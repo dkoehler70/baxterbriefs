@@ -7,7 +7,6 @@
 <meta name="description" content="Deed-level data on what small investors are actually doing in the Cleveland-Elyria MSA — flips, rentals, private lending — with a monthly theme and a playbook per investor type.">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../../assets/style.css">
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
 <style>
   .mc-form { max-width:540px; margin:0 auto; text-align:left; background:#fff; border:1px solid #C0CCD9; border-radius:3px; padding:24px; font-family:Helvetica, sans-serif; color:#3C4858; }
   .mc-form h3 { font-size:28px; font-weight:700; margin:0 0 8px; }
@@ -150,52 +149,16 @@
 
   <h2 class="section-title" id="activity-chart">Market Activity — Investor Purchases</h2>
   <p class="section-sub">Monthly count of investor purchases of MSA properties (left axis) and the median purchase price (right axis), trailing 13 months. The most recent month can grow up to ~15% as late recordings arrive.</p>
-  <div class="chart-container">
-    <canvas id="activityChart"></canvas>
-  </div>
   <!-- AGENT:chart:start -->
-<script id="chart-data" type="application/json">{"months":["2025-06","2025-07","2025-08","2025-09","2025-10","2025-11","2025-12","2026-01","2026-02","2026-03","2026-04","2026-05","2026-06"],"purchases":[1052,1131,1083,1114,1222,1030,1112,896,1046,1040,1040,1077,1076],"medians":[160000,160800,155000,153200,143875,140000,150000,121350,131250,140000,141275,140000,146282]}</script>
+<div class="map-panel"><img src="../img/chart_2026-05..2026-06.png" alt="Monthly investor purchases (bars) and median purchase price (line), trailing 13 months"></div>
       <!-- AGENT:chart:end -->
-  <script>
-  (function() {
-    var dataEl = document.getElementById('chart-data');
-    if (!dataEl || !window.Chart) return;
-    var data;
-    try { data = JSON.parse(dataEl.textContent); } catch (e) { return; }
-    var ctx = document.getElementById('activityChart');
-    if (!ctx || !data.months || !data.months.length) return;
-    new Chart(ctx, {
-      data: {
-        labels: data.months,
-        datasets: [
-          { type: 'bar', label: 'Investor purchases (count)', data: data.purchases,
-            backgroundColor: '#18416b', order: 2, yAxisID: 'y' },
-          { type: 'line', label: 'Median purchase price', data: data.medians,
-            borderColor: '#c0782a', backgroundColor: '#c0782a',
-            borderWidth: 2, pointRadius: 3, tension: 0.1, order: 1, yAxisID: 'y1' }
-        ]
-      },
-      options: {
-        responsive: true, maintainAspectRatio: false,
-        scales: {
-          x: { ticks: { maxRotation: 45, autoSkip: false } },
-          y: { title: { display: true, text: 'Purchases (count)' }, beginAtZero: true },
-          y1: { position: 'right', grid: { drawOnChartArea: false }, beginAtZero: true,
-                title: { display: true, text: 'Median price ($)' },
-                ticks: { callback: function(v) { return '$' + (v/1000) + 'k'; } } }
-        },
-        plugins: { legend: { position: 'bottom' } }
-      }
-    });
-  })();
-  </script>
 
   <h2 class="section-title" id="where-the-money-went">Where the Money Went</h2>
   <p class="section-sub">The geography of the period's investor activity: which zip codes saw the most recorded deals, and the largest individual transactions at street level.</p>
   <!-- AGENT:map:start -->
 <div class="map-panel">
     <h3 class="subsection-title" style="margin-top:0;">The 8 busiest zip codes for investor deals</h3>
-    <img src="../img/map_2026-05..2026-06_eb208e7a.png" alt="Map of the most active zip codes for investor activity">
+    <img src="../img/map_2026-05..2026-06_1cf7a76b.png" alt="Map of the most active zip codes for investor activity">
     <div class="caption">Each numbered pin is one zip code, ranked by recorded investor deals (purchases + flips of existing homes) this period; pin 1 corresponds to row #1 below, pin 2 to #2, and so on.</div>
     <div class="map-table-wrap">
     <table class="data">
@@ -203,8 +166,8 @@
       <tbody>
         <tr><td>#1</td><td>44105</td><td>Slavic Village / Union-Miles</td><td class="num">119</td><td class="num">12</td><td class="num">$45,000</td></tr>
         <tr><td>#2</td><td>44102</td><td>Detroit-Shoreway / Cudell</td><td class="num">93</td><td class="num">5</td><td class="num">$115,000</td></tr>
-        <tr><td>#3</td><td>44120</td><td>Shaker Square / Buckeye</td><td class="num">79</td><td class="num">8</td><td class="num">$73,334</td></tr>
-        <tr><td>#4</td><td>44060</td><td>Mentor</td><td class="num">80</td><td class="num">7</td><td class="num">$222,500</td></tr>
+        <tr><td>#3</td><td>44060</td><td>Mentor</td><td class="num">80</td><td class="num">7</td><td class="num">$222,500</td></tr>
+        <tr><td>#4</td><td>44120</td><td>Shaker Square / Buckeye</td><td class="num">79</td><td class="num">8</td><td class="num">$73,334</td></tr>
         <tr><td>#5</td><td>44077</td><td>Painesville</td><td class="num">78</td><td class="num">4</td><td class="num">$175,700</td></tr>
         <tr><td>#6</td><td>44128</td><td>Lee-Harvard / Warrensville</td><td class="num">68</td><td class="num">11</td><td class="num">$67,546</td></tr>
         <tr><td>#7</td><td>44108</td><td>Glenville</td><td class="num">62</td><td class="num">11</td><td class="num">$50,000</td></tr>
