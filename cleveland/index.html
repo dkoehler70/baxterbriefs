@@ -7,6 +7,8 @@
 <meta name="description" content="Deed-level data on what small investors are actually doing in the Cleveland-Elyria MSA — flips, rentals, private lending — with a monthly theme and a playbook per investor type.">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <style>
   .mc-form { max-width:540px; margin:0 auto; text-align:left; background:#fff; border:1px solid #C0CCD9; border-radius:3px; padding:24px; font-family:Helvetica, sans-serif; color:#3C4858; }
   .mc-form h3 { font-size:28px; font-weight:700; margin:0 0 8px; }
@@ -159,8 +161,9 @@
   <!-- AGENT:map:start -->
 <div class="map-panel">
     <h3 class="subsection-title" style="margin-top:0;">The 8 busiest zip codes for investor deals</h3>
-    <img src="img/map_2026-05..2026-06_1cf7a76b.png" alt="Map of the most active zip codes for investor activity">
-    <div class="caption">Each numbered pin is one zip code, ranked by recorded investor deals (purchases + flips of existing homes) this period; pin 1 corresponds to row #1 below, pin 2 to #2, and so on.</div>
+    <div id="dealmap"></div>
+    <script id="map-data" type="application/json">[{"rank":1,"zip":"44105","area":"Slavic Village / Union-Miles","lat":41.449858,"lng":-81.632098,"buys":119,"flips":12,"deals":131,"median":"$45,000"},{"rank":2,"zip":"44102","area":"Detroit-Shoreway / Cudell","lat":41.479281,"lng":-81.736378,"buys":93,"flips":5,"deals":98,"median":"$115,000"},{"rank":3,"zip":"44060","area":"Mentor","lat":41.67653,"lng":-81.328167,"buys":80,"flips":7,"deals":87,"median":"$222,500"},{"rank":4,"zip":"44120","area":"Shaker Square / Buckeye","lat":41.473288,"lng":-81.58088,"buys":79,"flips":8,"deals":87,"median":"$73,334"},{"rank":5,"zip":"44077","area":"Painesville","lat":41.697563,"lng":-81.20974,"buys":78,"flips":4,"deals":82,"median":"$175,700"},{"rank":6,"zip":"44128","area":"Lee-Harvard / Warrensville","lat":41.439887,"lng":-81.538531,"buys":68,"flips":11,"deals":79,"median":"$67,546"},{"rank":7,"zip":"44108","area":"Glenville","lat":41.54148,"lng":-81.612482,"buys":62,"flips":11,"deals":73,"median":"$50,000"},{"rank":8,"zip":"44109","area":"Old Brooklyn","lat":41.444141,"lng":-81.698357,"buys":60,"flips":11,"deals":71,"median":"$101,000"}]</script>
+    <div class="caption">Pins rank the busiest zips by recorded investor deals (purchases + flips of existing homes) this period — #1 busiest; orange = top 3; pin size scales with deal volume. Click a pin for details; full table below.</div>
     <div class="map-table-wrap">
     <table class="data">
       <thead><tr><th>#</th><th>Zip</th><th>Area</th><th class="num">Purchases</th><th class="num">Flips</th><th class="num">Median buy</th></tr></thead>
@@ -178,6 +181,30 @@
     </div>
   </div>
       <!-- AGENT:map:end -->
+  <script>
+  (function() {
+    var el = document.getElementById('map-data');
+    if (!el || !window.L) return;
+    var zips; try { zips = JSON.parse(el.textContent); } catch (e) { return; }
+    if (!zips.length) return;
+    var map = L.map('dealmap', { scrollWheelZoom: false });
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
+      { attribution: '&copy; OpenStreetMap contributors &copy; CARTO', maxZoom: 18 }).addTo(map);
+    var group = [];
+    var maxDeals = Math.max.apply(null, zips.map(function(z){ return z.deals; }));
+    zips.forEach(function(z) {
+      var size = 26 + Math.round(18 * z.deals / maxDeals);
+      var icon = L.divIcon({ className: '', iconSize: [size, size], iconAnchor: [size/2, size/2],
+        html: '<div class="rank-pin' + (z.rank <= 3 ? ' hot' : '') + '" style="width:'+size+'px;height:'+size+'px;">#'+z.rank+'</div>' });
+      var m = L.marker([z.lat, z.lng], { icon: icon }).addTo(map);
+      m.bindPopup('<b>#'+z.rank+' &middot; '+z.zip+'</b>'+(z.area ? ' &mdash; '+z.area : '')+'<br>'+
+        z.buys.toLocaleString()+' purchases &middot; '+z.flips.toLocaleString()+' flips<br>Median buy '+z.median);
+      m.bindTooltip('#'+z.rank+' '+z.zip, { direction: 'top' });
+      group.push(m);
+    });
+    map.fitBounds(L.featureGroup(group).getBounds().pad(0.25));
+  })();
+  </script>
   <!-- AGENT:deals:start -->
 <h3 class="subsection-title">Largest recorded deals of the period, at street level</h3>
 <div class="deal-strip">
@@ -257,7 +284,7 @@
         <div class="price">$799,000 gross · bought $400,000 (May 2025) → sold $1.2M</div>
         <div class="addr">26117 N WOODLAND RD, Beachwood 44122</div>
         <div class="meta">Single family · 1,602 sqft · Jun 17</div>
-        <div class="svdate">Street View Apr 2023 — before the flip (pre-renovation)</div>
+        <div class="svdate">Street View May 2026 — during the flip</div>
       </div>
     </div>
     <div class="deal-card">

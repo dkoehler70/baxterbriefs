@@ -248,3 +248,11 @@ table.data tr:last-child td { border-bottom: 0; }
 .deal-card .svdate { color:var(--text-muted); font-size:11px; margin-top:.25rem; }
 
 .hero .datarange { font-size: .95rem; color: #c9d6e8; margin-top: .45rem; }
+
+#dealmap { height: 420px; border: 1px solid var(--border); }
+.rank-pin { display:flex; align-items:center; justify-content:center;
+  background: var(--navy); color:#fff; border:2px solid #fff; border-radius:50%;
+  font: 700 13px/1 "Open Sans", sans-serif; box-shadow: 0 1px 4px rgba(0,0,0,.4); }
+.rank-pin.hot { background: #c0782a; }
+.leaflet-popup-content { font: 13px/1.5 "Open Sans", sans-serif; }
+.leaflet-popup-content b { color: var(--navy); }
