@@ -190,7 +190,7 @@
     var zips; try { zips = JSON.parse(el.textContent); } catch (e) { return; }
     if (!zips.length) return;
     var map = L.map('dealmap', { scrollWheelZoom: false });
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
       { attribution: '&copy; OpenStreetMap contributors &copy; CARTO', maxZoom: 18 }).addTo(map);
     var group = [];
     var maxDeals = Math.max.apply(null, zips.map(function(z){ return z.deals; }));
@@ -340,7 +340,7 @@
   <h2 class="section-title" id="flip-structure">Flip Structure — Year over Year</h2>
   <p class="section-sub">How the flip market itself is changing: margins, who is doing the flipping, what they flip, and where. Same two calendar months, this year vs last, from the current data extract.</p>
   <!-- AGENT:flipstructure:start -->
-<table class="data">
+<table class="data tight">
     <thead><tr><th>Flip market structure</th><th class="num">Same months last year</th><th class="num">This edition</th></tr></thead><tbody>
       <tr><td>Flips sold</td><td class="num">388</td><td class="num">225</td></tr>
       <tr><td>Median sale</td><td class="num">$74,650</td><td class="num">$62,500</td></tr>
@@ -368,20 +368,20 @@
     <div class="card"><h3>$87,719</h3><div class="meta">Avg profit per flip</div><div class="body">lifetime average, per-investor aggregates</div></div>
     <div class="card"><h3>5.5 mo</h3><div class="meta">Time between sales</div><div class="body">median gap between recorded flip sales (168 days)</div></div>
     <div class="card"><h3>1353 sqft &#183; 3 bd</h3><div class="meta">Typical house</div><div class="body">median year built 1948</div></div>
+    <div class="card"><img src="../img/flippercurve_2026-05..2026-06.png" alt="Flippers by lifetime flip count" style="width:100%;max-width:260px;"><div class="meta">flippers by lifetime flips · orange = this band</div></div>
 </div>
 <div class="pulse-caveat">Where they work: Lee-Harvard / Warrensville (44128) 5% &#183; Slavic Village / Union-Miles (44105) 5% &#183; Detroit-Shoreway / Cudell (44102) 4% &#183; Old Brooklyn (44109) 4% &#183; Shaker Square / Buckeye (44120) 3%.</div>
-<div class="map-panel" style="max-width:440px;"><img src="../img/flippercurve_2026-05..2026-06.png" alt="Flippers by lifetime flip count, profile band highlighted" style="max-width:420px;"><div class="caption">Flippers by lifetime flip count; orange = profiled band.</div></div>
       <!-- AGENT:flipperprofile:end -->
 
   <h2 class="section-title" id="market-pulse">Market Pulse</h2>
   <!-- AGENT:pulse:start -->
 <table class="data">
-    <thead><tr><th></th><th class="num">per month, 2026</th><th class="num">per month, 2025</th><th class="num">change</th></tr></thead><tbody>
-      <tr><td><span style="color:#b03a2e;">&#9660;</span> Flips sold (deeds)</td><td class="num">113</td><td class="num">194</td><td class="num">-42%</td></tr>
-      <tr><td> Net rental units added</td><td class="num">154</td><td class="num">-250</td><td class="num">—</td></tr>
-      <tr><td><span style="color:#b03a2e;">&#9660;</span> Lending deals funded</td><td class="num">59</td><td class="num">61</td><td class="num">-5%</td></tr>
-      <tr><td><span style="color:#1a7a3c;">&#9650;</span> Seller/notes held (net)</td><td class="num">234</td><td class="num">189</td><td class="num">+24%</td></tr>
-      <tr><td><span style="color:#b03a2e;">&#9660;</span> Investors (net)</td><td class="num">148</td><td class="num">291</td><td class="num">-49%</td></tr>
+    <thead><tr><th></th><th class="num">per month, 2025</th><th class="num">per month, 2026</th><th class="num">change</th></tr></thead><tbody>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Flips sold (deeds)</td><td class="num">194</td><td class="num">113</td><td class="num">-42%</td></tr>
+      <tr><td> Rental units held (net change)</td><td class="num">-250</td><td class="num">154</td><td class="num">—</td></tr>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Lending deals funded</td><td class="num">61</td><td class="num">59</td><td class="num">-5%</td></tr>
+      <tr><td><span style="color:#1a7a3c;">&#9650;</span> Seller/notes held (net)</td><td class="num">189</td><td class="num">234</td><td class="num">+24%</td></tr>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Investors (net)</td><td class="num">291</td><td class="num">148</td><td class="num">-49%</td></tr>
     </tbody></table>
   <div class="pulse-caveat">Flips = recorded deeds, same two months each year. Other rows = monthly rates of attributed activity (2026: Jun 2026 → Aug 2026; 2025: Jul 2025 → Feb 2026).</div>
       <!-- AGENT:pulse:end -->

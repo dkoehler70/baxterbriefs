@@ -256,3 +256,5 @@ table.data tr:last-child td { border-bottom: 0; }
 .rank-pin.hot { background: #c0782a; }
 .leaflet-popup-content { font: 13px/1.5 "Open Sans", sans-serif; }
 .leaflet-popup-content b { color: var(--navy); }
+
+table.data.tight th, table.data.tight td { padding: .38rem .8rem; }
