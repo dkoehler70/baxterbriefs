@@ -261,3 +261,5 @@ table.data.tight th, table.data.tight td { padding: .38rem .8rem; }
 
 .pulse-caveat + .pulse-caveat { margin-top: -0.25rem; }
 .pulse-caveat { margin: .25rem 0 .5rem; line-height: 1.45; }
+
+.pulse-caveat { margin: .25rem 0 .4rem; }
