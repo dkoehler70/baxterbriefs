@@ -263,3 +263,7 @@ table.data.tight th, table.data.tight td { padding: .38rem .8rem; }
 .pulse-caveat { margin: .25rem 0 .5rem; line-height: 1.45; }
 
 .pulse-caveat { margin: .25rem 0 .4rem; }
+
+.rank-pin { background:#0f2c4d; border:3px solid #fff; box-shadow:0 2px 6px rgba(0,0,0,.55); font-weight:700; }
+.rank-pin.hot { background:#d2691e; }
+#dealmap { filter: saturate(1.15) contrast(1.05); }
