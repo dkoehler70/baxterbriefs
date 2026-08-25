@@ -198,8 +198,8 @@
     var zips; try { zips = JSON.parse(el.textContent); } catch (e) { return; }
     if (!zips.length) return;
     var map = L.map('dealmap', { scrollWheelZoom: false });
-    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',
-      { attribution: '&copy; OpenStreetMap contributors', maxZoom: 18 }).addTo(map);
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',
+      { attribution: 'Tiles &copy; Esri', maxZoom: 18 }).addTo(map);
     var group = [];
     var maxDeals = Math.max.apply(null, zips.map(function(z){ return z.deals; }));
     zips.forEach(function(z) {

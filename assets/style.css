@@ -266,10 +266,8 @@ table.data.tight th, table.data.tight td { padding: .38rem .8rem; }
 
 .rank-pin { background:#0f2c4d; border:3px solid #fff; box-shadow:0 2px 6px rgba(0,0,0,.55); font-weight:700; }
 .rank-pin.hot { background:#d2691e; }
-#dealmap { }
-
-/* map: neutral faint infrastructure, pins carry the colour */
-#dealmap { }
+/* Esri World Street, colour-matched to OSM standard (see round-3 comparison) */
+#dealmap { filter: saturate(1.35) brightness(.94) hue-rotate(-6deg) contrast(1.06); }
 .rank-pin { background:#0d2742; border:3px solid #fff; box-shadow:0 2px 7px rgba(0,0,0,.6); }
 .rank-pin.hot { background:#e2690b; }
 /* two charts side by side */
