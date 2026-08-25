@@ -198,7 +198,7 @@
     var zips; try { zips = JSON.parse(el.textContent); } catch (e) { return; }
     if (!zips.length) return;
     var map = L.map('dealmap', { scrollWheelZoom: false });
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
+    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
       { attribution: '&copy; OpenStreetMap contributors &copy; CARTO', maxZoom: 18 }).addTo(map);
     var group = [];
     var maxDeals = Math.max.apply(null, zips.map(function(z){ return z.deals; }));
