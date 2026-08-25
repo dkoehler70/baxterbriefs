@@ -342,12 +342,12 @@
 
   <h2 class="section-title" id="flip-pipeline">Flip Pipeline — Buying, Selling and Inventory</h2>
   <!-- AGENT:flipflow:start -->
-<p class="section-sub">Homes bought by known flippers and flips sold, per month, alongside the stock of houses sitting in flipper hands. A house enters inventory when a flipper buys it and leaves when the resale records — or when it passes 24 months unsold, at which point it stops being a flip in progress. That release is why inventory can fall in a month when buying outruns selling.</p>
-<div class="map-panel"><img src="img/flipflow_2026-05..2026-06.png" alt="Flip purchases, flip sales and inventory by month with projection"><div class="caption">Solid = recorded. Dashed = projected. Shaded line = homes in flipper hands at month end (right axis).</div></div>
+<p class="section-sub">Homes bought by known flippers and flips sold, per month, alongside the stock of houses sitting in flipper hands. A house enters inventory when a flipper buys it and leaves when the resale records — or when it passes 24 months unsold, at which point it stops being a flip in progress. That third flow is the big one — it runs larger than the gap between buying and selling — so inventory routinely falls in months when flippers buy more than they sell.</p>
+<div class="map-panel"><img src="img/flipflow_2026-05..2026-06.png" alt="Flip purchases, flip sales and inventory by month with projection"><div class="caption">Solid = recorded, dashed = projected. Three flows move the stock: bought in, sold out, and aged out — purchases that pass 24 months unsold and stop counting as flips in progress. The heavy green line is inventory, read against the RIGHT axis, which is zoomed to its own range so month-to-month movement is visible — the stock runs about thirty times the size of the monthly flows, so on a shared scale it would look frozen.</div></div>
 <table class="data tight">
-    <thead><tr><th>Flip pipeline</th><th class="num">Bought / mo</th><th class="num">Sold / mo</th><th class="num">Inventory</th></tr></thead><tbody>
-      <tr><td>Latest recorded month (2026-05)</td><td class="num">147</td><td class="num">24</td><td class="num">2,155</td></tr>
-      <tr><td>Projected (2026-11)</td><td class="num">122</td><td class="num">29</td><td class="num">2,161</td></tr>
+    <thead><tr><th>Flip pipeline</th><th class="num">Bought / mo</th><th class="num">Sold / mo</th><th class="num">Aged out / mo</th><th class="num">Inventory</th></tr></thead><tbody>
+      <tr><td>Latest recorded month (2026-05)</td><td class="num">147</td><td class="num">24</td><td class="num">82</td><td class="num">2,194</td></tr>
+      <tr><td>Projected (2026-11)</td><td class="num">122</td><td class="num">29</td><td class="num">56</td><td class="num">2,207</td></tr>
     </tbody></table>
   <div class="pulse-caveat">Method: a straight-line trend through the last 24 months, adjusted for the month of the year. Tested by hiding the most recent six months and predicting them, it missed purchases by 21%, sales by 25% and inventory by 11% on average — treat it as direction, not a number to underwrite against. The newest month or two of deeds are still arriving, so the series stops before them.</div>
       <!-- AGENT:flipflow:end -->
