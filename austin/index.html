@@ -169,8 +169,8 @@
 <div class="map-panel">
     <h3 class="subsection-title" style="margin-top:0;">The 8 busiest zip codes for investor deals</h3>
     <div id="dealmap"></div>
-    <script id="map-data" type="application/json">[{"rank":1,"zip":"78745","area":"South Austin / Westgate","lat":30.207424,"lng":-97.798244,"buys":37,"flips":3,"deals":40,"median":"$448,210","medianSale":"$610,470"},{"rank":2,"zip":"78602","area":"Bastrop","lat":30.132505,"lng":-97.329527,"buys":38,"flips":0,"deals":38,"median":"$196,540","medianSale":"n/a"},{"rank":3,"zip":"78628","area":"Georgetown West","lat":30.664543,"lng":-97.778616,"buys":33,"flips":4,"deals":37,"median":"$379,050","medianSale":"$388,858"},{"rank":4,"zip":"78641","area":"Leander","lat":30.557918,"lng":-97.913672,"buys":34,"flips":1,"deals":35,"median":"$410,822","medianSale":"$425,733"},{"rank":5,"zip":"78640","area":"Kyle","lat":29.994866,"lng":-97.821239,"buys":31,"flips":3,"deals":34,"median":"$188,700","medianSale":"$312,722"},{"rank":6,"zip":"78621","area":"Elgin","lat":30.337023,"lng":-97.36042,"buys":30,"flips":1,"deals":31,"median":"$205,332","medianSale":"$194,712"},{"rank":7,"zip":"78664","area":"Round Rock","lat":30.505414,"lng":-97.647284,"buys":28,"flips":3,"deals":31,"median":"$299,294","medianSale":"$266,000"},{"rank":8,"zip":"78634","area":"Hutto","lat":30.55985,"lng":-97.544081,"buys":27,"flips":1,"deals":28,"median":"$327,559","medianSale":"$303,240"}]</script>
-    <div class="caption">Pins rank the busiest zips by recorded investor deals (purchases + flips of existing homes) this period — #1 busiest; orange = top 3; pin size scales with deal volume. Median buy is the typical investor purchase from the investor feed; median sale is the typical flip resale from the deed record. Click a pin for details; full table below.</div>
+    <script id="map-data" type="application/json">[{"rank":1,"zip":"78745","area":"South Austin / Westgate","lat":30.207424,"lng":-97.798244,"buys":37,"flips":3,"deals":40,"median":"$448,210","medianSale":"$610,470"},{"rank":2,"zip":"78602","area":"Bastrop","lat":30.132505,"lng":-97.329527,"buys":38,"flips":0,"deals":38,"median":"$196,540","medianSale":"n/a"},{"rank":3,"zip":"78628","area":"Georgetown West","lat":30.664543,"lng":-97.778616,"buys":33,"flips":4,"deals":37,"median":"$379,050","medianSale":"$388,858"},{"rank":4,"zip":"78641","area":"Leander","lat":30.557918,"lng":-97.913672,"buys":34,"flips":1,"deals":35,"median":"$410,822","medianSale":"$425,733"},{"rank":5,"zip":"78640","area":"Kyle","lat":29.994866,"lng":-97.821239,"buys":31,"flips":3,"deals":34,"median":"$188,700","medianSale":"$312,722"},{"rank":6,"zip":"78664","area":"Round Rock","lat":30.505414,"lng":-97.647284,"buys":28,"flips":3,"deals":31,"median":"$299,294","medianSale":"$266,000"},{"rank":7,"zip":"78621","area":"Elgin","lat":30.337023,"lng":-97.36042,"buys":30,"flips":1,"deals":31,"median":"$205,332","medianSale":"$194,712"},{"rank":8,"zip":"78634","area":"Hutto","lat":30.55985,"lng":-97.544081,"buys":27,"flips":1,"deals":28,"median":"$327,559","medianSale":"$303,240"}]</script>
+    <div class="caption">Pins rank the busiest zips by recorded investor deals (purchases + flips of existing homes) this period — #1 busiest; orange = top 3; pin size scales with deal volume. Median buy is the typical investor purchase; median sale the typical flip resale. Click a pin for details; full table below.</div>
     <div class="map-table-wrap">
     <table class="data">
       <thead><tr><th>#</th><th>Zip</th><th>Area</th><th class="num">Purchases</th><th class="num">Flips</th><th class="num">Median buy</th><th class="num">Median sale</th></tr></thead>
@@ -180,8 +180,8 @@
         <tr><td>#3</td><td>78628</td><td>Georgetown West</td><td class="num">33</td><td class="num">4</td><td class="num">$379,050</td><td class="num">$388,858</td></tr>
         <tr><td>#4</td><td>78641</td><td>Leander</td><td class="num">34</td><td class="num">1</td><td class="num">$410,822</td><td class="num">$425,733</td></tr>
         <tr><td>#5</td><td>78640</td><td>Kyle</td><td class="num">31</td><td class="num">3</td><td class="num">$188,700</td><td class="num">$312,722</td></tr>
-        <tr><td>#6</td><td>78621</td><td>Elgin</td><td class="num">30</td><td class="num">1</td><td class="num">$205,332</td><td class="num">$194,712</td></tr>
-        <tr><td>#7</td><td>78664</td><td>Round Rock</td><td class="num">28</td><td class="num">3</td><td class="num">$299,294</td><td class="num">$266,000</td></tr>
+        <tr><td>#6</td><td>78664</td><td>Round Rock</td><td class="num">28</td><td class="num">3</td><td class="num">$299,294</td><td class="num">$266,000</td></tr>
+        <tr><td>#7</td><td>78621</td><td>Elgin</td><td class="num">30</td><td class="num">1</td><td class="num">$205,332</td><td class="num">$194,712</td></tr>
         <tr><td>#8</td><td>78634</td><td>Hutto</td><td class="num">27</td><td class="num">1</td><td class="num">$327,559</td><td class="num">$303,240</td></tr>
       </tbody>
     </table>
@@ -215,7 +215,7 @@
   </script>
   <!-- AGENT:deals:start -->
 <h3 class="subsection-title">A representative deal in each of the busiest zips</h3>
-<p class="section-sub">One deal per zip: the largest that matches the housing this market actually trades (typical for this market: 1827 sqft, 3 bed, built around 1995; priced within 4x the county assessment and under 5x its own zip&#39;s median). Picked this way rather than by headline price, so a single outlier can't stand in for a neighbourhood.</p>
+<p class="section-sub">One deal per zip: the largest matching this market's typical house (typical for this market: 1827 sqft, 3 bed, built around 1995; priced within 4x the county assessment and under 5x its own zip&#39;s median).</p>
 <div class="deal-strip">
     <div class="deal-card">
       <img src="img/sv_2026-05..2026-06_1_cd2cce0f.jpg" alt="Street view of 3410 DALTON ST APT 1">
@@ -282,7 +282,7 @@
     </div>
   </div>
 <h3 class="subsection-title">Deal sheet — private lending, in date order</h3>
-<p class="section-sub">Private loans recorded against residential property this period, oldest first. Same guardrails as the cards above: the collateral matches the market's typical house and the amount sits inside its normal range.</p>
+<p class="section-sub">Private loans recorded against residential property this period, oldest first.</p>
 <table class="data">
     <thead><tr><th>Date</th><th>Lender</th><th class="num">Amount</th><th>Property</th><th>Use</th></tr></thead>
     <tbody>
@@ -331,63 +331,63 @@
   <!-- AGENT:flipstructure:start -->
 <table class="data tight">
     <thead><tr><th>Flip market structure</th><th class="num">Same months last year</th><th class="num">This edition</th></tr></thead><tbody>
-      <tr><td>Flips sold</td><td class="num">73</td><td class="num">54</td></tr>
-      <tr><td>Median sale</td><td class="num">$538,000</td><td class="num">$453,297</td></tr>
+      <tr><td>Flips sold</td><td class="num">74</td><td class="num">54</td></tr>
+      <tr><td>Median sale</td><td class="num">$535,831</td><td class="num">$453,297</td></tr>
       <tr><td>Median $/sqft</td><td class="num">$292</td><td class="num">$256</td></tr>
       <tr><td>Sale vs county-assessed</td><td class="num">1.22×</td><td class="num">1.04×</td></tr>
-      <tr><td>Median gross margin (matched buys)</td><td class="num">$121,000</td><td class="num">$85,940</td></tr>
+      <tr><td>Median gross margin (matched buys)</td><td class="num">$116,538</td><td class="num">$85,940</td></tr>
       <tr><td>Median margin %</td><td class="num">25%</td><td class="num">26%</td></tr>
-      <tr><td>Median hold</td><td class="num">8.0 mo</td><td class="num">5.4 mo</td></tr>
-      <tr><td>Homes bought by flippers</td><td class="num">180</td><td class="num">210</td></tr>
-      <tr><td>Net to inventory (bought − sold)</td><td class="num">+107</td><td class="num">+156</td></tr>
-      <tr><td>Active flippers</td><td class="num">61</td><td class="num">37</td></tr>
+      <tr><td>Median hold</td><td class="num">8.1 mo</td><td class="num">5.4 mo</td></tr>
+      <tr><td>Homes bought by flippers</td><td class="num">198</td><td class="num">223</td></tr>
+      <tr><td>Net to inventory (bought − sold)</td><td class="num">+124</td><td class="num">+169</td></tr>
+      <tr><td>Active flippers</td><td class="num">62</td><td class="num">37</td></tr>
       <tr><td>Top-10 flippers&#39; revenue share</td><td class="num">35%</td><td class="num">93%</td></tr>
-      <tr><td>Median house: sqft / beds / built</td><td class="num">1956 / 4 / 1999</td><td class="num">1926 / 3 / 1996</td></tr>
+      <tr><td>Median house: sqft / beds / built</td><td class="num">1951 / 4 / 1999</td><td class="num">1926 / 3 / 1996</td></tr>
       <tr><td>Pre-1950 stock share</td><td class="num">1%</td><td class="num">6%</td></tr>
       <tr><td>2–4 unit share</td><td class="num">8%</td><td class="num">6%</td></tr>
-      <tr><td>Median distance from downtown</td><td class="num">19.0 km</td><td class="num">27.8 km</td></tr>
+      <tr><td>Median distance from downtown</td><td class="num">19.4 km</td><td class="num">27.8 km</td></tr>
     </tbody></table>
 <div class="pulse-caveat"><strong>Dollar figures on this page are estimates.</strong> This county does not disclose sale prices, so 47% of them are back-computed from the recorded mortgage at an assumed loan-to-value. Treat every price, margin and per-foot figure as indicative. Counts, dates, hold times, parties and geography come from the deed record itself and are unaffected.</div>
-  <div class="pulse-caveat">Homes bought counts every deed recorded to a known flipper in the window, whether or not it has resold; net to inventory is that minus flips sold, so a positive number means flippers took on more houses than they cleared. The standing stock is in the Flip Pipeline section below, where purchases stop counting after five years unsold.</div>
+  <div class="pulse-caveat">Homes bought counts every deed recorded to a known flipper in the window, resold or not. Net to inventory is that minus flips sold. The standing stock is in the Flip Pipeline section.</div>
   <div class="pulse-caveat">Attributed profit per flip (per-investor aggregates, by drop period): Jul 25→Feb 26: 3,658 flips, $1.5M/flip &#183; Feb 26→Jun 26: 915 flips, n/a (revisions) &#183; Jun 26→Aug 26: 321 flips, n/a (revisions).</div>
-  <div class="pulse-caveat">County mix (share of flips, last year → this edition): Travis 64%→50% &#183; Williamson 16%→31% &#183; Hays 16%→13% &#183; Caldwell 1%→4% &#183; Bastrop 1%→2%.</div>
-  <div class="pulse-caveat">Biggest zip share moves: Georgetown West 0.0%→7.4% &#183; Spicewood 0.0%→5.6% &#183; South Austin / Shady Hollow 6.8%→1.9% &#183; Round Rock 1.4%→5.6% &#183; Jarrell 0.0%→3.7% &#183; Lago Vista 5.5%→1.9%.</div>
+  <div class="pulse-caveat">County mix (share of flips, last year → this edition): Travis 64%→50% &#183; Williamson 16%→31% &#183; Hays 16%→13% &#183; Caldwell 3%→4% &#183; Bastrop 1%→2%.</div>
+  <div class="pulse-caveat">Biggest zip share moves: Georgetown West 0.0%→7.4% &#183; Spicewood 0.0%→5.6% &#183; South Austin / Shady Hollow 6.8%→1.9% &#183; Round Rock 1.4%→5.6% &#183; Jarrell 0.0%→3.7% &#183; Lago Vista 5.4%→1.9%.</div>
       <!-- AGENT:flipstructure:end -->
 
   <h2 class="section-title" id="flip-pipeline">Flip Pipeline — Buying, Selling and Inventory</h2>
   <!-- AGENT:flipflow:start -->
-<p class="section-sub">Homes bought by known flippers and homes they resold, per month, alongside the stock sitting in flipper hands. A house enters inventory when a flipper buys it and leaves on the next recorded sale — at any price, on any timeline, which is a wider net than the flip count elsewhere in this brief. A purchase stops counting after five years unsold, on the view that by then it is a hold rather than a flip in progress.</p>
-<div class="map-panel"><img src="img/flipflow_2026-05..2026-06.png" alt="Flip purchases, flip sales and inventory by month with projection"><div class="caption">Solid = recorded, dashed = projected. Green bars are inventory — homes a flipper has bought and not yet resold — read against the RIGHT axis, which is which starts at zero so the bar heights can be compared directly. Purchases stop counting after five years unsold; that release is the grey line, and inventory moves by bought minus sold minus aged out.</div></div>
+<p class="section-sub">Homes bought by known flippers and homes they resold, per month, alongside the stock sitting in flipper hands. A house enters inventory when a flipper buys it and leaves on the next recorded sale, at any price. Purchases still unsold after five years are treated as holds and drop out.</p>
+<div class="map-panel"><img src="img/flipflow_2026-05..2026-06.png" alt="Flip purchases, flip sales and inventory by month with projection"><div class="caption">Solid = recorded, dashed = projected. Green bars are inventory on the right axis: homes bought and not yet resold. Aged out is purchases passing five years unsold. Inventory moves by bought minus resold minus aged out.</div></div>
 <table class="data tight">
     <thead><tr><th>Flip pipeline</th><th class="num">Bought / mo</th><th class="num">Sold / mo</th><th class="num">Aged out / mo</th><th class="num">Inventory</th></tr></thead><tbody>
-      <tr><td>Latest recorded month (2026-05)</td><td class="num">142</td><td class="num">113</td><td class="num">64</td><td class="num">2,868</td></tr>
-      <tr><td>Projected (2026-11)</td><td class="num">113</td><td class="num">106</td><td class="num">48</td><td class="num">2,563</td></tr>
+      <tr><td>Latest recorded month (2026-05)</td><td class="num">152</td><td class="num">117</td><td class="num">74</td><td class="num">3,204</td></tr>
+      <tr><td>Projected (2026-11)</td><td class="num">119</td><td class="num">107</td><td class="num">56</td><td class="num">2,869</td></tr>
     </tbody></table>
-  <div class="pulse-caveat">Method: a straight-line trend through the last 24 months, adjusted for the month of the year. Tested by hiding the most recent six months and predicting them, it missed purchases by 26%, sales by 13% and inventory by 2% on average — treat it as direction, not a number to underwrite against. The newest month or two of deeds are still arriving, so the series stops before them.</div>
+  <div class="pulse-caveat">Method: a straight-line trend through the last 24 months, adjusted for the month of the year. Tested by hiding the most recent six months and predicting them, it missed purchases by 26%, sales by 13% and inventory by 2% on average — The series stops before the newest month or two, where deeds are still recording.</div>
       <!-- AGENT:flipflow:end -->
 
   <h2 class="section-title" id="financing">Who's Funding the Deals</h2>
   <!-- AGENT:financing:start -->
-<p class="section-sub">First mortgages still open on flipper purchases from Jul 2025 – Jun 2026 that have not yet resold — so the lien on record is the flipper's own acquisition loan, not a later owner's mortgage. 34% of those purchases carried recorded debt; the rest closed cash or off-record. Ranked by deal count, not dollars, so the lenders doing volume at small-investor size show up.</p>
+<p class="section-sub">First mortgages open on flipper purchases from Jul 2025 – Jun 2026 that have not yet resold. 33% carried recorded debt; the rest closed cash or off-record. Ranked by deal count.</p>
 <div class="card-grid">
-    <div class="card"><h3>34%</h3><div class="meta">Purchases financed</div><div class="body">305 of 896 flipper purchases carried a recorded first mortgage</div></div>
-    <div class="card"><h3>$337,402</h3><div class="meta">Typical loan</div><div class="body">recorded lien amount; this county does not disclose sale prices, so loan-to-price cannot be computed here</div></div>
+    <div class="card"><h3>33%</h3><div class="meta">Purchases financed</div><div class="body">323 of 966 flipper purchases carried a recorded first mortgage</div></div>
+    <div class="card"><h3>$339,000</h3><div class="meta">Typical loan</div><div class="body">recorded lien amount; this county does not disclose sale prices, so loan-to-price cannot be computed here</div></div>
   </div>
 <table class="data tight">
     <thead><tr><th>Lender</th><th class="num">Loans</th><th class="num">Borrowers</th><th class="num">Median loan</th><th class="num">Median purchase</th></tr></thead><tbody>
       <tr><td>United Wholesale Mortgage LLC</td><td class="num">13</td><td class="num">12</td><td class="num">$299,475</td><td class="num">$300,594</td></tr>
+      <tr><td>Rocket Mortgage LLC</td><td class="num">11</td><td class="num">10</td><td class="num">$273,000</td><td class="num">$296,000</td></tr>
       <tr><td>Mortgage Research Center LLC</td><td class="num">11</td><td class="num">11</td><td class="num">$480,000</td><td class="num">$470,400</td></tr>
-      <tr><td>Rocket Mortgage LLC</td><td class="num">10</td><td class="num">9</td><td class="num">$271,500</td><td class="num">$287,750</td></tr>
-      <tr><td>Fairway Independent MTG Corp</td><td class="num">7</td><td class="num">7</td><td class="num">$440,000</td><td class="num">$389,750</td></tr>
-      <tr><td>CMG Mortgage INC</td><td class="num">6</td><td class="num">6</td><td class="num">$434,442</td><td class="num">$431,571</td></tr>
+      <tr><td>Fairway Independent MTG Corp</td><td class="num">8</td><td class="num">8</td><td class="num">$427,824</td><td class="num">$345,979</td></tr>
+      <tr><td>CMG Mortgage INC</td><td class="num">7</td><td class="num">7</td><td class="num">$472,500</td><td class="num">$471,419</td></tr>
       <tr><td>Kiavi Funding INC</td><td class="num">6</td><td class="num">3</td><td class="num">$210,000</td><td class="num">$221,000</td></tr>
       <tr><td>Dhi Mortgage Company, LTD.</td><td class="num">6</td><td class="num">4</td><td class="num">$365,800</td><td class="num">$253,850</td></tr>
       <tr><td>Wiggins Matthew</td><td class="num">5</td><td class="num">1</td><td class="num">$200,000</td><td class="num">$2.0M</td></tr>
-      <tr><td>Lendz Financial</td><td class="num">5</td><td class="num">1</td><td class="num">$202,150</td><td class="num">$271,320</td></tr>
       <tr><td>Loandepotcom LLC</td><td class="num">5</td><td class="num">5</td><td class="num">$497,000</td><td class="num">$324,500</td></tr>
+      <tr><td>Nexus Series B LLC</td><td class="num">5</td><td class="num">1</td><td class="num">$725,000</td><td class="num">$350,000</td></tr>
     </tbody></table>
 <div class="pulse-caveat"><strong>Dollar figures on this page are estimates.</strong> This county does not disclose sale prices, so 47% of them are back-computed from the recorded mortgage at an assumed loan-to-value. Treat every price, margin and per-foot figure as indicative. Counts, dates, hold times, parties and geography come from the deed record itself and are unaffected.</div>
-  <div class="pulse-caveat">No rate or term is shown: the county feed's interest rate is modelled rather than recorded, and its term field defaults to 30 years even for bridge lenders who write 12-month paper. Borrowers counts the distinct flippers on each lender's book. Loan vs price is the recorded first mortgage divided by what the buyer paid. Above 1.00x the lender is funding purchase plus rehab; below it the buyer brought cash to the table. Blanket mortgages covering several parcels are excluded, as are loans outside 0.1x-3x the price. Rates and points are not public record.</div>
+  <div class="pulse-caveat">Rates and terms are not published: the county feed models both. Borrowers counts the distinct flippers on each lender's book. Loan vs price is the recorded first mortgage divided by what the buyer paid. Above 1.00x the lender is funding purchase plus rehab; below it the buyer brought cash to the table. Blanket mortgages covering several parcels are excluded, as are loans outside 0.1x-3x the price. Rates and points are not public record.</div>
       <!-- AGENT:financing:end -->
 
   <h2 class="section-title" id="flipper-profile">Flipper Profile — The Working Flipper</h2>
@@ -407,8 +407,8 @@
   <!-- AGENT:pulse:start -->
 <table class="data">
     <thead><tr><th></th><th class="num">per month, 2025</th><th class="num">per month, 2026</th><th class="num">change</th><th class="num">avg/mo 2yr</th><th class="num">avg/mo 4yr</th></tr></thead><tbody>
-      <tr><td><span style="color:#1a7a3c;">&#9650;</span> Homes bought by flippers</td><td class="num">90</td><td class="num">105</td><td class="num">+17%</td><td class="num">98</td><td class="num">90</td></tr>
-      <tr><td><span style="color:#b03a2e;">&#9660;</span> Flips sold (deeds)</td><td class="num">37</td><td class="num">27</td><td class="num">-26%</td><td class="num">96</td><td class="num">93</td></tr>
+      <tr><td><span style="color:#1a7a3c;">&#9650;</span> Homes bought by flippers</td><td class="num">99</td><td class="num">112</td><td class="num">+13%</td><td class="num">105</td><td class="num">96</td></tr>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Flips sold (deeds)</td><td class="num">37</td><td class="num">27</td><td class="num">-27%</td><td class="num">100</td><td class="num">97</td></tr>
       <tr><td><span style="color:#b03a2e;">&#9660;</span> Lending deals funded</td><td class="num">304</td><td class="num">92</td><td class="num">-70%</td><td class="num">—</td><td class="num">—</td></tr>
       <tr><td><span style="color:#b03a2e;">&#9660;</span> Seller/notes held (net)</td><td class="num">953</td><td class="num">309</td><td class="num">-68%</td><td class="num">—</td><td class="num">—</td></tr>
       <tr><td> Investors (net)</td><td class="num">-897</td><td class="num">446</td><td class="num">—</td><td class="num">—</td><td class="num">—</td></tr>
