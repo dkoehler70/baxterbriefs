@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tucson Real Estate Investor Brief</title>
+<meta name="description" content="Deed-level data on what small investors are actually doing in the Tucson-Elyria MSA — flips, rentals, private lending — with a monthly theme and a playbook per investor type.">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  .mc-form { max-width:540px; margin:0 auto; text-align:left; background:#fff; border:1px solid #C0CCD9; border-radius:3px; padding:24px; font-family:Helvetica, sans-serif; color:#3C4858; }
+  .mc-form h3 { font-size:28px; font-weight:700; margin:0 0 8px; }
+  .mc-form p { font-size:16px; margin:0 0 12px; }
+  .mc-form label { display:block; font-weight:700; font-size:16px; margin-bottom:6px; }
+  .mc-form input[type=email] { width:100%; box-sizing:border-box; font-size:16px; padding:10px; border:1px solid #C0CCD9; border-radius:3px; margin-bottom:12px; }
+  .mc-form button { font-size:16px; font-weight:700; color:#fff; background:#3E4857; border:0; border-radius:3px; padding:10px 20px; cursor:pointer; }
+  .mc-form .mc-note { font-size:12px; color:#6b7785; margin-top:10px; }
+</style>
+</head>
+<body>
+
+<div class="utility-bar">
+  <div class="container">
+    <a href="#methodology">Methodology</a>
+    <a href="#about">About</a>
+    <a href="#newsletter">Subscribe</a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container">
+    <div class="brand">
+      <div class="brand-text">
+        <span class="brand-name">Tucson Real Estate Investor Brief</span>
+        <span class="brand-tag">Deed-level market intelligence for small investors · Tucson-Elyria MSA</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="primary-nav">
+  <div class="container">
+    <a href="#this-issue" class="active">This Issue</a>
+    <a href="#playbook">Investor Playbook</a>
+    <a href="#factoids">Factoids</a>
+    <a href="#activity-chart">Market Activity</a>
+    <a href="#where-the-money-went">Where the Money Went</a>
+    <a href="#flip-structure">Flip Structure</a>
+    <a href="#flip-pipeline">Flip Pipeline</a>
+      <a href="#financing">Funding</a>
+      <a href="#flipper-profile">Flipper Profile</a>
+    <a href="#market-pulse">Market Pulse</a>
+    <a href="#methodology">Methodology</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <!-- AGENT:hero:start -->
+<h1>August Edition — Buy-Sell Gap</h1>
+    <div class="datarange">Analyzing transactions recorded May 1 – June 30, 2026</div>
+      <!-- AGENT:hero:end -->
+  </div>
+</section>
+
+<main>
+
+  <h2 class="section-title" id="this-issue">This Issue
+    <!-- AGENT:updated:start -->
+<span style="float:right;font-weight:400;text-transform:none;letter-spacing:0;font-size:12px;color:var(--text-muted);">August 2026 edition</span>
+      <!-- AGENT:updated:end -->
+  </h2>
+  <!-- AGENT:theme:start -->
+<div class="forecast-headline">
+    <div>
+      <div class="number">245 bought vs 123 sold</div>
+      <div class="label">Homes bought by flippers versus flip resales recorded this edition; a year ago the same stretch ran 299 bought against 224 sold</div>
+    </div>
+    <div class="body">
+      <h3 style="margin:0 0 .5rem;color:var(--navy);">Flippers are acquiring two homes for every one they resell, and the net build is running above last year</h3>
+      <p>Flipper acquisitions ran 245 against 123 recorded resales this edition, a net build of 122 homes versus 75 in the same stretch a year ago, when the split was 299 bought to 224 sold. Exits are fewer and thinner: median flip margin was $82,000 (40.5%) against $89,000 (45.3%) a year ago, on a median resale of $284,500 versus $301,400. The selling cohort narrowed to 59 flippers from 115, with the top ten carrying 55.5% of resale volume against 48.0%. Recorded counts lag four to eight weeks and the most recent month can grow about 15%.</p>
+    </div>
+  </div>
+      <!-- AGENT:theme:end -->
+
+  <h2 class="section-title" id="playbook">Investor Playbook</h2>
+  <p class="section-sub">What this issue's numbers suggest checking, by investor type. Observations from recorded data — not investment, legal, or tax advice.</p>
+  <!-- AGENT:playbook:start -->
+<div class="card-grid">
+    <div class="card">
+      <h3>Sell into the acquisition side, not the exit side</h3>
+      <div class="meta">Wholesalers</div>
+      <div class="body">Flippers took down 245 homes while clearing 123, so demand for contracts is running ahead of resale absorption. The five assignments that surfaced carried a $20,000 median spread, and the buy medians worth building lists around are 85705 at $195,000, 85706 at $215,550 and 85713 at $220,000. Assignment counts here are a floor; only deals that touched a recorded deed are counted.</div>
+    </div>
+    <div class="card">
+      <h3>Underwrite to a 174-day hold and a $82,000 margin, not last year&#39;s numbers</h3>
+      <div class="meta">Flippers</div>
+      <div class="body">Median hold on flips sold this edition was 174 days with the middle half between 108.5 and 334 days, and 21% took over a year. Median margin came in at $82,000 (40.5%) against $89,000 (45.3%) a year ago. With 3,631 flip-held homes still in inventory and 70 aged out in May, the data suggests pricing the carry rather than the comp is the binding constraint.</div>
+    </div>
+    <div class="card">
+      <h3>The hold zips and the flip zips are separating</h3>
+      <div class="meta">Landlords</div>
+      <div class="body">Green Valley 85614 posted 92 investor buys against just 3 flips at a $235,000 median buy, and Oro Valley North 85755 showed 48 buys and zero flips. Condos entered at a $240,000 median on the same $204/sqft as single family, whose median was $339,950 — worth checking where the per-foot basis is equal but the ticket is $100,000 lower. 597 owners added 735 units since the last drop.</div>
+    </div>
+    <div class="card">
+      <h3>Extension and takeout paper is the gap that opened</h3>
+      <div class="meta">Private lenders</div>
+      <div class="body">Only 13 private loans recorded this period against 208 a year ago, while 21% of flips sold had been held over a year. Among trailing-twelve-month lenders, rehab exposure is concentrated — FLIPFAST 48 loans across 6 borrowers at 1.27 loan-to-price, Alta Funding 16 loans across 11 at 1.16. With seller notes also down to 95 from 126, the data suggests demand for second-round money on aging projects is not being met in the recorded market.</div>
+    </div>
+    <div class="card">
+      <h3>Per-foot basis inverts between small and larger residential</h3>
+      <div class="meta">Multifamily investors</div>
+      <div class="body">Twenty-eight 2-4 unit trades cleared at a $450,000 median and $275/sqft, while nine Apartment 5+ purchases cleared at $1,245,000 and $163/sqft. Small multifamily was 0% of flip resales this edition, down from 0.4% a year ago, so duplex-to-fourplex supply is not coming from flip exits. Where the per-foot gap holds, larger residential is the cheaper entry per square foot.</div>
+    </div>
+  </div>
+      <!-- AGENT:playbook:end -->
+
+  <h2 class="section-title" id="factoids">Factoids</h2>
+  <p class="section-sub">Numbers from this period a practitioner would repeat to a colleague. Each computed directly from recorded instruments.</p>
+  <!-- AGENT:factoids:start -->
+<div class="card-grid">
+    <div class="card">
+      <h3>29% of investor purchases at a $389,000 median — Out-of-state buyer share and median price</h3>
+      <div class="meta">trending up &#183; vs 58% local at a $280,000 median</div>
+      <div class="body">Out-of-state buying concentrates well above the local median ticket, with CA 61, WA 40 and CO 22 the top feeders. Local buyers still set the price floor in the mid-$200,000s to $280,000 band.</div>
+    </div>
+    <div class="card">
+      <h3>13 private loans recorded — Recorded private loans in the period, median $122,000</h3>
+      <div class="meta">trending down &#183; vs 208 a year ago, median $164,000</div>
+      <div class="body">Recorded private lending has all but vanished from the deed record for this period, and seller-financed notes fell to 95 from 126. Deals are being funded, but through instruments that are not surfacing as recorded private loans.</div>
+    </div>
+    <div class="card">
+      <h3>$275/sqft on 2-4 unit purchases — Median price per square foot, small multifamily acquisitions</h3>
+      <div class="meta">trending up &#183; vs $204/sqft for single family</div>
+      <div class="body">Twenty-eight 2-4 unit purchases cleared at a $450,000 median, the highest per-foot basis of any residential type this edition. Apartment 5+ traded the other way: nine purchases at a $1,245,000 median and $163/sqft.</div>
+    </div>
+    <div class="card">
+      <h3>97 mobile/manufactured purchases at $118,147 — Investor purchases of manufactured housing and their median price</h3>
+      <div class="meta">holding steady &#183; vs $339,950 median for single family</div>
+      <div class="body">At $117/sqft this is the lowest structural basis in the county mix, and eight of the 123 flips sold this period were manufactured. It remains the only product type where entry sits under $150,000 at volume.</div>
+    </div>
+    <div class="card">
+      <h3>85706 at 9.8% of flip resales — Littletown / Airport share of flips sold</h3>
+      <div class="meta">trending up &#183; vs 4.5% a year ago</div>
+      <div class="body">The zip recorded 12 flips against 28 investor buys, a $215,550 median buy. Vail (85641) moved from 0.9% to 4.9% of flips over the same comparison while Rita Ranch (85747) fell from 5.8% to 1.6%.</div>
+    </div>
+    <div class="card">
+      <h3>80% of purchases financed — Share of trailing-twelve-month investor purchases with recorded debt, median loan $225,834</h3>
+      <div class="meta">holding steady &#183; median loan-to-price 0.96</div>
+      <div class="body">Of 1,107 purchases, 891 carried recorded financing and 300 included rehab funds. Two lenders wrote above par on price — FLIPFAST at 1.27 loan-to-price across 48 loans and Alta Funding at 1.16 across 16 — which is where rehab dollars are showing up.</div>
+    </div>
+  </div>
+      <!-- AGENT:factoids:end -->
+
+  <h2 class="section-title" id="activity-chart">Market Activity — Investor Purchases</h2>
+  <p class="section-sub">Monthly count of investor purchases of MSA properties (left axis) and the median purchase price (right axis), trailing 13 months. The most recent month can grow up to ~15% as late recordings arrive.</p>
+  <!-- AGENT:chart:start -->
+<div class="chart-row">
+    <div class="map-panel"><img src="img/chart_2026-05..2026-06.png" alt="Monthly investor purchases and median price"><div class="caption">Investor purchases per month (bars) and median purchase price (line), trailing 13 months.</div></div>
+    <div class="map-panel"><img src="img/decades_2026-05..2026-06.png" alt="Investor purchases by decade the house was built"><div class="caption">Which vintage of housing investors bought this edition, by decade built.</div></div>
+  </div>
+      <!-- AGENT:chart:end -->
+
+  <h2 class="section-title" id="where-the-money-went">Where the Money Went</h2>
+  <p class="section-sub">The geography of the period's investor activity: which zip codes saw the most recorded deals, and the largest individual transactions at street level.</p>
+  <!-- AGENT:map:start -->
+<div class="map-panel">
+    <h3 class="subsection-title" style="margin-top:0;">The 8 busiest zip codes for investor deals</h3>
+    <div id="dealmap"></div>
+    <script id="map-data" type="application/json">[{"rank":1,"zip":"85614","area":"Green Valley","lat":31.8113,"lng":-110.931085,"buys":92,"flips":3,"deals":95,"median":"$235,000","medianSale":"$220,900"},{"rank":2,"zip":"85710","area":"East Tucson","lat":32.214388,"lng":-110.823663,"buys":60,"flips":12,"deals":72,"median":"$278,558","medianSale":"$311,000"},{"rank":3,"zip":"85705","area":"Amphi / North Tucson","lat":32.271205,"lng":-110.991724,"buys":64,"flips":7,"deals":71,"median":"$195,000","medianSale":"$210,000"},{"rank":4,"zip":"85713","area":"Menlo Park / Barrio Hollywood","lat":32.19457,"lng":-111.014995,"buys":46,"flips":7,"deals":53,"median":"$220,000","medianSale":"$195,000"},{"rank":5,"zip":"85716","area":"Sam Hughes / Blenman-Elm","lat":32.242195,"lng":-110.923528,"buys":47,"flips":3,"deals":50,"median":"$315,000","medianSale":"$323,000"},{"rank":6,"zip":"85719","area":"University / West University","lat":32.246222,"lng":-110.948769,"buys":46,"flips":4,"deals":50,"median":"$346,000","medianSale":"$307,000"},{"rank":7,"zip":"85718","area":"Catalina Foothills","lat":32.313135,"lng":-110.921964,"buys":47,"flips":2,"deals":49,"median":"$699,984","medianSale":"$205,500"},{"rank":8,"zip":"85755","area":"Oro Valley North","lat":32.468351,"lng":-110.981507,"buys":48,"flips":0,"deals":48,"median":"$542,500","medianSale":"n/a"}]</script>
+    <div class="caption">Pins rank the busiest zips by recorded investor deals (purchases + flips of existing homes) this period — #1 busiest; orange = top 3; pin size scales with deal volume. Median buy is the typical investor purchase; median sale the typical flip resale. Click a pin for details; full table below.</div>
+    <div class="map-table-wrap">
+    <table class="data">
+      <thead><tr><th>#</th><th>Zip</th><th>Area</th><th class="num">Purchases</th><th class="num">Flips</th><th class="num">Median buy</th><th class="num">Median sale</th></tr></thead>
+      <tbody>
+        <tr><td>#1</td><td>85614</td><td>Green Valley</td><td class="num">92</td><td class="num">3</td><td class="num">$235,000</td><td class="num">$220,900</td></tr>
+        <tr><td>#2</td><td>85710</td><td>East Tucson</td><td class="num">60</td><td class="num">12</td><td class="num">$278,558</td><td class="num">$311,000</td></tr>
+        <tr><td>#3</td><td>85705</td><td>Amphi / North Tucson</td><td class="num">64</td><td class="num">7</td><td class="num">$195,000</td><td class="num">$210,000</td></tr>
+        <tr><td>#4</td><td>85713</td><td>Menlo Park / Barrio Hollywood</td><td class="num">46</td><td class="num">7</td><td class="num">$220,000</td><td class="num">$195,000</td></tr>
+        <tr><td>#5</td><td>85716</td><td>Sam Hughes / Blenman-Elm</td><td class="num">47</td><td class="num">3</td><td class="num">$315,000</td><td class="num">$323,000</td></tr>
+        <tr><td>#6</td><td>85719</td><td>University / West University</td><td class="num">46</td><td class="num">4</td><td class="num">$346,000</td><td class="num">$307,000</td></tr>
+        <tr><td>#7</td><td>85718</td><td>Catalina Foothills</td><td class="num">47</td><td class="num">2</td><td class="num">$699,984</td><td class="num">$205,500</td></tr>
+        <tr><td>#8</td><td>85755</td><td>Oro Valley North</td><td class="num">48</td><td class="num">0</td><td class="num">$542,500</td><td class="num">n/a</td></tr>
+      </tbody>
+    </table>
+    </div>
+
+  </div>
+      <!-- AGENT:map:end -->
+  <script>
+  (function() {
+    var el = document.getElementById('map-data');
+    if (!el || !window.L) return;
+    var zips; try { zips = JSON.parse(el.textContent); } catch (e) { return; }
+    if (!zips.length) return;
+    var map = L.map('dealmap', { scrollWheelZoom: false });
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',
+      { attribution: 'Tiles &copy; Esri', maxZoom: 18 }).addTo(map);
+    var group = [];
+    var maxDeals = Math.max.apply(null, zips.map(function(z){ return z.deals; }));
+    zips.forEach(function(z) {
+      var size = 26 + Math.round(18 * z.deals / maxDeals);
+      var icon = L.divIcon({ className: '', iconSize: [size, size], iconAnchor: [size/2, size/2],
+        html: '<div class="rank-pin' + (z.rank <= 3 ? ' hot' : '') + '" style="width:'+size+'px;height:'+size+'px;">#'+z.rank+'</div>' });
+      var m = L.marker([z.lat, z.lng], { icon: icon }).addTo(map);
+      m.bindPopup('<b>#'+z.rank+' &middot; '+z.zip+'</b>'+(z.area ? ' &mdash; '+z.area : '')+'<br>'+
+        z.buys.toLocaleString()+' purchases &middot; '+z.flips.toLocaleString()+' flips<br>Median buy '+z.median);
+      m.bindTooltip('#'+z.rank+' '+z.zip, { direction: 'top' });
+      group.push(m);
+    });
+    map.fitBounds(L.featureGroup(group).getBounds().pad(0.25));
+  })();
+  </script>
+  <!-- AGENT:deals:start -->
+<h3 class="subsection-title">A representative deal in each of the busiest zips</h3>
+<p class="section-sub">One deal per zip: the largest matching this market's typical house (typical for this market: 1518 sqft, 3 bed, built around 1976; priced within 4x the county assessment and under 5x its own zip&#39;s median).</p>
+<div class="deal-strip">
+    <div class="deal-card">
+      <img src="img/sv_2026-05..2026-06_1_98315886.jpg" alt="Street view of 1642 E ENTRADA TERCERA">
+      <div class="body">
+        <div class="price">$749,000 · Purchase</div>
+        <div class="addr">1642 E ENTRADA TERCERA, Tucson 85718</div>
+        <div class="meta">Single family · 2,155 sqft · May 27</div>
+        <div class="svdate">Street View Mar 2025 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="img/sv_2026-05..2026-06_2_d1c18a50.jpg" alt="Street view of 12575 N MOUNTAIN BREEZE DR">
+      <div class="body">
+        <div class="price">$610,000 · Purchase</div>
+        <div class="addr">12575 N MOUNTAIN BREEZE DR, Tucson 85755</div>
+        <div class="meta">Single family · 1,400 sqft · May 1</div>
+        <div class="svdate">Street View Feb 2023 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="img/sv_2026-05..2026-06_3_8fc6cce9.jpg" alt="Street view of 1367 S MADERA RESERVE DR">
+      <div class="body">
+        <div class="price">$599,000 · Purchase</div>
+        <div class="addr">1367 S MADERA RESERVE DR, Green Valley 85614</div>
+        <div class="meta">Single family · 2,337 sqft · May 5</div>
+        <div class="svdate">Street View Jan 2026 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="img/sv_2026-05..2026-06_4_1c45bc3c.jpg" alt="Street view of 2240 E 2ND ST">
+      <div class="body">
+        <div class="price">$580,000 · Purchase</div>
+        <div class="addr">2240 E 2ND ST, Tucson 85719</div>
+        <div class="meta">Single family · 1,971 sqft · May 8</div>
+        <div class="svdate">Street View Mar 2022 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="img/sv_2026-05..2026-06_5_75b94aab.jpg" alt="Street view of 2621 E ADAMS ST">
+      <div class="body">
+        <div class="price">$500,000 · Purchase</div>
+        <div class="addr">2621 E ADAMS ST, Tucson 85716</div>
+        <div class="meta">Single family · 1,626 sqft · Jun 23</div>
+        <div class="svdate">Street View Apr 2019 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="img/sv_2026-05..2026-06_6_58639f94.jpg" alt="Street view of 1228 N 4TH AVE">
+      <div class="body">
+        <div class="price">$445,000 · Purchase</div>
+        <div class="addr">1228 N 4TH AVE, Tucson 85705</div>
+        <div class="meta">Single family · 1,304 sqft · May 13</div>
+        <div class="svdate">Street View Feb 2025 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="img/sv_2026-05..2026-06_7_c16b8b07.jpg" alt="Street view of 1925 S MCCONNELL DR">
+      <div class="body">
+        <div class="price">$372,500 · Purchase</div>
+        <div class="addr">1925 S MCCONNELL DR, Tucson 85710</div>
+        <div class="meta">Single family · 2,015 sqft · Jun 4</div>
+        <div class="svdate">Street View Apr 2025 — before the purchase</div>
+      </div>
+    </div>
+  </div>
+<h3 class="subsection-title">Deal sheet — private lending, in date order</h3>
+<p class="section-sub">Private loans recorded against residential property this period, oldest first.</p>
+<table class="data">
+    <thead><tr><th>Date</th><th>Lender</th><th class="num">Amount</th><th>Property</th><th>Use</th></tr></thead>
+    <tbody>
+      <tr><td>May 22</td><td>Zimmermann Christoph</td><td class="num">$215,000</td><td>1599 W King Ave, Tucson 85713</td><td>Single family</td></tr>
+    </tbody>
+  </table>
+<h3 class="subsection-title">Largest flip margin deals of the period, at street level</h3>
+<p class="section-sub">Gross margin = recorded sale price minus the flipper's recorded purchase price. Purchase deeds are recoverable for roughly 4 in 10 flips; rehab and carry costs are not public record.</p>
+<div class="deal-strip">
+    <div class="deal-card">
+      <img src="img/svm_2026-05..2026-06_1_c91c6d6d.jpg" alt="Street view of 9847 N FULBROOK WAY">
+      <div class="body">
+        <div class="price">$203,920 gross · bought $68,040 (Jun 2025) → sold $271,960</div>
+        <div class="addr">9847 N FULBROOK WAY, Marana 85653</div>
+        <div class="meta">Single family · 1,929 sqft · Jun 23</div>
+        <div class="svdate">Street View Jan 2026 — during the flip</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="img/svm_2026-05..2026-06_2_e981a19b.jpg" alt="Street view of 5547 S MEADOWLARK AVE">
+      <div class="body">
+        <div class="price">$39,000 gross · bought $130,000 (Feb 2025) → sold $169,000</div>
+        <div class="addr">5547 S MEADOWLARK AVE, Tucson 85746</div>
+        <div class="meta">Single family · 1,040 sqft · May 19</div>
+        <div class="svdate">Street View Jan 2025 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="img/svm_2026-05..2026-06_3_aa0b87f5.jpg" alt="Street view of 12402 N LUCKETT RD">
+      <div class="body">
+        <div class="price">$22,000 gross · bought $138,000 (Aug 2025) → sold $160,000</div>
+        <div class="addr">12402 N LUCKETT RD, Marana 85653</div>
+        <div class="meta">Mobile / manufactured · 1,248 sqft · May 20</div>
+        <div class="svdate">Street View Jan 2026 — during the flip</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="img/svm_2026-05..2026-06_4_b815a8cc.jpg" alt="Street view of 12021 N BLACKTAIL RD">
+      <div class="body">
+        <div class="price">$14,000 gross · bought $37,000 (Feb 2026) → sold $51,000</div>
+        <div class="addr">12021 N BLACKTAIL RD, Marana 85653</div>
+        <div class="meta">Mobile / manufactured · 1,008 sqft · May 13</div>
+        <div class="svdate">Street View Feb 2026 — during the flip</div>
+      </div>
+    </div>
+  </div>
+      <!-- AGENT:deals:end -->
+
+  <h2 class="section-title" id="flip-structure">Flip Structure — Year over Year</h2>
+  <p class="section-sub">How the flip market itself is changing: margins, who is doing the flipping, what they flip, and where. Same two calendar months, this year vs last, from the current data extract.</p>
+  <!-- AGENT:flipstructure:start -->
+<table class="data tight">
+    <thead><tr><th>Flip market structure</th><th class="num">Same months last year</th><th class="num">This edition</th></tr></thead><tbody>
+      <tr><td>Flips sold</td><td class="num">224</td><td class="num">123</td></tr>
+      <tr><td>Median sale</td><td class="num">$301,400</td><td class="num">$284,500</td></tr>
+      <tr><td>Median $/sqft</td><td class="num">$206</td><td class="num">$203</td></tr>
+      <tr><td>Sale vs county-assessed</td><td class="num">1.32×</td><td class="num">1.26×</td></tr>
+      <tr><td>Median gross margin (matched buys)</td><td class="num">$89,000</td><td class="num">$82,000</td></tr>
+      <tr><td>Median margin %</td><td class="num">45%</td><td class="num">41%</td></tr>
+      <tr><td>Median hold</td><td class="num">6.5 mo</td><td class="num">5.7 mo</td></tr>
+      <tr><td>Homes bought by flippers</td><td class="num">299</td><td class="num">245</td></tr>
+      <tr><td>Net to inventory (bought − sold)</td><td class="num">+75</td><td class="num">+122</td></tr>
+      <tr><td>Active flippers</td><td class="num">115</td><td class="num">59</td></tr>
+      <tr><td>Top-10 flippers&#39; revenue share</td><td class="num">48%</td><td class="num">56%</td></tr>
+      <tr><td>Median house: sqft / beds / built</td><td class="num">1479 / 3 / 1979</td><td class="num">1456 / 3 / 1977</td></tr>
+      <tr><td>Pre-1950 stock share</td><td class="num">4%</td><td class="num">7%</td></tr>
+      <tr><td>2–4 unit share</td><td class="num">0%</td><td class="num">0%</td></tr>
+      <tr><td>Median distance from downtown</td><td class="num">14.2 km</td><td class="num">14.2 km</td></tr>
+    </tbody></table>
+
+  <div class="pulse-caveat">Homes bought counts every deed recorded to a known flipper in the window, resold or not. Net to inventory is that minus flips sold. The standing stock is in the Flip Pipeline section.</div>
+  <div class="pulse-caveat">Attributed profit per flip (per-investor aggregates, by drop period): Feb 26→Jun 26: 162 flips, n/a (revisions) &#183; Jun 26→Aug 26: 118 flips, $117,955/flip.</div>
+  <div class="pulse-caveat">County mix (share of flips, last year → this edition): Pima 100%→100%.</div>
+  <div class="pulse-caveat">Biggest zip share moves: Littletown / Airport 4.5%→9.8% &#183; Palo Verde / Rosemont 6.7%→2.4% &#183; Rita Ranch 5.8%→1.6% &#183; Vail 0.9%→4.9% &#183; Drexel Heights 1.8%→4.9% &#183; East Tucson 6.7%→9.8%.</div>
+      <!-- AGENT:flipstructure:end -->
+
+  <h2 class="section-title" id="flip-pipeline">Flip Pipeline — Buying, Selling and Inventory</h2>
+  <!-- AGENT:flipflow:start -->
+<p class="section-sub">Homes bought by known flippers and homes they resold, per month, alongside the stock sitting in flipper hands. A house enters inventory when a flipper buys it and leaves on the next recorded sale, at any price. Purchases still unsold after five years are treated as holds and drop out.</p>
+<div class="map-panel"><img src="img/flipflow_2026-05..2026-06.png" alt="Flip purchases, flip sales and inventory by month with projection"><div class="caption">Solid = recorded, dashed = projected. Green bars are inventory on the right axis: homes bought and not yet resold. Aged out is purchases passing five years unsold. Inventory moves by bought minus resold minus aged out.</div></div>
+<table class="data tight">
+    <thead><tr><th>Flip pipeline</th><th class="num">Bought / mo</th><th class="num">Resold / mo</th><th class="num">Aged out / mo</th><th class="num">Inventory</th></tr></thead><tbody>
+      <tr><td>Latest recorded month (2026-05)</td><td class="num">177</td><td class="num">115</td><td class="num">70</td><td class="num">3,631</td></tr>
+      <tr><td>Projected (2026-11)</td><td class="num">98</td><td class="num">61</td><td class="num">48</td><td class="num">3,302</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Method: a straight-line trend through the last 24 months, adjusted for the month of the year. Tested by hiding the most recent six months and predicting them, it missed purchases by 24%, sales by 6% and inventory by 4% on average — The series stops before the newest month or two, where deeds are still recording.</div>
+      <!-- AGENT:flipflow:end -->
+
+  <h2 class="section-title" id="financing">Who's Funding the Deals</h2>
+  <!-- AGENT:financing:start -->
+<p class="section-sub">First mortgages open on flipper purchases from Jul 2025 – Jun 2026 that have not yet resold. 80% carried recorded debt; the rest closed cash or off-record. Ranked by deal count.</p>
+<div class="card-grid">
+    <div class="card"><h3>80%</h3><div class="meta">Purchases financed</div><div class="body">891 of 1,107 flipper purchases carried a recorded first mortgage</div></div>
+    <div class="card"><h3>$225,834</h3><div class="meta">Typical loan</div><div class="body">median 0.96&#215; the purchase price</div></div>
+    <div class="card"><h3>34%</h3><div class="meta">Funding the rehab too</div><div class="body">300 of 891 loans exceed the purchase price, so the lender is covering work as well as the buy</div></div>
+  </div>
+<table class="data tight">
+    <thead><tr><th>Lender</th><th class="num">Loans</th><th class="num">Borrowers</th><th class="num">Median loan</th><th class="num">Loan vs price</th><th class="num">Funds rehab</th><th class="num">Median purchase</th></tr></thead><tbody>
+      <tr><td>Flipfast Loans LLC</td><td class="num">48</td><td class="num">6</td><td class="num">$215,500</td><td class="num">1.27×</td><td class="num">69%</td><td class="num">$198,750</td></tr>
+      <tr><td>Nova Financial &amp; Inv Corp</td><td class="num">41</td><td class="num">39</td><td class="num">$280,321</td><td class="num">0.98×</td><td class="num">27%</td><td class="num">$300,000</td></tr>
+      <tr><td>Nova Financial &amp; Investment Co</td><td class="num">29</td><td class="num">24</td><td class="num">$168,000</td><td class="num">0.77×</td><td class="num">21%</td><td class="num">$215,400</td></tr>
+      <tr><td>Crosscountry Mortgage LLC</td><td class="num">24</td><td class="num">22</td><td class="num">$268,078</td><td class="num">0.98×</td><td class="num">38%</td><td class="num">$267,450</td></tr>
+      <tr><td>Archwest Funding LLC</td><td class="num">23</td><td class="num">4</td><td class="num">$226,150</td><td class="num">1.09×</td><td class="num">65%</td><td class="num">$217,575</td></tr>
+      <tr><td>Fairway Independent MTG Corp</td><td class="num">21</td><td class="num">20</td><td class="num">$309,294</td><td class="num">0.98×</td><td class="num">24%</td><td class="num">$318,000</td></tr>
+      <tr><td>V.i.p. Mortgage INC</td><td class="num">19</td><td class="num">19</td><td class="num">$350,000</td><td class="num">0.93×</td><td class="num">11%</td><td class="num">$350,000</td></tr>
+      <tr><td>Prosperity Home Mortgage LLC</td><td class="num">18</td><td class="num">18</td><td class="num">$333,500</td><td class="num">0.83×</td><td class="num">6%</td><td class="num">$421,000</td></tr>
+      <tr><td>Wells Fargo Bank NA</td><td class="num">18</td><td class="num">17</td><td class="num">$104,358</td><td class="num">0.60×</td><td class="num">17%</td><td class="num">$205,500</td></tr>
+      <tr><td>Alta Funding &amp; Investments LLC</td><td class="num">16</td><td class="num">11</td><td class="num">$217,500</td><td class="num">1.16×</td><td class="num">75%</td><td class="num">$187,500</td></tr>
+    </tbody></table>
+
+  <div class="pulse-caveat">Rates and terms are not published: the county feed models both. Borrowers counts the distinct flippers on each lender's book. Loan vs price is the recorded first mortgage divided by what the buyer paid. Above 1.00x the lender is funding purchase plus rehab; below it the buyer brought cash to the table. Blanket mortgages covering several parcels are excluded, as are loans outside 0.1x-3x the price. Rates and points are not public record.</div>
+      <!-- AGENT:financing:end -->
+
+  <h2 class="section-title" id="flipper-profile">Flipper Profile — The Working Flipper</h2>
+  <!-- AGENT:flipperprofile:start -->
+<p class="section-sub">The 70th–90th percentile of local flippers by lifetime flip count — the established operators below the whales: 4–11 lifetime flips each. Bath counts are not in the assessor extract.</p>
+<div class="card-grid">
+    <div class="card"><h3>123</h3><div class="meta">Flippers in the band</div><div class="body">each with 4–11 lifetime flips (avg 6.0)</div></div>
+    <div class="card"><h3>$81,000</h3><div class="meta">Median gross margin</div><div class="body">4,040 flips matched to their purchase price</div></div>
+    <div class="card"><h3>5.5 mo</h3><div class="meta">Typical hold</div><div class="body">purchase to resale, matched deals</div></div>
+    <div class="card"><h3>1518 sqft &#183; 3 bd</h3><div class="meta">Typical house</div><div class="body">median year built 1976</div></div>
+    <div class="card"><img src="img/flippercurve_2026-05..2026-06.png" alt="Flippers by lifetime flip count" style="width:100%;max-width:260px;"><div class="meta">flippers by lifetime flips · orange = this band</div></div>
+</div>
+<div class="pulse-caveat">Where they work: East Tucson (85710) 8% &#183; Palo Verde / Rosemont (85711) 8% &#183; Rita Ranch East (85730) 8% &#183; Amphi / North Tucson (85705) 6% &#183; Menlo Park / Barrio Hollywood (85713) 5%.</div>
+      <!-- AGENT:flipperprofile:end -->
+
+  <h2 class="section-title" id="market-pulse">Market Pulse</h2>
+  <!-- AGENT:pulse:start -->
+<table class="data">
+    <thead><tr><th></th><th class="num">per month, 2025</th><th class="num">per month, 2026</th><th class="num">change</th><th class="num">avg/mo 2yr</th><th class="num">avg/mo 4yr</th></tr></thead><tbody>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Homes bought by flippers</td><td class="num">150</td><td class="num">123</td><td class="num">-18%</td><td class="num">146</td><td class="num">168</td></tr>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Flips sold (deeds)</td><td class="num">112</td><td class="num">62</td><td class="num">-45%</td><td class="num">139</td><td class="num">179</td></tr>
+      <tr><td><span style="color:#1a7a3c;">&#9650;</span> Lending deals funded</td><td class="num">52</td><td class="num">122</td><td class="num">+136%</td><td class="num">—</td><td class="num">—</td></tr>
+      <tr><td><span style="color:#1a7a3c;">&#9650;</span> Seller/notes held (net)</td><td class="num">39</td><td class="num">559</td><td class="num">+1323%</td><td class="num">—</td><td class="num">—</td></tr>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Investors (net)</td><td class="num">343</td><td class="num">270</td><td class="num">-21%</td><td class="num">—</td><td class="num">—</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Flips and flipper purchases = recorded deeds, same two months each year; their 2- and 4-year columns are per-month averages of the deed series. The remaining rows come from the investor file, which spans 13 months, so they have no multi-year average (2026: Jun 2026 → Aug 2026; 2025: Feb 2026 → Jun 2026).</div>
+      <!-- AGENT:pulse:end -->
+
+  <h2 class="section-title" id="past-issues">Past Issues</h2>
+  <ul>
+    <!-- AGENT:archive:start -->
+<li><a href="202608/">August 2026</a></li>
+      <!-- AGENT:archive:end -->
+  </ul>
+
+  <h2 class="section-title" id="methodology">Methodology</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Source Data</h3>
+      <div class="meta">County recorder &amp; assessor via FARES</div>
+      <div class="body">Every figure is computed from recorded instruments (deeds, mortgages, assignments) and assessor property records for the five counties of the Tucson-Elyria MSA. No surveys, no estimates, no listings data.
+        <!-- AGENT:sourcedates:start -->
+<div style="margin-top:.5rem;color:var(--navy);">This edition analyzes transactions dated May 1 – June 30, 2026, as recorded through the 2026-08 data extract.</div>
+      <!-- AGENT:sourcedates:end -->
+      </div>
+    </div>
+    <div class="card">
+      <h3>Who Counts as an Investor</h3>
+      <div class="meta">Transaction-pattern identification</div>
+      <div class="body">Investors are entities whose recorded transaction history looks like investing: rental holding (landlords), short-hold resales (flippers), private mortgage lending, note holding, or contract assignment (wholesalers). Banks, homebuilders, iBuyers, SFR funds, and government entities are identified by name and reported separately from small investors.</div>
+    </div>
+    <div class="card">
+      <h3>How Comparisons Work</h3>
+      <div class="meta">Attribution deltas + same-window comparisons</div>
+      <div class="body">The Market Pulse reports activity attributed between successive data drops, from the per-investor lifetime totals maintained upstream — periods differ in length, so per-month rates are shown. Elsewhere, "vs. year ago" compares the same calendar months one year earlier, counted from the same data extract. Transfers under $5,000 (quitclaims, partial interests) are excluded everywhere. Counts lag recording by 4–8 weeks, and the newest month can grow up to ~15% as late records arrive — direction is reliable before magnitude.</div>
+    </div>
+    <div class="card">
+      <h3>Known Limits</h3>
+      <div class="meta">Floors, not ceilings</div>
+      <div class="body">Wholesale assignments only appear when they touch a recorded deed, so those counts are a floor. Flip hold times are measured from the prior recorded sale. Names are the owner of record, which may be an LLC or trust.</div>
+    </div>
+  </div>
+
+  <h2 class="section-title" id="about">About</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Purpose</h3>
+      <div class="body">A working tool for small real estate investors in Greater Tucson: what actually closed, where, at what prices, and what it suggests checking next — one theme per issue.</div>
+    </div>
+    <div class="card">
+      <h3>Cadence</h3>
+      <div class="body">Published with each bi-monthly data drop, covering the two most recent complete months of recorded activity.</div>
+    </div>
+    <div class="card">
+      <h3>Disclaimer</h3>
+      <div class="body">Observations from public records, not investment, legal, or tax advice. Past activity does not guarantee future results. Verify any property or counterparty independently before transacting.</div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="newsletter" id="newsletter">
+      <div class="mc-form" id="mc_embed_signup">
+        <form action="https://swarmtrace.us14.list-manage.com/subscribe/post?u=9a4ba4adf4888e6de8829189e&amp;id=35bb5ff4ae" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+          <h3>Subscribe</h3>
+          <p>Get each Tucson Investor Brief by email when a new issue is published.</p>
+          <label for="mce-EMAIL">Enter your email address to subscribe</label>
+          <input type="email" name="EMAIL" id="mce-EMAIL" placeholder="EMAIL" required>
+          <input type="hidden" name="tags" value="12497792">
+          <div style="position:absolute; left:-5000px;" aria-hidden="true"><input type="text" name="b_9a4ba4adf4888e6de8829189e_35bb5ff4ae" tabindex="-1" value=""></div>
+          <button type="submit" name="subscribe" id="mc-embedded-subscribe">SUBSCRIBE</button>
+          <p class="mc-note">Unsubscribe any time. Powered by Mailchimp.</p>
+        </form>
+      </div>
+    </div>
+    <div>
+      <h4>Sections</h4>
+      <ul>
+        <li><a href="#this-issue">This Issue</a></li>
+        <li><a href="#playbook">Investor Playbook</a></li>
+        <li><a href="#factoids">Factoids</a></li>
+        <li><a href="#activity-chart">Market Activity</a></li>
+        <li><a href="#where-the-money-went">Where the Money Went</a></li>
+        <li><a href="#market-pulse">Market Pulse</a></li>
+        <li><a href="#methodology">Methodology</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Coverage</h4>
+      <ul>
+        <li>Pima County</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:jpritchard@swarmalytics.com">jpritchard@swarmalytics.com</a></li>
+        <li>Powered by <a href="https://www.swarmalytics.com" target="_blank" rel="noopener">Swarmalytics</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    Tucson Real Estate Investor Brief is an independent research publication built from public
+    county records. Not affiliated with any government agency. Nothing here is investment, legal,
+    or tax advice.
+  </div>
+</footer>
+
+</body>
+</html>
