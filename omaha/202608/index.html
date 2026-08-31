@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Omaha Real Estate Investor Brief</title>
+<meta name="description" content="Deed-level data on what small investors are actually doing in the Omaha-Council Bluffs-Elyria MSA — flips, rentals, private lending — with a monthly theme and a playbook per investor type.">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  .mc-form { max-width:540px; margin:0 auto; text-align:left; background:#fff; border:1px solid #C0CCD9; border-radius:3px; padding:24px; font-family:Helvetica, sans-serif; color:#3C4858; }
+  .mc-form h3 { font-size:28px; font-weight:700; margin:0 0 8px; }
+  .mc-form p { font-size:16px; margin:0 0 12px; }
+  .mc-form label { display:block; font-weight:700; font-size:16px; margin-bottom:6px; }
+  .mc-form input[type=email] { width:100%; box-sizing:border-box; font-size:16px; padding:10px; border:1px solid #C0CCD9; border-radius:3px; margin-bottom:12px; }
+  .mc-form button { font-size:16px; font-weight:700; color:#fff; background:#3E4857; border:0; border-radius:3px; padding:10px 20px; cursor:pointer; }
+  .mc-form .mc-note { font-size:12px; color:#6b7785; margin-top:10px; }
+</style>
+</head>
+<body>
+
+<div class="utility-bar">
+  <div class="container">
+    <a href="#methodology">Methodology</a>
+    <a href="#about">About</a>
+    <a href="#newsletter">Subscribe</a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container">
+    <div class="brand">
+      <div class="brand-text">
+        <span class="brand-name">Omaha Real Estate Investor Brief</span>
+        <span class="brand-tag">Deed-level market intelligence for small investors · Omaha-Council Bluffs-Elyria MSA</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="primary-nav">
+  <div class="container">
+    <a href="#this-issue" class="active">This Issue</a>
+    <a href="#playbook">Investor Playbook</a>
+    <a href="#factoids">Factoids</a>
+    <a href="#activity-chart">Market Activity</a>
+    <a href="#where-the-money-went">Where the Money Went</a>
+    <a href="#flip-structure">Flip Structure</a>
+    <a href="#flip-pipeline">Flip Pipeline</a>
+      <a href="#financing">Funding</a>
+      <a href="#flipper-profile">Flipper Profile</a>
+    <a href="#market-pulse">Market Pulse</a>
+    <a href="#methodology">Methodology</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <!-- AGENT:hero:start -->
+<h1>August Edition — Basis Squeeze</h1>
+    <div class="datarange">Analyzing transactions recorded February 1 – March 31, 2026</div>
+      <!-- AGENT:hero:end -->
+  </div>
+</section>
+
+<main>
+
+  <h2 class="section-title" id="this-issue">This Issue
+    <!-- AGENT:updated:start -->
+<span style="float:right;font-weight:400;text-transform:none;letter-spacing:0;font-size:12px;color:var(--text-muted);">August 2026 edition</span>
+      <!-- AGENT:updated:end -->
+  </h2>
+  <!-- AGENT:theme:start -->
+<div class="forecast-headline">
+    <div>
+      <div class="number">$203,400 vs $155,000</div>
+      <div class="label">Median investor purchase price this edition against a year ago, set against a flip resale median that fell to $249,500 from $345,000</div>
+    </div>
+    <div class="body">
+      <h3 style="margin:0 0 .5rem;color:var(--navy);">Investors paid a median $203,400 this edition versus $155,000 a year ago, while flip resales fell to a median $249,500 from $345,000</h3>
+      <p>Investor purchases ran 270 this edition against 215 a year ago, and the median price paid rose to $203,400 from $155,000. Exits moved the other way: 168 flips resold at a median $249,500, down from 213 at $345,000. Median gross margin on completed flips narrowed to 45.8% of the resale price from 67.3% a year ago, before rehab and carry, which are not in the record. The buy side is being priced as if exit values held. Counts lag four to eight weeks and the most recent month can still grow.</p>
+    </div>
+  </div>
+      <!-- AGENT:theme:end -->
+
+  <h2 class="section-title" id="playbook">Investor Playbook</h2>
+  <p class="section-sub">What this issue's numbers suggest checking, by investor type. Observations from recorded data — not investment, legal, or tax advice.</p>
+  <!-- AGENT:playbook:start -->
+<div class="card-grid">
+    <div class="card">
+      <h3>Volume is in 51501 and 68048; Elkhorn is an exit market, not a sourcing one</h3>
+      <div class="meta">Wholesalers</div>
+      <div class="body">Council Bluffs West (51501) took 31 investor buys at a $137,500 median and Plattsmouth (68048) 19 at a $52,000 median, the two deepest buy pools this edition. Elkhorn (68022) recorded 18 flips against only 6 buys at a $570,500 median, so the data suggests sourcing there means competing with retail. With the median investor purchase at $203,400 against $155,000 a year ago, worth re-testing whether your assignment spreads still survive the higher buy comps. Recorded wholesale counts are a floor.</div>
+    </div>
+    <div class="card">
+      <h3>Underwrite to 45.8% gross, not 67.3%, and to a 188-day hold</h3>
+      <div class="meta">Flippers</div>
+      <div class="body">Median gross margin on this edition's 168 resales was 45.8% of sale price against 67.3% a year ago, on a median hold of 188 days versus 179. Rehab and carry are not in the record, so that gross number is the ceiling, not the take. The mid-tier operator band (3-6 lifetime flips) shows a 142-day median hold on 1,203 sqft product built around 1962, concentrated in 51501 (27.9% of their work) and 51503 (13.2%). Worth checking whether smaller, older, closer-in product beats the $570,500-basis Elkhorn trade at today's $159/sqft exit.</div>
+    </div>
+    <div class="card">
+      <h3>Single family is priced at $147/sqft; the few 2-4 unit trades printed near $100</h3>
+      <div class="meta">Landlords</div>
+      <div class="body">Single family drove 242 of the period's purchases at a $203,400 median and $147/sqft. Recorded 2-4 unit trades were thin — 3 deals at a $105,000 median and $100/sqft — but that basis gap is worth checking parcel by parcel. North Omaha (68111) logged 15 buys at a $117,000 median and Council Bluffs East (51503) 16 at $138,750, the price bands where buy-and-hold basis still sits well under the metro median. 280 local landlords added 429 units since the last drop, so competition for those units is real.</div>
+    </div>
+    <div class="card">
+      <h3>Three recorded private loans against 21; the gap is being filled by institution paper</h3>
+      <div class="meta">Private lenders</div>
+      <div class="body">Recorded private lending fell to 3 loans at a $135,200 median from 21 at $185,000. Over the trailing twelve months, 342 of 548 observed investor purchases were financed, median loan $165,075 at a 1.0 median loan-to-price, and 47.7% of financed deals included rehab dollars. Dayspring Bank wrote 30 loans to 9 borrowers with a 70% rehab share; Strongco Holdings 17 loans at a $200,000 median. The data suggests the open slot is small-balance rehab paper under $165,075 on 1,200-1,500 sqft mid-century product, where seller notes (34 this edition at a $137,600 median) are currently doing the work.</div>
+    </div>
+    <div class="card">
+      <h3>Five-plus trades price at $227/sqft while flippers have vacated small multi entirely</h3>
+      <div class="meta">Multifamily investors</div>
+      <div class="body">Four apartment 5+ deals recorded at a $2.0M median and $227/sqft, and three multi-family (unspecified) at $448,000. Small multi was 0% of flip resales this edition, against 1.4% a year ago, so 2-4 unit stock is not being bid up by exit-driven buyers right now. With investor purchase medians at $203,400 and financed deals running a 1.0 median loan-to-price, worth checking whether 2-4 unit assemblages in 51501 and 51503 pencil against the $227/sqft being paid for larger assets.</div>
+    </div>
+  </div>
+      <!-- AGENT:playbook:end -->
+
+  <h2 class="section-title" id="factoids">Factoids</h2>
+  <p class="section-sub">Numbers from this period a practitioner would repeat to a colleague. Each computed directly from recorded instruments.</p>
+  <!-- AGENT:factoids:start -->
+<div class="card-grid">
+    <div class="card">
+      <h3>69.6% vs 53.1% — Douglas County share of flips resold this edition</h3>
+      <div class="meta">trending up · vs 53.1% a year ago</div>
+      <div class="body">Sarpy's share fell to 14.3% from 29.1%. Sarpy purchases were 19 against 66 a year ago, so confirm the county file is complete before trading on that county trend.</div>
+    </div>
+    <div class="card">
+      <h3>106 vs 131 — Distinct operators recording a flip resale</h3>
+      <div class="meta">trending down · vs 131 a year ago</div>
+      <div class="body">The top ten operators took 31.5% of flip revenue, against 32.8% a year ago. The field thinned without concentrating, so the exits that closed were spread thin across small operators.</div>
+    </div>
+    <div class="card">
+      <h3>37 aged out vs 33 resold — Latest month: tracked flip holdings aged out of the pipeline versus resold</h3>
+      <div class="meta">trending up · 33 resales in the same month</div>
+      <div class="body">Tracked flip inventory stands at 2,315 holdings. More positions are passing the age cutoff than are clearing through a recorded resale, which is the shape of a slow exit market, not a fast one.</div>
+    </div>
+    <div class="card">
+      <h3>3 vs 21 — Recorded private loans this edition</h3>
+      <div class="meta">trending down · vs 21 a year ago</div>
+      <div class="body">Median recorded private loan was $135,200 against $185,000 a year ago. Over the trailing twelve months 62.4% of observed investor purchases carried recorded financing at a median $165,075, so institution paper is carrying the load.</div>
+    </div>
+    <div class="card">
+      <h3>$159/sqft vs $177 — Median flip resale price per square foot</h3>
+      <div class="meta">trending down · vs $177 a year ago</div>
+      <div class="body">Resales cleared at 1.22 times county assessed value, up from 1.17 a year ago. Buyers are paying above assessment but less per foot, so square footage is not being rewarded the way it was.</div>
+    </div>
+    <div class="card">
+      <h3>6% at a $206,466 median — Out-of-state share of investor purchases and their median price</h3>
+      <div class="meta">holding steady · vs a $175,000 median for local buyers</div>
+      <div class="body">Local buyers were 75% of purchases and elsewhere in NE/IA another 19%. Out-of-state money is thin in count but pays up, and top feeder states were KS 3, MN 2 and TX 2.</div>
+    </div>
+  </div>
+      <!-- AGENT:factoids:end -->
+
+  <h2 class="section-title" id="activity-chart">Market Activity — Investor Purchases</h2>
+  <p class="section-sub">Monthly count of investor purchases of MSA properties (left axis) and the median purchase price (right axis), trailing 13 months. The most recent month can grow up to ~15% as late recordings arrive.</p>
+  <!-- AGENT:chart:start -->
+<div class="chart-row">
+    <div class="map-panel"><img src="../img/chart_2026-02..2026-03.png" alt="Monthly investor purchases and median price"><div class="caption">Investor purchases per month (bars) and median purchase price (line), trailing 13 months.</div></div>
+    <div class="map-panel"><img src="../img/decades_2026-02..2026-03.png" alt="Investor purchases by decade the house was built"><div class="caption">Which vintage of housing investors bought this edition, by decade built.</div></div>
+  </div>
+      <!-- AGENT:chart:end -->
+
+  <h2 class="section-title" id="where-the-money-went">Where the Money Went</h2>
+  <p class="section-sub">The geography of the period's investor activity: which zip codes saw the most recorded deals, and the largest individual transactions at street level.</p>
+  <!-- AGENT:map:start -->
+<div class="map-panel">
+    <h3 class="subsection-title" style="margin-top:0;">The 8 busiest zip codes for investor deals</h3>
+    <div id="dealmap"></div>
+    <script id="map-data" type="application/json">[{"rank":1,"zip":"51501","area":"Council Bluffs West","lat":41.227277,"lng":-95.878439,"buys":31,"flips":10,"deals":41,"median":"$137,500","medianSale":"$182,500"},{"rank":2,"zip":"68048","area":"Plattsmouth","lat":40.98408,"lng":-95.942013,"buys":19,"flips":6,"deals":25,"median":"$52,000","medianSale":"$215,000"},{"rank":3,"zip":"68022","area":"Elkhorn","lat":41.277405,"lng":-96.246406,"buys":6,"flips":18,"deals":24,"median":"$570,500","medianSale":"$602,500"},{"rank":4,"zip":"51503","area":"Council Bluffs East","lat":41.22322,"lng":-95.784481,"buys":16,"flips":7,"deals":23,"median":"$138,750","medianSale":"$169,000"},{"rank":5,"zip":"68111","area":"North Omaha","lat":41.295458,"lng":-95.964916,"buys":15,"flips":6,"deals":21,"median":"$117,000","medianSale":"$98,500"},{"rank":6,"zip":"68104","area":"Benson","lat":41.295431,"lng":-96.002289,"buys":6,"flips":12,"deals":18,"median":"$200,263","medianSale":"$210,500"},{"rank":7,"zip":"68106","area":"Aksarben","lat":41.238785,"lng":-96.002274,"buys":6,"flips":5,"deals":11,"median":"$222,000","medianSale":"$298,000"},{"rank":8,"zip":"68114","area":"Westroads","lat":41.263139,"lng":-96.05204,"buys":7,"flips":4,"deals":11,"median":"$190,000","medianSale":"n/a"}]</script>
+    <div class="caption">Pins rank the busiest zips by recorded investor deals (purchases + flips of existing homes) this period — #1 busiest; orange = top 3; pin size scales with deal volume. Median buy is the typical investor purchase; median sale the typical flip resale. Click a pin for details; full table below.</div>
+    <div class="map-table-wrap">
+    <table class="data">
+      <thead><tr><th>#</th><th>Zip</th><th>Area</th><th class="num">Purchases</th><th class="num">Flips</th><th class="num">Median buy</th><th class="num">Median sale</th></tr></thead><tbody>
+        <tr><td>#1</td><td>51501</td><td>Council Bluffs West</td><td class="num">31</td><td class="num">10</td><td class="num">$137,500</td><td class="num">$182,500</td></tr>
+        <tr><td>#2</td><td>68048</td><td>Plattsmouth</td><td class="num">19</td><td class="num">6</td><td class="num">$52,000</td><td class="num">$215,000</td></tr>
+        <tr><td>#3</td><td>68022</td><td>Elkhorn</td><td class="num">6</td><td class="num">18</td><td class="num">$570,500</td><td class="num">$602,500</td></tr>
+        <tr><td>#4</td><td>51503</td><td>Council Bluffs East</td><td class="num">16</td><td class="num">7</td><td class="num">$138,750</td><td class="num">$169,000</td></tr>
+        <tr><td>#5</td><td>68111</td><td>North Omaha</td><td class="num">15</td><td class="num">6</td><td class="num">$117,000</td><td class="num">$98,500</td></tr>
+        <tr><td>#6</td><td>68104</td><td>Benson</td><td class="num">6</td><td class="num">12</td><td class="num">$200,263</td><td class="num">$210,500</td></tr>
+        <tr><td>#7</td><td>68106</td><td>Aksarben</td><td class="num">6</td><td class="num">5</td><td class="num">$222,000</td><td class="num">$298,000</td></tr>
+        <tr><td>#8</td><td>68114</td><td>Westroads</td><td class="num">7</td><td class="num">4</td><td class="num">$190,000</td><td class="num">n/a</td></tr>
+      </tbody></table>
+    </div>
+  </div>
+      <!-- AGENT:map:end -->
+  <script>
+  (function() {
+    var el = document.getElementById('map-data');
+    if (!el || !window.L) return;
+    var zips; try { zips = JSON.parse(el.textContent); } catch (e) { return; }
+    if (!zips.length) return;
+    var map = L.map('dealmap', { scrollWheelZoom: false });
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',
+      { attribution: 'Tiles &copy; Esri', maxZoom: 18 }).addTo(map);
+    var group = [];
+    var maxDeals = Math.max.apply(null, zips.map(function(z){ return z.deals; }));
+    zips.forEach(function(z) {
+      var size = 26 + Math.round(18 * z.deals / maxDeals);
+      var icon = L.divIcon({ className: '', iconSize: [size, size], iconAnchor: [size/2, size/2],
+        html: '<div class="rank-pin' + (z.rank <= 3 ? ' hot' : '') + '" style="width:'+size+'px;height:'+size+'px;">#'+z.rank+'</div>' });
+      var m = L.marker([z.lat, z.lng], { icon: icon }).addTo(map);
+      m.bindPopup('<b>#'+z.rank+' &middot; '+z.zip+'</b>'+(z.area ? ' &mdash; '+z.area : '')+'<br>'+
+        z.buys.toLocaleString()+' purchases &middot; '+z.flips.toLocaleString()+' flips<br>Median buy '+z.median);
+      m.bindTooltip('#'+z.rank+' '+z.zip, { direction: 'top' });
+      group.push(m);
+    });
+    map.fitBounds(L.featureGroup(group).getBounds().pad(0.25));
+  })();
+  </script>
+  <!-- AGENT:deals:start -->
+<h3 class="subsection-title">A representative deal in each of the busiest zips</h3>
+<p class="section-sub">One deal per zip: the largest matching this market's typical house (typical for this market: 1203 sqft, 3 bed, built around 1963; priced within 4x the county assessment and under 5x its own zip's median).</p>
+<div class="deal-strip">
+    <div class="deal-card">
+      <img src="../img/sv_2026-02..2026-03_dfb0d3fc.jpg" alt="Street view of 8342 PARKER CT">
+      <div class="body">
+        <div class="price">$417,000 · Purchase</div>
+        <div class="addr">8342 PARKER CT, Omaha 68114</div>
+        <div class="meta">Single family · 1,080 sqft · Feb 11</div>
+        <div class="svdate">Street View Nov 2024 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-02..2026-03_6366b743.jpg" alt="Street view of 978 S 50TH ST">
+      <div class="body">
+        <div class="price">$307,000 · Purchase</div>
+        <div class="addr">978 S 50TH ST, Omaha 68106</div>
+        <div class="meta">Single family · 1,460 sqft · Mar 18</div>
+        <div class="svdate">Street View May 2026 — after the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-02..2026-03_5ce7068c.jpg" alt="Street view of 3521 N MAIN CIR">
+      <div class="body">
+        <div class="price">$290,000 · Purchase</div>
+        <div class="addr">3521 N MAIN CIR, Elkhorn 68022</div>
+        <div class="meta">Single family · 1,411 sqft · Feb 17</div>
+        <div class="svdate">Street View Sep 2024 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-02..2026-03_4d0c1cff.jpg" alt="Street view of 1901 N 50TH ST">
+      <div class="body">
+        <div class="price">$238,526 · Purchase</div>
+        <div class="addr">1901 N 50TH ST, Omaha 68104</div>
+        <div class="meta">Single family · 1,560 sqft · Feb 20</div>
+        <div class="svdate">Street View Jun 2023 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-02..2026-03_ee358b2c.jpg" alt="Street view of 2626 AVENUE L">
+      <div class="body">
+        <div class="price">$230,000 · Purchase</div>
+        <div class="addr">2626 AVENUE L, Council Bluffs 51501</div>
+        <div class="meta">Single family · 992 sqft · Feb 17</div>
+        <div class="svdate">Street View Jun 2023 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-02..2026-03_83f3fad8.jpg" alt="Street view of 1117 9TH AVE">
+      <div class="body">
+        <div class="price">$213,500 · Purchase</div>
+        <div class="addr">1117 9TH AVE, Plattsmouth 68048</div>
+        <div class="meta">Single family · 912 sqft · Mar 6</div>
+        <div class="svdate">Street View Sep 2024 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-02..2026-03_569c704c.jpg" alt="Street view of 125 HIGHLAND DR">
+      <div class="body">
+        <div class="price">$177,000 · Purchase</div>
+        <div class="addr">125 HIGHLAND DR, Council Bluffs 51503</div>
+        <div class="meta">Single family · 1,004 sqft · Feb 2</div>
+        <div class="svdate">Street View Aug 2011 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-02..2026-03_961c75dd.jpg" alt="Street view of 4020 N 43RD ST">
+      <div class="body">
+        <div class="price">$175,000 · Purchase</div>
+        <div class="addr">4020 N 43RD ST, Omaha 68111</div>
+        <div class="meta">Single family · 998 sqft · Mar 31</div>
+        <div class="svdate">Street View May 2026 — after the purchase</div>
+      </div>
+    </div>
+  </div>
+<h3 class="subsection-title">Deal sheet — private lending, in date order</h3>
+<p class="section-sub">Private loans recorded against residential property this period, oldest first.</p>
+<table class="data">
+    <thead><tr><th>Date</th><th>Lender</th><th class="num">Amount</th><th>Property</th><th>Use</th></tr></thead><tbody>
+      <tr><td>Feb 2</td><td>Denise M Bolling Living Trust</td><td class="num">$135,200</td><td>7501 Terry DR, La Vista 68128</td><td>Single family</td></tr>
+      <tr><td>Feb 11</td><td>Otto Bros</td><td class="num">$160,000</td><td>1702 Euclid ST, Ashland 68003</td><td>Single family</td></tr>
+    </tbody></table>
+
+<h3 class="subsection-title">Largest flip margin deals of the period, at street level</h3>
+<p class="section-sub">Gross margin = recorded sale price minus the flipper's recorded purchase price. Purchase deeds are recoverable for roughly 4 in 10 flips; rehab and carry costs are not public record.</p>
+<div class="deal-strip">
+    <div class="deal-card">
+      <img src="../img/svm_2026-02..2026-03_8026ce95.jpg" alt="Street view of 4732 MANCHESTER DR">
+      <div class="body">
+        <div class="price">$275,000 gross · bought $175,000 (Jan 2025) → sold $450,000</div>
+        <div class="addr">4732 MANCHESTER DR, Omaha 68152</div>
+        <div class="meta">Single family · 1,940 sqft · Feb 19</div>
+        <div class="svdate">Street View Sep 2023 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-02..2026-03_dfb0d3fc.jpg" alt="Street view of 8342 PARKER CT">
+      <div class="body">
+        <div class="price">$239,000 gross · bought $178,000 (Jul 2025) → sold $417,000</div>
+        <div class="addr">8342 PARKER CT, Omaha 68114</div>
+        <div class="meta">Single family · 1,080 sqft · Feb 11</div>
+        <div class="svdate">Street View Nov 2024 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-02..2026-03_256e5d91.jpg" alt="Street view of 702 SHERMAN DR">
+      <div class="body">
+        <div class="price">$235,000 gross · bought $125,000 (Aug 2025) → sold $360,000</div>
+        <div class="addr">702 SHERMAN DR, Bellevue 68005</div>
+        <div class="meta">Single family · 2,507 sqft · Mar 12</div>
+        <div class="svdate">Street View Apr 2026 — after the flip</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-02..2026-03_6079acae.jpg" alt="Street view of 7702 HASCALL ST">
+      <div class="body">
+        <div class="price">$227,000 gross · bought $190,000 (Jun 2025) → sold $417,000</div>
+        <div class="addr">7702 HASCALL ST, Omaha 68124</div>
+        <div class="meta">Single family · 1,764 sqft · Feb 11</div>
+        <div class="svdate">Street View May 2026 — after the flip</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-02..2026-03_61fac45b.jpg" alt="Street view of 3507 LYNNWOOD DR">
+      <div class="body">
+        <div class="price">$226,049 gross · bought $88,951 (Jan 2026) → sold $315,000</div>
+        <div class="addr">3507 LYNNWOOD DR, Bellevue 68123</div>
+        <div class="meta">Single family · 1,828 sqft · Mar 9</div>
+        <div class="svdate">Street View Sep 2024 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-02..2026-03_7aa2939d.jpg" alt="Street view of 1217 WILROY RD">
+      <div class="body">
+        <div class="price">$199,000 gross · bought $74,000 (Nov 2024) → sold $273,000</div>
+        <div class="addr">1217 WILROY RD, Bellevue 68005</div>
+        <div class="meta">Single family · 1,512 sqft · Feb 27</div>
+        <div class="svdate">Street View Apr 2026 — after the flip</div>
+      </div>
+    </div>
+  </div>
+      <!-- AGENT:deals:end -->
+
+  <h2 class="section-title" id="flip-structure">Flip Structure — Year over Year</h2>
+  <p class="section-sub">How the flip market itself is changing: margins, who is doing the flipping, what they flip, and where. Same two calendar months, this year vs last, from the current data extract.</p>
+  <!-- AGENT:flipstructure:start -->
+<table class="data tight">
+    <thead><tr><th>Flip market structure</th><th class="num">Same months last year</th><th class="num">This edition</th></tr></thead><tbody>
+      <tr><td>Flips sold</td><td class="num">213</td><td class="num">168</td></tr>
+      <tr><td>Median sale</td><td class="num">$345,000</td><td class="num">$249,500</td></tr>
+      <tr><td>Median $/sqft</td><td class="num">$177</td><td class="num">$159</td></tr>
+      <tr><td>Sale vs county-assessed</td><td class="num">1.17×</td><td class="num">1.22×</td></tr>
+      <tr><td>Median gross margin (matched buys)</td><td class="num">$105,500</td><td class="num">$78,228</td></tr>
+      <tr><td>Median margin %</td><td class="num">67%</td><td class="num">46%</td></tr>
+      <tr><td>Median hold</td><td class="num">5.9 mo</td><td class="num">6.2 mo</td></tr>
+      <tr><td>Homes bought by flippers</td><td class="num">183</td><td class="num">132</td></tr>
+      <tr><td>Net to inventory (bought − sold)</td><td class="num">−30</td><td class="num">−36</td></tr>
+      <tr><td>Active flippers</td><td class="num">131</td><td class="num">106</td></tr>
+      <tr><td>Top-10 flippers' revenue share</td><td class="num">33%</td><td class="num">31%</td></tr>
+      <tr><td>Median house: sqft / beds / built</td><td class="num">1871 / 3 / 1991</td><td class="num">1547 / 3 / 1964</td></tr>
+      <tr><td>Pre-1950 stock share</td><td class="num">20%</td><td class="num">26%</td></tr>
+      <tr><td>2–4 unit share</td><td class="num">1%</td><td class="num">0%</td></tr>
+      <tr><td>Median distance from downtown</td><td class="num">17.9 km</td><td class="num">14.3 km</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Homes bought counts every deed recorded to a known flipper in the window, resold or not. Net to inventory is that minus flips sold. The standing stock is in the Flip Pipeline section.</div>
+  <div class="pulse-caveat">Attributed profit per flip (per-investor aggregates, by drop period): Feb 26→Jun 26: 29 flips, $29.6M/flip · Jun 26→Aug 26: 43 flips, n/a (revisions).</div>
+  <div class="pulse-caveat">County mix (share of flips, last year → this edition): Douglas 53%→70% · Sarpy 29%→14% · Pottawattamie 8%→10% · Cass 2%→4% · Saunders 3%→1% · Washington 1%→1% · Mills 2%→1% · Harrison 1%→0%.</div>
+  <div class="pulse-caveat">Biggest zip share moves: Papillion 12.2%→4.2% · Gretna 6.1%→0.6% · Elkhorn 6.6%→10.7% · Bennington 4.7%→1.2% · Benson 3.8%→7.1% · Gretna East 3.8%→0.6%.</div>
+      <!-- AGENT:flipstructure:end -->
+
+  <h2 class="section-title" id="flip-pipeline">Flip Pipeline — Buying, Selling and Inventory</h2>
+  <!-- AGENT:flipflow:start -->
+<p class="section-sub">Homes bought by known flippers and homes they resold, per month, alongside the stock sitting in flipper hands. A house enters inventory when a flipper buys it and leaves on the next recorded sale, at any price. Purchases still unsold after five years are treated as holds and drop out.</p>
+<div class="map-panel"><img src="../img/flipflow_2026-02..2026-03.png" alt="Flip purchases, flip sales and inventory by month with projection"><div class="caption">Solid = recorded, dashed = projected. Green bars are inventory on the right axis: homes bought and not yet resold. Aged out is purchases passing five years unsold. Inventory moves by bought minus resold minus aged out.</div></div>
+<table class="data tight">
+    <thead><tr><th>Flip pipeline</th><th class="num">Bought / mo</th><th class="num">Resold / mo</th><th class="num">Aged out / mo</th><th class="num">Inventory</th></tr></thead><tbody>
+      <tr><td>Latest recorded month (2026-03)</td><td class="num">71</td><td class="num">116</td><td class="num">48</td><td class="num">2,410</td></tr>
+      <tr><td>Projected (2026-09)</td><td class="num">46</td><td class="num">81</td><td class="num">36</td><td class="num">2,178</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Method: a straight-line trend through the last 24 months, adjusted for the month of the year, shown dashed as a projection. The series stops before the newest month or two, where deeds are still recording.</div>
+      <!-- AGENT:flipflow:end -->
+
+  <h2 class="section-title" id="financing">Who's Funding the Deals</h2>
+  <!-- AGENT:financing:start -->
+<p class="section-sub">First mortgages open on flipper purchases from Apr 2025 – Mar 2026 that have not yet resold. 62% carried recorded debt; the rest closed cash or off-record. Ranked by deal count.</p>
+<div class="card-grid">
+    <div class="card"><h3>62%</h3><div class="meta">Purchases financed</div><div class="body">342 of 548 flipper purchases carried a recorded first mortgage</div></div>
+    <div class="card"><h3>$165,075</h3><div class="meta">Typical loan</div><div class="body">median 1.00× the purchase price</div></div>
+    <div class="card"><h3>48%</h3><div class="meta">Funding the rehab too</div><div class="body">163 of 342 loans exceed the purchase price, so the lender is covering work as well as the buy</div></div>
+  </div>
+<table class="data tight">
+    <thead><tr><th>Lender</th><th class="num">Loans</th><th class="num">Borrowers</th><th class="num">Median loan</th><th class="num">Loan vs price</th><th class="num">Funds rehab</th><th class="num">Median purchase</th></tr></thead><tbody>
+      <tr><td>Dayspring Bank</td><td class="num">30</td><td class="num">9</td><td class="num">$165,022</td><td class="num">1.06×</td><td class="num">70%</td><td class="num">$155,800</td></tr>
+      <tr><td>Pinnacle Bank</td><td class="num">19</td><td class="num">11</td><td class="num">$181,000</td><td class="num">0.94×</td><td class="num">47%</td><td class="num">$185,000</td></tr>
+      <tr><td>Four Points Fcu</td><td class="num">18</td><td class="num">9</td><td class="num">$153,000</td><td class="num">1.00×</td><td class="num">6%</td><td class="num">$155,500</td></tr>
+      <tr><td>Strongco Holdings LLC</td><td class="num">17</td><td class="num">10</td><td class="num">$200,000</td><td class="num">1.02×</td><td class="num">65%</td><td class="num">$200,000</td></tr>
+      <tr><td>First Nebraska Bank</td><td class="num">14</td><td class="num">1</td><td class="num">$133,000</td><td class="num">1.61×</td><td class="num">100%</td><td class="num">$77,000</td></tr>
+      <tr><td>Liquid Lending Solutions LLC</td><td class="num">12</td><td class="num">11</td><td class="num">$202,500</td><td class="num">1.08×</td><td class="num">67%</td><td class="num">$195,000</td></tr>
+      <tr><td>Exchange Bank</td><td class="num">11</td><td class="num">5</td><td class="num">$153,900</td><td class="num">1.05×</td><td class="num">55%</td><td class="num">$133,000</td></tr>
+      <tr><td>Midstates Bank NA</td><td class="num">11</td><td class="num">7</td><td class="num">$140,000</td><td class="num">1.02×</td><td class="num">55%</td><td class="num">$130,000</td></tr>
+      <tr><td>Quickdraw Lending LLC</td><td class="num">11</td><td class="num">6</td><td class="num">$160,000</td><td class="num">1.20×</td><td class="num">64%</td><td class="num">$255,000</td></tr>
+      <tr><td>Nebraska Bank of Commerce</td><td class="num">9</td><td class="num">6</td><td class="num">$180,000</td><td class="num">1.00×</td><td class="num">44%</td><td class="num">$180,000</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Rates and terms are not published: the county feed models both. Borrowers counts the distinct flippers on each lender's book. Loan vs price is the recorded first mortgage divided by what the buyer paid. Above 1.00x the lender is funding purchase plus rehab; below it the buyer brought cash to the table. Blanket mortgages covering several parcels are excluded, as are loans outside 0.1x-3x the price. Rates and points are not public record.</div>
+      <!-- AGENT:financing:end -->
+
+  <h2 class="section-title" id="flipper-profile">Flipper Profile — The Working Flipper</h2>
+  <!-- AGENT:flipperprofile:start -->
+<p class="section-sub">The 70th–90th percentile of local flippers by lifetime flip count — the established operators below the whales: 3–6 lifetime flips each. Bath counts are not in the assessor extract.</p>
+<div class="card-grid">
+    <div class="card"><h3>55</h3><div class="meta">Flippers in the band</div><div class="body">each with 3–6 lifetime flips (avg 3.7)</div></div>
+    <div class="card"><h3>$162,000</h3><div class="meta">Median gross margin</div><div class="body">931 flips matched to their purchase price</div></div>
+    <div class="card"><h3>4.7 mo</h3><div class="meta">Typical hold</div><div class="body">purchase to resale, matched deals</div></div>
+    <div class="card"><h3>1203 sqft · 3 bd</h3><div class="meta">Typical house</div><div class="body">median year built 1963</div></div>
+    <div class="card"><img src="../img/flippercurve_2026-02..2026-03.png" alt="Flippers by lifetime flip count" style="width:100%;max-width:260px;"><div class="meta">flippers by lifetime flips · orange = this band</div></div>
+  </div>
+  <div class="pulse-caveat">Where they work: Council Bluffs West (51501) 28% · Council Bluffs East (51503) 13% · Underwood North (51576) 5% · Bellevue (68005) 5% · Florence (68112) 4%.</div>
+      <!-- AGENT:flipperprofile:end -->
+
+  <h2 class="section-title" id="market-pulse">Market Pulse</h2>
+  <!-- AGENT:pulse:start -->
+<table class="data">
+    <thead><tr><th></th><th class="num">per month, 2025</th><th class="num">per month, 2026</th><th class="num">change</th><th class="num">avg/mo 2yr</th><th class="num">avg/mo 4yr</th></tr></thead><tbody>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Homes bought by flippers</td><td class="num">92</td><td class="num">66</td><td class="num">-28%</td><td class="num">115</td><td class="num">—</td></tr>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Flips sold (deeds)</td><td class="num">107</td><td class="num">84</td><td class="num">-21%</td><td class="num">126</td><td class="num">—</td></tr>
+      <tr><td><span style="color:#1a7a3c;">&#9650;</span> Lending deals funded</td><td class="num">17</td><td class="num">18</td><td class="num">+6%</td><td class="num">—</td><td class="num">—</td></tr>
+      <tr><td><span style="color:#1a7a3c;">&#9650;</span> Seller/notes held (net)</td><td class="num">-2</td><td class="num">42</td><td class="num">+1944%</td><td class="num">—</td><td class="num">—</td></tr>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Investors (net)</td><td class="num">253</td><td class="num">-4</td><td class="num">-101%</td><td class="num">—</td><td class="num">—</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Flips and flipper purchases = recorded deeds, same two months each year; their 2- and 4-year columns are per-month averages of the deed series. The remaining rows come from the investor file, which spans 13 months, so they have no multi-year average (2026: Jun 2026 → Aug 2026; 2025: Feb 2026 → Jun 2026).</div>
+      <!-- AGENT:pulse:end -->
+
+  <h2 class="section-title" id="past-issues">Past Issues</h2>
+  <ul>
+    <!-- AGENT:archive:start -->
+<li><a href="../202608/">August 2026</a></li>
+      <!-- AGENT:archive:end -->
+  </ul>
+
+  <h2 class="section-title" id="methodology">Methodology</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Source Data</h3>
+      <div class="meta">County recorder &amp; assessor via FARES</div>
+      <div class="body">Every figure is computed from recorded instruments (deeds, mortgages, assignments) and assessor property records for the five counties of the Omaha-Council Bluffs-Elyria MSA. No surveys, no estimates, no listings data.
+        <!-- AGENT:sourcedates:start -->
+<div style="margin-top:.5rem;color:var(--navy);">This edition analyzes transactions dated February 1 – March 31, 2026, as recorded through the 2026-08 data extract.</div>
+      <!-- AGENT:sourcedates:end -->
+      </div>
+    </div>
+    <div class="card">
+      <h3>Who Counts as an Investor</h3>
+      <div class="meta">Transaction-pattern identification</div>
+      <div class="body">Investors are entities whose recorded transaction history looks like investing: rental holding (landlords), short-hold resales (flippers), private mortgage lending, note holding, or contract assignment (wholesalers). Banks, homebuilders, iBuyers, SFR funds, and government entities are identified by name and reported separately from small investors.</div>
+    </div>
+    <div class="card">
+      <h3>How Comparisons Work</h3>
+      <div class="meta">Attribution deltas + same-window comparisons</div>
+      <div class="body">The Market Pulse reports activity attributed between successive data drops, from the per-investor lifetime totals maintained upstream — periods differ in length, so per-month rates are shown. Elsewhere, "vs. year ago" compares the same calendar months one year earlier, counted from the same data extract. Transfers under $5,000 (quitclaims, partial interests) are excluded everywhere. Counts lag recording by 4–8 weeks, and the newest month can grow up to ~15% as late records arrive — direction is reliable before magnitude.</div>
+    </div>
+    <div class="card">
+      <h3>Known Limits</h3>
+      <div class="meta">Floors, not ceilings</div>
+      <div class="body">Wholesale assignments only appear when they touch a recorded deed, so those counts are a floor. Flip hold times are measured from the prior recorded sale. Names are the owner of record, which may be an LLC or trust.</div>
+    </div>
+  </div>
+
+  <h2 class="section-title" id="about">About</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Purpose</h3>
+      <div class="body">A working tool for small real estate investors in Greater Omaha-Council Bluffs: what actually closed, where, at what prices, and what it suggests checking next — one theme per issue.</div>
+    </div>
+    <div class="card">
+      <h3>Cadence</h3>
+      <div class="body">Published with each bi-monthly data drop, covering the two most recent complete months of recorded activity.</div>
+    </div>
+    <div class="card">
+      <h3>Disclaimer</h3>
+      <div class="body">Observations from public records, not investment, legal, or tax advice. Past activity does not guarantee future results. Verify any property or counterparty independently before transacting.</div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="newsletter" id="newsletter">
+      <div class="mc-form" id="mc_embed_signup">
+        <form action="https://swarmtrace.us14.list-manage.com/subscribe/post?u=9a4ba4adf4888e6de8829189e&amp;id=35bb5ff4ae" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+          <h3>Subscribe</h3>
+          <p>Get each Omaha Investor Brief by email when a new issue is published.</p>
+          <label for="mce-EMAIL">Enter your email address to subscribe</label>
+          <input type="email" name="EMAIL" id="mce-EMAIL" placeholder="EMAIL" required>
+          <input type="hidden" name="tags" value="12497799">
+          <div style="position:absolute; left:-5000px;" aria-hidden="true"><input type="text" name="b_9a4ba4adf4888e6de8829189e_35bb5ff4ae" tabindex="-1" value=""></div>
+          <button type="submit" name="subscribe" id="mc-embedded-subscribe">SUBSCRIBE</button>
+          <p class="mc-note">Unsubscribe any time. Powered by Mailchimp.</p>
+        </form>
+      </div>
+    </div>
+    <div>
+      <h4>Sections</h4>
+      <ul>
+        <li><a href="#this-issue">This Issue</a></li>
+        <li><a href="#playbook">Investor Playbook</a></li>
+        <li><a href="#factoids">Factoids</a></li>
+        <li><a href="#activity-chart">Market Activity</a></li>
+        <li><a href="#where-the-money-went">Where the Money Went</a></li>
+        <li><a href="#market-pulse">Market Pulse</a></li>
+        <li><a href="#methodology">Methodology</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Coverage</h4>
+      <ul>
+        <li>Cass County</li>
+        <li>Douglas County</li>
+        <li>Sarpy County</li>
+        <li>Saunders County</li>
+        <li>Washington County</li>
+        <li>Harrison County</li>
+        <li>Mills County</li>
+        <li>Pottawattamie County</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:jpritchard@swarmalytics.com">jpritchard@swarmalytics.com</a></li>
+        <li>Powered by <a href="https://www.swarmalytics.com" target="_blank" rel="noopener">Swarmalytics</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    Omaha Real Estate Investor Brief is an independent research publication built from public
+    county records. Not affiliated with any government agency. Nothing here is investment, legal,
+    or tax advice.
+  </div>
+</footer>
+
+</body>
+</html>
