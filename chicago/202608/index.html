@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chicago Real Estate Investor Brief</title>
+<meta name="description" content="Deed-level data on what small investors are actually doing in the Chicago-Elyria MSA — flips, rentals, private lending — with a monthly theme and a playbook per investor type.">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  .mc-form { max-width:540px; margin:0 auto; text-align:left; background:#fff; border:1px solid #C0CCD9; border-radius:3px; padding:24px; font-family:Helvetica, sans-serif; color:#3C4858; }
+  .mc-form h3 { font-size:28px; font-weight:700; margin:0 0 8px; }
+  .mc-form p { font-size:16px; margin:0 0 12px; }
+  .mc-form label { display:block; font-weight:700; font-size:16px; margin-bottom:6px; }
+  .mc-form input[type=email] { width:100%; box-sizing:border-box; font-size:16px; padding:10px; border:1px solid #C0CCD9; border-radius:3px; margin-bottom:12px; }
+  .mc-form button { font-size:16px; font-weight:700; color:#fff; background:#3E4857; border:0; border-radius:3px; padding:10px 20px; cursor:pointer; }
+  .mc-form .mc-note { font-size:12px; color:#6b7785; margin-top:10px; }
+</style>
+</head>
+<body>
+
+<div class="utility-bar">
+  <div class="container">
+    <a href="#methodology">Methodology</a>
+    <a href="#about">About</a>
+    <a href="#newsletter">Subscribe</a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container">
+    <div class="brand">
+      <div class="brand-text">
+        <span class="brand-name">Chicago Real Estate Investor Brief</span>
+        <span class="brand-tag">Deed-level market intelligence for small investors · Chicago-Elyria MSA</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="primary-nav">
+  <div class="container">
+    <a href="#this-issue" class="active">This Issue</a>
+    <a href="#playbook">Investor Playbook</a>
+    <a href="#factoids">Factoids</a>
+    <a href="#activity-chart">Market Activity</a>
+    <a href="#where-the-money-went">Where the Money Went</a>
+    <a href="#flip-structure">Flip Structure</a>
+    <a href="#flip-pipeline">Flip Pipeline</a>
+      <a href="#financing">Funding</a>
+      <a href="#flipper-profile">Flipper Profile</a>
+    <a href="#market-pulse">Market Pulse</a>
+    <a href="#methodology">Methodology</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <!-- AGENT:hero:start -->
+<h1>August Edition — Thinner Field</h1>
+    <div class="datarange">Analyzing transactions recorded May 1 – June 30, 2026</div>
+      <!-- AGENT:hero:end -->
+  </div>
+</section>
+
+<main>
+
+  <h2 class="section-title" id="this-issue">This Issue
+    <!-- AGENT:updated:start -->
+<span style="float:right;font-weight:400;text-transform:none;letter-spacing:0;font-size:12px;color:var(--text-muted);">August 2026 edition</span>
+      <!-- AGENT:updated:end -->
+  </h2>
+  <!-- AGENT:theme:start -->
+<div class="forecast-headline">
+    <div>
+      <div class="number">377 vs 681</div>
+      <div class="label">Distinct flip operators recording a resale this edition, against the same window a year ago</div>
+    </div>
+    <div class="body">
+      <h3 style="margin:0 0 .5rem;color:var(--navy);">The flip field halved: 377 operators recorded an exit this edition against 681 a year ago, and the ones still selling are pricier and more concentrated</h3>
+      <p>Flip exits fell to 534 from 922 a year ago, and the operator count behind them fell further, to 377 from 681. The ones still closing sold at a higher median price, $334,602 against $316,036, and held less time, 207 days versus 238.5. Concentration rose as the field thinned: the top ten operators took 18.8% of flip revenue, up from 11.2% a year ago. Cook County carried 65.9% of exits against 58.0%, and the median exit sat 27.1 km from the CBD versus 32.1 km. Recorded counts lag four to eight weeks.</p>
+    </div>
+  </div>
+      <!-- AGENT:theme:end -->
+
+  <h2 class="section-title" id="playbook">Investor Playbook</h2>
+  <p class="section-sub">What this issue's numbers suggest checking, by investor type. Observations from recorded data — not investment, legal, or tax advice.</p>
+  <!-- AGENT:playbook:start -->
+<div class="card-grid">
+    <div class="card">
+      <h3>Fewer buyers on the list; price the spread to the ones still closing</h3>
+      <div class="meta">Wholesalers</div>
+      <div class="body">With 377 operators recording exits against 681 a year ago, the buyer bench is thinner and the median recorded spread has fallen to $44,000 from $53,750. The data suggests focusing on where flip demand still shows up in volume: 60628 (Roseland) logged 16 flips against 107 investor buys on a $132,000 median buy, and Roseland, 60620 and 60617 are the top areas for the 3-8 lifetime-flip operator band. Worth re-verifying buyer capacity before locking long inspection periods.</div>
+    </div>
+    <div class="card">
+      <h3>Exits are slower to appear than buys — watch what you add to a 15,507-unit pipeline</h3>
+      <div class="meta">Flippers</div>
+      <div class="body">938 flip acquisitions against 534 exits put 404 net units into inventory this edition, versus 321 a year ago; tracked pipeline stands at 15,507 units in the latest month. Median hold on what did sell was 207 days, down from 238.5, and median sale-to-assessed was 1.56 against 1.45. Worth checking whether new buys pencil at the current 1,400 sqft, 3-bed, 1956-vintage median profile at $237/sqft exit rather than at last year's assumptions.</div>
+    </div>
+    <div class="card">
+      <h3>The basis gap sits in 2-4 units and apartments, not single family</h3>
+      <div class="meta">Landlords</div>
+      <div class="body">Single-family buys cleared at $375,000 and $239/sqft this edition; 2-4 units at $277,320 and $137/sqft, apartments 5+ at $565,000 and $183/sqft. Condos, 4,119 deals, sat at $326,000 and $233/sqft — close to single-family per foot. Only 0.7% of flips were small multi, so hold buyers face limited competition from resale operators in that product. Worth checking Joliet ($281,000, $181/sqft) and Tinley Park ($320,000, $198/sqft) against the $415,000 Chicago median.</div>
+    </div>
+    <div class="card">
+      <h3>Recorded private paper is scarce; the rehab slot is where the volume sits</h3>
+      <div class="meta">Private lenders</div>
+      <div class="body">Only 33 private loans were recorded this edition against 93 a year ago, at a $267,000 median versus $161,250. The trailing-twelve-month file shows the gap being filled by scaled lenders: Kiavi 142 loans (86.6% rehab-funded, $231,200 median), RFLF 4 at 105 and Loan Funder at 102, all at loan-to-price above 1.2. Median financed loan across the market is $216,000 at 0.97 loan-to-price. Terms and rates are not recorded and are not published here.</div>
+    </div>
+    <div class="card">
+      <h3>897 apartment buys at the lowest per-foot basis in the file</h3>
+      <div class="meta">Multifamily investors</div>
+      <div class="body">Apartment 5+ was the third-largest residential product by count, 897 deals at a $565,000 median and $182.83/sqft — below single family and condo per foot. Twenty-nine apartment properties were resold as flips at $57/sqft, and three of the eight largest-margin exits this edition were Apartment 5+ in 60647, 60660 and 60657. Note that DuPage purchases read 767 against 1,725 a year ago, which may reflect a partial county file; worth confirming before drawing county-level conclusions.</div>
+    </div>
+  </div>
+      <!-- AGENT:playbook:end -->
+
+  <h2 class="section-title" id="factoids">Factoids</h2>
+  <p class="section-sub">Numbers from this period a practitioner would repeat to a colleague. Each computed directly from recorded instruments.</p>
+  <!-- AGENT:factoids:start -->
+<div class="card-grid">
+    <div class="card">
+      <h3>12,206 investor purchases — Recorded investor purchases this edition, median $365,000</h3>
+      <div class="meta">trending down · vs 12,704 a year ago, median $370,000</div>
+      <div class="body">Buy-side volume is close to flat year over year while flip exits fell 42%, so the pullback is concentrated in resale, not acquisition. Median purchase price is $5,000 below the year-ago figure.</div>
+    </div>
+    <div class="card">
+      <h3>$153,667 median gross flip margin — Median gross margin on flips sold this edition</h3>
+      <div class="meta">trending up · was $140,000 a year ago</div>
+      <div class="body">Median margin percentage rose to 84.8% from 77.9%. Rehab and carry costs are not public record, so these are gross of work done.</div>
+    </div>
+    <div class="card">
+      <h3>7% of buyers from out of state — Out-of-state share of investor purchases, median price $408,500</h3>
+      <div class="meta">holding steady · vs local buyers at 91% and a $360,000 median</div>
+      <div class="body">Out-of-state money is buying above the local median, led by CA 105, FL 102 and TX 70 purchases. Local buyers still set price in most bands.</div>
+    </div>
+    <div class="card">
+      <h3>33 recorded private loans — Private loans recorded this edition, median $267,000</h3>
+      <div class="meta">trending down · vs 93 a year ago, median $161,250</div>
+      <div class="body">Fewer, larger recorded private loans. Over the trailing twelve months 60.0% of observed investor purchases carried recorded financing, and 39.9% of those 2,641 financed deals also funded rehab.</div>
+    </div>
+    <div class="card">
+      <h3>$183/sqft on Apartment 5+ buys — Median price per square foot paid on 897 apartment purchases</h3>
+      <div class="meta">holding steady · vs $239/sqft on 6,820 single-family buys</div>
+      <div class="body">The per-foot gap between apartment stock and single family remains the widest basis spread in this edition. 2-4 unit buys, 44 of them, cleared at $137/sqft on a $277,320 median.</div>
+    </div>
+    <div class="card">
+      <h3>16 wholesale assignments — Assignments surfacing on recorded deeds, median spread $44,000</h3>
+      <div class="meta">trending down · vs 32 a year ago, median spread $53,750</div>
+      <div class="body">Both count and spread are down year over year. Treat this as a floor — most assignments never touch a recorded deed.</div>
+    </div>
+  </div>
+      <!-- AGENT:factoids:end -->
+
+  <h2 class="section-title" id="activity-chart">Market Activity — Investor Purchases</h2>
+  <p class="section-sub">Monthly count of investor purchases of MSA properties (left axis) and the median purchase price (right axis), trailing 13 months. The most recent month can grow up to ~15% as late recordings arrive.</p>
+  <!-- AGENT:chart:start -->
+<div class="chart-row">
+    <div class="map-panel"><img src="../img/chart_2026-05..2026-06.png" alt="Monthly investor purchases and median price"><div class="caption">Investor purchases per month (bars) and median purchase price (line), trailing 13 months.</div></div>
+    <div class="map-panel"><img src="../img/decades_2026-05..2026-06.png" alt="Investor purchases by decade the house was built"><div class="caption">Which vintage of housing investors bought this edition, by decade built.</div></div>
+  </div>
+      <!-- AGENT:chart:end -->
+
+  <h2 class="section-title" id="where-the-money-went">Where the Money Went</h2>
+  <p class="section-sub">The geography of the period's investor activity: which zip codes saw the most recorded deals, and the largest individual transactions at street level.</p>
+  <!-- AGENT:map:start -->
+<div class="map-panel">
+    <h3 class="subsection-title" style="margin-top:0;">The 8 busiest zip codes for investor deals</h3>
+    <div id="dealmap"></div>
+    <script id="map-data" type="application/json">[{"rank":1,"zip":"60614","area":"Lincoln Park","lat":41.922747,"lng":-87.647153,"buys":197,"flips":3,"deals":200,"median":"$786,000","medianSale":"n/a"},{"rank":2,"zip":"60657","area":"Lakeview","lat":41.939411,"lng":-87.650704,"buys":177,"flips":5,"deals":182,"median":"$625,000","medianSale":"$352,000"},{"rank":3,"zip":"60611","area":"Streeterville","lat":41.894742,"lng":-87.615073,"buys":178,"flips":1,"deals":179,"median":"$477,500","medianSale":"n/a"},{"rank":4,"zip":"60618","area":"North Center","lat":41.947568,"lng":-87.702647,"buys":154,"flips":3,"deals":157,"median":"$650,000","medianSale":"n/a"},{"rank":5,"zip":"60622","area":"Wicker Park","lat":41.902172,"lng":-87.683337,"buys":151,"flips":4,"deals":155,"median":"$730,000","medianSale":"n/a"},{"rank":6,"zip":"60613","area":"Lakeview East","lat":41.956153,"lng":-87.652994,"buys":149,"flips":1,"deals":150,"median":"$350,000","medianSale":"n/a"},{"rank":7,"zip":"60647","area":"Logan Square","lat":41.921042,"lng":-87.701971,"buys":145,"flips":5,"deals":150,"median":"$755,000","medianSale":"$1.3M"},{"rank":8,"zip":"60610","area":"Near North Side","lat":41.904718,"lng":-87.635891,"buys":138,"flips":6,"deals":144,"median":"$475,000","medianSale":"$473,500"}]</script>
+    <div class="caption">Pins rank the busiest zips by recorded investor deals (purchases + flips of existing homes) this period — #1 busiest; orange = top 3; pin size scales with deal volume. Median buy is the typical investor purchase; median sale the typical flip resale. Click a pin for details; full table below.</div>
+    <div class="map-table-wrap">
+    <table class="data">
+      <thead><tr><th>#</th><th>Zip</th><th>Area</th><th class="num">Purchases</th><th class="num">Flips</th><th class="num">Median buy</th><th class="num">Median sale</th></tr></thead><tbody>
+        <tr><td>#1</td><td>60614</td><td>Lincoln Park</td><td class="num">197</td><td class="num">3</td><td class="num">$786,000</td><td class="num">n/a</td></tr>
+        <tr><td>#2</td><td>60657</td><td>Lakeview</td><td class="num">177</td><td class="num">5</td><td class="num">$625,000</td><td class="num">$352,000</td></tr>
+        <tr><td>#3</td><td>60611</td><td>Streeterville</td><td class="num">178</td><td class="num">1</td><td class="num">$477,500</td><td class="num">n/a</td></tr>
+        <tr><td>#4</td><td>60618</td><td>North Center</td><td class="num">154</td><td class="num">3</td><td class="num">$650,000</td><td class="num">n/a</td></tr>
+        <tr><td>#5</td><td>60622</td><td>Wicker Park</td><td class="num">151</td><td class="num">4</td><td class="num">$730,000</td><td class="num">n/a</td></tr>
+        <tr><td>#6</td><td>60613</td><td>Lakeview East</td><td class="num">149</td><td class="num">1</td><td class="num">$350,000</td><td class="num">n/a</td></tr>
+        <tr><td>#7</td><td>60647</td><td>Logan Square</td><td class="num">145</td><td class="num">5</td><td class="num">$755,000</td><td class="num">$1.3M</td></tr>
+        <tr><td>#8</td><td>60610</td><td>Near North Side</td><td class="num">138</td><td class="num">6</td><td class="num">$475,000</td><td class="num">$473,500</td></tr>
+      </tbody></table>
+    </div>
+  </div>
+      <!-- AGENT:map:end -->
+  <script>
+  (function() {
+    var el = document.getElementById('map-data');
+    if (!el || !window.L) return;
+    var zips; try { zips = JSON.parse(el.textContent); } catch (e) { return; }
+    if (!zips.length) return;
+    var map = L.map('dealmap', { scrollWheelZoom: false });
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',
+      { attribution: 'Tiles &copy; Esri', maxZoom: 18 }).addTo(map);
+    var group = [];
+    var maxDeals = Math.max.apply(null, zips.map(function(z){ return z.deals; }));
+    zips.forEach(function(z) {
+      var size = 26 + Math.round(18 * z.deals / maxDeals);
+      var icon = L.divIcon({ className: '', iconSize: [size, size], iconAnchor: [size/2, size/2],
+        html: '<div class="rank-pin' + (z.rank <= 3 ? ' hot' : '') + '" style="width:'+size+'px;height:'+size+'px;">#'+z.rank+'</div>' });
+      var m = L.marker([z.lat, z.lng], { icon: icon }).addTo(map);
+      m.bindPopup('<b>#'+z.rank+' &middot; '+z.zip+'</b>'+(z.area ? ' &mdash; '+z.area : '')+'<br>'+
+        z.buys.toLocaleString()+' purchases &middot; '+z.flips.toLocaleString()+' flips<br>Median buy '+z.median);
+      m.bindTooltip('#'+z.rank+' '+z.zip, { direction: 'top' });
+      group.push(m);
+    });
+    map.fitBounds(L.featureGroup(group).getBounds().pad(0.25));
+  })();
+  </script>
+  <!-- AGENT:deals:start -->
+<h3 class="subsection-title">A representative deal in each of the busiest zips</h3>
+<p class="section-sub">One deal per zip: the largest matching this market's typical house (typical for this market: 1419 sqft, 3 bed, built around 1960; priced within 4x the county assessment and under 5x its own zip's median).</p>
+<div class="deal-strip">
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_1_228a080d.jpg" alt="Street view of 65 W SCHILLER ST">
+      <div class="body">
+        <div class="price">$1.5M · Purchase</div>
+        <div class="addr">65 W SCHILLER ST, Chicago 60610</div>
+        <div class="meta">Single family · 1,928 sqft · Jun 2</div>
+        <div class="svdate">Street View Aug 2019 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_2_24120960.jpg" alt="Street view of 457 W FULLERTON PKWY # 2">
+      <div class="body">
+        <div class="price">$1.4M · Purchase</div>
+        <div class="addr">457 W FULLERTON PKWY # 2, Chicago 60614</div>
+        <div class="meta">Condo · 2,029 sqft · May 6</div>
+        <div class="svdate">Street View Nov 2025 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_3_b2382df9.jpg" alt="Street view of 1862 N WILMOT AVE">
+      <div class="body">
+        <div class="price">$1.3M · Purchase</div>
+        <div class="addr">1862 N WILMOT AVE, Chicago 60647</div>
+        <div class="meta">Single family · 1,755 sqft · Jun 1</div>
+        <div class="svdate">Street View Sep 2024 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_4_0b5f0bee.jpg" alt="Street view of 1532 N ELK GROVE AVE # L">
+      <div class="body">
+        <div class="price">$1.3M · Purchase</div>
+        <div class="addr">1532 N ELK GROVE AVE # L, Chicago 60622</div>
+        <div class="meta">Single family · 2,080 sqft · Jun 29</div>
+        <div class="svdate">Street View Sep 2024 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_5_250e87c3.jpg" alt="Street view of 1418 W WAVELAND AVE">
+      <div class="body">
+        <div class="price">$1.1M · Purchase</div>
+        <div class="addr">1418 W WAVELAND AVE, Chicago 60613</div>
+        <div class="meta">Single family · 1,188 sqft · May 7</div>
+        <div class="svdate">Street View Dec 2025 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_6_50c2228b.jpg" alt="Street view of 3141 N RACINE AVE APT 3">
+      <div class="body">
+        <div class="price">$1.1M · Purchase</div>
+        <div class="addr">3141 N RACINE AVE APT 3, Chicago 60657</div>
+        <div class="meta">Condo · 2,200 sqft · Jun 3</div>
+        <div class="svdate">Street View Oct 2015 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_7_ecf0047f.jpg" alt="Street view of 3619 N FRANCISCO AVE">
+      <div class="body">
+        <div class="price">$1.0M · Purchase</div>
+        <div class="addr">3619 N FRANCISCO AVE, Chicago 60618</div>
+        <div class="meta">Single family · 1,996 sqft · Jun 25</div>
+        <div class="svdate">Street View Sep 2022 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_8_6684ebd5.jpg" alt="Street view of 55 E ERIE ST APT 2103">
+      <div class="body">
+        <div class="price">$820,000 · Purchase</div>
+        <div class="addr">55 E ERIE ST APT 2103, Chicago 60611</div>
+        <div class="meta">Condo · 2,028 sqft · Jun 4</div>
+        <div class="svdate">Street View Jul 2025 — before the purchase</div>
+      </div>
+    </div>
+  </div>
+<h3 class="subsection-title">Deal sheet — private lending, in date order</h3>
+<p class="section-sub">Private loans recorded against residential property this period, oldest first.</p>
+<table class="data">
+    <thead><tr><th>Date</th><th>Lender</th><th class="num">Amount</th><th>Property</th><th>Use</th></tr></thead><tbody>
+      <tr><td>May 4</td><td>Quinn Matthew</td><td class="num">$576,000</td><td>135 N Peck Ave, La Grange 60525</td><td>Single family</td></tr>
+      <tr><td>May 4</td><td>Hrair Garabedian Ira</td><td class="num">$175,000</td><td>12816 S Laflin ST, Calumet Park 60827</td><td>Single family</td></tr>
+      <tr><td>May 6</td><td>Hatton Richard</td><td class="num">$120,000</td><td>904 E Greenwood DR, Mount Prospect 60056</td><td>Single family</td></tr>
+      <tr><td>May 8</td><td>American Community BK&amp;TR</td><td class="num">$50,000</td><td>1060 N Highland Ave, Aurora 60506</td><td>Single family</td></tr>
+      <tr><td>May 19</td><td>Ibarra Yakile</td><td class="num">$240,000</td><td>1532 N 39TH Ave, Stone Park 60165</td><td>Single family</td></tr>
+      <tr><td>Jun 3</td><td>Mazzone Olga</td><td class="num">$131,250</td><td>16784 Trapet Ave, Hazel Crest 60429</td><td>Single family</td></tr>
+      <tr><td>Jun 17</td><td>Kelliher Kevin</td><td class="num">$185,000</td><td>11545 S Loomis ST, Chicago 60643</td><td>Single family</td></tr>
+      <tr><td>Jun 22</td><td>Johnson Donald</td><td class="num">$400,000</td><td>222 N Mineral Springs RD, Chesterton 46304</td><td>Single family</td></tr>
+    </tbody></table>
+
+<h3 class="subsection-title">Largest flip margin deals of the period, at street level</h3>
+<p class="section-sub">Gross margin = recorded sale price minus the flipper's recorded purchase price. Purchase deeds are recoverable for roughly 4 in 10 flips; rehab and carry costs are not public record.</p>
+<div class="deal-strip">
+    <div class="deal-card">
+      <img src="../img/svm_2026-05..2026-06_1_3436eb94.jpg" alt="Street view of 570 S PARKSIDE AVE">
+      <div class="body">
+        <div class="price">$1.2M gross · bought $488,000 (Nov 2024) → sold $1.7M</div>
+        <div class="addr">570 S PARKSIDE AVE, Elmhurst 60126</div>
+        <div class="meta">Single family · 1,488 sqft · May 26</div>
+        <div class="svdate">Street View Oct 2023 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-05..2026-06_2_4d6114ee.jpg" alt="Street view of 4242 N SACRAMENTO AVE">
+      <div class="body">
+        <div class="price">$1.2M gross · bought $425,000 (Feb 2025) → sold $1.6M</div>
+        <div class="addr">4242 N SACRAMENTO AVE, Chicago 60618</div>
+        <div class="meta">Single family · 1,335 sqft · May 15</div>
+        <div class="svdate">Street View Sep 2024 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-05..2026-06_3_7cdcce61.jpg" alt="Street view of 3305 W WRIGHTWOOD AVE">
+      <div class="body">
+        <div class="price">$1.1M gross · bought $555,000 (Jan 2025) → sold $1.7M</div>
+        <div class="addr">3305 W WRIGHTWOOD AVE, Chicago 60647</div>
+        <div class="meta">Apartment 5+ · 2,372 sqft · May 1</div>
+        <div class="svdate">Street View Aug 2025 — during the flip</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-05..2026-06_4_9603e435.jpg" alt="Street view of 396 S PROSPECT AVE">
+      <div class="body">
+        <div class="price">$1.1M gross · bought $500,000 (Feb 2025) → sold $1.6M</div>
+        <div class="addr">396 S PROSPECT AVE, Elmhurst 60126</div>
+        <div class="meta">Single family · 1,022 sqft · Jun 11</div>
+        <div class="svdate">Street View Oct 2018 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-05..2026-06_5_ba6baf07.jpg" alt="Street view of 5725 N RIDGE AVE # 2">
+      <div class="body">
+        <div class="price">$1.1M gross · bought $665,000 (Jun 2025) → sold $1.7M</div>
+        <div class="addr">5725 N RIDGE AVE # 2, Chicago 60660</div>
+        <div class="meta">Apartment 5+ · 2,430 sqft · Jun 12</div>
+        <div class="svdate">Street View Oct 2024 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-05..2026-06_6_df3cb3a8.jpg" alt="Street view of 2125 W WALTON ST # 1">
+      <div class="body">
+        <div class="price">$919,000 gross · bought $660,000 (Aug 2025) → sold $1.6M</div>
+        <div class="addr">2125 W WALTON ST # 1, Chicago 60622</div>
+        <div class="meta">Single family · 1,500 sqft · Jun 10</div>
+        <div class="svdate">Street View Aug 2025 — during the flip</div>
+      </div>
+    </div>
+  </div>
+      <!-- AGENT:deals:end -->
+
+  <h2 class="section-title" id="flip-structure">Flip Structure — Year over Year</h2>
+  <p class="section-sub">How the flip market itself is changing: margins, who is doing the flipping, what they flip, and where. Same two calendar months, this year vs last, from the current data extract.</p>
+  <!-- AGENT:flipstructure:start -->
+<table class="data tight">
+    <thead><tr><th>Flip market structure</th><th class="num">Same months last year</th><th class="num">This edition</th></tr></thead><tbody>
+      <tr><td>Flips sold</td><td class="num">922</td><td class="num">534</td></tr>
+      <tr><td>Median sale</td><td class="num">$316,036</td><td class="num">$334,602</td></tr>
+      <tr><td>Median $/sqft</td><td class="num">$229</td><td class="num">$237</td></tr>
+      <tr><td>Sale vs county-assessed</td><td class="num">1.45×</td><td class="num">1.56×</td></tr>
+      <tr><td>Median gross margin (matched buys)</td><td class="num">$140,000</td><td class="num">$153,667</td></tr>
+      <tr><td>Median margin %</td><td class="num">78%</td><td class="num">85%</td></tr>
+      <tr><td>Median hold</td><td class="num">7.8 mo</td><td class="num">6.8 mo</td></tr>
+      <tr><td>Homes bought by flippers</td><td class="num">1,243</td><td class="num">938</td></tr>
+      <tr><td>Net to inventory (bought − sold)</td><td class="num">+321</td><td class="num">+404</td></tr>
+      <tr><td>Active flippers</td><td class="num">681</td><td class="num">377</td></tr>
+      <tr><td>Top-10 flippers' revenue share</td><td class="num">11%</td><td class="num">19%</td></tr>
+      <tr><td>Median house: sqft / beds / built</td><td class="num">1423 / 3 / 1958</td><td class="num">1400 / 3 / 1956</td></tr>
+      <tr><td>Pre-1950 stock share</td><td class="num">34%</td><td class="num">37%</td></tr>
+      <tr><td>2–4 unit share</td><td class="num">1%</td><td class="num">1%</td></tr>
+      <tr><td>Median distance from downtown</td><td class="num">32.1 km</td><td class="num">27.1 km</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Homes bought counts every deed recorded to a known flipper in the window, resold or not. Net to inventory is that minus flips sold. The standing stock is in the Flip Pipeline section.</div>
+  <div class="pulse-caveat">Attributed profit per flip (per-investor aggregates, by drop period): Feb 26→Jun 26: 2,191 flips, $136,772/flip · Jun 26→Aug 26: 813 flips, $69,619/flip.</div>
+  <div class="pulse-caveat">County mix (share of flips, last year → this edition): Cook 58%→66% · DuPage 10%→9% · Lake (IN) 10%→9% · Kane 3%→4% · Will 5%→4% · Lake (IL) 6%→4% · Porter 3%→1% · McHenry 2%→1% · Kendall 2%→1% · DeKalb 0%→0% · Jasper 0%→0%.</div>
+      <!-- AGENT:flipstructure:end -->
+
+  <h2 class="section-title" id="flip-pipeline">Flip Pipeline — Buying, Selling and Inventory</h2>
+  <!-- AGENT:flipflow:start -->
+<p class="section-sub">Homes bought by known flippers and homes they resold, per month, alongside the stock sitting in flipper hands. A house enters inventory when a flipper buys it and leaves on the next recorded sale, at any price. Purchases still unsold after five years are treated as holds and drop out.</p>
+<div class="map-panel"><img src="../img/flipflow_2026-05..2026-06.png" alt="Flip purchases, flip sales and inventory by month with projection"><div class="caption">Solid = recorded, dashed = projected. Green bars are inventory on the right axis: homes bought and not yet resold. Aged out is purchases passing five years unsold. Inventory moves by bought minus resold minus aged out.</div></div>
+<table class="data tight">
+    <thead><tr><th>Flip pipeline</th><th class="num">Bought / mo</th><th class="num">Resold / mo</th><th class="num">Aged out / mo</th><th class="num">Inventory</th></tr></thead><tbody>
+      <tr><td>Latest recorded month (2026-05)</td><td class="num">551</td><td class="num">454</td><td class="num">229</td><td class="num">15,507</td></tr>
+      <tr><td>Projected (2026-11)</td><td class="num">431</td><td class="num">398</td><td class="num">249</td><td class="num">15,200</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Method: a straight-line trend through the last 24 months, adjusted for the month of the year, shown dashed as a projection. The series stops before the newest month or two, where deeds are still recording.</div>
+      <!-- AGENT:flipflow:end -->
+
+  <h2 class="section-title" id="financing">Who's Funding the Deals</h2>
+  <!-- AGENT:financing:start -->
+<p class="section-sub">First mortgages open on flipper purchases from Jul 2025 – Jun 2026 that have not yet resold. 60% carried recorded debt; the rest closed cash or off-record. Ranked by deal count.</p>
+<div class="card-grid">
+    <div class="card"><h3>60%</h3><div class="meta">Purchases financed</div><div class="body">2,641 of 4,401 flipper purchases carried a recorded first mortgage</div></div>
+    <div class="card"><h3>$216,000</h3><div class="meta">Typical loan</div><div class="body">median 0.97× the purchase price</div></div>
+    <div class="card"><h3>40%</h3><div class="meta">Funding the rehab too</div><div class="body">1,053 of 2,641 loans exceed the purchase price, so the lender is covering work as well as the buy</div></div>
+  </div>
+<table class="data tight">
+    <thead><tr><th>Lender</th><th class="num">Loans</th><th class="num">Borrowers</th><th class="num">Median loan</th><th class="num">Loan vs price</th><th class="num">Funds rehab</th><th class="num">Median purchase</th></tr></thead><tbody>
+      <tr><td>Kiavi Funding INC</td><td class="num">142</td><td class="num">59</td><td class="num">$231,200</td><td class="num">1.29×</td><td class="num">87%</td><td class="num">$167,295</td></tr>
+      <tr><td>RFLF 4 LLC</td><td class="num">105</td><td class="num">49</td><td class="num">$262,500</td><td class="num">1.29×</td><td class="num">82%</td><td class="num">$214,000</td></tr>
+      <tr><td>Loan Funder LLC</td><td class="num">102</td><td class="num">65</td><td class="num">$228,125</td><td class="num">1.31×</td><td class="num">85%</td><td class="num">$182,500</td></tr>
+      <tr><td>Jpmorgan Chase Bank NA</td><td class="num">92</td><td class="num">84</td><td class="num">$195,750</td><td class="num">0.75×</td><td class="num">10%</td><td class="num">$265,000</td></tr>
+      <tr><td>Guaranteed Rate INC</td><td class="num">69</td><td class="num">66</td><td class="num">$279,000</td><td class="num">0.90×</td><td class="num">10%</td><td class="num">$330,000</td></tr>
+      <tr><td>Wells Fargo Bank NA</td><td class="num">48</td><td class="num">41</td><td class="num">$171,102</td><td class="num">0.84×</td><td class="num">33%</td><td class="num">$205,000</td></tr>
+      <tr><td>United Wholesale Mortgage LLC</td><td class="num">44</td><td class="num">40</td><td class="num">$315,125</td><td class="num">0.97×</td><td class="num">9%</td><td class="num">$333,500</td></tr>
+      <tr><td>Neighborhood Loans INC</td><td class="num">39</td><td class="num">38</td><td class="num">$306,440</td><td class="num">0.95×</td><td class="num">3%</td><td class="num">$325,000</td></tr>
+      <tr><td>Loandepot.com LLC</td><td class="num">38</td><td class="num">35</td><td class="num">$223,379</td><td class="num">0.95×</td><td class="num">16%</td><td class="num">$250,450</td></tr>
+      <tr><td>Crosscountry Mortgage LLC</td><td class="num">36</td><td class="num">33</td><td class="num">$315,430</td><td class="num">0.89×</td><td class="num">11%</td><td class="num">$385,000</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Rates and terms are not published: the county feed models both. Borrowers counts the distinct flippers on each lender's book. Loan vs price is the recorded first mortgage divided by what the buyer paid. Above 1.00x the lender is funding purchase plus rehab; below it the buyer brought cash to the table. Blanket mortgages covering several parcels are excluded, as are loans outside 0.1x-3x the price. Rates and points are not public record.</div>
+      <!-- AGENT:financing:end -->
+
+  <h2 class="section-title" id="flipper-profile">Flipper Profile — The Working Flipper</h2>
+  <!-- AGENT:flipperprofile:start -->
+<p class="section-sub">The 70th–90th percentile of local flippers by lifetime flip count — the established operators below the whales: 3–8 lifetime flips each. Bath counts are not in the assessor extract.</p>
+<div class="card-grid">
+    <div class="card"><h3>1,390</h3><div class="meta">Flippers in the band</div><div class="body">each with 3–8 lifetime flips (avg 4.1)</div></div>
+    <div class="card"><h3>$103,500</h3><div class="meta">Median gross margin</div><div class="body">10,092 flips matched to their purchase price</div></div>
+    <div class="card"><h3>5.8 mo</h3><div class="meta">Typical hold</div><div class="body">purchase to resale, matched deals</div></div>
+    <div class="card"><h3>1419 sqft · 3 bd</h3><div class="meta">Typical house</div><div class="body">median year built 1960</div></div>
+    <div class="card"><img src="../img/flippercurve_2026-05..2026-06.png" alt="Flippers by lifetime flip count" style="width:100%;max-width:260px;"><div class="meta">flippers by lifetime flips · orange = this band</div></div>
+  </div>
+  <div class="pulse-caveat">Where they work: Roseland (60628) 2% · Auburn Gresham (60620) 2% · South Chicago (60617) 2% · Elmhurst (60126) 2% · Chatham (60619) 1%.</div>
+      <!-- AGENT:flipperprofile:end -->
+
+  <h2 class="section-title" id="market-pulse">Market Pulse</h2>
+  <!-- AGENT:pulse:start -->
+<table class="data">
+    <thead><tr><th></th><th class="num">per month, 2025</th><th class="num">per month, 2026</th><th class="num">change</th><th class="num">avg/mo 2yr</th><th class="num">avg/mo 4yr</th></tr></thead><tbody>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Homes bought by flippers</td><td class="num">622</td><td class="num">469</td><td class="num">-25%</td><td class="num">588</td><td class="num">642</td></tr>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Flips sold (deeds)</td><td class="num">461</td><td class="num">267</td><td class="num">-42%</td><td class="num">502</td><td class="num">524</td></tr>
+      <tr><td><span style="color:#1a7a3c;">&#9650;</span> Lending deals funded</td><td class="num">67</td><td class="num">251</td><td class="num">+275%</td><td class="num">—</td><td class="num">—</td></tr>
+      <tr><td><span style="color:#1a7a3c;">&#9650;</span> Seller/notes held (net)</td><td class="num">30</td><td class="num">249</td><td class="num">+730%</td><td class="num">—</td><td class="num">—</td></tr>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Investors (net)</td><td class="num">943</td><td class="num">-8,850</td><td class="num">-1039%</td><td class="num">—</td><td class="num">—</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Flips and flipper purchases = recorded deeds, same two months each year; their 2- and 4-year columns are per-month averages of the deed series. The remaining rows come from the investor file, which spans 13 months, so they have no multi-year average (2026: Jun 2026 → Aug 2026; 2025: Feb 2026 → Jun 2026).</div>
+      <!-- AGENT:pulse:end -->
+
+  <h2 class="section-title" id="past-issues">Past Issues</h2>
+  <ul>
+    <!-- AGENT:archive:start -->
+<li><a href="../202608/">August 2026</a></li>
+      <!-- AGENT:archive:end -->
+  </ul>
+
+  <h2 class="section-title" id="methodology">Methodology</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Source Data</h3>
+      <div class="meta">County recorder &amp; assessor via FARES</div>
+      <div class="body">Every figure is computed from recorded instruments (deeds, mortgages, assignments) and assessor property records for the five counties of the Chicago-Elyria MSA. No surveys, no estimates, no listings data.
+        <!-- AGENT:sourcedates:start -->
+<div style="margin-top:.5rem;color:var(--navy);">This edition analyzes transactions dated May 1 – June 30, 2026, as recorded through the 2026-08 data extract.</div>
+      <!-- AGENT:sourcedates:end -->
+      </div>
+    </div>
+    <div class="card">
+      <h3>Who Counts as an Investor</h3>
+      <div class="meta">Transaction-pattern identification</div>
+      <div class="body">Investors are entities whose recorded transaction history looks like investing: rental holding (landlords), short-hold resales (flippers), private mortgage lending, note holding, or contract assignment (wholesalers). Banks, homebuilders, iBuyers, SFR funds, and government entities are identified by name and reported separately from small investors.</div>
+    </div>
+    <div class="card">
+      <h3>How Comparisons Work</h3>
+      <div class="meta">Attribution deltas + same-window comparisons</div>
+      <div class="body">The Market Pulse reports activity attributed between successive data drops, from the per-investor lifetime totals maintained upstream — periods differ in length, so per-month rates are shown. Elsewhere, "vs. year ago" compares the same calendar months one year earlier, counted from the same data extract. Transfers under $5,000 (quitclaims, partial interests) are excluded everywhere. Counts lag recording by 4–8 weeks, and the newest month can grow up to ~15% as late records arrive — direction is reliable before magnitude.</div>
+    </div>
+    <div class="card">
+      <h3>Known Limits</h3>
+      <div class="meta">Floors, not ceilings</div>
+      <div class="body">Wholesale assignments only appear when they touch a recorded deed, so those counts are a floor. Flip hold times are measured from the prior recorded sale. Names are the owner of record, which may be an LLC or trust.</div>
+    </div>
+  </div>
+
+  <h2 class="section-title" id="about">About</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Purpose</h3>
+      <div class="body">A working tool for small real estate investors in Greater Chicago: what actually closed, where, at what prices, and what it suggests checking next — one theme per issue.</div>
+    </div>
+    <div class="card">
+      <h3>Cadence</h3>
+      <div class="body">Published with each bi-monthly data drop, covering the two most recent complete months of recorded activity.</div>
+    </div>
+    <div class="card">
+      <h3>Disclaimer</h3>
+      <div class="body">Observations from public records, not investment, legal, or tax advice. Past activity does not guarantee future results. Verify any property or counterparty independently before transacting.</div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="newsletter" id="newsletter">
+      <div class="mc-form" id="mc_embed_signup">
+        <form action="https://swarmtrace.us14.list-manage.com/subscribe/post?u=9a4ba4adf4888e6de8829189e&amp;id=35bb5ff4ae" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+          <h3>Subscribe</h3>
+          <p>Get each Chicago Investor Brief by email when a new issue is published.</p>
+          <label for="mce-EMAIL">Enter your email address to subscribe</label>
+          <input type="email" name="EMAIL" id="mce-EMAIL" placeholder="EMAIL" required>
+          <input type="hidden" name="tags" value="12497797">
+          <div style="position:absolute; left:-5000px;" aria-hidden="true"><input type="text" name="b_9a4ba4adf4888e6de8829189e_35bb5ff4ae" tabindex="-1" value=""></div>
+          <button type="submit" name="subscribe" id="mc-embedded-subscribe">SUBSCRIBE</button>
+          <p class="mc-note">Unsubscribe any time. Powered by Mailchimp.</p>
+        </form>
+      </div>
+    </div>
+    <div>
+      <h4>Sections</h4>
+      <ul>
+        <li><a href="#this-issue">This Issue</a></li>
+        <li><a href="#playbook">Investor Playbook</a></li>
+        <li><a href="#factoids">Factoids</a></li>
+        <li><a href="#activity-chart">Market Activity</a></li>
+        <li><a href="#where-the-money-went">Where the Money Went</a></li>
+        <li><a href="#market-pulse">Market Pulse</a></li>
+        <li><a href="#methodology">Methodology</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Coverage</h4>
+      <ul>
+        <li>Cook County</li>
+        <li>DeKalb County</li>
+        <li>DuPage County</li>
+        <li>Grundy County</li>
+        <li>Kane County</li>
+        <li>Kendall County</li>
+        <li>Cook (IL) County</li>
+        <li>McHenry County</li>
+        <li>Will County</li>
+        <li>Jasper County</li>
+        <li>Cook (IN) County</li>
+        <li>Newton County</li>
+        <li>Porter County</li>
+        <li>Kenosha County</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:jpritchard@swarmalytics.com">jpritchard@swarmalytics.com</a></li>
+        <li>Powered by <a href="https://www.swarmalytics.com" target="_blank" rel="noopener">Swarmalytics</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    Chicago Real Estate Investor Brief is an independent research publication built from public
+    county records. Not affiliated with any government agency. Nothing here is investment, legal,
+    or tax advice.
+  </div>
+</footer>
+
+</body>
+</html>

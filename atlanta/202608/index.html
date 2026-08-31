@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atlanta Real Estate Investor Brief</title>
+<meta name="description" content="Deed-level data on what small investors are actually doing in the Atlanta-Elyria MSA — flips, rentals, private lending — with a monthly theme and a playbook per investor type.">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  .mc-form { max-width:540px; margin:0 auto; text-align:left; background:#fff; border:1px solid #C0CCD9; border-radius:3px; padding:24px; font-family:Helvetica, sans-serif; color:#3C4858; }
+  .mc-form h3 { font-size:28px; font-weight:700; margin:0 0 8px; }
+  .mc-form p { font-size:16px; margin:0 0 12px; }
+  .mc-form label { display:block; font-weight:700; font-size:16px; margin-bottom:6px; }
+  .mc-form input[type=email] { width:100%; box-sizing:border-box; font-size:16px; padding:10px; border:1px solid #C0CCD9; border-radius:3px; margin-bottom:12px; }
+  .mc-form button { font-size:16px; font-weight:700; color:#fff; background:#3E4857; border:0; border-radius:3px; padding:10px 20px; cursor:pointer; }
+  .mc-form .mc-note { font-size:12px; color:#6b7785; margin-top:10px; }
+</style>
+</head>
+<body>
+
+<div class="utility-bar">
+  <div class="container">
+    <a href="#methodology">Methodology</a>
+    <a href="#about">About</a>
+    <a href="#newsletter">Subscribe</a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container">
+    <div class="brand">
+      <div class="brand-text">
+        <span class="brand-name">Atlanta Real Estate Investor Brief</span>
+        <span class="brand-tag">Deed-level market intelligence for small investors · Atlanta-Elyria MSA</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="primary-nav">
+  <div class="container">
+    <a href="#this-issue" class="active">This Issue</a>
+    <a href="#playbook">Investor Playbook</a>
+    <a href="#factoids">Factoids</a>
+    <a href="#activity-chart">Market Activity</a>
+    <a href="#where-the-money-went">Where the Money Went</a>
+    <a href="#flip-structure">Flip Structure</a>
+    <a href="#flip-pipeline">Flip Pipeline</a>
+      <a href="#financing">Funding</a>
+      <a href="#flipper-profile">Flipper Profile</a>
+    <a href="#market-pulse">Market Pulse</a>
+    <a href="#methodology">Methodology</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <!-- AGENT:hero:start -->
+<h1>August Edition — Thinning Exits</h1>
+    <div class="datarange">Analyzing transactions recorded March 1 – April 30, 2026</div>
+      <!-- AGENT:hero:end -->
+  </div>
+</section>
+
+<main>
+
+  <h2 class="section-title" id="this-issue">This Issue
+    <!-- AGENT:updated:start -->
+<span style="float:right;font-weight:400;text-transform:none;letter-spacing:0;font-size:12px;color:var(--text-muted);">August 2026 edition</span>
+      <!-- AGENT:updated:end -->
+  </h2>
+  <!-- AGENT:theme:start -->
+<div class="forecast-headline">
+    <div>
+      <div class="number">462 vs 682</div>
+      <div class="label">Operators recording at least one flip resale this edition, against the same period a year ago</div>
+    </div>
+    <div class="body">
+      <h3 style="margin:0 0 .5rem;color:var(--navy);">Flip exits are thinning faster than investor buying: 462 operators sold 1,047 homes this edition against 682 selling 1,441 a year ago, while investor purchases held flat</h3>
+      <p>Resale supply from flippers is contracting on both counts: 1,047 flips sold this edition versus 1,441 a year ago, produced by 462 operators versus 682. Investor purchase volume did not follow — 3,732 recorded buys against 3,724 a year ago — so the pullback is concentrated in who is finishing and listing projects, not in who is acquiring. Pricing on the exits barely moved, median $328,000 against $336,500, and gross margin held at $68,000 versus $67,900. Fewer sellers competing on the same rehab product is the operating condition this period.</p>
+    </div>
+  </div>
+      <!-- AGENT:theme:end -->
+
+  <h2 class="section-title" id="playbook">Investor Playbook</h2>
+  <p class="section-sub">What this issue's numbers suggest checking, by investor type. Observations from recorded data — not investment, legal, or tax advice.</p>
+  <!-- AGENT:playbook:start -->
+<div class="card-grid">
+    <div class="card">
+      <h3>Sell into the zips where operators are still closing</h3>
+      <div class="meta">Wholesalers</div>
+      <div class="body">Only 4 assignments surfaced on recorded deeds against 86 a year ago, and that count is a floor. With 462 buyers active instead of 682, the data suggests tightening lists to zips with the most flip resales this edition — 30016 and 30127 at 23 each, 30032 at 20, 30052 at 16 — and to the flip buy box the records show: about 1,728 sqft, 3 bed, median year built 1986.</div>
+    </div>
+    <div class="card">
+      <h3>Less exit competition, unchanged pricing math</h3>
+      <div class="meta">Flippers</div>
+      <div class="body">Median resale held at $180/sqft against $181 a year ago, gross margin at $68,000 (31.5%), hold time 180 days versus 184. Cobb took 15.1% of resales this edition against 12.3%, while Fulton slipped to 13.7% from 15.8%; worth checking whether your acquisition basis in Cobb still supports the $328,000 median exit before adding there.</div>
+    </div>
+    <div class="card">
+      <h3>Basis gap between product types is the decision this period</h3>
+      <div class="meta">Landlords</div>
+      <div class="body">Single family bought at a $310,000 median and $167/sqft; condos at $280,000 and $242/sqft; mobile/manufactured at $102,000 and $87/sqft. With the overall investor median down to $307,750 from $325,000, the data suggests pricing offers off $/sqft rather than headline price, especially in Covington ($195,000 median buy) and Decatur ($215,000).</div>
+    </div>
+    <div class="card">
+      <h3>The small rehab loan is the visible hole</h3>
+      <div class="meta">Private lenders</div>
+      <div class="body">Recorded private loans fell to 28 from 54; over the trailing 12 months 64.6% of observed purchases were financed, 29.8% of those financed loans funded rehab (865), median loan $197,631 at 0.83 loan-to-price. Kiavi wrote 80 loans with a 73.8% rehab share and a $191,250 median purchase. Worth checking demand below that median loan size, where recorded private paper has thinned most.</div>
+    </div>
+    <div class="card">
+      <h3>Small multi is a thin but repricing tape</h3>
+      <div class="meta">Multifamily investors</div>
+      <div class="body">Eighty-nine 2-4 unit purchases at a $660,000 median ($277/sqft) and 29 apartment 5+ purchases at a $1.71M median ($116/sqft) frame the two ends. Small multi was 1.3% of flip resales this edition against 0.1% a year ago — a small base, but the first sign operators are exiting 2-4 unit product; worth tracking before assuming a thin resale bid.</div>
+    </div>
+  </div>
+      <!-- AGENT:playbook:end -->
+
+  <h2 class="section-title" id="factoids">Factoids</h2>
+  <p class="section-sub">Numbers from this period a practitioner would repeat to a colleague. Each computed directly from recorded instruments.</p>
+  <!-- AGENT:factoids:start -->
+<div class="card-grid">
+    <div class="card">
+      <h3>$307,750 — Median investor purchase price this edition</h3>
+      <div class="meta">trending down · was $325,000 a year ago</div>
+      <div class="body">Acquisition basis is lower even though purchase count is flat at 3,732 versus 3,724. Buyers are transacting at the same pace on cheaper paper.</div>
+    </div>
+    <div class="card">
+      <h3>$277/sqft — Median price per square foot on 2-4 unit purchases</h3>
+      <div class="meta">trending up · vs $167/sqft on single family</div>
+      <div class="body">Eighty-nine 2-4 unit deals cleared at a $660,000 median. Small multi carries the widest basis premium in the residential mix this period.</div>
+    </div>
+    <div class="card">
+      <h3>25% — Share of investor purchases by out-of-state buyers</h3>
+      <div class="meta">holding steady · vs 68% local, median $300,000</div>
+      <div class="body">Out-of-state buyers paid a $324,465 median, above the local median. TX (295), AZ (149) and FL (94) lead the feeder states.</div>
+    </div>
+    <div class="card">
+      <h3>28 — Private loans recorded this edition</h3>
+      <div class="meta">trending down · vs 54 a year ago</div>
+      <div class="body">Median recorded private loan rose to $278,000 from $200,000. Fewer, larger recorded notes leave a visible gap at smaller loan sizes.</div>
+    </div>
+    <div class="card">
+      <h3>61 — New seller-financed notes held</h3>
+      <div class="meta">trending up · vs 44 a year ago</div>
+      <div class="body">Median note size fell to $210,067 from $347,500. Seller paper is being written more often on cheaper properties.</div>
+    </div>
+    <div class="card">
+      <h3>3.3% — Share of flip resales in 30135 (Douglasville South)</h3>
+      <div class="meta">trending up · was 1.2% a year ago</div>
+      <div class="body">The largest zip-level share gain this edition. Meanwhile 30157 (Dallas) went from 1.8% of resales to none recorded.</div>
+    </div>
+  </div>
+      <!-- AGENT:factoids:end -->
+
+  <h2 class="section-title" id="activity-chart">Market Activity — Investor Purchases</h2>
+  <p class="section-sub">Monthly count of investor purchases of MSA properties (left axis) and the median purchase price (right axis), trailing 13 months. The most recent month can grow up to ~15% as late recordings arrive.</p>
+  <!-- AGENT:chart:start -->
+<div class="chart-row">
+    <div class="map-panel"><img src="../img/chart_2026-03..2026-04.png" alt="Monthly investor purchases and median price"><div class="caption">Investor purchases per month (bars) and median purchase price (line), trailing 13 months.</div></div>
+    <div class="map-panel"><img src="../img/decades_2026-03..2026-04.png" alt="Investor purchases by decade the house was built"><div class="caption">Which vintage of housing investors bought this edition, by decade built.</div></div>
+  </div>
+      <!-- AGENT:chart:end -->
+
+  <h2 class="section-title" id="where-the-money-went">Where the Money Went</h2>
+  <p class="section-sub">The geography of the period's investor activity: which zip codes saw the most recorded deals, and the largest individual transactions at street level.</p>
+  <!-- AGENT:map:start -->
+<div class="map-panel">
+    <h3 class="subsection-title" style="margin-top:0;">The 8 busiest zip codes for investor deals</h3>
+    <div id="dealmap"></div>
+    <script id="map-data" type="application/json">[{"rank":1,"zip":"30349","area":"South Fulton","lat":33.622488,"lng":-84.523908,"buys":77,"flips":14,"deals":91,"median":"$231,200","medianSale":"$271,450"},{"rank":2,"zip":"30331","area":"Southwest Atlanta","lat":33.705447,"lng":-84.54407,"buys":68,"flips":15,"deals":83,"median":"$201,000","medianSale":"$258,000"},{"rank":3,"zip":"30310","area":"West End","lat":33.726889,"lng":-84.428926,"buys":68,"flips":12,"deals":80,"median":"$221,200","medianSale":"$262,750"},{"rank":4,"zip":"30309","area":"Midtown","lat":33.799851,"lng":-84.385837,"buys":76,"flips":1,"deals":77,"median":"$377,500","medianSale":"n/a"},{"rank":5,"zip":"30318","area":"West Midtown","lat":33.79266,"lng":-84.44801,"buys":71,"flips":6,"deals":77,"median":"$252,900","medianSale":"$378,245"},{"rank":6,"zip":"30052","area":"Loganville","lat":33.817047,"lng":-83.897315,"buys":53,"flips":16,"deals":69,"median":"$350,001","medianSale":"$335,000"},{"rank":7,"zip":"30016","area":"COVINGTON","lat":33.517433,"lng":-83.928703,"buys":44,"flips":23,"deals":67,"median":"$196,000","medianSale":"$277,000"},{"rank":8,"zip":"30032","area":"Belvedere Park","lat":33.740668,"lng":-84.264466,"buys":44,"flips":20,"deals":64,"median":"$215,000","medianSale":"$276,450"}]</script>
+    <div class="caption">Pins rank the busiest zips by recorded investor deals (purchases + flips of existing homes) this period — #1 busiest; orange = top 3; pin size scales with deal volume. Median buy is the typical investor purchase; median sale the typical flip resale. Click a pin for details; full table below.</div>
+    <div class="map-table-wrap">
+    <table class="data">
+      <thead><tr><th>#</th><th>Zip</th><th>Area</th><th class="num">Purchases</th><th class="num">Flips</th><th class="num">Median buy</th><th class="num">Median sale</th></tr></thead><tbody>
+        <tr><td>#1</td><td>30349</td><td>South Fulton</td><td class="num">77</td><td class="num">14</td><td class="num">$231,200</td><td class="num">$271,450</td></tr>
+        <tr><td>#2</td><td>30331</td><td>Southwest Atlanta</td><td class="num">68</td><td class="num">15</td><td class="num">$201,000</td><td class="num">$258,000</td></tr>
+        <tr><td>#3</td><td>30310</td><td>West End</td><td class="num">68</td><td class="num">12</td><td class="num">$221,200</td><td class="num">$262,750</td></tr>
+        <tr><td>#4</td><td>30309</td><td>Midtown</td><td class="num">76</td><td class="num">1</td><td class="num">$377,500</td><td class="num">n/a</td></tr>
+        <tr><td>#5</td><td>30318</td><td>West Midtown</td><td class="num">71</td><td class="num">6</td><td class="num">$252,900</td><td class="num">$378,245</td></tr>
+        <tr><td>#6</td><td>30052</td><td>Loganville</td><td class="num">53</td><td class="num">16</td><td class="num">$350,001</td><td class="num">$335,000</td></tr>
+        <tr><td>#7</td><td>30016</td><td>COVINGTON</td><td class="num">44</td><td class="num">23</td><td class="num">$196,000</td><td class="num">$277,000</td></tr>
+        <tr><td>#8</td><td>30032</td><td>Belvedere Park</td><td class="num">44</td><td class="num">20</td><td class="num">$215,000</td><td class="num">$276,450</td></tr>
+      </tbody></table>
+    </div>
+  </div>
+      <!-- AGENT:map:end -->
+  <script>
+  (function() {
+    var el = document.getElementById('map-data');
+    if (!el || !window.L) return;
+    var zips; try { zips = JSON.parse(el.textContent); } catch (e) { return; }
+    if (!zips.length) return;
+    var map = L.map('dealmap', { scrollWheelZoom: false });
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',
+      { attribution: 'Tiles &copy; Esri', maxZoom: 18 }).addTo(map);
+    var group = [];
+    var maxDeals = Math.max.apply(null, zips.map(function(z){ return z.deals; }));
+    zips.forEach(function(z) {
+      var size = 26 + Math.round(18 * z.deals / maxDeals);
+      var icon = L.divIcon({ className: '', iconSize: [size, size], iconAnchor: [size/2, size/2],
+        html: '<div class="rank-pin' + (z.rank <= 3 ? ' hot' : '') + '" style="width:'+size+'px;height:'+size+'px;">#'+z.rank+'</div>' });
+      var m = L.marker([z.lat, z.lng], { icon: icon }).addTo(map);
+      m.bindPopup('<b>#'+z.rank+' &middot; '+z.zip+'</b>'+(z.area ? ' &mdash; '+z.area : '')+'<br>'+
+        z.buys.toLocaleString()+' purchases &middot; '+z.flips.toLocaleString()+' flips<br>Median buy '+z.median);
+      m.bindTooltip('#'+z.rank+' '+z.zip, { direction: 'top' });
+      group.push(m);
+    });
+    map.fitBounds(L.featureGroup(group).getBounds().pad(0.25));
+  })();
+  </script>
+  <!-- AGENT:deals:start -->
+<h3 class="subsection-title">A representative deal in each of the busiest zips</h3>
+<p class="section-sub">One deal per zip: the largest matching this market's typical house (typical for this market: 1713 sqft, 3 bed, built around 1985; priced within 4x the county assessment and under 5x its own zip's median).</p>
+<div class="deal-strip">
+    <div class="deal-card">
+      <img src="../img/sv_2026-03..2026-04_1_01f9b46c.jpg" alt="Street view of 40 12TH ST NE">
+      <div class="body">
+        <div class="price">$1.2M · Purchase</div>
+        <div class="addr">40 12TH ST NE, Atlanta 30309</div>
+        <div class="meta">Condo · 1,525 sqft · Mar 16</div>
+        <div class="svdate">Street View Mar 2025 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-03..2026-04_2_59adcea3.jpg" alt="Street view of 316 HENRY AARON AVE SW">
+      <div class="body">
+        <div class="price">$749,832 · Purchase</div>
+        <div class="addr">316 HENRY AARON AVE SW, Atlanta 30310</div>
+        <div class="meta">Single family · 1,740 sqft · Mar 30</div>
+        <div class="svdate">Street View Apr 2012 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-03..2026-04_3_fde2d7f3.jpg" alt="Street view of 1805 ELLINGTON ST">
+      <div class="body">
+        <div class="price">$588,400 · Purchase</div>
+        <div class="addr">1805 ELLINGTON ST, Decatur 30032</div>
+        <div class="meta">Single family · 2,464 sqft · Mar 23</div>
+        <div class="svdate">Street View Jan 2025 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-03..2026-04_4_81546c05.jpg" alt="Street view of 305 STERLING CREEK WAY">
+      <div class="body">
+        <div class="price">$457,000 · Purchase</div>
+        <div class="addr">305 STERLING CREEK WAY, Loganville 30052</div>
+        <div class="meta">Single family · 2,343 sqft · Apr 17</div>
+        <div class="svdate">Street View Mar 2026 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-03..2026-04_5_a74a6759.jpg" alt="Street view of 908 SILVERWOOD DR">
+      <div class="body">
+        <div class="price">$350,000 · Purchase</div>
+        <div class="addr">908 SILVERWOOD DR, Atlanta 30349</div>
+        <div class="meta">2–4 unit · 1,232 sqft · Mar 5</div>
+        <div class="svdate">Street View Nov 2024 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-03..2026-04_6_84a92765.jpg" alt="Street view of 3380 COLONY DR">
+      <div class="body">
+        <div class="price">$295,000 · Purchase</div>
+        <div class="addr">3380 COLONY DR, Covington 30016</div>
+        <div class="meta">Single family · 1,868 sqft · Apr 6</div>
+        <div class="svdate">Street View Oct 2022 — before the purchase</div>
+      </div>
+    </div>
+  </div>
+<h3 class="subsection-title">Deal sheet — private lending, in date order</h3>
+<p class="section-sub">Private loans recorded against residential property this period, oldest first.</p>
+<table class="data">
+    <thead><tr><th>Date</th><th>Lender</th><th class="num">Amount</th><th>Property</th><th>Use</th></tr></thead><tbody>
+      <tr><td>Mar 3</td><td>Patrick Burrows</td><td class="num">$240,000</td><td>1781 Jody DR Ne, Marietta 30066</td><td>Single family</td></tr>
+      <tr><td>Mar 10</td><td>Atlfolks Trust</td><td class="num">$275,000</td><td>1300 Lavista DR SW, Mableton 30126</td><td>Single family</td></tr>
+      <tr><td>Mar 10</td><td>Heslep Doug</td><td class="num">$225,000</td><td>4028 Rock Mill DR, Marietta 30062</td><td>Single family</td></tr>
+      <tr><td>Mar 16</td><td>Wallace Robert</td><td class="num">$117,449</td><td>1365 Victoria ST, Douglasville 30134</td><td>Single family</td></tr>
+      <tr><td>Mar 18</td><td>Groover David</td><td class="num">$450,000</td><td>389 England PL, Marietta 30066</td><td>Single family</td></tr>
+      <tr><td>Mar 30</td><td>Fisher Jeffrey</td><td class="num">$248,000</td><td>1299 Seven Springs Cir, Marietta 30068</td><td>Single family</td></tr>
+      <tr><td>Apr 1</td><td>Fisher Jeffrey</td><td class="num">$187,500</td><td>5536 Richland DR, Douglasville 30135</td><td>Single family</td></tr>
+    </tbody></table>
+
+<h3 class="subsection-title">Largest flip margin deals of the period, at street level</h3>
+<p class="section-sub">Gross margin = recorded sale price minus the flipper's recorded purchase price. Purchase deeds are recoverable for roughly 4 in 10 flips; rehab and carry costs are not public record.</p>
+<div class="deal-strip">
+    <div class="deal-card">
+      <img src="../img/svm_2026-03..2026-04_1_c06a5804.jpg" alt="Street view of 1138 JANES LN NE">
+      <div class="body">
+        <div class="price">$1.1M gross · bought $407,500 (Mar 2025) → sold $1.5M</div>
+        <div class="addr">1138 JANES LN NE, Atlanta 30324</div>
+        <div class="meta">Single family · 1,290 sqft · Mar 13</div>
+        <div class="svdate">Street View Apr 2012 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-03..2026-04_2_28164311.jpg" alt="Street view of 2685 KNOX ST NE">
+      <div class="body">
+        <div class="price">$955,000 gross · bought $435,000 (May 2025) → sold $1.4M</div>
+        <div class="addr">2685 KNOX ST NE, Atlanta 30317</div>
+        <div class="meta">Single family · 1,223 sqft · Mar 6</div>
+        <div class="svdate">Street View Jan 2026 — during the flip</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-03..2026-04_3_182e52bb.jpg" alt="Street view of 134 LOST LAKE TRL">
+      <div class="body">
+        <div class="price">$899,000 gross · bought $303,000 (May 2022) → sold $1.2M</div>
+        <div class="addr">134 LOST LAKE TRL, Villa Rica 30180</div>
+        <div class="meta">Single family · 1,572 sqft · Apr 1</div>
+        <div class="svdate">Street View Feb 2023 — during the flip</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-03..2026-04_4_38a0a413.jpg" alt="Street view of 1207 CONWAY RD">
+      <div class="body">
+        <div class="price">$885,000 gross · bought $390,000 (Mar 2025) → sold $1.3M</div>
+        <div class="addr">1207 CONWAY RD, Decatur 30030</div>
+        <div class="meta">Single family · 1,309 sqft · Apr 2</div>
+        <div class="svdate">Street View Dec 2022 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-03..2026-04_5_aa558adb.jpg" alt="Street view of 3342 PRETTY BRANCH DR SE">
+      <div class="body">
+        <div class="price">$730,000 gross · bought $460,000 (Apr 2025) → sold $1.2M</div>
+        <div class="addr">3342 PRETTY BRANCH DR SE, Smyrna 30080</div>
+        <div class="meta">Single family · 1,548 sqft · Mar 2</div>
+        <div class="svdate">Street View Mar 2015 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-03..2026-04_6_19f90d1d.jpg" alt="Street view of 429 WOODHAVEN DR">
+      <div class="body">
+        <div class="price">$720,000 gross · bought $370,000 (Jul 2024) → sold $1.1M</div>
+        <div class="addr">429 WOODHAVEN DR, Decatur 30030</div>
+        <div class="meta">Single family · 1,252 sqft · Mar 13</div>
+        <div class="svdate">Street View Jan 2026 — during the flip</div>
+      </div>
+    </div>
+  </div>
+      <!-- AGENT:deals:end -->
+
+  <h2 class="section-title" id="flip-structure">Flip Structure — Year over Year</h2>
+  <p class="section-sub">How the flip market itself is changing: margins, who is doing the flipping, what they flip, and where. Same two calendar months, this year vs last, from the current data extract.</p>
+  <!-- AGENT:flipstructure:start -->
+<table class="data tight">
+    <thead><tr><th>Flip market structure</th><th class="num">Same months last year</th><th class="num">This edition</th></tr></thead><tbody>
+      <tr><td>Flips sold</td><td class="num">1,441</td><td class="num">1,047</td></tr>
+      <tr><td>Median sale</td><td class="num">$336,500</td><td class="num">$328,000</td></tr>
+      <tr><td>Median $/sqft</td><td class="num">$181</td><td class="num">$180</td></tr>
+      <tr><td>Sale vs county-assessed</td><td class="num">1.06×</td><td class="num">1.05×</td></tr>
+      <tr><td>Median gross margin (matched buys)</td><td class="num">$67,900</td><td class="num">$68,000</td></tr>
+      <tr><td>Median margin %</td><td class="num">32%</td><td class="num">31%</td></tr>
+      <tr><td>Median hold</td><td class="num">6.1 mo</td><td class="num">5.9 mo</td></tr>
+      <tr><td>Homes bought by flippers</td><td class="num">1,590</td><td class="num">1,246</td></tr>
+      <tr><td>Net to inventory (bought − sold)</td><td class="num">+149</td><td class="num">+199</td></tr>
+      <tr><td>Active flippers</td><td class="num">682</td><td class="num">462</td></tr>
+      <tr><td>Top-10 flippers' revenue share</td><td class="num">60%</td><td class="num">53%</td></tr>
+      <tr><td>Median house: sqft / beds / built</td><td class="num">1842 / 3 / 1992</td><td class="num">1728 / 3 / 1986</td></tr>
+      <tr><td>Pre-1950 stock share</td><td class="num">4%</td><td class="num">6%</td></tr>
+      <tr><td>2–4 unit share</td><td class="num">0%</td><td class="num">1%</td></tr>
+      <tr><td>Median distance from downtown</td><td class="num">33.3 km</td><td class="num">32.9 km</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Homes bought counts every deed recorded to a known flipper in the window, resold or not. Net to inventory is that minus flips sold. The standing stock is in the Flip Pipeline section.</div>
+  <div class="pulse-caveat">Attributed profit per flip (per-investor aggregates, by drop period): Feb 26→Jun 26: 1,985 flips, $105,086/flip · Jun 26→Aug 26: 63 flips, $182,083/flip.</div>
+  <div class="pulse-caveat">County mix (share of flips, last year → this edition): Cobb 12%→15% · DeKalb 14%→14% · Fulton 16%→14% · Gwinnett 12%→11% · Henry 6%→7% · Clayton 4%→5% · Douglas 3%→5% · Carroll 4%→5% · Cherokee 5%→4% · Newton 3%→3% · Walton 2%→2% · Forsyth 2%→2% · Rockdale 3%→2% · Bartow 2%→2% · Fayette 1%→2% · Barrow 2%→2% · Butts 0%→1% · Haralson 0%→1% · Pickens 0%→1% · Dawson 0%→1% · Coweta 2%→1% · Meriwether 0%→0% · Lamar 0%→0% · Pike 0%→0% · Spalding 1%→0% · Paulding 4%→0% · Heard 0%→0% · Morgan 0%→0% · Jasper 0%→0%.</div>
+  <div class="pulse-caveat">Biggest zip share moves: Douglasville South 1.2%→3.3% · Dallas 1.8%→0.0% · South Fulton 3.0%→1.3% · 30132 1.6%→0.0% · Duluth 1.6%→0.1%.</div>
+      <!-- AGENT:flipstructure:end -->
+
+  <h2 class="section-title" id="flip-pipeline">Flip Pipeline — Buying, Selling and Inventory</h2>
+  <!-- AGENT:flipflow:start -->
+<p class="section-sub">Homes bought by known flippers and homes they resold, per month, alongside the stock sitting in flipper hands. A house enters inventory when a flipper buys it and leaves on the next recorded sale, at any price. Purchases still unsold after five years are treated as holds and drop out.</p>
+<div class="map-panel"><img src="../img/flipflow_2026-03..2026-04.png" alt="Flip purchases, flip sales and inventory by month with projection"><div class="caption">Solid = recorded, dashed = projected. Green bars are inventory on the right axis: homes bought and not yet resold. Aged out is purchases passing five years unsold. Inventory moves by bought minus resold minus aged out.</div></div>
+<table class="data tight">
+    <thead><tr><th>Flip pipeline</th><th class="num">Bought / mo</th><th class="num">Resold / mo</th><th class="num">Aged out / mo</th><th class="num">Inventory</th></tr></thead><tbody>
+      <tr><td>Latest recorded month (2026-05)</td><td class="num">260</td><td class="num">193</td><td class="num">342</td><td class="num">18,881</td></tr>
+      <tr><td>Projected (2026-11)</td><td class="num">396</td><td class="num">396</td><td class="num">212</td><td class="num">17,131</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Method: a straight-line trend through the last 24 months, adjusted for the month of the year, shown dashed as a projection. The series stops before the newest month or two, where deeds are still recording.</div>
+      <!-- AGENT:flipflow:end -->
+
+  <h2 class="section-title" id="financing">Who's Funding the Deals</h2>
+  <!-- AGENT:financing:start -->
+<p class="section-sub">First mortgages open on flipper purchases from May 2025 – Apr 2026 that have not yet resold. 65% carried recorded debt; the rest closed cash or off-record. Ranked by deal count.</p>
+<div class="card-grid">
+    <div class="card"><h3>65%</h3><div class="meta">Purchases financed</div><div class="body">2,899 of 4,485 flipper purchases carried a recorded first mortgage</div></div>
+    <div class="card"><h3>$197,631</h3><div class="meta">Typical loan</div><div class="body">median 0.83× the purchase price</div></div>
+    <div class="card"><h3>30%</h3><div class="meta">Funding the rehab too</div><div class="body">865 of 2,899 loans exceed the purchase price, so the lender is covering work as well as the buy</div></div>
+  </div>
+<table class="data tight">
+    <thead><tr><th>Lender</th><th class="num">Loans</th><th class="num">Borrowers</th><th class="num">Median loan</th><th class="num">Loan vs price</th><th class="num">Funds rehab</th><th class="num">Median purchase</th></tr></thead><tbody>
+      <tr><td>Kiavi Funding</td><td class="num">80</td><td class="num">47</td><td class="num">$203,900</td><td class="num">1.24×</td><td class="num">74%</td><td class="num">$191,250</td></tr>
+      <tr><td>Rocket Mortgage</td><td class="num">46</td><td class="num">33</td><td class="num">$251,100</td><td class="num">0.90×</td><td class="num">26%</td><td class="num">$275,300</td></tr>
+      <tr><td>Ameris Bank</td><td class="num">43</td><td class="num">35</td><td class="num">$311,355</td><td class="num">0.86×</td><td class="num">16%</td><td class="num">$384,500</td></tr>
+      <tr><td>Wells Fargo Bank NA</td><td class="num">42</td><td class="num">30</td><td class="num">$119,758</td><td class="num">0.48×</td><td class="num">12%</td><td class="num">$268,200</td></tr>
+      <tr><td>Quicken Loans</td><td class="num">38</td><td class="num">26</td><td class="num">$158,982</td><td class="num">0.68×</td><td class="num">11%</td><td class="num">$253,358</td></tr>
+      <tr><td>United Wholesale</td><td class="num">37</td><td class="num">32</td><td class="num">$247,833</td><td class="num">0.86×</td><td class="num">22%</td><td class="num">$310,000</td></tr>
+      <tr><td>Bank of America</td><td class="num">36</td><td class="num">28</td><td class="num">$117,855</td><td class="num">0.58×</td><td class="num">6%</td><td class="num">$220,550</td></tr>
+      <tr><td>Bank of America NA</td><td class="num">32</td><td class="num">25</td><td class="num">$115,183</td><td class="num">0.44×</td><td class="num">6%</td><td class="num">$258,400</td></tr>
+      <tr><td>Kiavi Funding INC</td><td class="num">28</td><td class="num">22</td><td class="num">$360,750</td><td class="num">1.15×</td><td class="num">79%</td><td class="num">$343,500</td></tr>
+      <tr><td>Homebanc MTG</td><td class="num">27</td><td class="num">23</td><td class="num">$123,850</td><td class="num">0.66×</td><td class="num">4%</td><td class="num">$190,200</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Rates and terms are not published: the county feed models both. Borrowers counts the distinct flippers on each lender's book. Loan vs price is the recorded first mortgage divided by what the buyer paid. Above 1.00x the lender is funding purchase plus rehab; below it the buyer brought cash to the table. Blanket mortgages covering several parcels are excluded, as are loans outside 0.1x-3x the price. Rates and points are not public record.</div>
+      <!-- AGENT:financing:end -->
+
+  <h2 class="section-title" id="flipper-profile">Flipper Profile — The Working Flipper</h2>
+  <!-- AGENT:flipperprofile:start -->
+<p class="section-sub">The 70th–90th percentile of local flippers by lifetime flip count — the established operators below the whales: 3–6 lifetime flips each. Bath counts are not in the assessor extract.</p>
+<div class="card-grid">
+    <div class="card"><h3>1,951</h3><div class="meta">Flippers in the band</div><div class="body">each with 3–6 lifetime flips (avg 3.7)</div></div>
+    <div class="card"><h3>$33,500</h3><div class="meta">Median gross margin</div><div class="body">37,829 flips matched to their purchase price</div></div>
+    <div class="card"><h3>5.3 mo</h3><div class="meta">Typical hold</div><div class="body">purchase to resale, matched deals</div></div>
+    <div class="card"><h3>1713 sqft · 3 bd</h3><div class="meta">Typical house</div><div class="body">median year built 1985</div></div>
+    <div class="card"><img src="../img/flippercurve_2026-03..2026-04.png" alt="Flippers by lifetime flip count" style="width:100%;max-width:260px;"><div class="meta">flippers by lifetime flips · orange = this band</div></div>
+  </div>
+  <div class="pulse-caveat">Where they work: Belvedere Park (30032) 3% · West Midtown (30318) 2% · West End (30310) 2% · South Atlanta (30315) 2% · South Fulton (30349) 2%.</div>
+      <!-- AGENT:flipperprofile:end -->
+
+  <h2 class="section-title" id="market-pulse">Market Pulse</h2>
+  <!-- AGENT:pulse:start -->
+<table class="data">
+    <thead><tr><th></th><th class="num">per month, 2025</th><th class="num">per month, 2026</th><th class="num">change</th><th class="num">avg/mo 2yr</th><th class="num">avg/mo 4yr</th></tr></thead><tbody>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Homes bought by flippers</td><td class="num">795</td><td class="num">623</td><td class="num">-22%</td><td class="num">713</td><td class="num">904</td></tr>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Flips sold (deeds)</td><td class="num">721</td><td class="num">524</td><td class="num">-27%</td><td class="num">756</td><td class="num">949</td></tr>
+      <tr><td><span style="color:#1a7a3c;">&#9650;</span> Lending deals funded</td><td class="num">41</td><td class="num">60</td><td class="num">+47%</td><td class="num">—</td><td class="num">—</td></tr>
+      <tr><td><span style="color:#1a7a3c;">&#9650;</span> Seller/notes held (net)</td><td class="num">31</td><td class="num">90</td><td class="num">+193%</td><td class="num">—</td><td class="num">—</td></tr>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Investors (net)</td><td class="num">3,347</td><td class="num">-1,339</td><td class="num">-140%</td><td class="num">—</td><td class="num">—</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Flips and flipper purchases = recorded deeds, same two months each year; their 2- and 4-year columns are per-month averages of the deed series. The remaining rows come from the investor file, which spans 13 months, so they have no multi-year average (2026: Jun 2026 → Aug 2026; 2025: Feb 2026 → Jun 2026).</div>
+      <!-- AGENT:pulse:end -->
+
+  <h2 class="section-title" id="past-issues">Past Issues</h2>
+  <ul>
+    <!-- AGENT:archive:start -->
+<li><a href="../202608/">August 2026</a></li>
+      <!-- AGENT:archive:end -->
+  </ul>
+
+  <h2 class="section-title" id="methodology">Methodology</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Source Data</h3>
+      <div class="meta">County recorder &amp; assessor via FARES</div>
+      <div class="body">Every figure is computed from recorded instruments (deeds, mortgages, assignments) and assessor property records for the five counties of the Atlanta-Elyria MSA. No surveys, no estimates, no listings data.
+        <!-- AGENT:sourcedates:start -->
+<div style="margin-top:.5rem;color:var(--navy);">This edition analyzes transactions dated March 1 – April 30, 2026, as recorded through the 2026-08 data extract.</div>
+      <!-- AGENT:sourcedates:end -->
+      </div>
+    </div>
+    <div class="card">
+      <h3>Who Counts as an Investor</h3>
+      <div class="meta">Transaction-pattern identification</div>
+      <div class="body">Investors are entities whose recorded transaction history looks like investing: rental holding (landlords), short-hold resales (flippers), private mortgage lending, note holding, or contract assignment (wholesalers). Banks, homebuilders, iBuyers, SFR funds, and government entities are identified by name and reported separately from small investors.</div>
+    </div>
+    <div class="card">
+      <h3>How Comparisons Work</h3>
+      <div class="meta">Attribution deltas + same-window comparisons</div>
+      <div class="body">The Market Pulse reports activity attributed between successive data drops, from the per-investor lifetime totals maintained upstream — periods differ in length, so per-month rates are shown. Elsewhere, "vs. year ago" compares the same calendar months one year earlier, counted from the same data extract. Transfers under $5,000 (quitclaims, partial interests) are excluded everywhere. Counts lag recording by 4–8 weeks, and the newest month can grow up to ~15% as late records arrive — direction is reliable before magnitude.</div>
+    </div>
+    <div class="card">
+      <h3>Known Limits</h3>
+      <div class="meta">Floors, not ceilings</div>
+      <div class="body">Wholesale assignments only appear when they touch a recorded deed, so those counts are a floor. Flip hold times are measured from the prior recorded sale. Names are the owner of record, which may be an LLC or trust.</div>
+    </div>
+  </div>
+
+  <h2 class="section-title" id="about">About</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Purpose</h3>
+      <div class="body">A working tool for small real estate investors in Greater Atlanta: what actually closed, where, at what prices, and what it suggests checking next — one theme per issue.</div>
+    </div>
+    <div class="card">
+      <h3>Cadence</h3>
+      <div class="body">Published with each bi-monthly data drop, covering the two most recent complete months of recorded activity.</div>
+    </div>
+    <div class="card">
+      <h3>Disclaimer</h3>
+      <div class="body">Observations from public records, not investment, legal, or tax advice. Past activity does not guarantee future results. Verify any property or counterparty independently before transacting.</div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="newsletter" id="newsletter">
+      <div class="mc-form" id="mc_embed_signup">
+        <form action="https://swarmtrace.us14.list-manage.com/subscribe/post?u=9a4ba4adf4888e6de8829189e&amp;id=35bb5ff4ae" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+          <h3>Subscribe</h3>
+          <p>Get each Atlanta Investor Brief by email when a new issue is published.</p>
+          <label for="mce-EMAIL">Enter your email address to subscribe</label>
+          <input type="email" name="EMAIL" id="mce-EMAIL" placeholder="EMAIL" required>
+          <input type="hidden" name="tags" value="12497795">
+          <div style="position:absolute; left:-5000px;" aria-hidden="true"><input type="text" name="b_9a4ba4adf4888e6de8829189e_35bb5ff4ae" tabindex="-1" value=""></div>
+          <button type="submit" name="subscribe" id="mc-embedded-subscribe">SUBSCRIBE</button>
+          <p class="mc-note">Unsubscribe any time. Powered by Mailchimp.</p>
+        </form>
+      </div>
+    </div>
+    <div>
+      <h4>Sections</h4>
+      <ul>
+        <li><a href="#this-issue">This Issue</a></li>
+        <li><a href="#playbook">Investor Playbook</a></li>
+        <li><a href="#factoids">Factoids</a></li>
+        <li><a href="#activity-chart">Market Activity</a></li>
+        <li><a href="#where-the-money-went">Where the Money Went</a></li>
+        <li><a href="#market-pulse">Market Pulse</a></li>
+        <li><a href="#methodology">Methodology</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Coverage</h4>
+      <ul>
+        <li>Barrow County</li>
+        <li>Bartow County</li>
+        <li>Butts County</li>
+        <li>Carroll County</li>
+        <li>Cherokee County</li>
+        <li>Clayton County</li>
+        <li>Cobb County</li>
+        <li>Coweta County</li>
+        <li>Dawson County</li>
+        <li>DeKalb County</li>
+        <li>Douglas County</li>
+        <li>Fayette County</li>
+        <li>Forsyth County</li>
+        <li>Fulton County</li>
+        <li>Gwinnett County</li>
+        <li>Haralson County</li>
+        <li>Heard County</li>
+        <li>Henry County</li>
+        <li>Jasper County</li>
+        <li>Lamar County</li>
+        <li>Meriwether County</li>
+        <li>Morgan County</li>
+        <li>Newton County</li>
+        <li>Paulding County</li>
+        <li>Pickens County</li>
+        <li>Pike County</li>
+        <li>Rockdale County</li>
+        <li>Spalding County</li>
+        <li>Walton County</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:jpritchard@swarmalytics.com">jpritchard@swarmalytics.com</a></li>
+        <li>Powered by <a href="https://www.swarmalytics.com" target="_blank" rel="noopener">Swarmalytics</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    Atlanta Real Estate Investor Brief is an independent research publication built from public
+    county records. Not affiliated with any government agency. Nothing here is investment, legal,
+    or tax advice.
+  </div>
+</footer>
+
+</body>
+</html>

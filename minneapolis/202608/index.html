@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minneapolis-St. Paul Real Estate Investor Brief</title>
+<meta name="description" content="Deed-level data on what small investors are actually doing in the Minneapolis-St. Paul-Elyria MSA — flips, rentals, private lending — with a monthly theme and a playbook per investor type.">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  .mc-form { max-width:540px; margin:0 auto; text-align:left; background:#fff; border:1px solid #C0CCD9; border-radius:3px; padding:24px; font-family:Helvetica, sans-serif; color:#3C4858; }
+  .mc-form h3 { font-size:28px; font-weight:700; margin:0 0 8px; }
+  .mc-form p { font-size:16px; margin:0 0 12px; }
+  .mc-form label { display:block; font-weight:700; font-size:16px; margin-bottom:6px; }
+  .mc-form input[type=email] { width:100%; box-sizing:border-box; font-size:16px; padding:10px; border:1px solid #C0CCD9; border-radius:3px; margin-bottom:12px; }
+  .mc-form button { font-size:16px; font-weight:700; color:#fff; background:#3E4857; border:0; border-radius:3px; padding:10px 20px; cursor:pointer; }
+  .mc-form .mc-note { font-size:12px; color:#6b7785; margin-top:10px; }
+</style>
+</head>
+<body>
+
+<div class="utility-bar">
+  <div class="container">
+    <a href="#methodology">Methodology</a>
+    <a href="#about">About</a>
+    <a href="#newsletter">Subscribe</a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container">
+    <div class="brand">
+      <div class="brand-text">
+        <span class="brand-name">Minneapolis-St. Paul Real Estate Investor Brief</span>
+        <span class="brand-tag">Deed-level market intelligence for small investors · Minneapolis-St. Paul-Elyria MSA</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="primary-nav">
+  <div class="container">
+    <a href="#this-issue" class="active">This Issue</a>
+    <a href="#playbook">Investor Playbook</a>
+    <a href="#factoids">Factoids</a>
+    <a href="#activity-chart">Market Activity</a>
+    <a href="#where-the-money-went">Where the Money Went</a>
+    <a href="#flip-structure">Flip Structure</a>
+    <a href="#flip-pipeline">Flip Pipeline</a>
+      <a href="#financing">Funding</a>
+      <a href="#flipper-profile">Flipper Profile</a>
+    <a href="#market-pulse">Market Pulse</a>
+    <a href="#methodology">Methodology</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <!-- AGENT:hero:start -->
+<h1>August Edition — Smaller Exits</h1>
+    <div class="datarange">Analyzing transactions recorded May 1 – June 30, 2026</div>
+      <!-- AGENT:hero:end -->
+  </div>
+</section>
+
+<main>
+
+  <h2 class="section-title" id="this-issue">This Issue
+    <!-- AGENT:updated:start -->
+<span style="float:right;font-weight:400;text-transform:none;letter-spacing:0;font-size:12px;color:var(--text-muted);">August 2026 edition</span>
+      <!-- AGENT:updated:end -->
+  </h2>
+  <!-- AGENT:theme:start -->
+<div class="forecast-headline">
+    <div>
+      <div class="number">1,173 sqft vs 1,635</div>
+      <div class="label">Median square footage of homes flippers resold this edition, against the same period a year ago</div>
+    </div>
+    <div class="body">
+      <h3 style="margin:0 0 .5rem;color:var(--navy);">Flip resales this edition are smaller, older and closer in: median exit 1,173 sqft vs 1,635 a year ago</h3>
+      <p>The 267 flips resold this edition had a median 1,173 sqft, down from 1,635 a year ago, and a median year built of 1960 versus 1984. Pre-1950 houses were 36% of flip exits versus 16% a year ago, and the median flip sat 17.3 km from the central business district versus 22.1 km. Ticket size fell with the product — $320,000 median resale versus $405,204 — while price per foot rose to $266.57 from $254.72. Hennepin and Ramsey took 46% and 21% of flip exits, up from 36% and 15%.</p>
+    </div>
+  </div>
+      <!-- AGENT:theme:end -->
+
+  <h2 class="section-title" id="playbook">Investor Playbook</h2>
+  <p class="section-sub">What this issue's numbers suggest checking, by investor type. Observations from recorded data — not investment, legal, or tax advice.</p>
+  <!-- AGENT:playbook:start -->
+<div class="card-grid">
+    <div class="card">
+      <h3>Rebuild the buy box around 1,173 sqft, pre-1950, inside Hennepin and Ramsey</h3>
+      <div class="meta">Wholesalers</div>
+      <div class="body">Only 4 assignments surfaced on recorded deeds this edition versus 17 a year ago, and that count is a floor. The demand that remains is for the product operators are actually reselling: median 1,173 sqft, built 1960, 36% pre-1950, 17.3 km from the CBD. The data suggests working 55412 Camden ($147,500 median investor buy, 11 flips), 55407 Powderhorn ($199,117, 5), 55406 Longfellow ($205,000, 7) and 55428 Crystal ($165,000, 8) rather than the $500,000-plus outer zips where flip share collapsed.</div>
+    </div>
+    <div class="card">
+      <h3>Smaller houses are clearing at a higher price per foot, not a higher ticket</h3>
+      <div class="meta">Flippers</div>
+      <div class="body">Median resale is $320,000 versus $405,204 a year ago, but $266.57/sqft versus $254.72. Sale-to-assessed sits at 1.10, down from 1.15, so the cushion above the county number is thinner. With 361 bought against 267 sold and 79 positions aging out in the latest month, underwriting to the 156-day median hold — and stress-testing to the 9.7-month upper quartile — is worth checking before adding another. Single family was 178 of the resales; the 2-4 unit and condo counts are too thin to plan around.</div>
+    </div>
+    <div class="card">
+      <h3>2-4 unit stock is the cheapest recorded basis per foot this edition</h3>
+      <div class="meta">Landlords</div>
+      <div class="body">Of 1,475 investor purchases, 46 were coded 2-4 units at a $368,500 median and $167/sqft, against $242/sqft for the 664 single family deals and $300/sqft for 245 condos. That gap is the clearest basis argument in the file. With flip buying at 361 against 267 exits, landlords are bidding against operators for the same 1,173-sqft pre-1950 houses in 55106, 55406, 55411 and 55117 — the zips where the mid-tier operator band concentrates.</div>
+    </div>
+    <div class="card">
+      <h3>Recorded private paper is thin; seller notes filled the gap</h3>
+      <div class="meta">Private lenders</div>
+      <div class="body">Recorded private loans fell to 10 from 32 a year ago, while seller-financed notes ran 70 this edition against 40 in the prior period (82 a year ago) at a $266,288 median. Trailing-12-month lender ranks show Kiavi at 53 loans (60% with rehab dollars, $279,100 median) and RFLF 4 at 37 (89% rehab). The opening the data suggests is short-duration rehab paper near the $238,000 trailing median loan on inward, pre-1950 stock, sized to a 156-day median hold. Rates and terms are modelled, not recorded, and are not published here.</div>
+    </div>
+    <div class="card">
+      <h3>Small multi is a growing slice of flip exits while 5+ trades at a premium per foot</h3>
+      <div class="meta">Multifamily investors</div>
+      <div class="body">Small multi was 4.9% of flip resales this edition versus 1.9% a year ago — a small but doubling share worth tracking as renovated 2-4 unit product comes to market. On the buy side, 74 Apartment 5+ deals cleared at a $1,271,000 median and $229/sqft against $167/sqft for 46 recorded 2-4 unit purchases. Where the smaller asset can be operated on the same management line, that spread is the number to test.</div>
+    </div>
+  </div>
+      <!-- AGENT:playbook:end -->
+
+  <h2 class="section-title" id="factoids">Factoids</h2>
+  <p class="section-sub">Numbers from this period a practitioner would repeat to a colleague. Each computed directly from recorded instruments.</p>
+  <!-- AGENT:factoids:start -->
+<div class="card-grid">
+    <div class="card">
+      <h3>1,475 investor purchases at a $367,875 median — Recorded investor purchases and median price this edition</h3>
+      <div class="meta">holding steady · vs 1,520 and $355,000 a year ago</div>
+      <div class="body">Acquisition volume is roughly flat year over year while the median paid is higher. Buy-side competition has not eased even as resale volume fell.</div>
+    </div>
+    <div class="card">
+      <h3>143 flip operators — Distinct operators recording a flip resale this edition</h3>
+      <div class="meta">trending down · vs 258 a year ago</div>
+      <div class="body">The seller field has thinned by nearly half. The top ten operators took 32.2% of flip revenue, down from 37.8% a year ago, so the shrinkage is broad rather than concentrated at the top.</div>
+    </div>
+    <div class="card">
+      <h3>Flippers bought 361 and sold 267, a net +94 to inventory — Flip purchases less flip resales this edition</h3>
+      <div class="meta">trending up · vs a net −13 a year ago</div>
+      <div class="body">Operators added more houses than they cleared this edition, reversing last year's drawdown. Held pipeline stood at 5,044 in the latest month, with 79 positions aging out.</div>
+    </div>
+    <div class="card">
+      <h3>55412 Camden holds 4.1% of flip exits — Zip share of flip resales this edition versus a year ago</h3>
+      <div class="meta">trending up · was 1.0% a year ago</div>
+      <div class="body">55106 Payne-Phalen moved to 3.7% from 1.4% and 55102 West Seventh to 2.6% from 0.3%, while 55340 fell to 0.4% from 3.6% and 55369 Maple Grove to 0.7% from 3.8%. Camden also logged 16 investor buys at a $147,500 median.</div>
+    </div>
+    <div class="card">
+      <h3>10 private loans recorded, median $244,000 — Recorded private loan instruments this edition</h3>
+      <div class="meta">trending down · vs 32 at a $332,552 median a year ago</div>
+      <div class="body">Recorded private lending is scarce, but the trailing-12-month file shows 855 of 1,566 observed purchases financed, a 54.6% share, at a 0.95 median loan-to-price. Rehab dollars were identified in 38.7% of those loans.</div>
+    </div>
+    <div class="card">
+      <h3>156-day median hold — Median days from prior purchase to flip resale this edition</h3>
+      <div class="meta">trending down · vs 177 days a year ago</div>
+      <div class="body">Faster turns paired with a 47.7% median gross margin, up from 44.5% a year ago, on a $100,000 median gross margin. Rehab and carry are not public record, so margins are gross.</div>
+    </div>
+  </div>
+      <!-- AGENT:factoids:end -->
+
+  <h2 class="section-title" id="activity-chart">Market Activity — Investor Purchases</h2>
+  <p class="section-sub">Monthly count of investor purchases of MSA properties (left axis) and the median purchase price (right axis), trailing 13 months. The most recent month can grow up to ~15% as late recordings arrive.</p>
+  <!-- AGENT:chart:start -->
+<div class="chart-row">
+    <div class="map-panel"><img src="../img/chart_2026-05..2026-06.png" alt="Monthly investor purchases and median price"><div class="caption">Investor purchases per month (bars) and median purchase price (line), trailing 13 months.</div></div>
+    <div class="map-panel"><img src="../img/decades_2026-05..2026-06.png" alt="Investor purchases by decade the house was built"><div class="caption">Which vintage of housing investors bought this edition, by decade built.</div></div>
+  </div>
+      <!-- AGENT:chart:end -->
+
+  <h2 class="section-title" id="where-the-money-went">Where the Money Went</h2>
+  <p class="section-sub">The geography of the period's investor activity: which zip codes saw the most recorded deals, and the largest individual transactions at street level.</p>
+  <!-- AGENT:map:start -->
+<div class="map-panel">
+    <h3 class="subsection-title" style="margin-top:0;">The 8 busiest zip codes for investor deals</h3>
+    <div id="dealmap"></div>
+    <script id="map-data" type="application/json">[{"rank":1,"zip":"55044","area":"Lakeville","lat":44.642146,"lng":-93.276446,"buys":25,"flips":2,"deals":27,"median":"$506,093","medianSale":"n/a"},{"rank":2,"zip":"55412","area":"Camden","lat":45.027324,"lng":-93.303612,"buys":16,"flips":11,"deals":27,"median":"$147,500","medianSale":"$246,600"},{"rank":3,"zip":"55407","area":"Powderhorn","lat":44.935036,"lng":-93.253029,"buys":21,"flips":5,"deals":26,"median":"$199,117","medianSale":"$268,000"},{"rank":4,"zip":"55340","area":"HAMEL","lat":45.078263,"lng":-93.572118,"buys":24,"flips":1,"deals":25,"median":"$562,500","medianSale":"n/a"},{"rank":5,"zip":"55406","area":"Longfellow","lat":44.938689,"lng":-93.221042,"buys":17,"flips":7,"deals":24,"median":"$205,000","medianSale":"$260,000"},{"rank":6,"zip":"55423","area":"Richfield","lat":44.877193,"lng":-93.281359,"buys":19,"flips":5,"deals":24,"median":"$280,000","medianSale":"$330,900"},{"rank":7,"zip":"55104","area":"Union Park","lat":44.953894,"lng":-93.164446,"buys":15,"flips":8,"deals":23,"median":"$547,000","medianSale":"$248,750"},{"rank":8,"zip":"55369","area":"Maple Grove","lat":45.127366,"lng":-93.4492,"buys":20,"flips":2,"deals":22,"median":"$309,000","medianSale":"n/a"}]</script>
+    <div class="caption">Pins rank the busiest zips by recorded investor deals (purchases + flips of existing homes) this period — #1 busiest; orange = top 3; pin size scales with deal volume. Median buy is the typical investor purchase; median sale the typical flip resale. Click a pin for details; full table below.</div>
+    <div class="map-table-wrap">
+    <table class="data">
+      <thead><tr><th>#</th><th>Zip</th><th>Area</th><th class="num">Purchases</th><th class="num">Flips</th><th class="num">Median buy</th><th class="num">Median sale</th></tr></thead><tbody>
+        <tr><td>#1</td><td>55044</td><td>Lakeville</td><td class="num">25</td><td class="num">2</td><td class="num">$506,093</td><td class="num">n/a</td></tr>
+        <tr><td>#2</td><td>55412</td><td>Camden</td><td class="num">16</td><td class="num">11</td><td class="num">$147,500</td><td class="num">$246,600</td></tr>
+        <tr><td>#3</td><td>55407</td><td>Powderhorn</td><td class="num">21</td><td class="num">5</td><td class="num">$199,117</td><td class="num">$268,000</td></tr>
+        <tr><td>#4</td><td>55340</td><td>HAMEL</td><td class="num">24</td><td class="num">1</td><td class="num">$562,500</td><td class="num">n/a</td></tr>
+        <tr><td>#5</td><td>55406</td><td>Longfellow</td><td class="num">17</td><td class="num">7</td><td class="num">$205,000</td><td class="num">$260,000</td></tr>
+        <tr><td>#6</td><td>55423</td><td>Richfield</td><td class="num">19</td><td class="num">5</td><td class="num">$280,000</td><td class="num">$330,900</td></tr>
+        <tr><td>#7</td><td>55104</td><td>Union Park</td><td class="num">15</td><td class="num">8</td><td class="num">$547,000</td><td class="num">$248,750</td></tr>
+        <tr><td>#8</td><td>55369</td><td>Maple Grove</td><td class="num">20</td><td class="num">2</td><td class="num">$309,000</td><td class="num">n/a</td></tr>
+      </tbody></table>
+    </div>
+  </div>
+      <!-- AGENT:map:end -->
+  <script>
+  (function() {
+    var el = document.getElementById('map-data');
+    if (!el || !window.L) return;
+    var zips; try { zips = JSON.parse(el.textContent); } catch (e) { return; }
+    if (!zips.length) return;
+    var map = L.map('dealmap', { scrollWheelZoom: false });
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',
+      { attribution: 'Tiles &copy; Esri', maxZoom: 18 }).addTo(map);
+    var group = [];
+    var maxDeals = Math.max.apply(null, zips.map(function(z){ return z.deals; }));
+    zips.forEach(function(z) {
+      var size = 26 + Math.round(18 * z.deals / maxDeals);
+      var icon = L.divIcon({ className: '', iconSize: [size, size], iconAnchor: [size/2, size/2],
+        html: '<div class="rank-pin' + (z.rank <= 3 ? ' hot' : '') + '" style="width:'+size+'px;height:'+size+'px;">#'+z.rank+'</div>' });
+      var m = L.marker([z.lat, z.lng], { icon: icon }).addTo(map);
+      m.bindPopup('<b>#'+z.rank+' &middot; '+z.zip+'</b>'+(z.area ? ' &mdash; '+z.area : '')+'<br>'+
+        z.buys.toLocaleString()+' purchases &middot; '+z.flips.toLocaleString()+' flips<br>Median buy '+z.median);
+      m.bindTooltip('#'+z.rank+' '+z.zip, { direction: 'top' });
+      group.push(m);
+    });
+    map.fitBounds(L.featureGroup(group).getBounds().pad(0.25));
+  })();
+  </script>
+  <!-- AGENT:deals:start -->
+<h3 class="subsection-title">A representative deal in each of the busiest zips</h3>
+<p class="section-sub">One deal per zip: the largest matching this market's typical house (typical for this market: 1322 sqft, 3 bed, built around 1964; priced within 4x the county assessment and under 5x its own zip's median).</p>
+<div class="deal-strip">
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_1_40c527a5.jpg" alt="Street view of 2085 HAMEL RD">
+      <div class="body">
+        <div class="price">$700,000 · Purchase</div>
+        <div class="addr">2085 HAMEL RD, Hamel 55340</div>
+        <div class="meta">Single family · 1,770 sqft · May 4</div>
+        <div class="svdate">Street View Apr 2025 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_2_ebd8489d.jpg" alt="Street view of 7241 HARRIET AVE">
+      <div class="body">
+        <div class="price">$450,000 · Purchase</div>
+        <div class="addr">7241 HARRIET AVE, Minneapolis 55423</div>
+        <div class="meta">Single family · 1,663 sqft · May 1</div>
+        <div class="svdate">Street View Jul 2026 — after the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_3_173eddb2.jpg" alt="Street view of 4300 E 41ST ST">
+      <div class="body">
+        <div class="price">$425,000 · Purchase</div>
+        <div class="addr">4300 E 41ST ST, Minneapolis 55406</div>
+        <div class="meta">Single family · 1,562 sqft · Jun 2</div>
+        <div class="svdate">Street View Nov 2022 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_4_650a96e8.jpg" alt="Street view of 11878 100TH PL N">
+      <div class="body">
+        <div class="price">$377,700 · Purchase</div>
+        <div class="addr">11878 100TH PL N, Maple Grove 55369</div>
+        <div class="meta">Single family · 976 sqft · May 8</div>
+        <div class="svdate">Street View Aug 2025 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_5_ae3423ea.jpg" alt="Street view of 3317 21ST AVE S">
+      <div class="body">
+        <div class="price">$340,000 · Purchase</div>
+        <div class="addr">3317 21ST AVE S, Minneapolis 55407</div>
+        <div class="meta">Single family · 934 sqft · May 26</div>
+        <div class="svdate">Street View Sep 2014 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_6_7d9eb5ab.jpg" alt="Street view of 4211 UPTON AVE N">
+      <div class="body">
+        <div class="price">$337,000 · Purchase</div>
+        <div class="addr">4211 UPTON AVE N, Minneapolis 55412</div>
+        <div class="meta">Single family · 1,341 sqft · Jun 22</div>
+        <div class="svdate">Street View May 2026 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_7_cb7b1c80.jpg" alt="Street view of 1343 SHERBURNE AVE">
+      <div class="body">
+        <div class="price">$300,000 · Purchase</div>
+        <div class="addr">1343 SHERBURNE AVE, Saint Paul 55104</div>
+        <div class="meta">2-4 units · 1,176 sqft · May 11</div>
+        <div class="svdate">Street View Aug 2024 — before the purchase</div>
+      </div>
+    </div>
+  </div>
+<h3 class="subsection-title">Deal sheet — private lending, in date order</h3>
+<p class="section-sub">Private loans recorded against residential property this period, oldest first.</p>
+<table class="data">
+    <thead><tr><th>Date</th><th>Lender</th><th class="num">Amount</th><th>Property</th><th>Use</th></tr></thead><tbody>
+      <tr><td>Jun 29</td><td>Shirmer Mandi</td><td class="num">$238,000</td><td>14183 Finale Ave N, Hugo 55038</td><td>Single family</td></tr>
+      <tr><td>Jun 30</td><td>Wellstone Paul</td><td class="num">$100,000</td><td>2195 Howard CT, Saint Paul 55119</td><td>Single family</td></tr>
+      <tr><td>Jun 30</td><td>Roseville Economic Dev Authori</td><td class="num">$27,500</td><td>157 Grandview Ave W, Saint Paul 55113</td><td>Single family</td></tr>
+    </tbody></table>
+
+<h3 class="subsection-title">Largest flip margin deals of the period, at street level</h3>
+<p class="section-sub">Gross margin = recorded sale price minus the flipper's recorded purchase price. Purchase deeds are recoverable for roughly 4 in 10 flips; rehab and carry costs are not public record.</p>
+<div class="deal-strip">
+    <div class="deal-card">
+      <img src="../img/svm_2026-05..2026-06_1_4024c3d0.jpg" alt="Street view of 5228 ABBOTT AVE S">
+      <div class="body">
+        <div class="price">$1.2M gross · bought $435,000 (Aug 2025) → sold $1.7M</div>
+        <div class="addr">5228 ABBOTT AVE S, Minneapolis 55410</div>
+        <div class="meta">Single family · 1,000 sqft · Jun 1</div>
+        <div class="svdate">Street View Aug 2011 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-05..2026-06_2_9198db14.jpg" alt="Street view of 5400 MALIBU DR">
+      <div class="body">
+        <div class="price">$715,000 gross · bought $560,000 (Sep 2025) → sold $1.3M</div>
+        <div class="addr">5400 MALIBU DR, Minneapolis 55436</div>
+        <div class="meta">Single family · 2,789 sqft · May 28</div>
+        <div class="svdate">Street View Apr 2025 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-05..2026-06_3_205f3cc9.jpg" alt="Street view of 10752 MOUNT CURVE RD">
+      <div class="body">
+        <div class="price">$662,000 gross · bought $680,000 (Jan 2026) → sold $1.3M</div>
+        <div class="addr">10752 MOUNT CURVE RD, Eden Prairie 55347</div>
+        <div class="meta">Single family · 4,221 sqft · Jun 5</div>
+        <div class="svdate">Street View Jun 2019 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-05..2026-06_4_24f5b873.jpg" alt="Street view of 4205 W 42ND ST">
+      <div class="body">
+        <div class="price">$532,000 gross · bought $800,000 (Sep 2025) → sold $1.3M</div>
+        <div class="addr">4205 W 42ND ST, Minneapolis 55416</div>
+        <div class="meta">Single family · 1,874 sqft · Jun 9</div>
+        <div class="svdate">Street View Apr 2025 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-05..2026-06_5_251879ad.jpg" alt="Street view of 694 MEADOW LN">
+      <div class="body">
+        <div class="price">$327,500 gross · bought $672,500 (May 2025) → sold $1.0M</div>
+        <div class="addr">694 MEADOW LN, Saint Paul 55125</div>
+        <div class="meta">Single family · 3,541 sqft · Jun 5</div>
+        <div class="svdate">Street View Aug 2024 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-05..2026-06_6_a75e7e84.jpg" alt="Street view of 15055 UPPER 63RD ST N">
+      <div class="body">
+        <div class="price">$279,222 gross · bought $120,678 (Oct 2025) → sold $399,900</div>
+        <div class="addr">15055 UPPER 63RD ST N, Stillwater 55082</div>
+        <div class="meta">Single family · 1,340 sqft · Jun 11</div>
+        <div class="svdate">Street View Aug 2024 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+  </div>
+      <!-- AGENT:deals:end -->
+
+  <h2 class="section-title" id="flip-structure">Flip Structure — Year over Year</h2>
+  <p class="section-sub">How the flip market itself is changing: margins, who is doing the flipping, what they flip, and where. Same two calendar months, this year vs last, from the current data extract.</p>
+  <!-- AGENT:flipstructure:start -->
+<table class="data tight">
+    <thead><tr><th>Flip market structure</th><th class="num">Same months last year</th><th class="num">This edition</th></tr></thead><tbody>
+      <tr><td>Flips sold</td><td class="num">580</td><td class="num">267</td></tr>
+      <tr><td>Median sale</td><td class="num">$405,204</td><td class="num">$320,000</td></tr>
+      <tr><td>Median $/sqft</td><td class="num">$255</td><td class="num">$267</td></tr>
+      <tr><td>Sale vs county-assessed</td><td class="num">1.15×</td><td class="num">1.10×</td></tr>
+      <tr><td>Median gross margin (matched buys)</td><td class="num">$103,250</td><td class="num">$100,000</td></tr>
+      <tr><td>Median margin %</td><td class="num">44%</td><td class="num">48%</td></tr>
+      <tr><td>Median hold</td><td class="num">5.8 mo</td><td class="num">5.1 mo</td></tr>
+      <tr><td>Homes bought by flippers</td><td class="num">567</td><td class="num">361</td></tr>
+      <tr><td>Net to inventory (bought − sold)</td><td class="num">−13</td><td class="num">+94</td></tr>
+      <tr><td>Active flippers</td><td class="num">258</td><td class="num">143</td></tr>
+      <tr><td>Top-10 flippers' revenue share</td><td class="num">38%</td><td class="num">32%</td></tr>
+      <tr><td>Median house: sqft / beds / built</td><td class="num">1635 / 3 / 1984</td><td class="num">1173 / 3 / 1960</td></tr>
+      <tr><td>Pre-1950 stock share</td><td class="num">16%</td><td class="num">36%</td></tr>
+      <tr><td>2–4 unit share</td><td class="num">2%</td><td class="num">5%</td></tr>
+      <tr><td>Median distance from downtown</td><td class="num">22.1 km</td><td class="num">17.3 km</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Homes bought counts every deed recorded to a known flipper in the window, resold or not. Net to inventory is that minus flips sold. The standing stock is in the Flip Pipeline section.</div>
+  <div class="pulse-caveat">Attributed profit per flip (per-investor aggregates, by drop period): Feb 26→Jun 26: 873 flips, n/a (revisions) · Jun 26→Aug 26: 298 flips, n/a (revisions).</div>
+  <div class="pulse-caveat">County mix (share of flips, last year → this edition): Hennepin 36%→46% · Ramsey 15%→21% · Washington 10%→8% · Anoka 12%→7% · Dakota 11%→6% · Wright 5%→3% · Scott 4%→2% · Isanti 0%→1% · Chisago 0%→1% · Sherburne 2%→1% · Carver 1%→1% · Le Sueur 0%→0% · Mille Lacs 1%→0%.</div>
+  <div class="pulse-caveat">Biggest zip share moves: 55340 3.6%→0.4% · Camden 1.0%→4.1% · Maple Grove 3.8%→0.7% · Payne-Phalen 1.4%→3.7% · Union Park 0.7%→3.0% · West Seventh 0.3%→2.6%.</div>
+      <!-- AGENT:flipstructure:end -->
+
+  <h2 class="section-title" id="flip-pipeline">Flip Pipeline — Buying, Selling and Inventory</h2>
+  <!-- AGENT:flipflow:start -->
+<p class="section-sub">Homes bought by known flippers and homes they resold, per month, alongside the stock sitting in flipper hands. A house enters inventory when a flipper buys it and leaves on the next recorded sale, at any price. Purchases still unsold after five years are treated as holds and drop out.</p>
+<div class="map-panel"><img src="../img/flipflow_2026-05..2026-06.png" alt="Flip purchases, flip sales and inventory by month with projection"><div class="caption">Solid = recorded, dashed = projected. Green bars are inventory on the right axis: homes bought and not yet resold. Aged out is purchases passing five years unsold. Inventory moves by bought minus resold minus aged out.</div></div>
+<table class="data tight">
+    <thead><tr><th>Flip pipeline</th><th class="num">Bought / mo</th><th class="num">Resold / mo</th><th class="num">Aged out / mo</th><th class="num">Inventory</th></tr></thead><tbody>
+      <tr><td>Latest recorded month (2026-05)</td><td class="num">212</td><td class="num">227</td><td class="num">79</td><td class="num">5,044</td></tr>
+      <tr><td>Projected (2026-11)</td><td class="num">113</td><td class="num">129</td><td class="num">85</td><td class="num">4,405</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Method: a straight-line trend through the last 24 months, adjusted for the month of the year, shown dashed as a projection. The series stops before the newest month or two, where deeds are still recording.</div>
+      <!-- AGENT:flipflow:end -->
+
+  <h2 class="section-title" id="financing">Who's Funding the Deals</h2>
+  <!-- AGENT:financing:start -->
+<p class="section-sub">First mortgages open on flipper purchases from Jul 2025 – Jun 2026 that have not yet resold. 55% carried recorded debt; the rest closed cash or off-record. Ranked by deal count.</p>
+<div class="card-grid">
+    <div class="card"><h3>55%</h3><div class="meta">Purchases financed</div><div class="body">855 of 1,566 flipper purchases carried a recorded first mortgage</div></div>
+    <div class="card"><h3>$238,000</h3><div class="meta">Typical loan</div><div class="body">median 0.95× the purchase price</div></div>
+    <div class="card"><h3>39%</h3><div class="meta">Funding the rehab too</div><div class="body">331 of 855 loans exceed the purchase price, so the lender is covering work as well as the buy</div></div>
+  </div>
+<table class="data tight">
+    <thead><tr><th>Lender</th><th class="num">Loans</th><th class="num">Borrowers</th><th class="num">Median loan</th><th class="num">Loan vs price</th><th class="num">Funds rehab</th><th class="num">Median purchase</th></tr></thead><tbody>
+      <tr><td>Kiavi Funding INC</td><td class="num">53</td><td class="num">33</td><td class="num">$279,100</td><td class="num">1.16×</td><td class="num">60%</td><td class="num">$238,000</td></tr>
+      <tr><td>RFLF 4 LLC</td><td class="num">37</td><td class="num">11</td><td class="num">$254,500</td><td class="num">1.23×</td><td class="num">89%</td><td class="num">$211,000</td></tr>
+      <tr><td>Wells Fargo Bank NA</td><td class="num">32</td><td class="num">24</td><td class="num">$166,819</td><td class="num">0.69×</td><td class="num">16%</td><td class="num">$269,950</td></tr>
+      <tr><td>Bell Bank</td><td class="num">22</td><td class="num">21</td><td class="num">$336,850</td><td class="num">0.87×</td><td class="num">18%</td><td class="num">$410,950</td></tr>
+      <tr><td>Bridgewater Bank</td><td class="num">20</td><td class="num">9</td><td class="num">$228,500</td><td class="num">0.87×</td><td class="num">45%</td><td class="num">$208,500</td></tr>
+      <tr><td>Coulee Bank</td><td class="num">20</td><td class="num">5</td><td class="num">$198,992</td><td class="num">0.96×</td><td class="num">30%</td><td class="num">$208,500</td></tr>
+      <tr><td>Us Bank NA</td><td class="num">14</td><td class="num">13</td><td class="num">$239,781</td><td class="num">0.70×</td><td class="num">7%</td><td class="num">$318,450</td></tr>
+      <tr><td>Cove Lending LLC</td><td class="num">13</td><td class="num">7</td><td class="num">$280,750</td><td class="num">1.24×</td><td class="num">92%</td><td class="num">$220,000</td></tr>
+      <tr><td>Lakeview Bank</td><td class="num">13</td><td class="num">7</td><td class="num">$216,976</td><td class="num">0.80×</td><td class="num">15%</td><td class="num">$271,220</td></tr>
+      <tr><td>Granite Bank</td><td class="num">12</td><td class="num">10</td><td class="num">$322,300</td><td class="num">0.98×</td><td class="num">42%</td><td class="num">$346,000</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Rates and terms are not published: the county feed models both. Borrowers counts the distinct flippers on each lender's book. Loan vs price is the recorded first mortgage divided by what the buyer paid. Above 1.00x the lender is funding purchase plus rehab; below it the buyer brought cash to the table. Blanket mortgages covering several parcels are excluded, as are loans outside 0.1x-3x the price. Rates and points are not public record.</div>
+      <!-- AGENT:financing:end -->
+
+  <h2 class="section-title" id="flipper-profile">Flipper Profile — The Working Flipper</h2>
+  <!-- AGENT:flipperprofile:start -->
+<p class="section-sub">The 70th–90th percentile of local flippers by lifetime flip count — the established operators below the whales: 3–8 lifetime flips each. Bath counts are not in the assessor extract.</p>
+<div class="card-grid">
+    <div class="card"><h3>862</h3><div class="meta">Flippers in the band</div><div class="body">each with 3–8 lifetime flips (avg 4.1)</div></div>
+    <div class="card"><h3>$76,500</h3><div class="meta">Median gross margin</div><div class="body">11,892 flips matched to their purchase price</div></div>
+    <div class="card"><h3>6.2 mo</h3><div class="meta">Typical hold</div><div class="body">purchase to resale, matched deals</div></div>
+    <div class="card"><h3>1322 sqft · 3 bd</h3><div class="meta">Typical house</div><div class="body">median year built 1964</div></div>
+    <div class="card"><img src="../img/flippercurve_2026-05..2026-06.png" alt="Flippers by lifetime flip count" style="width:100%;max-width:260px;"><div class="meta">flippers by lifetime flips · orange = this band</div></div>
+  </div>
+  <div class="pulse-caveat">Where they work: Payne-Phalen (55106) 3% · Longfellow (55406) 2% · Near North (55411) 2% · Audubon Park (55418) 2% · North End (55117) 2%.</div>
+      <!-- AGENT:flipperprofile:end -->
+
+  <h2 class="section-title" id="market-pulse">Market Pulse</h2>
+  <!-- AGENT:pulse:start -->
+<table class="data">
+    <thead><tr><th></th><th class="num">per month, 2025</th><th class="num">per month, 2026</th><th class="num">change</th><th class="num">avg/mo 2yr</th><th class="num">avg/mo 4yr</th></tr></thead><tbody>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Homes bought by flippers</td><td class="num">284</td><td class="num">181</td><td class="num">-36%</td><td class="num">301</td><td class="num">356</td></tr>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Flips sold (deeds)</td><td class="num">290</td><td class="num">134</td><td class="num">-54%</td><td class="num">320</td><td class="num">341</td></tr>
+      <tr><td><span style="color:#1a7a3c;">&#9650;</span> Lending deals funded</td><td class="num">29</td><td class="num">86</td><td class="num">+197%</td><td class="num">—</td><td class="num">—</td></tr>
+      <tr><td><span style="color:#1a7a3c;">&#9650;</span> Seller/notes held (net)</td><td class="num">-25</td><td class="num">121</td><td class="num">+594%</td><td class="num">—</td><td class="num">—</td></tr>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Investors (net)</td><td class="num">89</td><td class="num">-2,425</td><td class="num">-2817%</td><td class="num">—</td><td class="num">—</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Flips and flipper purchases = recorded deeds, same two months each year; their 2- and 4-year columns are per-month averages of the deed series. The remaining rows come from the investor file, which spans 13 months, so they have no multi-year average (2026: Jun 2026 → Aug 2026; 2025: Feb 2026 → Jun 2026).</div>
+      <!-- AGENT:pulse:end -->
+
+  <h2 class="section-title" id="past-issues">Past Issues</h2>
+  <ul>
+    <!-- AGENT:archive:start -->
+<li><a href="../202608/">August 2026</a></li>
+      <!-- AGENT:archive:end -->
+  </ul>
+
+  <h2 class="section-title" id="methodology">Methodology</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Source Data</h3>
+      <div class="meta">County recorder &amp; assessor via FARES</div>
+      <div class="body">Every figure is computed from recorded instruments (deeds, mortgages, assignments) and assessor property records for the five counties of the Minneapolis-St. Paul-Elyria MSA. No surveys, no estimates, no listings data.
+        <!-- AGENT:sourcedates:start -->
+<div style="margin-top:.5rem;color:var(--navy);">This edition analyzes transactions dated May 1 – June 30, 2026, as recorded through the 2026-08 data extract.</div>
+      <!-- AGENT:sourcedates:end -->
+      </div>
+    </div>
+    <div class="card">
+      <h3>Who Counts as an Investor</h3>
+      <div class="meta">Transaction-pattern identification</div>
+      <div class="body">Investors are entities whose recorded transaction history looks like investing: rental holding (landlords), short-hold resales (flippers), private mortgage lending, note holding, or contract assignment (wholesalers). Banks, homebuilders, iBuyers, SFR funds, and government entities are identified by name and reported separately from small investors.</div>
+    </div>
+    <div class="card">
+      <h3>How Comparisons Work</h3>
+      <div class="meta">Attribution deltas + same-window comparisons</div>
+      <div class="body">The Market Pulse reports activity attributed between successive data drops, from the per-investor lifetime totals maintained upstream — periods differ in length, so per-month rates are shown. Elsewhere, "vs. year ago" compares the same calendar months one year earlier, counted from the same data extract. Transfers under $5,000 (quitclaims, partial interests) are excluded everywhere. Counts lag recording by 4–8 weeks, and the newest month can grow up to ~15% as late records arrive — direction is reliable before magnitude.</div>
+    </div>
+    <div class="card">
+      <h3>Known Limits</h3>
+      <div class="meta">Floors, not ceilings</div>
+      <div class="body">Wholesale assignments only appear when they touch a recorded deed, so those counts are a floor. Flip hold times are measured from the prior recorded sale. Names are the owner of record, which may be an LLC or trust.</div>
+    </div>
+  </div>
+
+  <h2 class="section-title" id="about">About</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Purpose</h3>
+      <div class="body">A working tool for small real estate investors in Greater Minneapolis-St. Paul: what actually closed, where, at what prices, and what it suggests checking next — one theme per issue.</div>
+    </div>
+    <div class="card">
+      <h3>Cadence</h3>
+      <div class="body">Published with each bi-monthly data drop, covering the two most recent complete months of recorded activity.</div>
+    </div>
+    <div class="card">
+      <h3>Disclaimer</h3>
+      <div class="body">Observations from public records, not investment, legal, or tax advice. Past activity does not guarantee future results. Verify any property or counterparty independently before transacting.</div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="newsletter" id="newsletter">
+      <div class="mc-form" id="mc_embed_signup">
+        <form action="https://swarmtrace.us14.list-manage.com/subscribe/post?u=9a4ba4adf4888e6de8829189e&amp;id=35bb5ff4ae" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+          <h3>Subscribe</h3>
+          <p>Get each Twin Cities Investor Brief by email when a new issue is published.</p>
+          <label for="mce-EMAIL">Enter your email address to subscribe</label>
+          <input type="email" name="EMAIL" id="mce-EMAIL" placeholder="EMAIL" required>
+          <input type="hidden" name="tags" value="12497796">
+          <div style="position:absolute; left:-5000px;" aria-hidden="true"><input type="text" name="b_9a4ba4adf4888e6de8829189e_35bb5ff4ae" tabindex="-1" value=""></div>
+          <button type="submit" name="subscribe" id="mc-embedded-subscribe">SUBSCRIBE</button>
+          <p class="mc-note">Unsubscribe any time. Powered by Mailchimp.</p>
+        </form>
+      </div>
+    </div>
+    <div>
+      <h4>Sections</h4>
+      <ul>
+        <li><a href="#this-issue">This Issue</a></li>
+        <li><a href="#playbook">Investor Playbook</a></li>
+        <li><a href="#factoids">Factoids</a></li>
+        <li><a href="#activity-chart">Market Activity</a></li>
+        <li><a href="#where-the-money-went">Where the Money Went</a></li>
+        <li><a href="#market-pulse">Market Pulse</a></li>
+        <li><a href="#methodology">Methodology</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Coverage</h4>
+      <ul>
+        <li>Anoka County</li>
+        <li>Carver County</li>
+        <li>Chisago County</li>
+        <li>Dakota County</li>
+        <li>Hennepin County</li>
+        <li>Isanti County</li>
+        <li>Le Sueur County</li>
+        <li>Mille Lacs County</li>
+        <li>Ramsey County</li>
+        <li>Scott County</li>
+        <li>Sherburne County</li>
+        <li>Sibley County</li>
+        <li>Washington County</li>
+        <li>Wright County</li>
+        <li>Pierce County</li>
+        <li>St. Croix County</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:jpritchard@swarmalytics.com">jpritchard@swarmalytics.com</a></li>
+        <li>Powered by <a href="https://www.swarmalytics.com" target="_blank" rel="noopener">Swarmalytics</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    Minneapolis-St. Paul Real Estate Investor Brief is an independent research publication built from public
+    county records. Not affiliated with any government agency. Nothing here is investment, legal,
+    or tax advice.
+  </div>
+</footer>
+
+</body>
+</html>
