@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Louisville Real Estate Investor Brief</title>
+<meta name="description" content="Deed-level data on what small investors are actually doing in the Louisville-Elyria MSA — flips, rentals, private lending — with a monthly theme and a playbook per investor type.">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  .mc-form { max-width:540px; margin:0 auto; text-align:left; background:#fff; border:1px solid #C0CCD9; border-radius:3px; padding:24px; font-family:Helvetica, sans-serif; color:#3C4858; }
+  .mc-form h3 { font-size:28px; font-weight:700; margin:0 0 8px; }
+  .mc-form p { font-size:16px; margin:0 0 12px; }
+  .mc-form label { display:block; font-weight:700; font-size:16px; margin-bottom:6px; }
+  .mc-form input[type=email] { width:100%; box-sizing:border-box; font-size:16px; padding:10px; border:1px solid #C0CCD9; border-radius:3px; margin-bottom:12px; }
+  .mc-form button { font-size:16px; font-weight:700; color:#fff; background:#3E4857; border:0; border-radius:3px; padding:10px 20px; cursor:pointer; }
+  .mc-form .mc-note { font-size:12px; color:#6b7785; margin-top:10px; }
+</style>
+</head>
+<body>
+
+<div class="utility-bar">
+  <div class="container">
+    <a href="#methodology">Methodology</a>
+    <a href="#about">About</a>
+    <a href="#newsletter">Subscribe</a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container">
+    <div class="brand">
+      <div class="brand-text">
+        <span class="brand-name">Louisville Real Estate Investor Brief</span>
+        <span class="brand-tag">Deed-level market intelligence for small investors · Louisville-Elyria MSA</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="primary-nav">
+  <div class="container">
+    <a href="#this-issue" class="active">This Issue</a>
+    <a href="#playbook">Investor Playbook</a>
+    <a href="#factoids">Factoids</a>
+    <a href="#activity-chart">Market Activity</a>
+    <a href="#where-the-money-went">Where the Money Went</a>
+    <a href="#flip-structure">Flip Structure</a>
+    <a href="#flip-pipeline">Flip Pipeline</a>
+      <a href="#financing">Funding</a>
+      <a href="#flipper-profile">Flipper Profile</a>
+    <a href="#market-pulse">Market Pulse</a>
+    <a href="#methodology">Methodology</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <!-- AGENT:hero:start -->
+<h1>August Edition — Margin Squeeze</h1>
+    <div class="datarange">Analyzing transactions recorded March 1 – April 30, 2026</div>
+      <!-- AGENT:hero:end -->
+  </div>
+</section>
+
+<main>
+
+  <h2 class="section-title" id="this-issue">This Issue
+    <!-- AGENT:updated:start -->
+<span style="float:right;font-weight:400;text-transform:none;letter-spacing:0;font-size:12px;color:var(--text-muted);">August 2026 edition</span>
+      <!-- AGENT:updated:end -->
+  </h2>
+  <!-- AGENT:theme:start -->
+<div class="forecast-headline">
+    <div>
+      <div class="number">$88,450 vs $105,000</div>
+      <div class="label">Median gross margin on flips resold this edition against a year ago, with the median resale price effectively flat at $225,000 vs $224,000</div>
+    </div>
+    <div class="body">
+      <h3 style="margin:0 0 .5rem;color:var(--navy);">Flip resale prices held flat while gross margins compressed: the squeeze moved to the acquisition side</h3>
+      <p>Flip exits held their price: 154 flips cleared at a median $225,000 against $224,000 a year ago, and per-foot pricing rose to $197.18 from $182.88. The spread did not hold. Median gross margin fell to $88,450 from $105,000, and margin over basis to 54% from 83%, which puts the compression on the buy side rather than the exit. Operators also turned stock faster, a median 173.5 days held versus 209. Margins here are gross — rehab and carry are not in public record — so the recorded cushion overstates what is left net.</p>
+    </div>
+  </div>
+      <!-- AGENT:theme:end -->
+
+  <h2 class="section-title" id="playbook">Investor Playbook</h2>
+  <p class="section-sub">What this issue's numbers suggest checking, by investor type. Observations from recorded data — not investment, legal, or tax advice.</p>
+  <!-- AGENT:playbook:start -->
+<div class="card-grid">
+    <div class="card">
+      <h3>Price the assignment to a 54% gross margin, not last year's 83%</h3>
+      <div class="meta">Wholesalers</div>
+      <div class="body">The buyer pool is underwriting to a median $88,450 gross spread, down from $105,000, so contracts written at a year-ago basis are the ones sitting. The data suggests the deepest buy-side volume is still in 40214 ($167,500 median buy), 40216 ($174,000), 40215 ($109,098) and 40211 ($69,000). Only 4 assignments surfaced on recorded deeds this edition — treat that as a floor, not the market.</div>
+    </div>
+    <div class="card">
+      <h3>Hold the exit assumption, cut the basis</h3>
+      <div class="meta">Flippers</div>
+      <div class="body">Resale medians did not move ($225,000 vs $224,000) and per-foot exits improved to $197.18, so the loss came from acquisition. Worth re-running offers against the standing product profile — 1,222 sqft, 3 beds, built 1963, 22.6% pre-1950 — and a 173.5-day median hold, which is five weeks shorter than a year ago. Sale-to-assessed slipped to 1.41 from 1.49, a signal that stretch exits are getting harder to prove out.</div>
+    </div>
+    <div class="card">
+      <h3>Watch tired flip stock and the 2-4 unit basis gap</h3>
+      <div class="meta">Landlords</div>
+      <div class="body">61 flips aged out of the pipeline in the latest recorded month, the highest reading in this series' recent run, and pipeline inventory drew down to 3,624 from 3,938 in May 2025 — that combination usually produces sellers with holding fatigue. On basis, 2-4 units traded at $129/sqft against $147/sqft for single family (25 vs 774 deals), which is worth checking parcel by parcel before defaulting to houses.</div>
+    </div>
+    <div class="card">
+      <h3>Recorded private paper thinned while seller notes filled in</h3>
+      <div class="meta">Private lenders</div>
+      <div class="body">37 recorded private loans against 87 a year ago, at a $124,500 median versus $150,000. Over the trailing twelve months 49.7% of 837 observed purchases carried recorded financing and 69.5% of those 416 loans funded rehab, with a median loan of $155,000 at a 1.25 loan-to-price. The gap now sits in short-hold rehab paper on sub-$200,000 basis; note that rates and terms are not recorded and are not published here.</div>
+    </div>
+    <div class="card">
+      <h3>Small multi has basis advantage and a thin exit</h3>
+      <div class="meta">Multifamily investors</div>
+      <div class="body">Apartment 5+ cleared 31 deals at a $550,000 median ($156/sqft) and 2-4 units 25 deals at $215,000 ($129/sqft). But small multi was only 1.3% of flips resold, so an exit-by-resale plan has almost no comp support — the data supports underwriting these as holds. Recorded activity clustered in Jefferson County, which took 78.6% of flips against 71.8% a year ago.</div>
+    </div>
+  </div>
+      <!-- AGENT:playbook:end -->
+
+  <h2 class="section-title" id="factoids">Factoids</h2>
+  <p class="section-sub">Numbers from this period a practitioner would repeat to a colleague. Each computed directly from recorded instruments.</p>
+  <!-- AGENT:factoids:start -->
+<div class="card-grid">
+    <div class="card">
+      <h3>1,120 investor purchases at a $199,000 median — Recorded residential investor purchases this edition and their median price</h3>
+      <div class="meta">trending up · vs 956 at $210,000 a year ago</div>
+      <div class="body">Volume is up 17% year over year while the median price paid is down $11,000. More deals are clearing at a lower headline basis, though flip margin data suggests rehab-grade product is not getting cheaper.</div>
+    </div>
+    <div class="card">
+      <h3>$197.18 per sqft on flip resales — Median resale price per square foot on flips sold, against the same period a year ago</h3>
+      <div class="meta">trending up · vs $182.88 a year ago</div>
+      <div class="body">Exit pricing per foot improved on essentially unchanged product — median 1,222 sqft, 3 beds, built 1963. Underwriting an exit near this per-foot level is defensible; underwriting last year's margin is not.</div>
+    </div>
+    <div class="card">
+      <h3>173.5 days median hold — Median days held on flips resold this edition versus a year ago</h3>
+      <div class="meta">trending down · vs 209 days a year ago</div>
+      <div class="body">Turn times shortened by roughly five weeks at the median, with 28% of resales inside 90 days. Faster turns reduce carry, which matters more now that gross spread is thinner.</div>
+    </div>
+    <div class="card">
+      <h3>45.8% top-10 revenue share — Share of flip resale revenue recorded by the ten largest operators, versus a year ago</h3>
+      <div class="meta">trending up · vs 34.1% a year ago</div>
+      <div class="body">Resale dollars are more concentrated in a handful of operators than a year ago. Sellers of rehab-grade inventory have fewer high-volume end buyers to shop to.</div>
+    </div>
+    <div class="card">
+      <h3>129 seller-held notes vs 37 recorded private loans — New seller-financed notes and recorded private loans this edition</h3>
+      <div class="meta">trending up · notes were 48 and private loans 87 a year ago</div>
+      <div class="body">Seller paper nearly tripled year over year at a $160,000 median while recorded private loans fell 57% to a $124,500 median. Structured seller terms are absorbing financing that used to appear as recorded third-party debt.</div>
+    </div>
+    <div class="card">
+      <h3>40218 at 5.8% of flips, 40219 at 7.1% — Zip share of flips resold this edition versus the same period a year ago</h3>
+      <div class="meta">trending up · 40218 was 1.0% and 40219 was 3.3% a year ago</div>
+      <div class="body">Buechel and Okolona took a materially larger share of resales while Shively (40216) slipped to 3.2% from 6.2%. Comp pulls built on last year's zip mix will misprice both directions.</div>
+    </div>
+  </div>
+      <!-- AGENT:factoids:end -->
+
+  <h2 class="section-title" id="activity-chart">Market Activity — Investor Purchases</h2>
+  <p class="section-sub">Monthly count of investor purchases of MSA properties (left axis) and the median purchase price (right axis), trailing 13 months. The most recent month can grow up to ~15% as late recordings arrive.</p>
+  <!-- AGENT:chart:start -->
+<div class="chart-row">
+    <div class="map-panel"><img src="../img/chart_2026-03..2026-04.png" alt="Monthly investor purchases and median price"><div class="caption">Investor purchases per month (bars) and median purchase price (line), trailing 13 months.</div></div>
+    <div class="map-panel"><img src="../img/decades_2026-03..2026-04.png" alt="Investor purchases by decade the house was built"><div class="caption">Which vintage of housing investors bought this edition, by decade built.</div></div>
+  </div>
+      <!-- AGENT:chart:end -->
+
+  <h2 class="section-title" id="where-the-money-went">Where the Money Went</h2>
+  <p class="section-sub">The geography of the period's investor activity: which zip codes saw the most recorded deals, and the largest individual transactions at street level.</p>
+  <!-- AGENT:map:start -->
+<div class="map-panel">
+    <h3 class="subsection-title" style="margin-top:0;">The 8 busiest zip codes for investor deals</h3>
+    <div id="dealmap"></div>
+    <script id="map-data" type="application/json">[{"rank":1,"zip":"40214","area":"Iroquois","lat":38.148491,"lng":-85.779843,"buys":50,"flips":12,"deals":62,"median":"$167,500","medianSale":"$300,324"},{"rank":2,"zip":"40216","area":"Shively","lat":38.18614,"lng":-85.83878,"buys":49,"flips":5,"deals":54,"median":"$174,000","medianSale":"$185,000"},{"rank":3,"zip":"40215","area":"Beechmont","lat":38.190476,"lng":-85.785734,"buys":46,"flips":3,"deals":49,"median":"$109,098","medianSale":"n/a"},{"rank":4,"zip":"40211","area":"Shawnee","lat":38.235823,"lng":-85.824579,"buys":42,"flips":5,"deals":47,"median":"$69,000","medianSale":"$76,500"},{"rank":5,"zip":"40272","area":"Valley Station","lat":38.078458,"lng":-85.853119,"buys":31,"flips":14,"deals":45,"median":"$160,000","medianSale":"$215,000"},{"rank":6,"zip":"40212","area":"Portland","lat":38.267967,"lng":-85.802494,"buys":40,"flips":3,"deals":43,"median":"$68,000","medianSale":"n/a"},{"rank":7,"zip":"40258","area":"Pleasure Ridge Park","lat":38.148592,"lng":-85.871182,"buys":33,"flips":10,"deals":43,"median":"$187,500","medianSale":"$212,500"},{"rank":8,"zip":"40219","area":"Okolona","lat":38.137909,"lng":-85.692693,"buys":30,"flips":11,"deals":41,"median":"$230,500","medianSale":"$240,000"}]</script>
+    <div class="caption">Pins rank the busiest zips by recorded investor deals (purchases + flips of existing homes) this period — #1 busiest; orange = top 3; pin size scales with deal volume. Median buy is the typical investor purchase; median sale the typical flip resale. Click a pin for details; full table below.</div>
+    <div class="map-table-wrap">
+    <table class="data">
+      <thead><tr><th>#</th><th>Zip</th><th>Area</th><th class="num">Purchases</th><th class="num">Flips</th><th class="num">Median buy</th><th class="num">Median sale</th></tr></thead><tbody>
+        <tr><td>#1</td><td>40214</td><td>Iroquois</td><td class="num">50</td><td class="num">12</td><td class="num">$167,500</td><td class="num">$300,324</td></tr>
+        <tr><td>#2</td><td>40216</td><td>Shively</td><td class="num">49</td><td class="num">5</td><td class="num">$174,000</td><td class="num">$185,000</td></tr>
+        <tr><td>#3</td><td>40215</td><td>Beechmont</td><td class="num">46</td><td class="num">3</td><td class="num">$109,098</td><td class="num">n/a</td></tr>
+        <tr><td>#4</td><td>40211</td><td>Shawnee</td><td class="num">42</td><td class="num">5</td><td class="num">$69,000</td><td class="num">$76,500</td></tr>
+        <tr><td>#5</td><td>40272</td><td>Valley Station</td><td class="num">31</td><td class="num">14</td><td class="num">$160,000</td><td class="num">$215,000</td></tr>
+        <tr><td>#6</td><td>40212</td><td>Portland</td><td class="num">40</td><td class="num">3</td><td class="num">$68,000</td><td class="num">n/a</td></tr>
+        <tr><td>#7</td><td>40258</td><td>Pleasure Ridge Park</td><td class="num">33</td><td class="num">10</td><td class="num">$187,500</td><td class="num">$212,500</td></tr>
+        <tr><td>#8</td><td>40219</td><td>Okolona</td><td class="num">30</td><td class="num">11</td><td class="num">$230,500</td><td class="num">$240,000</td></tr>
+      </tbody></table>
+    </div>
+  </div>
+      <!-- AGENT:map:end -->
+  <script>
+  (function() {
+    var el = document.getElementById('map-data');
+    if (!el || !window.L) return;
+    var zips; try { zips = JSON.parse(el.textContent); } catch (e) { return; }
+    if (!zips.length) return;
+    var map = L.map('dealmap', { scrollWheelZoom: false });
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',
+      { attribution: 'Tiles &copy; Esri', maxZoom: 18 }).addTo(map);
+    var group = [];
+    var maxDeals = Math.max.apply(null, zips.map(function(z){ return z.deals; }));
+    zips.forEach(function(z) {
+      var size = 26 + Math.round(18 * z.deals / maxDeals);
+      var icon = L.divIcon({ className: '', iconSize: [size, size], iconAnchor: [size/2, size/2],
+        html: '<div class="rank-pin' + (z.rank <= 3 ? ' hot' : '') + '" style="width:'+size+'px;height:'+size+'px;">#'+z.rank+'</div>' });
+      var m = L.marker([z.lat, z.lng], { icon: icon }).addTo(map);
+      m.bindPopup('<b>#'+z.rank+' &middot; '+z.zip+'</b>'+(z.area ? ' &mdash; '+z.area : '')+'<br>'+
+        z.buys.toLocaleString()+' purchases &middot; '+z.flips.toLocaleString()+' flips<br>Median buy '+z.median);
+      m.bindTooltip('#'+z.rank+' '+z.zip, { direction: 'top' });
+      group.push(m);
+    });
+    map.fitBounds(L.featureGroup(group).getBounds().pad(0.25));
+  })();
+  </script>
+  <!-- AGENT:deals:start -->
+<h3 class="subsection-title">A representative deal in each of the busiest zips</h3>
+<p class="section-sub">One deal per zip: the largest matching this market's typical house (typical for this market: 1158 sqft, 2 bed, built around 1961; priced within 4x the county assessment and under 5x its own zip's median).</p>
+<div class="deal-strip">
+    <div class="deal-card">
+      <img src="../img/sv_2026-03..2026-04_f19195e8.jpg" alt="Street view of 3303 GATECREEK RD">
+      <div class="body">
+        <div class="price">$370,000 · Purchase</div>
+        <div class="addr">3303 GATECREEK RD, Louisville KY 40272</div>
+        <div class="meta">Single family · 1,840 sqft · Mar 31</div>
+        <div class="svdate">Street View Sep 2024 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-03..2026-04_8b59d766.jpg" alt="Street view of 1731 MEYERS LN">
+      <div class="body">
+        <div class="price">$310,000 · Purchase</div>
+        <div class="addr">1731 MEYERS LN, Louisville KY 40216</div>
+        <div class="meta">Apartment 5+ · 1,470 sqft · Mar 3</div>
+        <div class="svdate">Street View Jul 2024 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-03..2026-04_a947bd2d.jpg" alt="Street view of 8105 HORIZON LN">
+      <div class="body">
+        <div class="price">$300,000 · Purchase</div>
+        <div class="addr">8105 HORIZON LN, Louisville KY 40219</div>
+        <div class="meta">Single family · 1,014 sqft · Mar 2</div>
+        <div class="svdate">Street View Nov 2024 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-03..2026-04_62844e6c.jpg" alt="Street view of 7912 3RD STREET RD">
+      <div class="body">
+        <div class="price">$245,000 · Purchase</div>
+        <div class="addr">7912 3RD STREET RD, Louisville KY 40214</div>
+        <div class="meta">Single family · 1,460 sqft · Apr 29</div>
+        <div class="svdate">Street View Sep 2024 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-03..2026-04_9e23c215.jpg" alt="Street view of 5250 JULIA RD">
+      <div class="body">
+        <div class="price">$245,000 · Purchase</div>
+        <div class="addr">5250 JULIA RD, Louisville KY 40258</div>
+        <div class="meta">Single family · 1,213 sqft · Apr 13</div>
+        <div class="svdate">Street View Jun 2022 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-03..2026-04_a4ac55c6.jpg" alt="Street view of 4655 CLIFF AVE">
+      <div class="body">
+        <div class="price">$200,000 · Purchase</div>
+        <div class="addr">4655 CLIFF AVE, Louisville KY 40215</div>
+        <div class="meta">Single family · 878 sqft · Mar 6</div>
+        <div class="svdate">Street View Jun 2024 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-03..2026-04_65d6ab86.jpg" alt="Street view of 3408 CANE RUN RD">
+      <div class="body">
+        <div class="price">$190,000 · Purchase</div>
+        <div class="addr">3408 CANE RUN RD, Louisville KY 40211</div>
+        <div class="meta">Single family · 916 sqft · Mar 4</div>
+        <div class="svdate">Street View Jul 2024 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-03..2026-04_99986bef.jpg" alt="Street view of 114 S 43RD ST">
+      <div class="body">
+        <div class="price">$110,000 · Purchase</div>
+        <div class="addr">114 S 43RD ST, Louisville KY 40212</div>
+        <div class="meta">Single family · 1,411 sqft · Mar 9</div>
+        <div class="svdate">Street View Jun 2024 — before the purchase</div>
+      </div>
+    </div>
+  </div>
+<h3 class="subsection-title">Deal sheet — private lending, in date order</h3>
+<p class="section-sub">Private loans recorded against residential property this period, oldest first.</p>
+<table class="data">
+    <thead><tr><th>Date</th><th>Lender</th><th class="num">Amount</th><th>Property</th><th>Use</th></tr></thead><tbody>
+      <tr><td>Mar 3</td><td>Burnett Joseph</td><td class="num">$310,000</td><td>1731 Meyers LN, Louisville KY 40216</td><td>Apartment 5+</td></tr>
+      <tr><td>Mar 6</td><td>Burnett Joseph</td><td class="num">$50,000</td><td>1190 Bicknell Ave, Louisville KY 40215</td><td>Single family</td></tr>
+      <tr><td>Mar 16</td><td>Oatley Matthew</td><td class="num">$165,000</td><td>706 Greenwood CT, Shelbyville KY 40065</td><td>Single family</td></tr>
+      <tr><td>Mar 17</td><td>Fonk Ronald</td><td class="num">$200,000</td><td>5146 Bell Ave, Shelbyville KY 40065</td><td>Single family</td></tr>
+      <tr><td>Mar 17</td><td>Gollar Sandy</td><td class="num">$104,155</td><td>135 Cotton LN, Taylorsville KY 40071</td><td>Single family</td></tr>
+    </tbody></table>
+
+<h3 class="subsection-title">Largest flip margin deals of the period, at street level</h3>
+<p class="section-sub">Gross margin = recorded sale price minus the flipper's recorded purchase price. Purchase deeds are recoverable for roughly 4 in 10 flips; rehab and carry costs are not public record.</p>
+<div class="deal-strip">
+    <div class="deal-card">
+      <img src="../img/svm_2026-03..2026-04_ea269ce9.jpg" alt="Street view of 13206 CREEKVIEW RD">
+      <div class="body">
+        <div class="price">$446,000 gross · bought $254,000 (May 2025) → sold $700,000</div>
+        <div class="addr">13206 CREEKVIEW RD, Prospect KY 40059</div>
+        <div class="meta">Single family · 2,455 sqft · Apr 21</div>
+        <div class="svdate">Street View Nov 2024 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-03..2026-04_3b973d24.jpg" alt="Street view of 6710 TALLWOOD CT">
+      <div class="body">
+        <div class="price">$315,000 gross · bought $345,000 (Nov 2025) → sold $660,000</div>
+        <div class="addr">6710 TALLWOOD CT, Prospect KY 40059</div>
+        <div class="meta">Single family · 3,570 sqft · Apr 16</div>
+        <div class="svdate">Street View Nov 2024 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-03..2026-04_7c63ee88.jpg" alt="Street view of 1015 BENTON RIDGE DR">
+      <div class="body">
+        <div class="price">$274,780 gross · bought $220,220 (Oct 2025) → sold $495,000</div>
+        <div class="addr">1015 BENTON RIDGE DR, Louisville KY 40245</div>
+        <div class="meta">Single family · 2,414 sqft · Mar 16</div>
+        <div class="svdate">Street View Sep 2024 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-03..2026-04_43e86432.jpg" alt="Street view of 1822 TYLER PKWY">
+      <div class="body">
+        <div class="price">$219,000 gross · bought $307,000 (Dec 2024) → sold $526,000</div>
+        <div class="addr">1822 TYLER PKWY, Louisville KY 40204</div>
+        <div class="meta">2-4 units · 2,107 sqft · Apr 14</div>
+        <div class="svdate">Street View Jul 2024 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-03..2026-04_2f68eb9d.jpg" alt="Street view of 6505 RIDGE CLIFF RD">
+      <div class="body">
+        <div class="price">$209,500 gross · bought $175,000 (Mar 2025) → sold $384,500</div>
+        <div class="addr">6505 RIDGE CLIFF RD, Louisville KY 40228</div>
+        <div class="meta">Single family · 2,194 sqft · Mar 23</div>
+        <div class="svdate">Street View Oct 2024 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-03..2026-04_bf3ef098.jpg" alt="Street view of 7906 OLD STATE ROAD 60">
+      <div class="body">
+        <div class="price">$202,600 gross · bought $132,400 (Feb 2025) → sold $335,000</div>
+        <div class="addr">7906 OLD STATE ROAD 60, Sellersburg IN 47172</div>
+        <div class="meta">Single family · 1,428 sqft · Mar 4</div>
+        <div class="svdate">Street View Dec 2024 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+  </div>
+      <!-- AGENT:deals:end -->
+
+  <h2 class="section-title" id="flip-structure">Flip Structure — Year over Year</h2>
+  <p class="section-sub">How the flip market itself is changing: margins, who is doing the flipping, what they flip, and where. Same two calendar months, this year vs last, from the current data extract.</p>
+  <!-- AGENT:flipstructure:start -->
+<table class="data tight">
+    <thead><tr><th>Flip market structure</th><th class="num">Same months last year</th><th class="num">This edition</th></tr></thead><tbody>
+      <tr><td>Flips sold</td><td class="num">209</td><td class="num">154</td></tr>
+      <tr><td>Median sale</td><td class="num">$224,000</td><td class="num">$225,000</td></tr>
+      <tr><td>Median $/sqft</td><td class="num">$183</td><td class="num">$197</td></tr>
+      <tr><td>Sale vs county-assessed</td><td class="num">1.49×</td><td class="num">1.41×</td></tr>
+      <tr><td>Median gross margin (matched buys)</td><td class="num">$105,000</td><td class="num">$88,450</td></tr>
+      <tr><td>Median margin %</td><td class="num">83%</td><td class="num">54%</td></tr>
+      <tr><td>Median hold</td><td class="num">6.9 mo</td><td class="num">5.7 mo</td></tr>
+      <tr><td>Homes bought by flippers</td><td class="num">277</td><td class="num">231</td></tr>
+      <tr><td>Net to inventory (bought − sold)</td><td class="num">+68</td><td class="num">+77</td></tr>
+      <tr><td>Active flippers</td><td class="num">160</td><td class="num">104</td></tr>
+      <tr><td>Top-10 flippers' revenue share</td><td class="num">34%</td><td class="num">46%</td></tr>
+      <tr><td>Median house: sqft / beds / built</td><td class="num">1216 / 2 / 1961</td><td class="num">1222 / 3 / 1963</td></tr>
+      <tr><td>Pre-1950 stock share</td><td class="num">30%</td><td class="num">23%</td></tr>
+      <tr><td>2–4 unit share</td><td class="num">1%</td><td class="num">1%</td></tr>
+      <tr><td>Median distance from downtown</td><td class="num">15.2 km</td><td class="num">15.2 km</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Homes bought counts every deed recorded to a known flipper in the window, resold or not. Net to inventory is that minus flips sold. The standing stock is in the Flip Pipeline section.</div>
+  <div class="pulse-caveat">Attributed profit per flip (per-investor aggregates, by drop period): Feb 26→Jun 26: 514 flips, $60,447/flip · Jun 26→Aug 26: 149 flips, $81,759/flip.</div>
+  <div class="pulse-caveat">County mix (share of flips, last year → this edition): Jefferson 72%→79% · Oldham 2%→7% · Clark 3%→5% · Floyd 5%→3% · Shelby 2%→2% · Henry 0%→2% · Bullitt 5%→1% · Trimble 1%→1% · Meade 1%→1% · Washington 1%→0% · Harrison 1%→0% · Scott 6%→0% · Spencer 1%→0%.</div>
+  <div class="pulse-caveat">Biggest zip share moves: Buechel 1.0%→5.8% · Beechmont 5.7%→1.9% · Okolona 3.3%→7.1% · Fairdale 0.5%→3.9% · Shively 6.2%→3.2% · Scottsburg 2.9%→0.0%.</div>
+      <!-- AGENT:flipstructure:end -->
+
+  <h2 class="section-title" id="flip-pipeline">Flip Pipeline — Buying, Selling and Inventory</h2>
+  <!-- AGENT:flipflow:start -->
+<p class="section-sub">Homes bought by known flippers and homes they resold, per month, alongside the stock sitting in flipper hands. A house enters inventory when a flipper buys it and leaves on the next recorded sale, at any price. Purchases still unsold after five years are treated as holds and drop out.</p>
+<div class="map-panel"><img src="../img/flipflow_2026-03..2026-04.png" alt="Flip purchases, flip sales and inventory by month with projection"><div class="caption">Solid = recorded, dashed = projected. Green bars are inventory on the right axis: homes bought and not yet resold. Aged out is purchases passing five years unsold. Inventory moves by bought minus resold minus aged out.</div></div>
+<table class="data tight">
+    <thead><tr><th>Flip pipeline</th><th class="num">Bought / mo</th><th class="num">Resold / mo</th><th class="num">Aged out / mo</th><th class="num">Inventory</th></tr></thead><tbody>
+      <tr><td>Latest recorded month (2026-05)</td><td class="num">112</td><td class="num">103</td><td class="num">61</td><td class="num">3,624</td></tr>
+      <tr><td>Projected (2026-11)</td><td class="num">88</td><td class="num">106</td><td class="num">43</td><td class="num">3,765</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Method: a straight-line trend through the last 24 months, adjusted for the month of the year, shown dashed as a projection. The series stops before the newest month or two, where deeds are still recording.</div>
+      <!-- AGENT:flipflow:end -->
+
+  <h2 class="section-title" id="financing">Who's Funding the Deals</h2>
+  <!-- AGENT:financing:start -->
+<p class="section-sub">First mortgages open on flipper purchases from May 2025 – Apr 2026 that have not yet resold. 50% carried recorded debt; the rest closed cash or off-record. Ranked by deal count.</p>
+<div class="card-grid">
+    <div class="card"><h3>50%</h3><div class="meta">Purchases financed</div><div class="body">416 of 837 flipper purchases carried a recorded first mortgage</div></div>
+    <div class="card"><h3>$155,000</h3><div class="meta">Typical loan</div><div class="body">median 1.25× the purchase price — the median lender advances rehab money on top of the buy</div></div>
+    <div class="card"><h3>69%</h3><div class="meta">Funding the rehab too</div><div class="body">289 of 416 loans exceed the purchase price, so the lender is covering work as well as the buy</div></div>
+  </div>
+<table class="data tight">
+    <thead><tr><th>Lender</th><th class="num">Loans</th><th class="num">Borrowers</th><th class="num">Median loan</th><th class="num">Loan vs price</th><th class="num">Funds rehab</th><th class="num">Median purchase</th></tr></thead><tbody>
+      <tr><td>MM Lending LLC</td><td class="num">29</td><td class="num">17</td><td class="num">$169,709</td><td class="num">1.53×</td><td class="num">97%</td><td class="num">$105,000</td></tr>
+      <tr><td>Burnett Joseph</td><td class="num">20</td><td class="num">11</td><td class="num">$160,500</td><td class="num">1.34×</td><td class="num">75%</td><td class="num">$130,500</td></tr>
+      <tr><td>River City Bank INC</td><td class="num">17</td><td class="num">13</td><td class="num">$164,724</td><td class="num">1.03×</td><td class="num">53%</td><td class="num">$165,000</td></tr>
+      <tr><td>Surepoint Equity LLC</td><td class="num">16</td><td class="num">8</td><td class="num">$201,750</td><td class="num">1.33×</td><td class="num">88%</td><td class="num">$165,000</td></tr>
+      <tr><td>United Wholesale Mortgage LLC</td><td class="num">16</td><td class="num">13</td><td class="num">$157,125</td><td class="num">1.36×</td><td class="num">88%</td><td class="num">$130,500</td></tr>
+      <tr><td>Flippin Loan LLC</td><td class="num">15</td><td class="num">12</td><td class="num">$127,500</td><td class="num">1.48×</td><td class="num">100%</td><td class="num">$90,000</td></tr>
+      <tr><td>Prime One LLC</td><td class="num">15</td><td class="num">8</td><td class="num">$157,250</td><td class="num">1.25×</td><td class="num">93%</td><td class="num">$116,000</td></tr>
+      <tr><td>Stock Yards Bank & Trust Co</td><td class="num">9</td><td class="num">8</td><td class="num">$196,377</td><td class="num">1.50×</td><td class="num">56%</td><td class="num">$137,000</td></tr>
+      <tr><td>Annex Capital INC</td><td class="num">8</td><td class="num">5</td><td class="num">$259,000</td><td class="num">1.70×</td><td class="num">100%</td><td class="num">$125,000</td></tr>
+      <tr><td>Jpmorgan Chase Bank NA</td><td class="num">8</td><td class="num">7</td><td class="num">$83,228</td><td class="num">0.93×</td><td class="num">38%</td><td class="num">$86,500</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Rates and terms are not published: the county feed models both. Borrowers counts the distinct flippers on each lender's book. Loan vs price is the recorded first mortgage divided by what the buyer paid. Above 1.00x the lender is funding purchase plus rehab; below it the buyer brought cash to the table. Blanket mortgages covering several parcels are excluded, as are loans outside 0.1x-3x the price. Rates and points are not public record.</div>
+      <!-- AGENT:financing:end -->
+
+  <h2 class="section-title" id="flipper-profile">Flipper Profile — The Working Flipper</h2>
+  <!-- AGENT:flipperprofile:start -->
+<p class="section-sub">The 70th–90th percentile of local flippers by lifetime flip count — the established operators below the whales: 3–8 lifetime flips each. Bath counts are not in the assessor extract.</p>
+<div class="card-grid">
+    <div class="card"><h3>327</h3><div class="meta">Flippers in the band</div><div class="body">each with 3–8 lifetime flips (avg 4.3)</div></div>
+    <div class="card"><h3>$82,000</h3><div class="meta">Median gross margin</div><div class="body">1,368 flips matched to their purchase price</div></div>
+    <div class="card"><h3>4.8 mo</h3><div class="meta">Typical hold</div><div class="body">purchase to resale, matched deals</div></div>
+    <div class="card"><h3>1158 sqft · 2 bd</h3><div class="meta">Typical house</div><div class="body">median year built 1961</div></div>
+    <div class="card"><img src="../img/flippercurve_2026-03..2026-04.png" alt="Flippers by lifetime flip count" style="width:100%;max-width:260px;"><div class="meta">flippers by lifetime flips · orange = this band</div></div>
+  </div>
+  <div class="pulse-caveat">Where they work: New Albany (47150) 7% · Shively (40216) 5% · Iroquois (40214) 5% · Pleasure Ridge Park (40258) 5% · Valley Station (40272) 5%.</div>
+      <!-- AGENT:flipperprofile:end -->
+
+  <h2 class="section-title" id="market-pulse">Market Pulse</h2>
+  <!-- AGENT:pulse:start -->
+<table class="data">
+    <thead><tr><th></th><th class="num">per month, Feb–Jun 2026</th><th class="num">per month, Jun–Aug 2026</th><th class="num">change</th><th class="num">avg/mo 2yr</th><th class="num">avg/mo 4yr</th></tr></thead><tbody>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Homes bought by flippers</td><td class="num">139</td><td class="num">116</td><td class="num">-17%</td><td class="num">130</td><td class="num">132</td></tr>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Flips sold (deeds)</td><td class="num">105</td><td class="num">77</td><td class="num">-26%</td><td class="num">98</td><td class="num">96</td></tr>
+      <tr><td><span style="color:#1a7a3c;">&#9650;</span> Lending deals funded</td><td class="num">38</td><td class="num">51</td><td class="num">+32%</td><td class="num">—</td><td class="num">—</td></tr>
+      <tr><td><span style="color:#1a7a3c;">&#9650;</span> Seller/notes held (net)</td><td class="num">23</td><td class="num">49</td><td class="num">+113%</td><td class="num">—</td><td class="num">—</td></tr>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Investors (net)</td><td class="num">373</td><td class="num">224</td><td class="num">-40%</td><td class="num">—</td><td class="num">—</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Flips and flipper purchases = recorded deeds, same two months each year; their 2- and 4-year columns are per-month averages of the deed series. The remaining rows come from the investor file, which spans 13 months, so they have no multi-year average (2026: Jun 2026 → Aug 2026; 2025: Feb 2026 → Jun 2026).</div>
+      <!-- AGENT:pulse:end -->
+
+  <h2 class="section-title" id="past-issues">Past Issues</h2>
+  <ul>
+    <!-- AGENT:archive:start -->
+<li><a href="../202608/">August 2026</a></li>
+      <!-- AGENT:archive:end -->
+  </ul>
+
+  <h2 class="section-title" id="methodology">Methodology</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Source Data</h3>
+      <div class="meta">County recorder &amp; assessor via FARES</div>
+      <div class="body">Every figure is computed from recorded instruments (deeds, mortgages, assignments) and assessor property records for the five counties of the Louisville-Elyria MSA. No surveys, no estimates, no listings data.
+        <!-- AGENT:sourcedates:start -->
+<div style="margin-top:.5rem;color:var(--navy);">This edition analyzes transactions dated March 1 – April 30, 2026, as recorded through the 2026-08 data extract.</div>
+      <!-- AGENT:sourcedates:end -->
+      </div>
+    </div>
+    <div class="card">
+      <h3>Who Counts as an Investor</h3>
+      <div class="meta">Transaction-pattern identification</div>
+      <div class="body">Investors are entities whose recorded transaction history looks like investing: rental holding (landlords), short-hold resales (flippers), private mortgage lending, note holding, or contract assignment (wholesalers). Banks, homebuilders, iBuyers, SFR funds, and government entities are identified by name and reported separately from small investors.</div>
+    </div>
+    <div class="card">
+      <h3>How Comparisons Work</h3>
+      <div class="meta">Attribution deltas + same-window comparisons</div>
+      <div class="body">The Market Pulse reports activity attributed between successive data drops, from the per-investor lifetime totals maintained upstream — periods differ in length, so per-month rates are shown. Elsewhere, "vs. year ago" compares the same calendar months one year earlier, counted from the same data extract. Transfers under $5,000 (quitclaims, partial interests) are excluded everywhere. Counts lag recording by 4–8 weeks, and the newest month can grow up to ~15% as late records arrive — direction is reliable before magnitude.</div>
+    </div>
+    <div class="card">
+      <h3>Known Limits</h3>
+      <div class="meta">Floors, not ceilings</div>
+      <div class="body">Wholesale assignments only appear when they touch a recorded deed, so those counts are a floor. Flip hold times are measured from the prior recorded sale. Names are the owner of record, which may be an LLC or trust.</div>
+    </div>
+  </div>
+
+  <h2 class="section-title" id="about">About</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Purpose</h3>
+      <div class="body">A working tool for small real estate investors in Greater Louisville: what actually closed, where, at what prices, and what it suggests checking next — one theme per issue.</div>
+    </div>
+    <div class="card">
+      <h3>Cadence</h3>
+      <div class="body">Published with each bi-monthly data drop, covering the two most recent complete months of recorded activity.</div>
+    </div>
+    <div class="card">
+      <h3>Disclaimer</h3>
+      <div class="body">Observations from public records, not investment, legal, or tax advice. Past activity does not guarantee future results. Verify any property or counterparty independently before transacting.</div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="newsletter" id="newsletter">
+      <div class="mc-form" id="mc_embed_signup">
+        <form action="https://swarmtrace.us14.list-manage.com/subscribe/post?u=9a4ba4adf4888e6de8829189e&amp;id=35bb5ff4ae" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+          <h3>Subscribe</h3>
+          <p>Get each Louisville Investor Brief by email when a new issue is published.</p>
+          <label for="mce-EMAIL">Enter your email address to subscribe</label>
+          <input type="email" name="EMAIL" id="mce-EMAIL" placeholder="EMAIL" required>
+          <input type="hidden" name="tags" value="12497802">
+          <div style="position:absolute; left:-5000px;" aria-hidden="true"><input type="text" name="b_9a4ba4adf4888e6de8829189e_35bb5ff4ae" tabindex="-1" value=""></div>
+          <button type="submit" name="subscribe" id="mc-embedded-subscribe">SUBSCRIBE</button>
+          <p class="mc-note">Unsubscribe any time. Powered by Mailchimp.</p>
+        </form>
+      </div>
+    </div>
+    <div>
+      <h4>Sections</h4>
+      <ul>
+        <li><a href="#this-issue">This Issue</a></li>
+        <li><a href="#playbook">Investor Playbook</a></li>
+        <li><a href="#factoids">Factoids</a></li>
+        <li><a href="#activity-chart">Market Activity</a></li>
+        <li><a href="#where-the-money-went">Where the Money Went</a></li>
+        <li><a href="#market-pulse">Market Pulse</a></li>
+        <li><a href="#methodology">Methodology</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Coverage</h4>
+      <ul>
+        <li>Bullitt County</li>
+        <li>Henry County</li>
+        <li>Jefferson County</li>
+        <li>Meade County</li>
+        <li>Oldham County</li>
+        <li>Shelby County</li>
+        <li>Spencer County</li>
+        <li>Trimble County</li>
+        <li>Clark County</li>
+        <li>Floyd County</li>
+        <li>Harrison County</li>
+        <li>Scott County</li>
+        <li>Washington County</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:jpritchard@swarmalytics.com">jpritchard@swarmalytics.com</a></li>
+        <li>Powered by <a href="https://www.swarmalytics.com" target="_blank" rel="noopener">Swarmalytics</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    Louisville Real Estate Investor Brief is an independent research publication built from public
+    county records. Not affiliated with any government agency. Nothing here is investment, legal,
+    or tax advice.
+  </div>
+</footer>
+
+</body>
+</html>
