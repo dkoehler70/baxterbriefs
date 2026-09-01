@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portland Real Estate Investor Brief</title>
+<meta name="description" content="Deed-level data on what small investors are actually doing in the Portland-Vancouver-Elyria MSA — flips, rentals, private lending — with a monthly theme and a playbook per investor type.">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  .mc-form { max-width:540px; margin:0 auto; text-align:left; background:#fff; border:1px solid #C0CCD9; border-radius:3px; padding:24px; font-family:Helvetica, sans-serif; color:#3C4858; }
+  .mc-form h3 { font-size:28px; font-weight:700; margin:0 0 8px; }
+  .mc-form p { font-size:16px; margin:0 0 12px; }
+  .mc-form label { display:block; font-weight:700; font-size:16px; margin-bottom:6px; }
+  .mc-form input[type=email] { width:100%; box-sizing:border-box; font-size:16px; padding:10px; border:1px solid #C0CCD9; border-radius:3px; margin-bottom:12px; }
+  .mc-form button { font-size:16px; font-weight:700; color:#fff; background:#3E4857; border:0; border-radius:3px; padding:10px 20px; cursor:pointer; }
+  .mc-form .mc-note { font-size:12px; color:#6b7785; margin-top:10px; }
+</style>
+</head>
+<body>
+
+<div class="utility-bar">
+  <div class="container">
+    <a href="#methodology">Methodology</a>
+    <a href="#about">About</a>
+    <a href="#newsletter">Subscribe</a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container">
+    <div class="brand">
+      <div class="brand-text">
+        <span class="brand-name">Portland Real Estate Investor Brief</span>
+        <span class="brand-tag">Deed-level market intelligence for small investors · Portland-Vancouver-Elyria MSA</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="primary-nav">
+  <div class="container">
+    <a href="#this-issue" class="active">This Issue</a>
+    <a href="#playbook">Investor Playbook</a>
+    <a href="#factoids">Factoids</a>
+    <a href="#activity-chart">Market Activity</a>
+    <a href="#where-the-money-went">Where the Money Went</a>
+    <a href="#flip-structure">Flip Structure</a>
+    <a href="#flip-pipeline">Flip Pipeline</a>
+      <a href="#financing">Funding</a>
+      <a href="#flipper-profile">Flipper Profile</a>
+    <a href="#market-pulse">Market Pulse</a>
+    <a href="#methodology">Methodology</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <!-- AGENT:hero:start -->
+<h1>August Edition — Inner-Ring Flips</h1>
+    <div class="datarange">Analyzing transactions recorded May 1 – June 30, 2026</div>
+      <!-- AGENT:hero:end -->
+  </div>
+</section>
+
+<main>
+
+  <h2 class="section-title" id="this-issue">This Issue
+    <!-- AGENT:updated:start -->
+<span style="float:right;font-weight:400;text-transform:none;letter-spacing:0;font-size:12px;color:var(--text-muted);">August 2026 edition</span>
+      <!-- AGENT:updated:end -->
+  </h2>
+  <!-- AGENT:theme:start -->
+<div class="forecast-headline">
+    <div>
+      <div class="number">51.7% vs 23.2%</div>
+      <div class="label">Multnomah County share of flip resales this edition, against its share a year ago</div>
+    </div>
+    <div class="body">
+      <h3 style="margin:0 0 .5rem;color:var(--navy);">Flip exits halved and moved inside the city: Multnomah is 51.7% of resales versus 23.2% a year ago</h3>
+      <p>Flip resales fell to 89 from 177 a year ago, and the ones that closed sat closer in: Multnomah accounted for 51.7% of resales versus 23.2% a year ago, and the median distance from the central business district was 11.9 km versus 17.9 km. The stock moved with the map — median year built 1964 versus 1998, and 28.1% pre-1950 versus 16.4%. Fewer, older, closer-in projects carried wider gross spreads: median margin $173,000 (48.3%) against $122,400 (33.3%) a year ago, on a 171-day median hold versus 227. Rehab and carry are not public record, so margins are gross.</p>
+    </div>
+  </div>
+      <!-- AGENT:theme:end -->
+
+  <h2 class="section-title" id="playbook">Investor Playbook</h2>
+  <p class="section-sub">What this issue's numbers suggest checking, by investor type. Observations from recorded data — not investment, legal, or tax advice.</p>
+  <!-- AGENT:playbook:start -->
+<div class="card-grid">
+    <div class="card">
+      <h3>Fewer assignments, wider spreads — feed the inner-Portland buyer</h3>
+      <div class="meta">Wholesalers</div>
+      <div class="body">Only 5 assignments surfaced on recorded deeds, flat against the prior period and down from 16 a year ago, but the median spread was $50,000 versus $32,000 a year ago. Recorded wholesale counts are a floor. With flip resales concentrated in Multnomah at 51.7% and the median resale property built in 1964 at 1,516 sqft, the data suggests dispositions run easier on older three-bedroom houses in 97217 (7 flips), 97206 (4) and 97211 (4) than on the outer-county product buyers walked away from.</div>
+    </div>
+    <div class="card">
+      <h3>Check basis before following the crowd back inside the city</h3>
+      <div class="meta">Flippers</div>
+      <div class="body">Flip resales cleared at a $520,000 median and $335.61/sqft, against a single family purchase median of $539,800 at $315/sqft — the gap between what investors are paying and what flips exit at is narrow. Washington County's share of resales fell from 32.2% to 11.2% and Clark's from 23.2% to 10.1%, so exit comps in those counties are thinner this period. Median hold is 171 days versus 227 a year ago; underwriting at that pace, and to the 1.077 median sale-to-assessed ratio, is worth testing before bidding.</div>
+    </div>
+    <div class="card">
+      <h3>The per-foot discount is in 2-4 units, not houses</h3>
+      <div class="meta">Landlords</div>
+      <div class="body">2-4 unit purchases, 80 deals at a $632,500 median, priced at $270/sqft against $315/sqft for single family and $311/sqft for condos. Mobile and manufactured, 26 deals at $411,500, came in at $268/sqft. With 1,328 local landlords adding units (+1,647 units) since the last drop, competition on houses is heavy; the data suggests the small-multi and manufactured lanes are where basis per foot is currently lowest.</div>
+    </div>
+    <div class="card">
+      <h3>Fill the gap on older inner-city rehabs</h3>
+      <div class="meta">Private lenders</div>
+      <div class="body">Recorded private loans ran 47 at a $355,000 median versus 98 a year ago, while seller notes rose to 161. Over the trailing twelve months the median loan was $374,514 at a median loan-to-price of 1.0, and 228 of 468 financed purchases carried rehab dollars. Named lenders are already thick at the larger end — CoreVest 24 loans at a $513,575 median, Kiavi 13 at $458,200. The thinner ground looks like the $250,000–$400,000 rehab draw on pre-1950 Multnomah stock, which is 28.1% of this period's flip resales. Interest rates and terms are not recorded and are not published here.</div>
+    </div>
+    <div class="card">
+      <h3>Small multi stays a rounding error in the flip data</h3>
+      <div class="meta">Multifamily investors</div>
+      <div class="body">Small multi was 2.2% of flip resales, up from 1.1% a year ago — three 2-4 unit flips at a $192,000 median margin and $93/sqft. On the buy side, 11 multi-family (unspecified) trades cleared at a $2.8M median and $200/sqft, and 7 apartment 5+ deals at an $8.15M median. With so few resale comps, worth leaning on the 80 2-4 unit purchases at $632,500 and $270/sqft for basis rather than on flip exits.</div>
+    </div>
+  </div>
+      <!-- AGENT:playbook:end -->
+
+  <h2 class="section-title" id="factoids">Factoids</h2>
+  <p class="section-sub">Numbers from this period a practitioner would repeat to a colleague. Each computed directly from recorded instruments.</p>
+  <!-- AGENT:factoids:start -->
+<div class="card-grid">
+    <div class="card">
+      <h3>1,775 investor purchases — Recorded investor purchases this edition, median $525,000</h3>
+      <div class="meta">trending up · vs 1,395 a year ago, median $550,000</div>
+      <div class="body">Buy-side volume is up 27% year over year while the median ticket is $25,000 lower. Acquisition appetite is not the constraint on flip resales this period.</div>
+    </div>
+    <div class="card">
+      <h3>18% of purchases from out of state — Out-of-state share of investor purchases, median price $574,995 against local buyers at $513,748</h3>
+      <div class="meta">holding steady · vs local buyers at 73% of purchases</div>
+      <div class="body">California leads feeder states with 119 purchases, then Arizona at 43 and Texas at 20. Out-of-state paper is clearing at a higher median than local buyers, which matters when you are bidding the same listing.</div>
+    </div>
+    <div class="card">
+      <h3>67 flip operators — Distinct operators recording a flip resale this edition</h3>
+      <div class="meta">trending down · vs 103 a year ago</div>
+      <div class="body">The seller field has thinned by a third while the top ten operators took 41.4% of flip revenue, up from 39.7%. Fewer, larger sellers are setting comps in the resale bands you are pricing against.</div>
+    </div>
+    <div class="card">
+      <h3>47 private loans recorded — Recorded private loans this edition, median $355,000</h3>
+      <div class="meta">trending down · vs 98 a year ago, median $315,836</div>
+      <div class="body">Half as many recorded private loans at a higher median size. Over the trailing twelve months 71.1% of observed investor purchases were financed and 48.7% of those 468 loans included rehab funds.</div>
+    </div>
+    <div class="card">
+      <h3>161 seller-financed notes — New seller-held notes recorded this edition, median $350,000</h3>
+      <div class="meta">trending up · vs 96 a year ago, median $387,500</div>
+      <div class="body">Seller paper is up 68% year over year at a median $37,500 below last year's note size. It is currently the deeper of the two non-bank channels in these records.</div>
+    </div>
+    <div class="card">
+      <h3>$270/sqft on 2-4 units — Median price per square foot paid for 2-4 unit purchases versus single family this edition</h3>
+      <div class="meta">trending down · vs $315/sqft for single family</div>
+      <div class="body">Eighty 2-4 unit deals cleared at a $632,500 median, a $45/sqft discount to single family basis. Condos, 219 deals at a $329,900 median, priced at $311/sqft — close to houses on a per-foot basis.</div>
+    </div>
+  </div>
+      <!-- AGENT:factoids:end -->
+
+  <h2 class="section-title" id="activity-chart">Market Activity — Investor Purchases</h2>
+  <p class="section-sub">Monthly count of investor purchases of MSA properties (left axis) and the median purchase price (right axis), trailing 13 months. The most recent month can grow up to ~15% as late recordings arrive.</p>
+  <!-- AGENT:chart:start -->
+<div class="chart-row">
+    <div class="map-panel"><img src="../img/chart_2026-05..2026-06.png" alt="Monthly investor purchases and median price"><div class="caption">Investor purchases per month (bars) and median purchase price (line), trailing 13 months.</div></div>
+    <div class="map-panel"><img src="../img/decades_2026-05..2026-06.png" alt="Investor purchases by decade the house was built"><div class="caption">Which vintage of housing investors bought this edition, by decade built.</div></div>
+  </div>
+      <!-- AGENT:chart:end -->
+
+  <h2 class="section-title" id="where-the-money-went">Where the Money Went</h2>
+  <p class="section-sub">The geography of the period's investor activity: which zip codes saw the most recorded deals, and the largest individual transactions at street level.</p>
+  <!-- AGENT:map:start -->
+<div class="map-panel">
+    <h3 class="subsection-title" style="margin-top:0;">The 8 busiest zip codes for investor deals</h3>
+    <div id="dealmap"></div>
+    <script id="map-data" type="application/json">[{"rank":1,"zip":"97229","area":"Bethany","lat":45.549242,"lng":-122.809952,"buys":54,"flips":1,"deals":55,"median":"$784,500","medianSale":"n/a"},{"rank":2,"zip":"97217","area":"Kenton","lat":45.596784,"lng":-122.695414,"buys":43,"flips":7,"deals":50,"median":"$435,000","medianSale":"$550,000"},{"rank":3,"zip":"97206","area":"Foster-Powell","lat":45.481598,"lng":-122.598295,"buys":43,"flips":4,"deals":47,"median":"$400,000","medianSale":"n/a"},{"rank":4,"zip":"97219","area":"Multnomah Village","lat":45.454231,"lng":-122.698526,"buys":41,"flips":1,"deals":42,"median":"$511,000","medianSale":"n/a"},{"rank":5,"zip":"97202","area":"Sellwood / Westmoreland","lat":45.482012,"lng":-122.644451,"buys":40,"flips":1,"deals":41,"median":"$597,950","medianSale":"n/a"},{"rank":6,"zip":"97035","area":"Lake Oswego West","lat":45.413601,"lng":-122.725252,"buys":34,"flips":5,"deals":39,"median":"$663,500","medianSale":"$750,000"},{"rank":7,"zip":"97080","area":"GRESHAM","lat":45.478314,"lng":-122.390727,"buys":34,"flips":2,"deals":36,"median":"$507,498","medianSale":"n/a"},{"rank":8,"zip":"97007","area":"Beaverton South","lat":45.442813,"lng":-122.871155,"buys":34,"flips":1,"deals":35,"median":"$622,000","medianSale":"n/a"}]</script>
+    <div class="caption">Pins rank the busiest zips by recorded investor deals (purchases + flips of existing homes) this period — #1 busiest; orange = top 3; pin size scales with deal volume. Median buy is the typical investor purchase; median sale the typical flip resale. Click a pin for details; full table below.</div>
+    <div class="map-table-wrap">
+    <table class="data">
+      <thead><tr><th>#</th><th>Zip</th><th>Area</th><th class="num">Purchases</th><th class="num">Flips</th><th class="num">Median buy</th><th class="num">Median sale</th></tr></thead><tbody>
+        <tr><td>#1</td><td>97229</td><td>Bethany</td><td class="num">54</td><td class="num">1</td><td class="num">$784,500</td><td class="num">n/a</td></tr>
+        <tr><td>#2</td><td>97217</td><td>Kenton</td><td class="num">43</td><td class="num">7</td><td class="num">$435,000</td><td class="num">$550,000</td></tr>
+        <tr><td>#3</td><td>97206</td><td>Foster-Powell</td><td class="num">43</td><td class="num">4</td><td class="num">$400,000</td><td class="num">n/a</td></tr>
+        <tr><td>#4</td><td>97219</td><td>Multnomah Village</td><td class="num">41</td><td class="num">1</td><td class="num">$511,000</td><td class="num">n/a</td></tr>
+        <tr><td>#5</td><td>97202</td><td>Sellwood / Westmoreland</td><td class="num">40</td><td class="num">1</td><td class="num">$597,950</td><td class="num">n/a</td></tr>
+        <tr><td>#6</td><td>97035</td><td>Lake Oswego West</td><td class="num">34</td><td class="num">5</td><td class="num">$663,500</td><td class="num">$750,000</td></tr>
+        <tr><td>#7</td><td>97080</td><td>GRESHAM</td><td class="num">34</td><td class="num">2</td><td class="num">$507,498</td><td class="num">n/a</td></tr>
+        <tr><td>#8</td><td>97007</td><td>Beaverton South</td><td class="num">34</td><td class="num">1</td><td class="num">$622,000</td><td class="num">n/a</td></tr>
+      </tbody></table>
+    </div>
+  </div>
+      <!-- AGENT:map:end -->
+  <script>
+  (function() {
+    var el = document.getElementById('map-data');
+    if (!el || !window.L) return;
+    var zips; try { zips = JSON.parse(el.textContent); } catch (e) { return; }
+    if (!zips.length) return;
+    var map = L.map('dealmap', { scrollWheelZoom: false });
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',
+      { attribution: 'Tiles &copy; Esri', maxZoom: 18 }).addTo(map);
+    var group = [];
+    var maxDeals = Math.max.apply(null, zips.map(function(z){ return z.deals; }));
+    zips.forEach(function(z) {
+      var size = 26 + Math.round(18 * z.deals / maxDeals);
+      var icon = L.divIcon({ className: '', iconSize: [size, size], iconAnchor: [size/2, size/2],
+        html: '<div class="rank-pin' + (z.rank <= 3 ? ' hot' : '') + '" style="width:'+size+'px;height:'+size+'px;">#'+z.rank+'</div>' });
+      var m = L.marker([z.lat, z.lng], { icon: icon }).addTo(map);
+      m.bindPopup('<b>#'+z.rank+' &middot; '+z.zip+'</b>'+(z.area ? ' &mdash; '+z.area : '')+'<br>'+
+        z.buys.toLocaleString()+' purchases &middot; '+z.flips.toLocaleString()+' flips<br>Median buy '+z.median);
+      m.bindTooltip('#'+z.rank+' '+z.zip, { direction: 'top' });
+      group.push(m);
+    });
+    map.fitBounds(L.featureGroup(group).getBounds().pad(0.25));
+  })();
+  </script>
+  <!-- AGENT:deals:start -->
+<h3 class="subsection-title">A representative deal in each of the busiest zips</h3>
+<p class="section-sub">One deal per zip: the largest matching this market's typical house (typical for this market: 1531 sqft, 3 bed, built around 1970; priced within 4x the county assessment and under 5x its own zip's median).</p>
+<div class="deal-strip">
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_1e8f6c93.jpg" alt="Street view of 4430 LORDS LN">
+      <div class="body">
+        <div class="price">$1.8M · Flip</div>
+        <div class="addr">4430 LORDS LN, Lake Oswego OR 97035</div>
+        <div class="meta">Single family · 1,229 sqft · May 27</div>
+        <div class="svdate">Street View Jun 2024 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_789cf2e5.jpg" alt="Street view of 15715 SW DIVISION ST">
+      <div class="body">
+        <div class="price">$1.1M · Purchase</div>
+        <div class="addr">15715 SW DIVISION ST, Beaverton OR 97007</div>
+        <div class="meta">Single family · 2,390 sqft · Jun 24</div>
+        <div class="svdate">Street View Apr 2024 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_a7e2ad41.jpg" alt="Street view of 230 S CANBY ST">
+      <div class="body">
+        <div class="price">$935,000 · Purchase</div>
+        <div class="addr">230 S CANBY ST, Portland OR 97219</div>
+        <div class="meta">Single family · 2,408 sqft · Jun 3</div>
+        <div class="svdate">Street View May 2024 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_49b0608b.jpg" alt="Street view of 15715 NW CLAREMONT DR">
+      <div class="body">
+        <div class="price">$925,000 · Purchase</div>
+        <div class="addr">15715 NW CLAREMONT DR, Portland OR 97229</div>
+        <div class="meta">Single family · 2,233 sqft · Jun 3</div>
+        <div class="svdate">Street View Jul 2024 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_57b0217b.jpg" alt="Street view of 2730 SE 66TH AVE">
+      <div class="body">
+        <div class="price">$875,000 · Purchase</div>
+        <div class="addr">2730 SE 66TH AVE, Portland OR 97206</div>
+        <div class="meta">Single family · 2,346 sqft · Jun 29</div>
+        <div class="svdate">Street View Apr 2025 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_acec4114.jpg" alt="Street view of 3331 SE STEELE ST">
+      <div class="body">
+        <div class="price">$850,000 · Purchase</div>
+        <div class="addr">3331 SE STEELE ST, Portland OR 97202</div>
+        <div class="meta">Single family · 1,888 sqft · May 22</div>
+        <div class="svdate">Street View Apr 2025 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_8ede9981.jpg" alt="Street view of 2581 SE MORLAN WAY">
+      <div class="body">
+        <div class="price">$705,000 · Purchase</div>
+        <div class="addr">2581 SE MORLAN WAY, Gresham OR 97080</div>
+        <div class="meta">Single family · 2,336 sqft · Jun 24</div>
+        <div class="svdate">Street View May 2025 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_1464c399.jpg" alt="Street view of 2214 N EMERSON ST">
+      <div class="body">
+        <div class="price">$612,000 · Purchase</div>
+        <div class="addr">2214 N EMERSON ST, Portland OR 97217</div>
+        <div class="meta">Single family · 1,144 sqft · Jun 12</div>
+        <div class="svdate">Street View Apr 2025 — before the purchase</div>
+      </div>
+    </div>
+  </div>
+<h3 class="subsection-title">Deal sheet — private lending, in date order</h3>
+<p class="section-sub">Private loans recorded against residential property this period, oldest first.</p>
+<table class="data">
+    <thead><tr><th>Date</th><th>Lender</th><th class="num">Amount</th><th>Property</th><th>Use</th></tr></thead><tbody>
+      <tr><td>May 4</td><td>Coronado Jason</td><td class="num">$260,000</td><td>1526 Ne 150TH Ave, Portland ID 97230</td><td>Single family</td></tr>
+      <tr><td>May 5</td><td>Brown Heather</td><td class="num">$285,000</td><td>152 Ne 33RD CT, Hillsboro OR 97124</td><td>Single family</td></tr>
+      <tr><td>May 7</td><td>Bogdan Viorica</td><td class="num">$264,000</td><td>10300 Ne Ward RD, Brush Prairie OR 98606</td><td>Mobile / manufactured</td></tr>
+      <tr><td>May 7</td><td>Bogdan Viorica</td><td class="num">$264,000</td><td>10300 Ne Ward RD, Brush Prairie OR 98606</td><td>Mobile / manufactured</td></tr>
+      <tr><td>May 7</td><td>Bogdan Viorica</td><td class="num">$264,000</td><td>10300 Ne Ward RD, Brush Prairie OR 98606</td><td>Mobile / manufactured</td></tr>
+      <tr><td>May 7</td><td>Jones Daron</td><td class="num">$140,000</td><td>18558 SW Takena CT, Beaverton WA 97003</td><td>Single family</td></tr>
+      <tr><td>May 7</td><td>Jones Daron</td><td class="num">$140,000</td><td>18544 SW Takena CT, Beaverton WA 97003</td><td>Single family</td></tr>
+      <tr><td>May 8</td><td>Fromm Jens</td><td class="num">$400,000</td><td>1108 N Hadley RD, Newberg WA 97132</td><td>Single family</td></tr>
+    </tbody></table>
+
+<h3 class="subsection-title">Largest flip margin deals of the period, at street level</h3>
+<p class="section-sub">Gross margin = recorded sale price minus the flipper's recorded purchase price. Purchase deeds are recoverable for roughly 4 in 10 flips; rehab and carry costs are not public record.</p>
+<div class="deal-strip">
+    <div class="deal-card">
+      <img src="../img/svm_2026-05..2026-06_1e8f6c93.jpg" alt="Street view of 4430 LORDS LN">
+      <div class="body">
+        <div class="price">$1.8M gross · bought $712,000 (Dec 2024) → sold $2.5M</div>
+        <div class="addr">4430 LORDS LN, Lake Oswego OR 97035</div>
+        <div class="meta">Single family · 1,229 sqft · May 29</div>
+        <div class="svdate">Street View Jun 2024 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-05..2026-06_7c7f1b30.jpg" alt="Street view of 2764 GLEN HAVEN RD">
+      <div class="body">
+        <div class="price">$1.7M gross · bought $700,000 (Mar 2025) → sold $2.4M</div>
+        <div class="addr">2764 GLEN HAVEN RD, Lake Oswego OR 97034</div>
+        <div class="meta">Single family · 1,714 sqft · May 8</div>
+        <div class="svdate">Street View Jun 2024 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-05..2026-06_4c40db06.jpg" alt="Street view of 1209 SW HESSLER DR">
+      <div class="body">
+        <div class="price">$1.1M gross · bought $1.2M (Oct 2025) → sold $2.3M</div>
+        <div class="addr">1209 SW HESSLER DR, Portland OR 97239</div>
+        <div class="meta">Single family · 2,584 sqft · May 15</div>
+        <div class="svdate">Street View Jul 2024 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-05..2026-06_6db50d37.jpg" alt="Street view of 226 NW MACLEAY BLVD">
+      <div class="body">
+        <div class="price">$985,000 gross · bought $365,000 (Dec 2024) → sold $1.4M</div>
+        <div class="addr">226 NW MACLEAY BLVD, Portland OR 97210</div>
+        <div class="meta">Single family · 1,685 sqft · Jun 18</div>
+        <div class="svdate">Street View May 2024 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-05..2026-06_cdbd62aa.jpg" alt="Street view of 236 NE SACRAMENTO ST">
+      <div class="body">
+        <div class="price">$490,000 gross · bought $275,000 (Jan 2025) → sold $765,000</div>
+        <div class="addr">236 NE SACRAMENTO ST, Portland OR 97212</div>
+        <div class="meta">Single family · 1,838 sqft · May 29</div>
+        <div class="svdate">Street View Oct 2018 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-05..2026-06_a7c75702.jpg" alt="Street view of 17350 ASHLEY CT">
+      <div class="body">
+        <div class="price">$475,296 gross · bought $399,704 (May 2025) → sold $875,000</div>
+        <div class="addr">17350 ASHLEY CT, Lake Oswego OR 97035</div>
+        <div class="meta">Single family · 2,290 sqft · May 1</div>
+        <div class="svdate">Street View Jun 2024 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+  </div>
+      <!-- AGENT:deals:end -->
+
+  <h2 class="section-title" id="flip-structure">Flip Structure — Year over Year</h2>
+  <p class="section-sub">How the flip market itself is changing: margins, who is doing the flipping, what they flip, and where. Same two calendar months, this year vs last, from the current data extract.</p>
+  <!-- AGENT:flipstructure:start -->
+<table class="data tight">
+    <thead><tr><th>Flip market structure</th><th class="num">Same months last year</th><th class="num">This edition</th></tr></thead><tbody>
+      <tr><td>Flips sold</td><td class="num">177</td><td class="num">89</td></tr>
+      <tr><td>Median sale</td><td class="num">$529,900</td><td class="num">$520,000</td></tr>
+      <tr><td>Median $/sqft</td><td class="num">$326</td><td class="num">$336</td></tr>
+      <tr><td>Sale vs county-assessed</td><td class="num">1.07×</td><td class="num">1.08×</td></tr>
+      <tr><td>Median gross margin (matched buys)</td><td class="num">$122,400</td><td class="num">$173,000</td></tr>
+      <tr><td>Median margin %</td><td class="num">33%</td><td class="num">48%</td></tr>
+      <tr><td>Median hold</td><td class="num">7.5 mo</td><td class="num">5.6 mo</td></tr>
+      <tr><td>Homes bought by flippers</td><td class="num">194</td><td class="num">160</td></tr>
+      <tr><td>Net to inventory (bought − sold)</td><td class="num">+17</td><td class="num">+71</td></tr>
+      <tr><td>Active flippers</td><td class="num">103</td><td class="num">67</td></tr>
+      <tr><td>Top-10 flippers' revenue share</td><td class="num">40%</td><td class="num">41%</td></tr>
+      <tr><td>Median house: sqft / beds / built</td><td class="num">1693 / 3 / 1998</td><td class="num">1517 / 3 / 1964</td></tr>
+      <tr><td>Pre-1950 stock share</td><td class="num">16%</td><td class="num">28%</td></tr>
+      <tr><td>2–4 unit share</td><td class="num">1%</td><td class="num">2%</td></tr>
+      <tr><td>Median distance from downtown</td><td class="num">17.9 km</td><td class="num">11.9 km</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Homes bought counts every deed recorded to a known flipper in the window, resold or not. Net to inventory is that minus flips sold. The standing stock is in the Flip Pipeline section.</div>
+  <div class="pulse-caveat">Attributed profit per flip (per-investor aggregates, by drop period): Feb 26→Jun 26: 689 flips, n/a (revisions) · Jun 26→Aug 26: 262 flips, n/a (revisions).</div>
+  <div class="pulse-caveat">County mix (share of flips, last year → this edition): Multnomah 23%→52% · Clackamas 15%→22% · Washington 32%→11% · Clark 23%→10% · Yamhill 5%→3% · Columbia 2%→1%.</div>
+  <div class="pulse-caveat">Biggest zip share moves: Hillsboro 8.5%→1.1% · Kenton 1.7%→7.9% · Tualatin 6.2%→1.1% · Rockwood 0.0%→4.5% · Felida 4.0%→0.0% · Orchards 4.0%→0.0%.</div>
+      <!-- AGENT:flipstructure:end -->
+
+  <h2 class="section-title" id="flip-pipeline">Flip Pipeline — Buying, Selling and Inventory</h2>
+  <!-- AGENT:flipflow:start -->
+<p class="section-sub">Homes bought by known flippers and homes they resold, per month, alongside the stock sitting in flipper hands. A house enters inventory when a flipper buys it and leaves on the next recorded sale, at any price. Purchases still unsold after five years are treated as holds and drop out.</p>
+<div class="map-panel"><img src="../img/flipflow_2026-05..2026-06.png" alt="Flip purchases, flip sales and inventory by month with projection"><div class="caption">Solid = recorded, dashed = projected. Green bars are inventory on the right axis: homes bought and not yet resold. Aged out is purchases passing five years unsold. Inventory moves by bought minus resold minus aged out.</div></div>
+<table class="data tight">
+    <thead><tr><th>Flip pipeline</th><th class="num">Bought / mo</th><th class="num">Resold / mo</th><th class="num">Aged out / mo</th><th class="num">Inventory</th></tr></thead><tbody>
+      <tr><td>Latest recorded month (2026-05)</td><td class="num">90</td><td class="num">72</td><td class="num">26</td><td class="num">1,842</td></tr>
+      <tr><td>Projected (2026-11)</td><td class="num">50</td><td class="num">69</td><td class="num">29</td><td class="num">1,671</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Method: a straight-line trend through the last 24 months, adjusted for the month of the year, shown dashed as a projection. The series stops before the newest month or two, where deeds are still recording.</div>
+      <!-- AGENT:flipflow:end -->
+
+  <h2 class="section-title" id="financing">Who's Funding the Deals</h2>
+  <!-- AGENT:financing:start -->
+<p class="section-sub">First mortgages open on flipper purchases from Jul 2025 – Jun 2026 that have not yet resold. 71% carried recorded debt; the rest closed cash or off-record. Ranked by deal count.</p>
+<div class="card-grid">
+    <div class="card"><h3>71%</h3><div class="meta">Purchases financed</div><div class="body">468 of 658 flipper purchases carried a recorded first mortgage</div></div>
+    <div class="card"><h3>$374,514</h3><div class="meta">Typical loan</div><div class="body">median 1.00× the purchase price</div></div>
+    <div class="card"><h3>49%</h3><div class="meta">Funding the rehab too</div><div class="body">228 of 468 loans exceed the purchase price, so the lender is covering work as well as the buy</div></div>
+  </div>
+<table class="data tight">
+    <thead><tr><th>Lender</th><th class="num">Loans</th><th class="num">Borrowers</th><th class="num">Median loan</th><th class="num">Loan vs price</th><th class="num">Funds rehab</th><th class="num">Median purchase</th></tr></thead><tbody>
+      <tr><td>Corevest American Fin LNDR LLC</td><td class="num">24</td><td class="num">7</td><td class="num">$513,575</td><td class="num">1.15×</td><td class="num">92%</td><td class="num">$446,500</td></tr>
+      <tr><td>Legacy Lending LLC</td><td class="num">16</td><td class="num">12</td><td class="num">$377,852</td><td class="num">1.16×</td><td class="num">81%</td><td class="num">$355,000</td></tr>
+      <tr><td>Merchants Mortgage NW LLC</td><td class="num">16</td><td class="num">10</td><td class="num">$325,125</td><td class="num">1.11×</td><td class="num">75%</td><td class="num">$317,250</td></tr>
+      <tr><td>Kiavi Funding INC</td><td class="num">13</td><td class="num">8</td><td class="num">$458,200</td><td class="num">1.23×</td><td class="num">85%</td><td class="num">$399,000</td></tr>
+      <tr><td>Blackhawk Capital Group</td><td class="num">11</td><td class="num">4</td><td class="num">$255,271</td><td class="num">0.85×</td><td class="num">0%</td><td class="num">$295,000</td></tr>
+      <tr><td>Iron Bridge Mortgage Fund LLC</td><td class="num">10</td><td class="num">7</td><td class="num">$630,000</td><td class="num">1.08×</td><td class="num">60%</td><td class="num">$430,000</td></tr>
+      <tr><td>Rain City Cap LLC</td><td class="num">9</td><td class="num">8</td><td class="num">$311,950</td><td class="num">1.00×</td><td class="num">56%</td><td class="num">$302,500</td></tr>
+      <tr><td>Mortgage Research Center LLC</td><td class="num">7</td><td class="num">4</td><td class="num">$393,855</td><td class="num">1.11×</td><td class="num">71%</td><td class="num">$343,345</td></tr>
+      <tr><td>Onpoint Community Credit Union</td><td class="num">7</td><td class="num">7</td><td class="num">$388,000</td><td class="num">0.64×</td><td class="num">0%</td><td class="num">$530,000</td></tr>
+      <tr><td>Pennymac Loan Services LLC</td><td class="num">7</td><td class="num">5</td><td class="num">$375,279</td><td class="num">1.04×</td><td class="num">57%</td><td class="num">$420,000</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Rates and terms are not published: the county feed models both. Borrowers counts the distinct flippers on each lender's book. Loan vs price is the recorded first mortgage divided by what the buyer paid. Above 1.00x the lender is funding purchase plus rehab; below it the buyer brought cash to the table. Blanket mortgages covering several parcels are excluded, as are loans outside 0.1x-3x the price. Rates and points are not public record.</div>
+      <!-- AGENT:financing:end -->
+
+  <h2 class="section-title" id="flipper-profile">Flipper Profile — The Working Flipper</h2>
+  <!-- AGENT:flipperprofile:start -->
+<p class="section-sub">The 70th–90th percentile of local flippers by lifetime flip count — the established operators below the whales: 4–9 lifetime flips each. Bath counts are not in the assessor extract.</p>
+<div class="card-grid">
+    <div class="card"><h3>165</h3><div class="meta">Flippers in the band</div><div class="body">each with 4–9 lifetime flips (avg 5.4)</div></div>
+    <div class="card"><h3>$100,000</h3><div class="meta">Median gross margin</div><div class="body">2,835 flips matched to their purchase price</div></div>
+    <div class="card"><h3>6.3 mo</h3><div class="meta">Typical hold</div><div class="body">purchase to resale, matched deals</div></div>
+    <div class="card"><h3>1531 sqft · 3 bd</h3><div class="meta">Typical house</div><div class="body">median year built 1970</div></div>
+    <div class="card"><img src="../img/flippercurve_2026-05..2026-06.png" alt="Flippers by lifetime flip count" style="width:100%;max-width:260px;"><div class="meta">flippers by lifetime flips · orange = this band</div></div>
+  </div>
+  <div class="pulse-caveat">Where they work: Foster-Powell (97206) 5% · Woodlawn (97211) 4% · Oak Grove (97267) 4% · Kenton (97217) 4% · Camas (98607) 3%.</div>
+      <!-- AGENT:flipperprofile:end -->
+
+  <h2 class="section-title" id="market-pulse">Market Pulse</h2>
+  <!-- AGENT:pulse:start -->
+<table class="data">
+    <thead><tr><th></th><th class="num">per month, Feb–Jun 2026</th><th class="num">per month, Jun–Aug 2026</th><th class="num">change</th><th class="num">avg/mo 2yr</th><th class="num">avg/mo 4yr</th></tr></thead><tbody>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Homes bought by flippers</td><td class="num">97</td><td class="num">80</td><td class="num">-18%</td><td class="num">104</td><td class="num">109</td></tr>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Flips sold (deeds)</td><td class="num">89</td><td class="num">45</td><td class="num">-50%</td><td class="num">101</td><td class="num">107</td></tr>
+      <tr><td><span style="color:#1a7a3c;">&#9650;</span> Lending deals funded</td><td class="num">43</td><td class="num">97</td><td class="num">+126%</td><td class="num">—</td><td class="num">—</td></tr>
+      <tr><td><span style="color:#1a7a3c;">&#9650;</span> Seller/notes held (net)</td><td class="num">91</td><td class="num">100</td><td class="num">+10%</td><td class="num">—</td><td class="num">—</td></tr>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Investors (net)</td><td class="num">136</td><td class="num">6</td><td class="num">-96%</td><td class="num">—</td><td class="num">—</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Flips and flipper purchases = recorded deeds, same two months each year; their 2- and 4-year columns are per-month averages of the deed series. The remaining rows come from the investor file, which spans 13 months, so they have no multi-year average (2026: Jun 2026 → Aug 2026; 2025: Feb 2026 → Jun 2026).</div>
+      <!-- AGENT:pulse:end -->
+
+  <h2 class="section-title" id="past-issues">Past Issues</h2>
+  <ul>
+    <!-- AGENT:archive:start -->
+<li><a href="../202608/">August 2026</a></li>
+      <!-- AGENT:archive:end -->
+  </ul>
+
+  <h2 class="section-title" id="methodology">Methodology</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Source Data</h3>
+      <div class="meta">County recorder &amp; assessor via FARES</div>
+      <div class="body">Every figure is computed from recorded instruments (deeds, mortgages, assignments) and assessor property records for the five counties of the Portland-Vancouver-Elyria MSA. No surveys, no estimates, no listings data.
+        <!-- AGENT:sourcedates:start -->
+<div style="margin-top:.5rem;color:var(--navy);">This edition analyzes transactions dated May 1 – June 30, 2026, as recorded through the 2026-08 data extract.</div>
+      <!-- AGENT:sourcedates:end -->
+      </div>
+    </div>
+    <div class="card">
+      <h3>Who Counts as an Investor</h3>
+      <div class="meta">Transaction-pattern identification</div>
+      <div class="body">Investors are entities whose recorded transaction history looks like investing: rental holding (landlords), short-hold resales (flippers), private mortgage lending, note holding, or contract assignment (wholesalers). Banks, homebuilders, iBuyers, SFR funds, and government entities are identified by name and reported separately from small investors.</div>
+    </div>
+    <div class="card">
+      <h3>How Comparisons Work</h3>
+      <div class="meta">Attribution deltas + same-window comparisons</div>
+      <div class="body">The Market Pulse reports activity attributed between successive data drops, from the per-investor lifetime totals maintained upstream — periods differ in length, so per-month rates are shown. Elsewhere, "vs. year ago" compares the same calendar months one year earlier, counted from the same data extract. Transfers under $5,000 (quitclaims, partial interests) are excluded everywhere. Counts lag recording by 4–8 weeks, and the newest month can grow up to ~15% as late records arrive — direction is reliable before magnitude.</div>
+    </div>
+    <div class="card">
+      <h3>Known Limits</h3>
+      <div class="meta">Floors, not ceilings</div>
+      <div class="body">Wholesale assignments only appear when they touch a recorded deed, so those counts are a floor. Flip hold times are measured from the prior recorded sale. Names are the owner of record, which may be an LLC or trust.</div>
+    </div>
+  </div>
+
+  <h2 class="section-title" id="about">About</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Purpose</h3>
+      <div class="body">A working tool for small real estate investors in Greater Portland-Vancouver: what actually closed, where, at what prices, and what it suggests checking next — one theme per issue.</div>
+    </div>
+    <div class="card">
+      <h3>Cadence</h3>
+      <div class="body">Published with each bi-monthly data drop, covering the two most recent complete months of recorded activity.</div>
+    </div>
+    <div class="card">
+      <h3>Disclaimer</h3>
+      <div class="body">Observations from public records, not investment, legal, or tax advice. Past activity does not guarantee future results. Verify any property or counterparty independently before transacting.</div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="newsletter" id="newsletter">
+      <div class="mc-form" id="mc_embed_signup">
+        <form action="https://swarmtrace.us14.list-manage.com/subscribe/post?u=9a4ba4adf4888e6de8829189e&amp;id=35bb5ff4ae" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+          <h3>Subscribe</h3>
+          <p>Get each Portland Investor Brief by email when a new issue is published.</p>
+          <label for="mce-EMAIL">Enter your email address to subscribe</label>
+          <input type="email" name="EMAIL" id="mce-EMAIL" placeholder="EMAIL" required>
+          <input type="hidden" name="tags" value="12497803">
+          <div style="position:absolute; left:-5000px;" aria-hidden="true"><input type="text" name="b_9a4ba4adf4888e6de8829189e_35bb5ff4ae" tabindex="-1" value=""></div>
+          <button type="submit" name="subscribe" id="mc-embedded-subscribe">SUBSCRIBE</button>
+          <p class="mc-note">Unsubscribe any time. Powered by Mailchimp.</p>
+        </form>
+      </div>
+    </div>
+    <div>
+      <h4>Sections</h4>
+      <ul>
+        <li><a href="#this-issue">This Issue</a></li>
+        <li><a href="#playbook">Investor Playbook</a></li>
+        <li><a href="#factoids">Factoids</a></li>
+        <li><a href="#activity-chart">Market Activity</a></li>
+        <li><a href="#where-the-money-went">Where the Money Went</a></li>
+        <li><a href="#market-pulse">Market Pulse</a></li>
+        <li><a href="#methodology">Methodology</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Coverage</h4>
+      <ul>
+        <li>Clackamas County</li>
+        <li>Columbia County</li>
+        <li>Multnomah County</li>
+        <li>Washington County</li>
+        <li>Yamhill County</li>
+        <li>Clark County</li>
+        <li>Skamania County</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:jpritchard@swarmalytics.com">jpritchard@swarmalytics.com</a></li>
+        <li>Powered by <a href="https://www.swarmalytics.com" target="_blank" rel="noopener">Swarmalytics</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    Portland Real Estate Investor Brief is an independent research publication built from public
+    county records. Not affiliated with any government agency. Nothing here is investment, legal,
+    or tax advice.
+  </div>
+</footer>
+
+</body>
+</html>

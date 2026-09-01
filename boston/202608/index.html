@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Boston Real Estate Investor Brief</title>
+<meta name="description" content="Deed-level data on what small investors are actually doing in the Boston-Cambridge-Newton-Elyria MSA — flips, rentals, private lending — with a monthly theme and a playbook per investor type.">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  .mc-form { max-width:540px; margin:0 auto; text-align:left; background:#fff; border:1px solid #C0CCD9; border-radius:3px; padding:24px; font-family:Helvetica, sans-serif; color:#3C4858; }
+  .mc-form h3 { font-size:28px; font-weight:700; margin:0 0 8px; }
+  .mc-form p { font-size:16px; margin:0 0 12px; }
+  .mc-form label { display:block; font-weight:700; font-size:16px; margin-bottom:6px; }
+  .mc-form input[type=email] { width:100%; box-sizing:border-box; font-size:16px; padding:10px; border:1px solid #C0CCD9; border-radius:3px; margin-bottom:12px; }
+  .mc-form button { font-size:16px; font-weight:700; color:#fff; background:#3E4857; border:0; border-radius:3px; padding:10px 20px; cursor:pointer; }
+  .mc-form .mc-note { font-size:12px; color:#6b7785; margin-top:10px; }
+</style>
+</head>
+<body>
+
+<div class="utility-bar">
+  <div class="container">
+    <a href="#methodology">Methodology</a>
+    <a href="#about">About</a>
+    <a href="#newsletter">Subscribe</a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container">
+    <div class="brand">
+      <div class="brand-text">
+        <span class="brand-name">Boston Real Estate Investor Brief</span>
+        <span class="brand-tag">Deed-level market intelligence for small investors · Boston-Cambridge-Newton-Elyria MSA</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="primary-nav">
+  <div class="container">
+    <a href="#this-issue" class="active">This Issue</a>
+    <a href="#playbook">Investor Playbook</a>
+    <a href="#factoids">Factoids</a>
+    <a href="#activity-chart">Market Activity</a>
+    <a href="#where-the-money-went">Where the Money Went</a>
+    <a href="#flip-structure">Flip Structure</a>
+    <a href="#flip-pipeline">Flip Pipeline</a>
+      <a href="#financing">Funding</a>
+      <a href="#flipper-profile">Flipper Profile</a>
+    <a href="#market-pulse">Market Pulse</a>
+    <a href="#methodology">Methodology</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <!-- AGENT:hero:start -->
+<h1>August Edition — Thinning Field</h1>
+    <div class="datarange">Analyzing transactions recorded May 1 – June 30, 2026</div>
+      <!-- AGENT:hero:end -->
+  </div>
+</section>
+
+<main>
+
+  <h2 class="section-title" id="this-issue">This Issue
+    <!-- AGENT:updated:start -->
+<span style="float:right;font-weight:400;text-transform:none;letter-spacing:0;font-size:12px;color:var(--text-muted);">August 2026 edition</span>
+      <!-- AGENT:updated:end -->
+  </h2>
+  <!-- AGENT:theme:start -->
+<div class="forecast-headline">
+    <div>
+      <div class="number">97 vs 214</div>
+      <div class="label">Distinct operators recording a completed flip sale this edition, versus the same span a year ago</div>
+    </div>
+    <div class="body">
+      <h3 style="margin:0 0 .5rem;color:var(--navy);">The flip field halved: 97 operators closed 109 resales, against 214 operators and 245 resales a year ago, and the top ten now take 31% of resale dollars</h3>
+      <p>Completed flip resales fell to 109 from 245 a year ago, and the number of operators behind them fell to 97 from 214. Revenue concentrated as the field thinned: the top ten operators took 31.2% of resale dollars, up from 17.6% a year ago. Pricing did not break with the volume — median resale was $780,000 against $715,000, and median gross margin $260,000 against $250,000 — but exits took longer, at a median 249 days held versus 227. Fewer, larger, slower is the shape of this edition's exit market.</p>
+    </div>
+  </div>
+      <!-- AGENT:theme:end -->
+
+  <h2 class="section-title" id="playbook">Investor Playbook</h2>
+  <p class="section-sub">What this issue's numbers suggest checking, by investor type. Observations from recorded data — not investment, legal, or tax advice.</p>
+  <!-- AGENT:playbook:start -->
+<div class="card-grid">
+    <div class="card">
+      <h3>Fewer buyers per deal — market to the three-to-six-flip band</h3>
+      <div class="meta">Wholesalers</div>
+      <div class="body">With flipper acquisitions at 144 versus 278 a year ago, the buyer list is shorter and slower to commit. The data suggests focusing on the 512 operators with three to six lifetime flips, who average 3.8 flips and cluster in Natick 01760 (2.4% of their activity), Brockton 02301 (2.1%) and Salem 01970 (2.1%); their typical target is about 1,792 sqft, three beds, built around 1955. Wholesale counts here are a floor, since only assignments touching a recorded deed are visible.</div>
+    </div>
+    <div class="card">
+      <h3>Underwrite eight-plus months of carry and a 1.24 sale-to-assessed ceiling</h3>
+      <div class="meta">Flippers</div>
+      <div class="body">Median hold ran 249 days versus 227 a year ago, and 36% of exits took over a year. Median resale-to-assessed slipped to 1.24 from 1.27 and median gross margin percentage to 57.3% from 60.5%, so the exit ceiling is tightening even as the dollar margin holds at $260,000. Margins here are gross — rehab and carry are not public record — and with half of exits in pre-1950 stock, worth stress-testing budgets on that vintage.</div>
+    </div>
+    <div class="card">
+      <h3>The cheapest occupied basis per foot is still 2-4 unit product</h3>
+      <div class="meta">Landlords</div>
+      <div class="body">2-4 units traded at $342/sqft on 314 deals ($885,000 median) against $444/sqft for condos and $393/sqft for single family. Zips worth checking on basis are 01852 Lowell South ($368,500 median buy, 24 purchases) and 02072 ($437,500, 24 purchases), both well under the $672,516 market median. Where the small-multi discount per foot holds, the entry basis is set below the condo comparables in the same period.</div>
+    </div>
+    <div class="card">
+      <h3>Rehab paper is the contested slice; purchase-only volume is shrinking</h3>
+      <div class="meta">Private lenders</div>
+      <div class="body">Of 697 financed purchases in the trailing 12 months, 265 (38.0%) also funded rehab, median loan $412,463 at 84.4% loan-to-price. The top recorded originators skew heavily to rehab — RFLF 4 at 36 loans and 94% rehab share, Dunegrass Capital at 13 loans and 100% — while flipper buying runs at 72 per month. With fewer projects starting, the data suggests competing on the rehab-funded slice and on repeat borrowers rather than on new-operator volume.</div>
+    </div>
+    <div class="card">
+      <h3>5+ apartment basis at $281/sqft, and small multi is a rising share of exits</h3>
+      <div class="meta">Multifamily investors</div>
+      <div class="body">64 apartment 5+ purchases recorded at a $1,262,500 median and $281/sqft, the lowest per-foot basis in the residential mix. Small multifamily also rose to 14.7% of completed flips from 11.0%, meaning more renovated 2-4 unit product is reaching the market. Middlesex carried 38.5% of exits versus 35.1% a year ago while Essex fell to 11.0% from 15.5%, so comparable supply is shifting county to county.</div>
+    </div>
+  </div>
+      <!-- AGENT:playbook:end -->
+
+  <h2 class="section-title" id="factoids">Factoids</h2>
+  <p class="section-sub">Numbers from this period a practitioner would repeat to a colleague. Each computed directly from recorded instruments.</p>
+  <!-- AGENT:factoids:start -->
+<div class="card-grid">
+    <div class="card">
+      <h3>144 flip acquisitions — Homes bought by flippers this edition</h3>
+      <div class="meta">trending down · vs 278 a year ago</div>
+      <div class="body">Acquisition volume fell further than exits did, so the resale pipeline entering next year is thinner than the current exit count implies. Recorded instruments lag four to eight weeks and the most recent month can still grow.</div>
+    </div>
+    <div class="card">
+      <h3>2,218 investor purchases at a $672,516 median — All recorded residential investor purchases and their median price</h3>
+      <div class="meta">trending down · vs 3,241 and $675,000 a year ago</div>
+      <div class="body">Volume is down roughly a third year over year while the median price is essentially unchanged. Sellers are not discounting into the thinner bid.</div>
+    </div>
+    <div class="card">
+      <h3>5.5% of flips in 02302 — Brockton East share of completed flips</h3>
+      <div class="meta">trending up · vs 2.4% a year ago</div>
+      <div class="body">The largest single zip-level share gain in the exit data, with 02043 also moving to 3.7% from 0.8%. Against only 109 total exits, each zip share rests on a handful of deeds.</div>
+    </div>
+    <div class="card">
+      <h3>$342/sqft on 2-4 units — Median price per square foot paid on 2-4 unit purchases, 314 deals at an $885,000 median</h3>
+      <div class="meta">holding steady · vs $444/sqft on 824 condo purchases</div>
+      <div class="body">Small multifamily remains the cheapest occupied basis per foot outside 5+ apartment stock at $281/sqft. Single family sits between at $393/sqft.</div>
+    </div>
+    <div class="card">
+      <h3>265 rehab-funded loans — Trailing-12-month purchase loans that also funded rehab, out of 697 financed purchases</h3>
+      <div class="meta">holding steady · 38.0% of the 697 financed purchases in the trailing 12 months</div>
+      <div class="body">Financed share of observed purchases was 73.7%, with a median loan of $412,463 at 84.4% loan-to-price. Terms and rates are modelled by the county feed, not recorded, so they are not published here.</div>
+    </div>
+    <div class="card">
+      <h3>49.5% of flips built pre-1950 — Share of completed flips in pre-1950 stock; small multifamily was 14.7% of exits</h3>
+      <div class="meta">trending up · vs 41.7% pre-1950 and 11.0% small multi a year ago</div>
+      <div class="body">The exit mix shifted toward older and toward 2-4 unit product, with median year built 1950 against 1955. Scope rehab budgets to that vintage rather than to last year's mix.</div>
+    </div>
+  </div>
+      <!-- AGENT:factoids:end -->
+
+  <h2 class="section-title" id="activity-chart">Market Activity — Investor Purchases</h2>
+  <p class="section-sub">Monthly count of investor purchases of MSA properties (left axis) and the median purchase price (right axis), trailing 13 months. The most recent month can grow up to ~15% as late recordings arrive.</p>
+  <!-- AGENT:chart:start -->
+<div class="chart-row">
+    <div class="map-panel"><img src="../img/chart_2026-05..2026-06.png" alt="Monthly investor purchases and median price"><div class="caption">Investor purchases per month (bars) and median purchase price (line), trailing 13 months.</div></div>
+    <div class="map-panel"><img src="../img/decades_2026-05..2026-06.png" alt="Investor purchases by decade the house was built"><div class="caption">Which vintage of housing investors bought this edition, by decade built.</div></div>
+  </div>
+      <!-- AGENT:chart:end -->
+
+  <h2 class="section-title" id="where-the-money-went">Where the Money Went</h2>
+  <p class="section-sub">The geography of the period's investor activity: which zip codes saw the most recorded deals, and the largest individual transactions at street level.</p>
+  <!-- AGENT:map:start -->
+<div class="map-panel">
+    <h3 class="subsection-title" style="margin-top:0;">The 8 busiest zip codes for investor deals</h3>
+    <div id="dealmap"></div>
+    <script id="map-data" type="application/json">[{"rank":1,"zip":"02127","area":"South Boston","lat":42.335301,"lng":-71.038216,"buys":36,"flips":1,"deals":37,"median":"$915,000","medianSale":"n/a"},{"rank":2,"zip":"03820","area":"Dover","lat":43.18636,"lng":-70.883623,"buys":33,"flips":0,"deals":33,"median":"$582,000","medianSale":"n/a"},{"rank":3,"zip":"02360","area":"Plymouth","lat":41.882062,"lng":-70.631289,"buys":29,"flips":2,"deals":31,"median":"$570,000","medianSale":"n/a"},{"rank":4,"zip":"02472","area":"Watertown","lat":42.369451,"lng":-71.177925,"buys":29,"flips":1,"deals":30,"median":"$830,000","medianSale":"n/a"},{"rank":5,"zip":"03038","area":"Derry","lat":42.892761,"lng":-71.276763,"buys":28,"flips":0,"deals":28,"median":"$512,500","medianSale":"n/a"},{"rank":6,"zip":"02072","area":"STOUGHTON","lat":42.119006,"lng":-71.10365,"buys":24,"flips":2,"deals":26,"median":"$437,500","medianSale":"n/a"},{"rank":7,"zip":"01852","area":"Lowell South","lat":42.632978,"lng":-71.295616,"buys":24,"flips":1,"deals":25,"median":"$368,500","medianSale":"n/a"},{"rank":8,"zip":"02169","area":"Quincy","lat":42.240016,"lng":-71.015205,"buys":25,"flips":0,"deals":25,"median":"$680,000","medianSale":"n/a"}]</script>
+    <div class="caption">Pins rank the busiest zips by recorded investor deals (purchases + flips of existing homes) this period — #1 busiest; orange = top 3; pin size scales with deal volume. Median buy is the typical investor purchase; median sale the typical flip resale. Click a pin for details; full table below.</div>
+    <div class="map-table-wrap">
+    <table class="data">
+      <thead><tr><th>#</th><th>Zip</th><th>Area</th><th class="num">Purchases</th><th class="num">Flips</th><th class="num">Median buy</th><th class="num">Median sale</th></tr></thead><tbody>
+        <tr><td>#1</td><td>02127</td><td>South Boston</td><td class="num">36</td><td class="num">1</td><td class="num">$915,000</td><td class="num">n/a</td></tr>
+        <tr><td>#2</td><td>03820</td><td>Dover</td><td class="num">33</td><td class="num">0</td><td class="num">$582,000</td><td class="num">n/a</td></tr>
+        <tr><td>#3</td><td>02360</td><td>Plymouth</td><td class="num">29</td><td class="num">2</td><td class="num">$570,000</td><td class="num">n/a</td></tr>
+        <tr><td>#4</td><td>02472</td><td>Watertown</td><td class="num">29</td><td class="num">1</td><td class="num">$830,000</td><td class="num">n/a</td></tr>
+        <tr><td>#5</td><td>03038</td><td>Derry</td><td class="num">28</td><td class="num">0</td><td class="num">$512,500</td><td class="num">n/a</td></tr>
+        <tr><td>#6</td><td>02072</td><td>STOUGHTON</td><td class="num">24</td><td class="num">2</td><td class="num">$437,500</td><td class="num">n/a</td></tr>
+        <tr><td>#7</td><td>01852</td><td>Lowell South</td><td class="num">24</td><td class="num">1</td><td class="num">$368,500</td><td class="num">n/a</td></tr>
+        <tr><td>#8</td><td>02169</td><td>Quincy</td><td class="num">25</td><td class="num">0</td><td class="num">$680,000</td><td class="num">n/a</td></tr>
+      </tbody></table>
+    </div>
+  </div>
+      <!-- AGENT:map:end -->
+  <script>
+  (function() {
+    var el = document.getElementById('map-data');
+    if (!el || !window.L) return;
+    var zips; try { zips = JSON.parse(el.textContent); } catch (e) { return; }
+    if (!zips.length) return;
+    var map = L.map('dealmap', { scrollWheelZoom: false });
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',
+      { attribution: 'Tiles &copy; Esri', maxZoom: 18 }).addTo(map);
+    var group = [];
+    var maxDeals = Math.max.apply(null, zips.map(function(z){ return z.deals; }));
+    zips.forEach(function(z) {
+      var size = 26 + Math.round(18 * z.deals / maxDeals);
+      var icon = L.divIcon({ className: '', iconSize: [size, size], iconAnchor: [size/2, size/2],
+        html: '<div class="rank-pin' + (z.rank <= 3 ? ' hot' : '') + '" style="width:'+size+'px;height:'+size+'px;">#'+z.rank+'</div>' });
+      var m = L.marker([z.lat, z.lng], { icon: icon }).addTo(map);
+      m.bindPopup('<b>#'+z.rank+' &middot; '+z.zip+'</b>'+(z.area ? ' &mdash; '+z.area : '')+'<br>'+
+        z.buys.toLocaleString()+' purchases &middot; '+z.flips.toLocaleString()+' flips<br>Median buy '+z.median);
+      m.bindTooltip('#'+z.rank+' '+z.zip, { direction: 'top' });
+      group.push(m);
+    });
+    map.fitBounds(L.featureGroup(group).getBounds().pad(0.25));
+  })();
+  </script>
+  <!-- AGENT:deals:start -->
+<h3 class="subsection-title">A representative deal in each of the busiest zips</h3>
+<p class="section-sub">One deal per zip: the largest matching this market's typical house (typical for this market: 1792 sqft, 3 bed, built around 1955; priced within 4x the county assessment and under 5x its own zip's median).</p>
+<div class="deal-strip">
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_42540a18.jpg" alt="Street view of 33 HALL AVE # 35">
+      <div class="body">
+        <div class="price">$2.1M · Purchase</div>
+        <div class="addr">33 HALL AVE # 35, Watertown MA 02472</div>
+        <div class="meta">2-4 units · 2,384 sqft · May 20</div>
+        <div class="svdate">Street View Aug 2022 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_60578f11.jpg" alt="Street view of 20 ISAAC LUCAS CIR">
+      <div class="body">
+        <div class="price">$1.7M · Purchase</div>
+        <div class="addr">20 ISAAC LUCAS CIR, Dover NH 03820</div>
+        <div class="meta">Single family · 1,814 sqft · May 26</div>
+        <div class="svdate">Street View Oct 2008 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_08a66a42.jpg" alt="Street view of 333 W 4TH ST">
+      <div class="body">
+        <div class="price">$1.4M · Purchase</div>
+        <div class="addr">333 W 4TH ST, South Boston MA 02127</div>
+        <div class="meta">Condo · 1,565 sqft · May 27</div>
+        <div class="svdate">Street View Sep 2022 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_b271704d.jpg" alt="Street view of 312 ADAMS ST">
+      <div class="body">
+        <div class="price">$1.3M · Purchase</div>
+        <div class="addr">312 ADAMS ST, Quincy MA 02169</div>
+        <div class="meta">Single family · 2,697 sqft · Jun 5</div>
+        <div class="svdate">Street View Dec 2011 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_2d6fbab3.jpg" alt="Street view of 80 BAY SHORE DR">
+      <div class="body">
+        <div class="price">$815,000 · Purchase</div>
+        <div class="addr">80 BAY SHORE DR, Plymouth MA 02360</div>
+        <div class="meta">Single family · 1,554 sqft · May 28</div>
+        <div class="svdate">Street View Aug 2021 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_091d87f6.jpg" alt="Street view of 286 PLEASANT ST">
+      <div class="body">
+        <div class="price">$685,000 · Purchase</div>
+        <div class="addr">286 PLEASANT ST, Lowell MA 01852</div>
+        <div class="meta">2-4 units · 1,764 sqft · May 29</div>
+        <div class="svdate">Street View Jul 2025 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_cf31b760.jpg" alt="Street view of 56 BEDARD AVE">
+      <div class="body">
+        <div class="price">$633,400 · Purchase</div>
+        <div class="addr">56 BEDARD AVE, Derry NH 03038</div>
+        <div class="meta">Single family · 1,132 sqft · May 14</div>
+        <div class="svdate">Street View Jun 2025 — before the purchase</div>
+      </div>
+    </div>
+  </div>
+<h3 class="subsection-title">Largest flip margin deals of the period, at street level</h3>
+<p class="section-sub">Gross margin = recorded sale price minus the flipper's recorded purchase price. Purchase deeds are recoverable for roughly 4 in 10 flips; rehab and carry costs are not public record.</p>
+<div class="deal-strip">
+    <div class="deal-card">
+      <img src="../img/svm_2026-05..2026-06_8041249d.jpg" alt="Street view of 81 KIMBALL BEACH RD">
+      <div class="body">
+        <div class="price">$2.2M gross · bought $1.0M (May 2024) → sold $3.3M</div>
+        <div class="addr">81 KIMBALL BEACH RD, Hingham MA 02043</div>
+        <div class="meta">Single family · 3,717 sqft · May 19</div>
+        <div class="svdate">Street View Aug 2025 — during the flip</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-05..2026-06_1759f25c.jpg" alt="Street view of 16 EVELYN ST">
+      <div class="body">
+        <div class="price">$1.8M gross · bought $650,000 (Mar 2025) → sold $2.5M</div>
+        <div class="addr">16 EVELYN ST, Burlington MA 01803</div>
+        <div class="meta">Single family · 1,028 sqft · May 26</div>
+        <div class="svdate">Street View Sep 2019 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-05..2026-06_1363c051.jpg" alt="Street view of 21 LAWTON RD">
+      <div class="body">
+        <div class="price">$1.8M gross · bought $900,000 (Oct 2025) → sold $2.7M</div>
+        <div class="addr">21 LAWTON RD, Needham MA 02492</div>
+        <div class="meta">Single family · 1,074 sqft · May 22</div>
+        <div class="svdate">Street View Sep 2013 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-05..2026-06_758afb52.jpg" alt="Street view of 1 LAWRENCE RD">
+      <div class="body">
+        <div class="price">$1.8M gross · bought $1.4M (Oct 2025) → sold $3.2M</div>
+        <div class="addr">1 LAWRENCE RD, Wellesley MA 02482</div>
+        <div class="meta">Single family · 1,860 sqft · Jun 3</div>
+        <div class="svdate">Street View Jul 2022 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-05..2026-06_284d645f.jpg" alt="Street view of 48 SUNRISE RD">
+      <div class="body">
+        <div class="price">$1.7M gross · bought $820,000 (Dec 2024) → sold $2.5M</div>
+        <div class="addr">48 SUNRISE RD, Westwood MA 02090</div>
+        <div class="meta">Single family · 1,108 sqft · Jun 5</div>
+        <div class="svdate">Street View Jun 2025 — during the flip</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-05..2026-06_20d7bf83.jpg" alt="Street view of 245 WEBSTER ST">
+      <div class="body">
+        <div class="price">$1.6M gross · bought $625,000 (Oct 2024) → sold $2.3M</div>
+        <div class="addr">245 WEBSTER ST, West Newton MA 02465</div>
+        <div class="meta">Single family · 1,254 sqft · Jun 5</div>
+        <div class="svdate">Street View Aug 2019 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+  </div>
+      <!-- AGENT:deals:end -->
+
+  <h2 class="section-title" id="flip-structure">Flip Structure — Year over Year</h2>
+  <p class="section-sub">How the flip market itself is changing: margins, who is doing the flipping, what they flip, and where. Same two calendar months, this year vs last, from the current data extract.</p>
+  <!-- AGENT:flipstructure:start -->
+<table class="data tight">
+    <thead><tr><th>Flip market structure</th><th class="num">Same months last year</th><th class="num">This edition</th></tr></thead><tbody>
+      <tr><td>Flips sold</td><td class="num">245</td><td class="num">109</td></tr>
+      <tr><td>Median sale</td><td class="num">$715,000</td><td class="num">$780,000</td></tr>
+      <tr><td>Median $/sqft</td><td class="num">$480</td><td class="num">$472</td></tr>
+      <tr><td>Sale vs county-assessed</td><td class="num">1.27×</td><td class="num">1.24×</td></tr>
+      <tr><td>Median gross margin (matched buys)</td><td class="num">$250,000</td><td class="num">$260,000</td></tr>
+      <tr><td>Median margin %</td><td class="num">60%</td><td class="num">57%</td></tr>
+      <tr><td>Median hold</td><td class="num">7.5 mo</td><td class="num">8.2 mo</td></tr>
+      <tr><td>Homes bought by flippers</td><td class="num">278</td><td class="num">144</td></tr>
+      <tr><td>Net to inventory (bought − sold)</td><td class="num">+33</td><td class="num">+35</td></tr>
+      <tr><td>Active flippers</td><td class="num">214</td><td class="num">97</td></tr>
+      <tr><td>Top-10 flippers' revenue share</td><td class="num">18%</td><td class="num">31%</td></tr>
+      <tr><td>Median house: sqft / beds / built</td><td class="num">1470 / 3 / 1955</td><td class="num">1524 / 3 / 1950</td></tr>
+      <tr><td>Pre-1950 stock share</td><td class="num">42%</td><td class="num">50%</td></tr>
+      <tr><td>2–4 unit share</td><td class="num">11%</td><td class="num">15%</td></tr>
+      <tr><td>Median distance from downtown</td><td class="num">25.4 km</td><td class="num">25.2 km</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Homes bought counts every deed recorded to a known flipper in the window, resold or not. Net to inventory is that minus flips sold. The standing stock is in the Flip Pipeline section.</div>
+  <div class="pulse-caveat">Attributed profit per flip (per-investor aggregates, by drop period): Feb 26→Jun 26: 268 flips, $236,096/flip · Jun 26→Aug 26: 2 flips, $1.1M/flip.</div>
+  <div class="pulse-caveat">County mix (share of flips, last year → this edition): Middlesex 35%→39% · Plymouth 19%→20% · Norfolk 20%→17% · Essex 16%→11% · Suffolk 7%→9% · Rockingham 2%→4% · Strafford 1%→0%.</div>
+  <div class="pulse-caveat">Biggest zip share moves: Brockton East 2.4%→5.5% · 02043 0.8%→3.7% · 01463 0.0%→2.8% · Needham 0.0%→2.8% · 01701 2.4%→0.0% · Brockton 4.1%→1.8%.</div>
+      <!-- AGENT:flipstructure:end -->
+
+  <h2 class="section-title" id="flip-pipeline">Flip Pipeline — Buying, Selling and Inventory</h2>
+  <!-- AGENT:flipflow:start -->
+<p class="section-sub">Homes bought by known flippers and homes they resold, per month, alongside the stock sitting in flipper hands. A house enters inventory when a flipper buys it and leaves on the next recorded sale, at any price. Purchases still unsold after five years are treated as holds and drop out.</p>
+<div class="map-panel"><img src="../img/flipflow_2026-05..2026-06.png" alt="Flip purchases, flip sales and inventory by month with projection"><div class="caption">Solid = recorded, dashed = projected. Green bars are inventory on the right axis: homes bought and not yet resold. Aged out is purchases passing five years unsold. Inventory moves by bought minus resold minus aged out.</div></div>
+<table class="data tight">
+    <thead><tr><th>Flip pipeline</th><th class="num">Bought / mo</th><th class="num">Resold / mo</th><th class="num">Aged out / mo</th><th class="num">Inventory</th></tr></thead><tbody>
+      <tr><td>Latest recorded month (2026-05)</td><td class="num">118</td><td class="num">102</td><td class="num">35</td><td class="num">2,871</td></tr>
+      <tr><td>Projected (2026-11)</td><td class="num">93</td><td class="num">87</td><td class="num">34</td><td class="num">2,763</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Method: a straight-line trend through the last 24 months, adjusted for the month of the year, shown dashed as a projection. The series stops before the newest month or two, where deeds are still recording.</div>
+      <!-- AGENT:flipflow:end -->
+
+  <h2 class="section-title" id="financing">Who's Funding the Deals</h2>
+  <!-- AGENT:financing:start -->
+<p class="section-sub">First mortgages open on flipper purchases from Jul 2025 – Jun 2026 that have not yet resold. 74% carried recorded debt; the rest closed cash or off-record. Ranked by deal count.</p>
+<div class="card-grid">
+    <div class="card"><h3>74%</h3><div class="meta">Purchases financed</div><div class="body">697 of 946 flipper purchases carried a recorded first mortgage</div></div>
+    <div class="card"><h3>$412,463</h3><div class="meta">Typical loan</div><div class="body">median 0.84× the purchase price</div></div>
+    <div class="card"><h3>38%</h3><div class="meta">Funding the rehab too</div><div class="body">265 of 697 loans exceed the purchase price, so the lender is covering work as well as the buy</div></div>
+  </div>
+<table class="data tight">
+    <thead><tr><th>Lender</th><th class="num">Loans</th><th class="num">Borrowers</th><th class="num">Median loan</th><th class="num">Loan vs price</th><th class="num">Funds rehab</th><th class="num">Median purchase</th></tr></thead><tbody>
+      <tr><td>RFLF 4 LLC</td><td class="num">36</td><td class="num">25</td><td class="num">$538,875</td><td class="num">1.22×</td><td class="num">94%</td><td class="num">$468,825</td></tr>
+      <tr><td>Tailor Ridge Reit LLC</td><td class="num">15</td><td class="num">7</td><td class="num">$402,500</td><td class="num">1.24×</td><td class="num">87%</td><td class="num">$335,000</td></tr>
+      <tr><td>Dunegrass Capital LLC</td><td class="num">13</td><td class="num">8</td><td class="num">$510,000</td><td class="num">1.25×</td><td class="num">100%</td><td class="num">$425,000</td></tr>
+      <tr><td>Rockland Trust Co</td><td class="num">13</td><td class="num">12</td><td class="num">$528,000</td><td class="num">0.88×</td><td class="num">38%</td><td class="num">$540,000</td></tr>
+      <tr><td>Kiavi Funding INC</td><td class="num">9</td><td class="num">8</td><td class="num">$551,600</td><td class="num">1.13×</td><td class="num">89%</td><td class="num">$530,000</td></tr>
+      <tr><td>Village Bank</td><td class="num">9</td><td class="num">8</td><td class="num">$1.6M</td><td class="num">1.78×</td><td class="num">78%</td><td class="num">$905,000</td></tr>
+      <tr><td>Jpmorgan Chase Bank NA</td><td class="num">8</td><td class="num">8</td><td class="num">$309,730</td><td class="num">0.65×</td><td class="num">25%</td><td class="num">$425,000</td></tr>
+      <tr><td>Dedham Institution for Savings</td><td class="num">7</td><td class="num">6</td><td class="num">$1.4M</td><td class="num">1.37×</td><td class="num">86%</td><td class="num">$1.1M</td></tr>
+      <tr><td>Leader Bank NA</td><td class="num">7</td><td class="num">6</td><td class="num">$825,000</td><td class="num">0.70×</td><td class="num">0%</td><td class="num">$1.1M</td></tr>
+      <tr><td>Abl Residential Credit Acquisi</td><td class="num">6</td><td class="num">2</td><td class="num">$455,500</td><td class="num">1.14×</td><td class="num">83%</td><td class="num">$372,500</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Rates and terms are not published: the county feed models both. Borrowers counts the distinct flippers on each lender's book. Loan vs price is the recorded first mortgage divided by what the buyer paid. Above 1.00x the lender is funding purchase plus rehab; below it the buyer brought cash to the table. Blanket mortgages covering several parcels are excluded, as are loans outside 0.1x-3x the price. Rates and points are not public record.</div>
+      <!-- AGENT:financing:end -->
+
+  <h2 class="section-title" id="flipper-profile">Flipper Profile — The Working Flipper</h2>
+  <!-- AGENT:flipperprofile:start -->
+<p class="section-sub">The 70th–90th percentile of local flippers by lifetime flip count — the established operators below the whales: 3–6 lifetime flips each. Bath counts are not in the assessor extract.</p>
+<div class="card-grid">
+    <div class="card"><h3>512</h3><div class="meta">Flippers in the band</div><div class="body">each with 3–6 lifetime flips (avg 3.8)</div></div>
+    <div class="card"><h3>$215,000</h3><div class="meta">Median gross margin</div><div class="body">1,404 flips matched to their purchase price</div></div>
+    <div class="card"><h3>6.5 mo</h3><div class="meta">Typical hold</div><div class="body">purchase to resale, matched deals</div></div>
+    <div class="card"><h3>1792 sqft · 3 bd</h3><div class="meta">Typical house</div><div class="body">median year built 1955</div></div>
+    <div class="card"><img src="../img/flippercurve_2026-05..2026-06.png" alt="Flippers by lifetime flip count" style="width:100%;max-width:260px;"><div class="meta">flippers by lifetime flips · orange = this band</div></div>
+  </div>
+  <div class="pulse-caveat">Where they work: Natick (01760) 2% · Brockton (02301) 2% · Salem (01970) 2% · Concord (01742) 2% · Brockton East (02302) 2%.</div>
+      <!-- AGENT:flipperprofile:end -->
+
+  <h2 class="section-title" id="market-pulse">Market Pulse</h2>
+  <!-- AGENT:pulse:start -->
+<table class="data">
+    <thead><tr><th></th><th class="num">per month, Feb–Jun 2026</th><th class="num">per month, Jun–Aug 2026</th><th class="num">change</th><th class="num">avg/mo 2yr</th><th class="num">avg/mo 4yr</th></tr></thead><tbody>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Homes bought by flippers</td><td class="num">139</td><td class="num">72</td><td class="num">-48%</td><td class="num">137</td><td class="num">151</td></tr>
+      <tr><td><span style="color:#1a7a3c;">&#9650;</span> Lending deals funded</td><td class="num">14</td><td class="num">64</td><td class="num">+349%</td><td class="num">—</td><td class="num">—</td></tr>
+      <tr><td><span style="color:#1a7a3c;">&#9650;</span> Seller/notes held (net)</td><td class="num">1</td><td class="num">295</td><td class="num">+294/mo</td><td class="num">—</td><td class="num">—</td></tr>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Investors (net)</td><td class="num">2,561</td><td class="num">649</td><td class="num">-75%</td><td class="num">—</td><td class="num">—</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Flips and flipper purchases = recorded deeds, same two months each year; their 2- and 4-year columns are per-month averages of the deed series. The remaining rows come from the investor file, which spans 13 months, so they have no multi-year average (2026: Jun 2026 → Aug 2026; 2025: Feb 2026 → Jun 2026).</div>
+      <!-- AGENT:pulse:end -->
+
+  <h2 class="section-title" id="past-issues">Past Issues</h2>
+  <ul>
+    <!-- AGENT:archive:start -->
+<li><a href="../202608/">August 2026</a></li>
+      <!-- AGENT:archive:end -->
+  </ul>
+
+  <h2 class="section-title" id="methodology">Methodology</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Source Data</h3>
+      <div class="meta">County recorder &amp; assessor via FARES</div>
+      <div class="body">Every figure is computed from recorded instruments (deeds, mortgages, assignments) and assessor property records for the five counties of the Boston-Cambridge-Newton-Elyria MSA. No surveys, no estimates, no listings data.
+        <!-- AGENT:sourcedates:start -->
+<div style="margin-top:.5rem;color:var(--navy);">This edition analyzes transactions dated May 1 – June 30, 2026, as recorded through the 2026-08 data extract.</div>
+      <!-- AGENT:sourcedates:end -->
+      </div>
+    </div>
+    <div class="card">
+      <h3>Who Counts as an Investor</h3>
+      <div class="meta">Transaction-pattern identification</div>
+      <div class="body">Investors are entities whose recorded transaction history looks like investing: rental holding (landlords), short-hold resales (flippers), private mortgage lending, note holding, or contract assignment (wholesalers). Banks, homebuilders, iBuyers, SFR funds, and government entities are identified by name and reported separately from small investors.</div>
+    </div>
+    <div class="card">
+      <h3>How Comparisons Work</h3>
+      <div class="meta">Attribution deltas + same-window comparisons</div>
+      <div class="body">The Market Pulse reports activity attributed between successive data drops, from the per-investor lifetime totals maintained upstream — periods differ in length, so per-month rates are shown. Elsewhere, "vs. year ago" compares the same calendar months one year earlier, counted from the same data extract. Transfers under $5,000 (quitclaims, partial interests) are excluded everywhere. Counts lag recording by 4–8 weeks, and the newest month can grow up to ~15% as late records arrive — direction is reliable before magnitude.</div>
+    </div>
+    <div class="card">
+      <h3>Known Limits</h3>
+      <div class="meta">Floors, not ceilings</div>
+      <div class="body">Wholesale assignments only appear when they touch a recorded deed, so those counts are a floor. Flip hold times are measured from the prior recorded sale. Names are the owner of record, which may be an LLC or trust.</div>
+    </div>
+  </div>
+
+  <h2 class="section-title" id="about">About</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Purpose</h3>
+      <div class="body">A working tool for small real estate investors in Greater Boston-Cambridge-Newton: what actually closed, where, at what prices, and what it suggests checking next — one theme per issue.</div>
+    </div>
+    <div class="card">
+      <h3>Cadence</h3>
+      <div class="body">Published with each bi-monthly data drop, covering the two most recent complete months of recorded activity.</div>
+    </div>
+    <div class="card">
+      <h3>Disclaimer</h3>
+      <div class="body">Observations from public records, not investment, legal, or tax advice. Past activity does not guarantee future results. Verify any property or counterparty independently before transacting.</div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="newsletter" id="newsletter">
+      <div class="mc-form" id="mc_embed_signup">
+        <form action="https://swarmtrace.us14.list-manage.com/subscribe/post?u=9a4ba4adf4888e6de8829189e&amp;id=35bb5ff4ae" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+          <h3>Subscribe</h3>
+          <p>Get each Boston Investor Brief by email when a new issue is published.</p>
+          <label for="mce-EMAIL">Enter your email address to subscribe</label>
+          <input type="email" name="EMAIL" id="mce-EMAIL" placeholder="EMAIL" required>
+          <input type="hidden" name="tags" value="12497805">
+          <div style="position:absolute; left:-5000px;" aria-hidden="true"><input type="text" name="b_9a4ba4adf4888e6de8829189e_35bb5ff4ae" tabindex="-1" value=""></div>
+          <button type="submit" name="subscribe" id="mc-embedded-subscribe">SUBSCRIBE</button>
+          <p class="mc-note">Unsubscribe any time. Powered by Mailchimp.</p>
+        </form>
+      </div>
+    </div>
+    <div>
+      <h4>Sections</h4>
+      <ul>
+        <li><a href="#this-issue">This Issue</a></li>
+        <li><a href="#playbook">Investor Playbook</a></li>
+        <li><a href="#factoids">Factoids</a></li>
+        <li><a href="#activity-chart">Market Activity</a></li>
+        <li><a href="#where-the-money-went">Where the Money Went</a></li>
+        <li><a href="#market-pulse">Market Pulse</a></li>
+        <li><a href="#methodology">Methodology</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Coverage</h4>
+      <ul>
+        <li>Essex County</li>
+        <li>Middlesex County</li>
+        <li>Norfolk County</li>
+        <li>Plymouth County</li>
+        <li>Suffolk County</li>
+        <li>Rockingham County</li>
+        <li>Strafford County</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:jpritchard@swarmalytics.com">jpritchard@swarmalytics.com</a></li>
+        <li>Powered by <a href="https://www.swarmalytics.com" target="_blank" rel="noopener">Swarmalytics</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    Boston Real Estate Investor Brief is an independent research publication built from public
+    county records. Not affiliated with any government agency. Nothing here is investment, legal,
+    or tax advice.
+  </div>
+</footer>
+
+</body>
+</html>
