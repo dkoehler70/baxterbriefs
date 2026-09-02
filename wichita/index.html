@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wichita Real Estate Investor Brief</title>
+<meta name="description" content="Deed-level data on what small investors are actually doing in the Wichita-Elyria MSA — flips, rentals, private lending — with a monthly theme and a playbook per investor type.">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  .mc-form { max-width:540px; margin:0 auto; text-align:left; background:#fff; border:1px solid #C0CCD9; border-radius:3px; padding:24px; font-family:Helvetica, sans-serif; color:#3C4858; }
+  .mc-form h3 { font-size:28px; font-weight:700; margin:0 0 8px; }
+  .mc-form p { font-size:16px; margin:0 0 12px; }
+  .mc-form label { display:block; font-weight:700; font-size:16px; margin-bottom:6px; }
+  .mc-form input[type=email] { width:100%; box-sizing:border-box; font-size:16px; padding:10px; border:1px solid #C0CCD9; border-radius:3px; margin-bottom:12px; }
+  .mc-form button { font-size:16px; font-weight:700; color:#fff; background:#3E4857; border:0; border-radius:3px; padding:10px 20px; cursor:pointer; }
+  .mc-form .mc-note { font-size:12px; color:#6b7785; margin-top:10px; }
+</style>
+</head>
+<body>
+
+<div class="utility-bar">
+  <div class="container">
+    <a href="#methodology">Methodology</a>
+    <a href="#about">About</a>
+    <a href="#newsletter">Subscribe</a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container">
+    <div class="brand">
+      <div class="brand-text">
+        <span class="brand-name">Wichita Real Estate Investor Brief</span>
+        <span class="brand-tag">Deed-level market intelligence for small investors · Wichita-Elyria MSA</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="primary-nav">
+  <div class="container">
+    <a href="#this-issue" class="active">This Issue</a>
+    <a href="#playbook">Investor Playbook</a>
+    <a href="#factoids">Factoids</a>
+    <a href="#activity-chart">Market Activity</a>
+    <a href="#where-the-money-went">Where the Money Went</a>
+    <a href="#flip-structure">Flip Structure</a>
+    <a href="#flip-pipeline">Flip Pipeline</a>
+      <a href="#financing">Funding</a>
+      <a href="#flipper-profile">Flipper Profile</a>
+    <a href="#market-pulse">Market Pulse</a>
+    <a href="#methodology">Methodology</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <!-- AGENT:hero:start -->
+<h1>August Edition — Restocking Stall</h1>
+    <div class="datarange">Analyzing transactions recorded May 1 – June 30, 2026</div>
+      <!-- AGENT:hero:end -->
+  </div>
+</section>
+
+<main>
+
+  <h2 class="section-title" id="this-issue">This Issue
+    <!-- AGENT:updated:start -->
+<span style="float:right;font-weight:400;text-transform:none;letter-spacing:0;font-size:12px;color:var(--text-muted);">August 2026 edition</span>
+      <!-- AGENT:updated:end -->
+  </h2>
+  <!-- AGENT:theme:start -->
+<div class="forecast-headline">
+    <div>
+      <div class="number">39 vs 103</div>
+      <div class="label">Homes bought by flippers this edition versus the same two months a year ago (recorded deeds)</div>
+    </div>
+    <div class="body">
+      <h3 style="margin:0 0 .5rem;color:var(--navy);">Flippers stopped restocking: 39 acquisitions against 103 a year ago, and the pipeline is now draining</h3>
+      <p>Flipper acquisitions fell to 39 this edition from 103 a year ago, while 42 flips sold against 73 — net additions to flip inventory ran −3, versus +30 a year ago. The operator count thinned to 31 from 53, and the top ten operators took 54% of flip revenue against 39%. Median hold on what did sell stretched to 298.5 days from 224, with 43% held over a year. Counts, dates and hold times are recorded; every dollar figure in this edition is an estimate, since this county does not disclose prices.</p>
+    </div>
+  </div>
+      <!-- AGENT:theme:end -->
+
+  <h2 class="section-title" id="playbook">Investor Playbook</h2>
+  <p class="section-sub">What this issue's numbers suggest checking, by investor type. Observations from recorded data — not investment, legal, or tax advice.</p>
+  <!-- AGENT:playbook:start -->
+<div class="card-grid">
+    <div class="card">
+      <h3>The buyer list is 31 names, not 53</h3>
+      <div class="meta">Wholesalers</div>
+      <div class="body">Flipper purchases ran 19.5 per month this edition against 51.5 a year ago and a four-year average of 45.1, and only 31 operators closed an exit. Rebuilding the list around the operators still active is worth more than volume marketing. Where flip share rose — Delano 67203 (9.5% vs 4.1%), El Dorado 67042 and West Wichita 67209 (each 7.1% vs 1.4%) — there is still a bid; 67052 went to zero from 6.8%. The product that sold: 3 bed, about 1,573 sqft, median year built 1952, a third pre-1950.</div>
+    </div>
+    <div class="card">
+      <h3>Underwrite ten months of carry, not five</h3>
+      <div class="meta">Flippers</div>
+      <div class="body">Median hold on flips sold this edition was 298.5 days against 224 a year ago, with 43% over a year and only 12% under 90 days. The p70-p90 operator band — 76 operators, mean 4.3 lifetime flips — turns in a median 187 days on larger, newer stock (about 1,689 sqft, median year built 1971) versus the market's 1952. The data suggests the newer, larger product is where the turn is; margins are gross of rehab and carry, and all dollar figures here are estimates.</div>
+    </div>
+    <div class="card">
+      <h3>Less competition for 1950s stock</h3>
+      <div class="meta">Landlords</div>
+      <div class="body">With flipper buying at 39 against 103, the pre-1960 inventory investors bought — 51 purchases from the 1950s, 22 from the 1940s, 22 pre-1940 — faces fewer rehab bidders. The zips carrying flips at the lowest estimated buy basis are worth checking: 67213 at roughly $117,900 median buy with 4 flips, 67216 at roughly $126,200 with 4, 67211 at roughly $138,300 with 3. Estimated $/sqft on 2-4 units, roughly $105, sits below single family at roughly $120.</div>
+    </div>
+    <div class="card">
+      <h3>The gap is 9-to-12-month bridge, not 6</h3>
+      <div class="meta">Private lenders</div>
+      <div class="body">Ten private loans were recorded this edition against 32 a year ago, on a trailing-twelve-month base where 41% of the 81 financed purchases funded rehab. Median recorded loan was about $120,000. Falcon Financing led on count with 7 loans to 4 borrowers at a median loan-to-price near 0.80; Seek First Capital ran 4 at a similar ratio. With median holds now at 298.5 days, term structure matched to a ten-month hold is what the recorded book is not currently supplying. Rates and terms are not recorded and are not published here.</div>
+    </div>
+    <div class="card">
+      <h3>Six apartment trades, 29 small-multi trades</h3>
+      <div class="meta">Multifamily investors</div>
+      <div class="body">Purchases split 29 deals in 2-4 units at an estimated median near $282,000 and 6 in apartment 5+ at an estimated median near $685,000, roughly $137/sqft against roughly $105/sqft for 2-4 units. Only 3 of 42 flip exits were 2-4 unit product, so small multifamily is being acquired to hold. Seller-financed notes held ran 44 this edition, flat against 44 a year ago — the structure is still available on this product where bank paper is scarce.</div>
+    </div>
+  </div>
+      <!-- AGENT:playbook:end -->
+
+  <h2 class="section-title" id="factoids">Factoids</h2>
+  <p class="section-sub">Numbers from this period a practitioner would repeat to a colleague. Each computed directly from recorded instruments.</p>
+  <!-- AGENT:factoids:start -->
+<div class="card-grid">
+    <div class="card">
+      <h3>192 investor purchases — Recorded investor purchases across the five-county metro this edition</h3>
+      <div class="meta">trending down · vs 200 a year ago and 277 in the prior period</div>
+      <div class="body">The year-over-year change is small; the drop from the prior two months is the notable one, at −31%. Recorded counts lag four to eight weeks and the most recent month can still grow.</div>
+    </div>
+    <div class="card">
+      <h3>10 private loans recorded — Recorded private-lending instruments on residential property this edition</h3>
+      <div class="meta">trending down · vs 32 a year ago</div>
+      <div class="body">Over the trailing twelve months only 81 of 320 observed investor purchases carried recorded financing, a 25.3% financed share. Purchase capital in this market is overwhelmingly unrecorded or cash.</div>
+    </div>
+    <div class="card">
+      <h3>Delano 67203 at 9.5% of flips — Share of period flip sales in zip 67203 against its share a year ago</h3>
+      <div class="meta">trending up · vs 4.1% a year ago</div>
+      <div class="body">El Dorado 67042 and West Wichita 67209 each moved to 7.1% from 1.4%, while Goddard West 67052 went to zero from 6.8%. On 42 total flips these are small absolute counts, so read them as direction, not magnitude.</div>
+    </div>
+    <div class="card">
+      <h3>Butler County 14.3% of flips — Butler County share of metro flip sales versus a year ago</h3>
+      <div class="meta">trending up · vs 8.2% a year ago</div>
+      <div class="body">Sedgwick fell to 85.7% from 91.8%. Median distance of a flip from the Wichita CBD was 9.19 km, against 8.72 km a year ago — exits drifted slightly outward.</div>
+    </div>
+    <div class="card">
+      <h3>29 purchases of 2-4 unit property — Recorded investor purchases of 2-4 unit residential product this edition, of 192 total</h3>
+      <div class="meta">holding steady · vs 141 single-family purchases in the same period</div>
+      <div class="body">Estimated basis on 2-4 units works out to roughly $105/sqft against roughly $120/sqft for single family. Small multifamily was only 4.8% of flip exits, so the product is being held rather than turned.</div>
+    </div>
+    <div class="card">
+      <h3>1,032 homes in flipper inventory — Estimated held flip inventory in the latest month against the same month a year ago</h3>
+      <div class="meta">trending down · vs 1,123 a year ago</div>
+      <div class="body">The latest month recorded 22 bought, 44 resold and 9 aged out of the flip window. Inventory has fallen in each of the last four months in the series.</div>
+    </div>
+  </div>
+      <!-- AGENT:factoids:end -->
+
+  <h2 class="section-title" id="activity-chart">Market Activity — Investor Purchases</h2>
+  <p class="section-sub">Monthly count of investor purchases of MSA properties (left axis) and the median purchase price (right axis), trailing 13 months. The most recent month can grow up to ~15% as late recordings arrive.</p>
+  <!-- AGENT:chart:start -->
+<div class="chart-row">
+    <div class="map-panel"><img src="img/chart_2026-05..2026-06.png" alt="Monthly investor purchases and median price"><div class="caption">Investor purchases per month (bars) and median purchase price (line), trailing 13 months.</div></div>
+    <div class="map-panel"><img src="img/decades_2026-05..2026-06.png" alt="Investor purchases by decade the house was built"><div class="caption">Which vintage of housing investors bought this edition, by decade built.</div></div>
+  </div>
+      <!-- AGENT:chart:end -->
+
+  <h2 class="section-title" id="where-the-money-went">Where the Money Went</h2>
+  <p class="section-sub">The geography of the period's investor activity: which zip codes saw the most recorded deals, and the largest individual transactions at street level.</p>
+  <!-- AGENT:map:start -->
+<div class="map-panel">
+    <h3 class="subsection-title" style="margin-top:0;">The 8 busiest zip codes for investor deals</h3>
+    <div id="dealmap"></div>
+    <script id="map-data" type="application/json">[{"rank":1,"zip":"67042","area":"El Dorado","lat":37.857264,"lng":-96.780718,"buys":17,"flips":3,"deals":20,"median":"$183,600","medianSale":"n/a"},{"rank":2,"zip":"67002","area":"Andover","lat":37.700824,"lng":-97.106918,"buys":15,"flips":1,"deals":16,"median":"$329,042","medianSale":"n/a"},{"rank":3,"zip":"67216","area":"South Wichita","lat":37.611241,"lng":-97.312617,"buys":12,"flips":4,"deals":16,"median":"$126,184","medianSale":"n/a"},{"rank":4,"zip":"67213","area":"South Central","lat":37.667472,"lng":-97.364129,"buys":8,"flips":4,"deals":12,"median":"$117,948","medianSale":"n/a"},{"rank":5,"zip":"67207","area":"Southeast Wichita","lat":37.665927,"lng":-97.230236,"buys":10,"flips":1,"deals":11,"median":"$207,860","medianSale":"n/a"},{"rank":6,"zip":"67211","area":"Planeview","lat":37.667063,"lng":-97.317043,"buys":8,"flips":3,"deals":11,"median":"$138,276","medianSale":"n/a"},{"rank":7,"zip":"67218","area":"Southeast Heights","lat":37.668511,"lng":-97.280361,"buys":11,"flips":0,"deals":11,"median":"$162,193","medianSale":"n/a"},{"rank":8,"zip":"67037","area":"Derby","lat":37.571832,"lng":-97.217235,"buys":7,"flips":2,"deals":9,"median":"$222,908","medianSale":"n/a"}]</script>
+    <div class="caption">Pins rank the busiest zips by recorded investor deals (purchases + flips of existing homes) this period — #1 busiest; orange = top 3; pin size scales with deal volume. Median buy is the typical investor purchase; median sale the typical flip resale. Click a pin for details; full table below.</div>
+    <div class="map-table-wrap">
+    <table class="data">
+      <thead><tr><th>#</th><th>Zip</th><th>Area</th><th class="num">Purchases</th><th class="num">Flips</th><th class="num">Median buy</th><th class="num">Median sale</th></tr></thead><tbody>
+        <tr><td>#1</td><td>67042</td><td>El Dorado</td><td class="num">17</td><td class="num">3</td><td class="num">$183,600</td><td class="num">n/a</td></tr>
+        <tr><td>#2</td><td>67002</td><td>Andover</td><td class="num">15</td><td class="num">1</td><td class="num">$329,042</td><td class="num">n/a</td></tr>
+        <tr><td>#3</td><td>67216</td><td>South Wichita</td><td class="num">12</td><td class="num">4</td><td class="num">$126,184</td><td class="num">n/a</td></tr>
+        <tr><td>#4</td><td>67213</td><td>South Central</td><td class="num">8</td><td class="num">4</td><td class="num">$117,948</td><td class="num">n/a</td></tr>
+        <tr><td>#5</td><td>67207</td><td>Southeast Wichita</td><td class="num">10</td><td class="num">1</td><td class="num">$207,860</td><td class="num">n/a</td></tr>
+        <tr><td>#6</td><td>67211</td><td>Planeview</td><td class="num">8</td><td class="num">3</td><td class="num">$138,276</td><td class="num">n/a</td></tr>
+        <tr><td>#7</td><td>67218</td><td>Southeast Heights</td><td class="num">11</td><td class="num">0</td><td class="num">$162,193</td><td class="num">n/a</td></tr>
+        <tr><td>#8</td><td>67037</td><td>Derby</td><td class="num">7</td><td class="num">2</td><td class="num">$222,908</td><td class="num">n/a</td></tr>
+      </tbody></table>
+    </div>
+  </div>
+  <div class="pulse-caveat">Dollar figures on this page are estimates. This county does not disclose sale prices, so 59% of them are back-computed from the recorded mortgage at an assumed loan-to-value. Treat every price, margin and per-foot figure as indicative. Counts, dates, hold times, parties and geography come from the deed record itself and are unaffected.</div>
+      <!-- AGENT:map:end -->
+  <script>
+  (function() {
+    var el = document.getElementById('map-data');
+    if (!el || !window.L) return;
+    var zips; try { zips = JSON.parse(el.textContent); } catch (e) { return; }
+    if (!zips.length) return;
+    var map = L.map('dealmap', { scrollWheelZoom: false });
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',
+      { attribution: 'Tiles &copy; Esri', maxZoom: 18 }).addTo(map);
+    var group = [];
+    var maxDeals = Math.max.apply(null, zips.map(function(z){ return z.deals; }));
+    zips.forEach(function(z) {
+      var size = 26 + Math.round(18 * z.deals / maxDeals);
+      var icon = L.divIcon({ className: '', iconSize: [size, size], iconAnchor: [size/2, size/2],
+        html: '<div class="rank-pin' + (z.rank <= 3 ? ' hot' : '') + '" style="width:'+size+'px;height:'+size+'px;">#'+z.rank+'</div>' });
+      var m = L.marker([z.lat, z.lng], { icon: icon }).addTo(map);
+      m.bindPopup('<b>#'+z.rank+' &middot; '+z.zip+'</b>'+(z.area ? ' &mdash; '+z.area : '')+'<br>'+
+        z.buys.toLocaleString()+' purchases &middot; '+z.flips.toLocaleString()+' flips<br>Median buy '+z.median);
+      m.bindTooltip('#'+z.rank+' '+z.zip, { direction: 'top' });
+      group.push(m);
+    });
+    map.fitBounds(L.featureGroup(group).getBounds().pad(0.25));
+  })();
+  </script>
+  <!-- AGENT:deals:start -->
+<h3 class="subsection-title">A representative deal in each of the busiest zips</h3>
+<p class="section-sub">One deal per zip: the largest matching this market's typical house (typical for this market: 1689 sqft, 3 bed, built around 1971; priced within 4x the county assessment and under 5x its own zip's median).</p>
+<div class="deal-strip">
+    <div class="deal-card">
+      <img src="img/sv_2026-05..2026-06_d1ed40eb.jpg" alt="Street view of 244 S MCCANDLESS RD">
+      <div class="body">
+        <div class="price">$470,820 · Purchase</div>
+        <div class="addr">244 S MCCANDLESS RD, Andover KS 67002</div>
+        <div class="meta">Single family · 1,780 sqft · Jun 3</div>
+        <div class="svdate">Street View Jul 2023 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="img/sv_2026-05..2026-06_6a30e588.jpg" alt="Street view of 4595 NW HOPKINS SWITCH RD">
+      <div class="body">
+        <div class="price">$404,320 · Purchase</div>
+        <div class="addr">4595 NW HOPKINS SWITCH RD, El Dorado KS 67042</div>
+        <div class="meta">Single family · 1,642 sqft · Jun 26</div>
+        <div class="svdate">Street View Sep 2023 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="img/sv_2026-05..2026-06_50a4daec.jpg" alt="Street view of 1326 S SUMMIT RD">
+      <div class="body">
+        <div class="price">$340,480 · Purchase</div>
+        <div class="addr">1326 S SUMMIT RD, Derby KS 67037</div>
+        <div class="meta">Single family · 2,676 sqft · Jun 10</div>
+        <div class="svdate">Street View Mar 2026 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="img/sv_2026-05..2026-06_5c765f20.jpg" alt="Street view of 1202 S DOREEN ST">
+      <div class="body">
+        <div class="price">$283,024 · Purchase</div>
+        <div class="addr">1202 S DOREEN ST, Wichita KS 67207</div>
+        <div class="meta">2-4 units · 1,362 sqft · May 13</div>
+        <div class="svdate">Street View Feb 2026 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="img/sv_2026-05..2026-06_fe797045.jpg" alt="Street view of 437 ELPYCO ST">
+      <div class="body">
+        <div class="price">$279,300 · Purchase</div>
+        <div class="addr">437 ELPYCO ST, Wichita KS 67218</div>
+        <div class="meta">Single family · 1,936 sqft · May 29</div>
+        <div class="svdate">Street View Aug 2011 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="img/sv_2026-05..2026-06_1a2901bd.jpg" alt="Street view of 1858 S VOLUTSIA AVE">
+      <div class="body">
+        <div class="price">$212,002 · Purchase</div>
+        <div class="addr">1858 S VOLUTSIA AVE, Wichita KS 67211</div>
+        <div class="meta">Single family · 2,166 sqft · Jun 16</div>
+        <div class="svdate">Street View Feb 2026 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="img/sv_2026-05..2026-06_160cca8e.jpg" alt="Street view of 1618 S RICHMOND AVE">
+      <div class="body">
+        <div class="price">$208,477 · Flip</div>
+        <div class="addr">1618 S RICHMOND AVE, Wichita KS 67213</div>
+        <div class="meta">Single family · 1,128 sqft · May 8</div>
+        <div class="svdate">Street View Mar 2026 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="img/sv_2026-05..2026-06_3c47e2b6.jpg" alt="Street view of 2902 S WASHINGTON AVE">
+      <div class="body">
+        <div class="price">$154,612 · Purchase</div>
+        <div class="addr">2902 S WASHINGTON AVE, Wichita KS 67216</div>
+        <div class="meta">Single family · 1,261 sqft · Jun 4</div>
+        <div class="svdate">Street View Mar 2026 — before the purchase</div>
+      </div>
+    </div>
+  </div>
+<h3 class="subsection-title">Deal sheet — private lending, in date order</h3>
+<p class="section-sub">Private loans recorded against residential property this period, oldest first.</p>
+<table class="data">
+    <thead><tr><th>Date</th><th>Lender</th><th class="num">Amount</th><th>Property</th><th>Use</th></tr></thead><tbody>
+      <tr><td>May 4</td><td>Community National BK&amp;TR</td><td class="num">$115,000</td><td>1000 Helen ST, Augusta KS 67010</td><td>2-4 units</td></tr>
+      <tr><td>May 4</td><td>Community National BK&amp;TR</td><td class="num">$115,000</td><td>1000 Helen ST, Augusta KS 67010</td><td>2-4 units</td></tr>
+      <tr><td>May 4</td><td>Community National BK&amp;TR</td><td class="num">$115,000</td><td>1000 Helen ST, Augusta KS 67010</td><td>2-4 units</td></tr>
+      <tr><td>May 4</td><td>Community National BK&amp;TR</td><td class="num">$115,000</td><td>1002 Helen ST, Augusta KS 67010</td><td>2-4 units</td></tr>
+      <tr><td>May 4</td><td>Community National BK&amp;TR</td><td class="num">$115,000</td><td>1002 Helen ST, Augusta KS 67010</td><td>2-4 units</td></tr>
+      <tr><td>May 4</td><td>Community National BK&amp;TR</td><td class="num">$115,000</td><td>1002 Helen ST, Augusta KS 67010</td><td>2-4 units</td></tr>
+      <tr><td>May 6</td><td>Harrison Warner</td><td class="num">$59,445</td><td>522 Akron ST, Augusta KS 67010</td><td>Single family</td></tr>
+      <tr><td>Jun 1</td><td>Halstead Jonathan</td><td class="num">$150,000</td><td>620 S Queen ST, Maize KS 67101</td><td>Single family</td></tr>
+    </tbody></table>
+
+<h3 class="subsection-title">Largest flip margin deals of the period, at street level</h3>
+<p class="section-sub">Gross margin = recorded sale price minus the flipper's recorded purchase price. Purchase deeds are recoverable for roughly 4 in 10 flips; rehab and carry costs are not public record.</p>
+<div class="deal-strip">
+    <div class="deal-card">
+      <img src="img/svm_2026-05..2026-06_e475bf74.jpg" alt="Street view of 7841 S WASHINGTON ST">
+      <div class="body">
+        <div class="price">$122,696 gross · bought $77,140 (Mar 2025) → sold $199,836</div>
+        <div class="addr">7841 S WASHINGTON ST, Haysville KS 67060</div>
+        <div class="meta">Single family · 1,292 sqft · May 14</div>
+        <div class="svdate">Street View Mar 2026 — during the flip</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="img/svm_2026-05..2026-06_cd56e196.jpg" alt="Street view of 444 S DERBY AVE">
+      <div class="body">
+        <div class="price">$115,420 gross · bought $60,000 (Dec 2025) → sold $175,420</div>
+        <div class="addr">444 S DERBY AVE, Derby KS 67037</div>
+        <div class="meta">Single family · 1,025 sqft · Jun 4</div>
+        <div class="svdate">Street View Mar 2026 — during the flip</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="img/svm_2026-05..2026-06_6452fd1f.jpg" alt="Street view of 2241 N BELMONT ST">
+      <div class="body">
+        <div class="price">$109,459 gross · bought $265,800 (Dec 2025) → sold $375,259</div>
+        <div class="addr">2241 N BELMONT ST, Wichita KS 67220</div>
+        <div class="meta">Single family · 2,029 sqft · May 1</div>
+        <div class="svdate">Street View Feb 2026 — during the flip</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="img/svm_2026-05..2026-06_4e08e0b3.jpg" alt="Street view of 2230 W MANHATTAN DR">
+      <div class="body">
+        <div class="price">$95,092 gross · bought $133,000 (Feb 2026) → sold $228,092</div>
+        <div class="addr">2230 W MANHATTAN DR, Wichita KS 67204</div>
+        <div class="meta">Single family · 1,666 sqft · Jun 12</div>
+        <div class="svdate">Street View Feb 2026 — during the flip</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="img/svm_2026-05..2026-06_a44fb741.jpg" alt="Street view of 1931 E 50TH ST S">
+      <div class="body">
+        <div class="price">$85,811 gross · bought $167,048 (Mar 2026) → sold $252,859</div>
+        <div class="addr">1931 E 50TH ST S, Wichita KS 67216</div>
+        <div class="meta">Single family · 1,408 sqft · May 1</div>
+        <div class="svdate">Street View Mar 2026 — during the flip</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="img/svm_2026-05..2026-06_e431a855.jpg" alt="Street view of 2438 S HYDRAULIC ST">
+      <div class="body">
+        <div class="price">$82,845 gross · bought $138,320 (Jun 2025) → sold $221,165</div>
+        <div class="addr">2438 S HYDRAULIC ST, Wichita KS 67216</div>
+        <div class="meta">Single family · 1,339 sqft · May 21</div>
+        <div class="svdate">Street View Feb 2026 — during the flip</div>
+      </div>
+    </div>
+  </div>
+      <!-- AGENT:deals:end -->
+
+  <h2 class="section-title" id="flip-structure">Flip Structure — Year over Year</h2>
+  <p class="section-sub">How the flip market itself is changing: margins, who is doing the flipping, what they flip, and where. Same two calendar months, this year vs last, from the current data extract.</p>
+  <!-- AGENT:flipstructure:start -->
+<table class="data tight">
+    <thead><tr><th>Flip market structure</th><th class="num">Same months last year</th><th class="num">This edition</th></tr></thead><tbody>
+      <tr><td>Flips sold</td><td class="num">73</td><td class="num">42</td></tr>
+      <tr><td>Median sale</td><td class="num">$211,041</td><td class="num">$197,320</td></tr>
+      <tr><td>Median $/sqft</td><td class="num">$150</td><td class="num">$146</td></tr>
+      <tr><td>Sale vs county-assessed</td><td class="num">1.55×</td><td class="num">1.60×</td></tr>
+      <tr><td>Median gross margin (matched buys)</td><td class="num">$44,472</td><td class="num">$33,236</td></tr>
+      <tr><td>Median margin %</td><td class="num">23%</td><td class="num">18%</td></tr>
+      <tr><td>Median hold</td><td class="num">7.4 mo</td><td class="num">9.8 mo</td></tr>
+      <tr><td>Homes bought by flippers</td><td class="num">103</td><td class="num">39</td></tr>
+      <tr><td>Net to inventory (bought − sold)</td><td class="num">+30</td><td class="num">−3</td></tr>
+      <tr><td>Active flippers</td><td class="num">53</td><td class="num">31</td></tr>
+      <tr><td>Top-10 flippers' revenue share</td><td class="num">39%</td><td class="num">54%</td></tr>
+      <tr><td>Median house: sqft / beds / built</td><td class="num">1452 / 3 / 1953</td><td class="num">1573 / 3 / 1953</td></tr>
+      <tr><td>Pre-1950 stock share</td><td class="num">36%</td><td class="num">33%</td></tr>
+      <tr><td>2–4 unit share</td><td class="num">4%</td><td class="num">5%</td></tr>
+      <tr><td>Median distance from downtown</td><td class="num">8.7 km</td><td class="num">9.2 km</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Dollar figures on this page are estimates. This county does not disclose sale prices, so 59% of them are back-computed from the recorded mortgage at an assumed loan-to-value. Treat every price, margin and per-foot figure as indicative. Counts, dates, hold times, parties and geography come from the deed record itself and are unaffected.</div>
+  <div class="pulse-caveat">Homes bought counts every deed recorded to a known flipper in the window, resold or not. Net to inventory is that minus flips sold. The standing stock is in the Flip Pipeline section.</div>
+  <div class="pulse-caveat">Attributed profit per flip (per-investor aggregates, by drop period): Feb 26→Jun 26: 183 flips, $1,956/flip · Jun 26→Aug 26: 54 flips, $82,309/flip.</div>
+  <div class="pulse-caveat">County mix (share of flips, last year → this edition): Sedgwick 92%→86% · Butler 8%→14%.</div>
+  <div class="pulse-caveat">Biggest zip share moves: Goddard West 6.8%→0.0% · Planeview 13.7%→7.1% · North Wichita 8.2%→2.4% · El Dorado 1.4%→7.1% · West Wichita 1.4%→7.1% · Delano 4.1%→9.5%.</div>
+      <!-- AGENT:flipstructure:end -->
+
+  <h2 class="section-title" id="flip-pipeline">Flip Pipeline — Buying, Selling and Inventory</h2>
+  <!-- AGENT:flipflow:start -->
+<p class="section-sub">Homes bought by known flippers and homes they resold, per month, alongside the stock sitting in flipper hands. A house enters inventory when a flipper buys it and leaves on the next recorded sale, at any price. Purchases still unsold after five years are treated as holds and drop out.</p>
+<div class="map-panel"><img src="img/flipflow_2026-05..2026-06.png" alt="Flip purchases, flip sales and inventory by month with projection"><div class="caption">Solid = recorded, dashed = projected. Green bars are inventory on the right axis: homes bought and not yet resold. Aged out is purchases passing five years unsold. Inventory moves by bought minus resold minus aged out.</div></div>
+<table class="data tight">
+    <thead><tr><th>Flip pipeline</th><th class="num">Bought / mo</th><th class="num">Resold / mo</th><th class="num">Aged out / mo</th><th class="num">Inventory</th></tr></thead><tbody>
+      <tr><td>Latest recorded month (2026-05)</td><td class="num">22</td><td class="num">44</td><td class="num">9</td><td class="num">1,032</td></tr>
+      <tr><td>Projected (2026-11)</td><td class="num">28</td><td class="num">50</td><td class="num">9</td><td class="num">1,094</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Method: a straight-line trend through the last 24 months, adjusted for the month of the year, shown dashed as a projection. The series stops before the newest month or two, where deeds are still recording.</div>
+      <!-- AGENT:flipflow:end -->
+
+  <h2 class="section-title" id="financing">Who's Funding the Deals</h2>
+  <!-- AGENT:financing:start -->
+<p class="section-sub">First mortgages open on flipper purchases from Jul 2025 – Jun 2026 that have not yet resold. 25% carried recorded debt; the rest closed cash or off-record. Ranked by deal count.</p>
+<div class="card-grid">
+    <div class="card"><h3>25%</h3><div class="meta">Purchases financed</div><div class="body">81 of 320 flipper purchases carried a recorded first mortgage</div></div>
+    <div class="card"><h3>$120,000</h3><div class="meta">Typical loan</div><div class="body">recorded lien amount; this county does not disclose sale prices, so loan-to-price cannot be computed here</div></div>
+  </div>
+<table class="data tight">
+    <thead><tr><th>Lender</th><th class="num">Loans</th><th class="num">Borrowers</th><th class="num">Median loan</th><th class="num">Median purchase</th></tr></thead><tbody>
+      <tr><td>Falcon Financing LLC</td><td class="num">7</td><td class="num">4</td><td class="num">$107,500</td><td class="num">$118,800</td></tr>
+      <tr><td>Conway Bank</td><td class="num">5</td><td class="num">1</td><td class="num">$475,358</td><td class="num">$465,566</td></tr>
+      <tr><td>Ict Antioch LLC</td><td class="num">4</td><td class="num">3</td><td class="num">$115,000</td><td class="num">$133,215</td></tr>
+      <tr><td>Seek First Capital LLC</td><td class="num">4</td><td class="num">3</td><td class="num">$112,500</td><td class="num">$140,650</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Dollar figures on this page are estimates. This county does not disclose sale prices, so 59% of them are back-computed from the recorded mortgage at an assumed loan-to-value. Treat every price, margin and per-foot figure as indicative. Counts, dates, hold times, parties and geography come from the deed record itself and are unaffected.</div>
+  <div class="pulse-caveat">Rates and terms are not published: the county feed models both. Borrowers counts the distinct flippers on each lender's book. Loan vs price is the recorded first mortgage divided by what the buyer paid. Above 1.00x the lender is funding purchase plus rehab; below it the buyer brought cash to the table. Blanket mortgages covering several parcels are excluded, as are loans outside 0.1x-3x the price. Rates and points are not public record.</div>
+      <!-- AGENT:financing:end -->
+
+  <h2 class="section-title" id="flipper-profile">Flipper Profile — The Working Flipper</h2>
+  <!-- AGENT:flipperprofile:start -->
+<p class="section-sub">The 70th–90th percentile of local flippers by lifetime flip count — the established operators below the whales: 3–9 lifetime flips each. Bath counts are not in the assessor extract.</p>
+<div class="card-grid">
+    <div class="card"><h3>76</h3><div class="meta">Flippers in the band</div><div class="body">each with 3–9 lifetime flips (avg 4.3)</div></div>
+    <div class="card"><h3>$36,800</h3><div class="meta">Median gross margin</div><div class="body">283 flips matched to their purchase price</div></div>
+    <div class="card"><h3>6.2 mo</h3><div class="meta">Typical hold</div><div class="body">purchase to resale, matched deals</div></div>
+    <div class="card"><h3>1689 sqft · 3 bd</h3><div class="meta">Typical house</div><div class="body">median year built 1971</div></div>
+    <div class="card"><img src="img/flippercurve_2026-05..2026-06.png" alt="Flippers by lifetime flip count" style="width:100%;max-width:260px;"><div class="meta">flippers by lifetime flips · orange = this band</div></div>
+  </div>
+  <div class="pulse-caveat">Where they work: Haysville North (67217) 11% · Northwest Wichita (67205) 6% · Planeview (67211) 6% · Andover (67002) 5% · Derby (67037) 5%.</div>
+      <!-- AGENT:flipperprofile:end -->
+
+  <h2 class="section-title" id="market-pulse">Market Pulse</h2>
+  <!-- AGENT:pulse:start -->
+<table class="data">
+    <thead><tr><th></th><th class="num">per month, Feb–Jun 2026</th><th class="num">per month, Jun–Aug 2026</th><th class="num">change</th><th class="num">avg/mo 2yr</th><th class="num">avg/mo 4yr</th></tr></thead><tbody>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Homes bought by flippers</td><td class="num">52</td><td class="num">20</td><td class="num">-62%</td><td class="num">49</td><td class="num">45</td></tr>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Flips sold (deeds)</td><td class="num">37</td><td class="num">21</td><td class="num">-42%</td><td class="num">41</td><td class="num">35</td></tr>
+      <tr><td><span style="color:#1a7a3c;">&#9650;</span> Lending deals funded</td><td class="num">19</td><td class="num">21</td><td class="num">+14%</td><td class="num">—</td><td class="num">—</td></tr>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Seller/notes held (net)</td><td class="num">12</td><td class="num">9</td><td class="num">-28%</td><td class="num">—</td><td class="num">—</td></tr>
+      <tr><td><span style="color:#1a7a3c;">&#9650;</span> Investors (net)</td><td class="num">-39</td><td class="num">17</td><td class="num">+56/mo</td><td class="num">—</td><td class="num">—</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Flips and flipper purchases = recorded deeds, same two months each year; their 2- and 4-year columns are per-month averages of the deed series. The remaining rows come from the investor file, which spans 13 months, so they have no multi-year average (2026: Jun 2026 → Aug 2026; 2025: Feb 2026 → Jun 2026).</div>
+      <!-- AGENT:pulse:end -->
+
+  <h2 class="section-title" id="past-issues">Past Issues</h2>
+  <ul>
+    <!-- AGENT:archive:start -->
+<li><a href="202608/">August 2026</a></li>
+      <!-- AGENT:archive:end -->
+  </ul>
+
+  <h2 class="section-title" id="methodology">Methodology</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Source Data</h3>
+      <div class="meta">County recorder &amp; assessor via FARES</div>
+      <div class="body">Every figure is computed from recorded instruments (deeds, mortgages, assignments) and assessor property records for the five counties of the Wichita-Elyria MSA. No surveys, no estimates, no listings data.
+        <!-- AGENT:sourcedates:start -->
+<div style="margin-top:.5rem;color:var(--navy);">This edition analyzes transactions dated May 1 – June 30, 2026, as recorded through the 2026-08 data extract.</div>
+      <!-- AGENT:sourcedates:end -->
+      </div>
+    </div>
+    <div class="card">
+      <h3>Who Counts as an Investor</h3>
+      <div class="meta">Transaction-pattern identification</div>
+      <div class="body">Investors are entities whose recorded transaction history looks like investing: rental holding (landlords), short-hold resales (flippers), private mortgage lending, note holding, or contract assignment (wholesalers). Banks, homebuilders, iBuyers, SFR funds, and government entities are identified by name and reported separately from small investors.</div>
+    </div>
+    <div class="card">
+      <h3>How Comparisons Work</h3>
+      <div class="meta">Attribution deltas + same-window comparisons</div>
+      <div class="body">The Market Pulse reports activity attributed between successive data drops, from the per-investor lifetime totals maintained upstream — periods differ in length, so per-month rates are shown. Elsewhere, "vs. year ago" compares the same calendar months one year earlier, counted from the same data extract. Transfers under $5,000 (quitclaims, partial interests) are excluded everywhere. Counts lag recording by 4–8 weeks, and the newest month can grow up to ~15% as late records arrive — direction is reliable before magnitude.</div>
+    </div>
+    <div class="card">
+      <h3>Known Limits</h3>
+      <div class="meta">Floors, not ceilings</div>
+      <div class="body">Wholesale assignments only appear when they touch a recorded deed, so those counts are a floor. Flip hold times are measured from the prior recorded sale. Names are the owner of record, which may be an LLC or trust.</div>
+    </div>
+  </div>
+
+  <h2 class="section-title" id="about">About</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Purpose</h3>
+      <div class="body">A working tool for small real estate investors in Greater Wichita: what actually closed, where, at what prices, and what it suggests checking next — one theme per issue.</div>
+    </div>
+    <div class="card">
+      <h3>Cadence</h3>
+      <div class="body">Published with each bi-monthly data drop, covering the two most recent complete months of recorded activity.</div>
+    </div>
+    <div class="card">
+      <h3>Disclaimer</h3>
+      <div class="body">Observations from public records, not investment, legal, or tax advice. Past activity does not guarantee future results. Verify any property or counterparty independently before transacting.</div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="newsletter" id="newsletter">
+      <div class="mc-form" id="mc_embed_signup">
+        <form action="https://swarmtrace.us14.list-manage.com/subscribe/post?u=9a4ba4adf4888e6de8829189e&amp;id=35bb5ff4ae" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+          <h3>Subscribe</h3>
+          <p>Get each Wichita Investor Brief by email when a new issue is published.</p>
+          <label for="mce-EMAIL">Enter your email address to subscribe</label>
+          <input type="email" name="EMAIL" id="mce-EMAIL" placeholder="EMAIL" required>
+          <input type="hidden" name="tags" value="12497806">
+          <div style="position:absolute; left:-5000px;" aria-hidden="true"><input type="text" name="b_9a4ba4adf4888e6de8829189e_35bb5ff4ae" tabindex="-1" value=""></div>
+          <button type="submit" name="subscribe" id="mc-embedded-subscribe">SUBSCRIBE</button>
+          <p class="mc-note">Unsubscribe any time. Powered by Mailchimp.</p>
+        </form>
+      </div>
+    </div>
+    <div>
+      <h4>Sections</h4>
+      <ul>
+        <li><a href="#this-issue">This Issue</a></li>
+        <li><a href="#playbook">Investor Playbook</a></li>
+        <li><a href="#factoids">Factoids</a></li>
+        <li><a href="#activity-chart">Market Activity</a></li>
+        <li><a href="#where-the-money-went">Where the Money Went</a></li>
+        <li><a href="#market-pulse">Market Pulse</a></li>
+        <li><a href="#methodology">Methodology</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Coverage</h4>
+      <ul>
+        <li>Sedgwick County</li>
+        <li>Butler County</li>
+        <li>Harvey County</li>
+        <li>Kingman County</li>
+        <li>Sumner County</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:jpritchard@swarmalytics.com">jpritchard@swarmalytics.com</a></li>
+        <li>Powered by <a href="https://www.swarmalytics.com" target="_blank" rel="noopener">Swarmalytics</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    Wichita Real Estate Investor Brief is an independent research publication built from public
+    county records. Not affiliated with any government agency. Nothing here is investment, legal,
+    or tax advice.
+  </div>
+</footer>
+
+</body>
+</html>
