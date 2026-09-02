@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dallas-Fort Worth Real Estate Investor Brief</title>
+<meta name="description" content="Deed-level data on what small investors are actually doing in the Dallas-Fort Worth-Elyria MSA — flips, rentals, private lending — with a monthly theme and a playbook per investor type.">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  .mc-form { max-width:540px; margin:0 auto; text-align:left; background:#fff; border:1px solid #C0CCD9; border-radius:3px; padding:24px; font-family:Helvetica, sans-serif; color:#3C4858; }
+  .mc-form h3 { font-size:28px; font-weight:700; margin:0 0 8px; }
+  .mc-form p { font-size:16px; margin:0 0 12px; }
+  .mc-form label { display:block; font-weight:700; font-size:16px; margin-bottom:6px; }
+  .mc-form input[type=email] { width:100%; box-sizing:border-box; font-size:16px; padding:10px; border:1px solid #C0CCD9; border-radius:3px; margin-bottom:12px; }
+  .mc-form button { font-size:16px; font-weight:700; color:#fff; background:#3E4857; border:0; border-radius:3px; padding:10px 20px; cursor:pointer; }
+  .mc-form .mc-note { font-size:12px; color:#6b7785; margin-top:10px; }
+</style>
+</head>
+<body>
+
+<div class="utility-bar">
+  <div class="container">
+    <a href="#methodology">Methodology</a>
+    <a href="#about">About</a>
+    <a href="#newsletter">Subscribe</a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container">
+    <div class="brand">
+      <div class="brand-text">
+        <span class="brand-name">Dallas-Fort Worth Real Estate Investor Brief</span>
+        <span class="brand-tag">Deed-level market intelligence for small investors · Dallas-Fort Worth-Elyria MSA</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="primary-nav">
+  <div class="container">
+    <a href="#this-issue" class="active">This Issue</a>
+    <a href="#playbook">Investor Playbook</a>
+    <a href="#factoids">Factoids</a>
+    <a href="#activity-chart">Market Activity</a>
+    <a href="#where-the-money-went">Where the Money Went</a>
+    <a href="#flip-structure">Flip Structure</a>
+    <a href="#flip-pipeline">Flip Pipeline</a>
+      <a href="#financing">Funding</a>
+      <a href="#flipper-profile">Flipper Profile</a>
+    <a href="#market-pulse">Market Pulse</a>
+    <a href="#methodology">Methodology</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <!-- AGENT:hero:start -->
+<h1>August Edition — Inventory Build</h1>
+    <div class="datarange">Analyzing transactions recorded May 1 – June 30, 2026</div>
+      <!-- AGENT:hero:end -->
+  </div>
+</section>
+
+<main>
+
+  <h2 class="section-title" id="this-issue">This Issue
+    <!-- AGENT:updated:start -->
+<span style="float:right;font-weight:400;text-transform:none;letter-spacing:0;font-size:12px;color:var(--text-muted);">August 2026 edition</span>
+      <!-- AGENT:updated:end -->
+  </h2>
+  <!-- AGENT:theme:start -->
+<div class="forecast-headline">
+    <div>
+      <div class="number">567 vs 366</div>
+      <div class="label">Net homes added to flipper-held inventory this edition (purchases less resales), against 366 in the same two months a year ago</div>
+    </div>
+    <div class="body">
+      <h3 style="margin:0 0 .5rem;color:var(--navy);">Flipper buying held up while exits fell 44%, adding a net 567 homes to flipper inventory versus 366 a year ago</h3>
+      <p>Flips sold came in at 357, down from 643 a year ago and 586 in the prior period. Acquisitions barely moved: 924 homes bought by flippers versus 1,009 a year ago. The gap is the story — a net 567 homes went into flipper hands this edition against 366 a year ago, and the modelled pipeline stood at 10,592 units in the latest month with 166 positions aging past the flip window. Counts are recorded instruments and lag four to eight weeks, and the most recent month can still grow.</p>
+    </div>
+  </div>
+      <!-- AGENT:theme:end -->
+
+  <h2 class="section-title" id="playbook">Investor Playbook</h2>
+  <p class="section-sub">What this issue's numbers suggest checking, by investor type. Observations from recorded data — not investment, legal, or tax advice.</p>
+  <!-- AGENT:playbook:start -->
+<div class="card-grid">
+    <div class="card">
+      <h3>Follow the buy count, not the flip count</h3>
+      <div class="meta">Wholesalers</div>
+      <div class="body">Flippers still took down 924 homes this edition against 1,009 a year ago, so the buy side is intact. The zips carrying both volume and visible flip exits are 75228 Casa View (37 buys, 12 flips), 75126 Forney (39 buys, 7 flips) and 75216 Oak Cliff South (49 buys, 5 flips); median buys there run roughly $303,000, $270,000 and $163,000 respectively. Granbury East 76048 logged 56 buys but only 2 flips — worth checking whether that demand is rental or owner-occupant before pricing a contract for a rehab buyer.</div>
+    </div>
+    <div class="card">
+      <h3>Underwrite the exit queue, not last year's exit rate</h3>
+      <div class="meta">Flippers</div>
+      <div class="body">Only 357 flips cleared against 643 a year ago while 924 were bought, and the pipeline shows 10,592 held units with 166 aging out in the latest month. Estimated median gross margin was about 25% of sale price versus roughly 21% a year ago, but that is gross — rehab and carry are not in public record, and 45% of these prices are back-computed. The data suggests sizing carry to a hold longer than the 174-day median and checking recent recorded exits in your own zip before committing.</div>
+    </div>
+    <div class="card">
+      <h3>Aged flipper positions are the acquisition channel this period</h3>
+      <div class="meta">Landlords</div>
+      <div class="body">Investor purchases totalled 2,870 against 3,123 a year ago, so competition at the courthouse eased slightly. With 10,592 units modelled as held and 166 aging out in the latest month, operators holding past their window are a plausible source of direct approaches. Single family made up 2,151 of purchases at an estimated median near $319,000; 2-4 units ran 128 deals at roughly $399,000. Worth checking parcels bought by flippers 12-plus months ago in Tarrant, where the flip share rose to 31.7%.</div>
+    </div>
+    <div class="card">
+      <h3>Bridge and extension demand where recorded originations have gone scarce</h3>
+      <div class="meta">Private lenders</div>
+      <div class="body">Recorded private loans fell to 100 from 399 a year ago while flipper-held inventory sits at 10,592. Over the trailing 12 months only 35.5% of observed investor purchases carried a recorded loan, and 44.2% of the 1,264 financed deals included rehab dollars. The gap that fills first is likely takeout and extension paper on positions past 174 days, not fresh purchase money. Median recorded private loan this edition is estimated near $233,000, so exposure per file is modest relative to the estimated $324,000 median purchase.</div>
+    </div>
+    <div class="card">
+      <h3>2-4 unit basis is priced level with houses</h3>
+      <div class="meta">Multifamily investors</div>
+      <div class="body">2-4 unit purchases numbered 128 at an estimated median near $399,000 and roughly $188 per square foot, essentially level with single family at about $189 per square foot on 2,151 deals. Small multi is nearly absent from flip exits — 0.6% of flips versus 1.6% a year ago — so resale comps for that product are thin and pricing leans on rents. Apartment 5+ recorded 36 purchases. Where per-foot basis is the same, the data suggests underwriting the unit count, not the discount.</div>
+    </div>
+  </div>
+      <!-- AGENT:playbook:end -->
+
+  <h2 class="section-title" id="factoids">Factoids</h2>
+  <p class="section-sub">Numbers from this period a practitioner would repeat to a colleague. Each computed directly from recorded instruments.</p>
+  <!-- AGENT:factoids:start -->
+<div class="card-grid">
+    <div class="card">
+      <h3>249 selling operators — Distinct flip operators recording a sale this edition</h3>
+      <div class="meta">trending down · vs 426 a year ago</div>
+      <div class="body">The seller pool thinned faster than the deal count did. Top-10 operators took roughly 70% of flip revenue, against about 73% a year ago, so concentration is steady while the tail has stepped back.</div>
+    </div>
+    <div class="card">
+      <h3>174-day median hold — Median days held on flips that did sell</h3>
+      <div class="meta">trending down · vs 198 days a year ago</div>
+      <div class="body">The homes that cleared moved faster than last year, which points to selective exits rather than a broadly quicker market. Roughly a fifth of measured exits still took over a year.</div>
+    </div>
+    <div class="card">
+      <h3>31.7% of flips in Tarrant — Tarrant County share of flip sales</h3>
+      <div class="meta">trending up · vs 24.6% a year ago</div>
+      <div class="body">Tarrant closed most of the gap with Dallas, which held 37.8% versus 38.6% a year ago. Collin fell to 8.7% from 11.8%, so the exit map has shifted west.</div>
+    </div>
+    <div class="card">
+      <h3>1,654 sqft, built 1973 — Median size and vintage of homes flipped this edition</h3>
+      <div class="meta">trending down · was 1,775 sqft and built 1981 a year ago</div>
+      <div class="body">Product got smaller and older, and the median flip sat 32.6 km from the Dallas CBD versus 36.1 km a year ago. Comp sets built for 1980s suburban stock will not fit this basis.</div>
+    </div>
+    <div class="card">
+      <h3>121 assignments surfaced — Wholesale assignments visible on recorded deeds</h3>
+      <div class="meta">trending up · vs 93 in the prior period; 126 a year ago</div>
+      <div class="body">Assignment flow rebuilt from the prior period even as flip exits fell, which is consistent with buyers still taking down inventory. Treat the count as a floor, since most assignments never touch a deed.</div>
+    </div>
+    <div class="card">
+      <h3>100 private loans recorded — Recorded private-lender originations this edition</h3>
+      <div class="meta">trending down · vs 399 a year ago</div>
+      <div class="body">Recorded private credit is thin at the same time flipper inventory is building. Across the trailing 12 months, 35.5% of observed investor purchases carried a recorded loan and 44.2% of those financed deals included rehab funding.</div>
+    </div>
+  </div>
+      <!-- AGENT:factoids:end -->
+
+  <h2 class="section-title" id="activity-chart">Market Activity — Investor Purchases</h2>
+  <p class="section-sub">Monthly count of investor purchases of MSA properties (left axis) and the median purchase price (right axis), trailing 13 months. The most recent month can grow up to ~15% as late recordings arrive.</p>
+  <!-- AGENT:chart:start -->
+<div class="chart-row">
+    <div class="map-panel"><img src="../img/chart_2026-05..2026-06.png" alt="Monthly investor purchases and median price"><div class="caption">Investor purchases per month (bars) and median purchase price (line), trailing 13 months.</div></div>
+    <div class="map-panel"><img src="../img/decades_2026-05..2026-06.png" alt="Investor purchases by decade the house was built"><div class="caption">Which vintage of housing investors bought this edition, by decade built.</div></div>
+  </div>
+      <!-- AGENT:chart:end -->
+
+  <h2 class="section-title" id="where-the-money-went">Where the Money Went</h2>
+  <p class="section-sub">The geography of the period's investor activity: which zip codes saw the most recorded deals, and the largest individual transactions at street level.</p>
+  <!-- AGENT:map:start -->
+<div class="map-panel">
+    <h3 class="subsection-title" style="margin-top:0;">The 8 busiest zip codes for investor deals</h3>
+    <div id="dealmap"></div>
+    <script id="map-data" type="application/json">[{"rank":1,"zip":"76048","area":"Granbury East","lat":32.408186,"lng":-97.801312,"buys":56,"flips":2,"deals":58,"median":"$240,012","medianSale":"n/a"},{"rank":2,"zip":"75216","area":"Oak Cliff South","lat":32.711324,"lng":-96.781215,"buys":49,"flips":5,"deals":54,"median":"$162,758","medianSale":"$237,500"},{"rank":3,"zip":"75407","area":"Princeton","lat":33.155792,"lng":-96.48041,"buys":49,"flips":2,"deals":51,"median":"$228,217","medianSale":"n/a"},{"rank":4,"zip":"75228","area":"Casa View","lat":32.824924,"lng":-96.679438,"buys":37,"flips":12,"deals":49,"median":"$302,575","medianSale":"$347,344"},{"rank":5,"zip":"76227","area":"Aubrey","lat":33.273393,"lng":-96.990395,"buys":46,"flips":3,"deals":49,"median":"$278,245","medianSale":"n/a"},{"rank":6,"zip":"75126","area":"Forney","lat":32.742601,"lng":-96.452883,"buys":39,"flips":7,"deals":46,"median":"$269,990","medianSale":"$327,262"},{"rank":7,"zip":"76065","area":"MIDLOTHIAN","lat":32.469436,"lng":-96.99067,"buys":43,"flips":1,"deals":44,"median":"$595,459","medianSale":"n/a"},{"rank":8,"zip":"76049","area":"Granbury","lat":32.459823,"lng":-97.706972,"buys":34,"flips":3,"deals":37,"median":"$341,893","medianSale":"n/a"}]</script>
+    <div class="caption">Pins rank the busiest zips by recorded investor deals (purchases + flips of existing homes) this period — #1 busiest; orange = top 3; pin size scales with deal volume. Median buy is the typical investor purchase; median sale the typical flip resale. Click a pin for details; full table below.</div>
+    <div class="map-table-wrap">
+    <table class="data">
+      <thead><tr><th>#</th><th>Zip</th><th>Area</th><th class="num">Purchases</th><th class="num">Flips</th><th class="num">Median buy</th><th class="num">Median sale</th></tr></thead><tbody>
+        <tr><td>#1</td><td>76048</td><td>Granbury East</td><td class="num">56</td><td class="num">2</td><td class="num">$240,012</td><td class="num">n/a</td></tr>
+        <tr><td>#2</td><td>75216</td><td>Oak Cliff South</td><td class="num">49</td><td class="num">5</td><td class="num">$162,758</td><td class="num">$237,500</td></tr>
+        <tr><td>#3</td><td>75407</td><td>Princeton</td><td class="num">49</td><td class="num">2</td><td class="num">$228,217</td><td class="num">n/a</td></tr>
+        <tr><td>#4</td><td>75228</td><td>Casa View</td><td class="num">37</td><td class="num">12</td><td class="num">$302,575</td><td class="num">$347,344</td></tr>
+        <tr><td>#5</td><td>76227</td><td>Aubrey</td><td class="num">46</td><td class="num">3</td><td class="num">$278,245</td><td class="num">n/a</td></tr>
+        <tr><td>#6</td><td>75126</td><td>Forney</td><td class="num">39</td><td class="num">7</td><td class="num">$269,990</td><td class="num">$327,262</td></tr>
+        <tr><td>#7</td><td>76065</td><td>MIDLOTHIAN</td><td class="num">43</td><td class="num">1</td><td class="num">$595,459</td><td class="num">n/a</td></tr>
+        <tr><td>#8</td><td>76049</td><td>Granbury</td><td class="num">34</td><td class="num">3</td><td class="num">$341,893</td><td class="num">n/a</td></tr>
+      </tbody></table>
+    </div>
+  </div>
+  <div class="pulse-caveat">Dollar figures on this page are estimates. This county does not disclose sale prices, so 45% of them are back-computed from the recorded mortgage at an assumed loan-to-value. Treat every price, margin and per-foot figure as indicative. Counts, dates, hold times, parties and geography come from the deed record itself and are unaffected.</div>
+      <!-- AGENT:map:end -->
+  <script>
+  (function() {
+    var el = document.getElementById('map-data');
+    if (!el || !window.L) return;
+    var zips; try { zips = JSON.parse(el.textContent); } catch (e) { return; }
+    if (!zips.length) return;
+    var map = L.map('dealmap', { scrollWheelZoom: false });
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',
+      { attribution: 'Tiles &copy; Esri', maxZoom: 18 }).addTo(map);
+    var group = [];
+    var maxDeals = Math.max.apply(null, zips.map(function(z){ return z.deals; }));
+    zips.forEach(function(z) {
+      var size = 26 + Math.round(18 * z.deals / maxDeals);
+      var icon = L.divIcon({ className: '', iconSize: [size, size], iconAnchor: [size/2, size/2],
+        html: '<div class="rank-pin' + (z.rank <= 3 ? ' hot' : '') + '" style="width:'+size+'px;height:'+size+'px;">#'+z.rank+'</div>' });
+      var m = L.marker([z.lat, z.lng], { icon: icon }).addTo(map);
+      m.bindPopup('<b>#'+z.rank+' &middot; '+z.zip+'</b>'+(z.area ? ' &mdash; '+z.area : '')+'<br>'+
+        z.buys.toLocaleString()+' purchases &middot; '+z.flips.toLocaleString()+' flips<br>Median buy '+z.median);
+      m.bindTooltip('#'+z.rank+' '+z.zip, { direction: 'top' });
+      group.push(m);
+    });
+    map.fitBounds(L.featureGroup(group).getBounds().pad(0.25));
+  })();
+  </script>
+  <!-- AGENT:deals:start -->
+<h3 class="subsection-title">A representative deal in each of the busiest zips</h3>
+<p class="section-sub">One deal per zip: the largest matching this market's typical house (typical for this market: 1674 sqft, 3 bed, built around 1978; priced within 4x the county assessment and under 5x its own zip's median).</p>
+<div class="deal-strip">
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_52645a3e.jpg" alt="Street view of 2216 SPRINGHILL DR">
+      <div class="body">
+        <div class="price">$814,625 · Purchase</div>
+        <div class="addr">2216 SPRINGHILL DR, Dallas TX 75228</div>
+        <div class="meta">Single family · 1,700 sqft · May 12</div>
+        <div class="svdate">Street View Apr 2025 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_4e5e6fe8.jpg" alt="Street view of 802 FAIRMEADOW CIR">
+      <div class="body">
+        <div class="price">$518,035 · Flip</div>
+        <div class="addr">802 FAIRMEADOW CIR, Aubrey TX 76227</div>
+        <div class="meta">Single family · 2,144 sqft · Jun 26</div>
+        <div class="svdate">Street View May 2026 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_2ebe365d.jpg" alt="Street view of 3731 JOE WILSON RD">
+      <div class="body">
+        <div class="price">$422,940 · Purchase</div>
+        <div class="addr">3731 JOE WILSON RD, Midlothian TX 76065</div>
+        <div class="meta">Single family · 1,665 sqft · Jun 11</div>
+        <div class="svdate">Street View Apr 2025 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_7704be1c.jpg" alt="Street view of 5300 COUNTY ROAD 437">
+      <div class="body">
+        <div class="price">$414,960 · Purchase</div>
+        <div class="addr">5300 COUNTY ROAD 437, Princeton TX 75407</div>
+        <div class="meta">Single family · 1,514 sqft · Jun 18</div>
+        <div class="svdate">Street View Nov 2024 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_70af5746.jpg" alt="Street view of 506 ELM GROVE TRL">
+      <div class="body">
+        <div class="price">$351,120 · Purchase</div>
+        <div class="addr">506 ELM GROVE TRL, Forney TX 75126</div>
+        <div class="meta">Single family · 2,417 sqft · May 1</div>
+        <div class="svdate">Street View Mar 2022 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_3f1aa043.jpg" alt="Street view of 3124 MODREE AVE">
+      <div class="body">
+        <div class="price">$347,263 · Purchase</div>
+        <div class="addr">3124 MODREE AVE, Dallas TX 75216</div>
+        <div class="meta">Single family · 2,501 sqft · Jun 30</div>
+        <div class="svdate">Street View Aug 2025 — before the purchase</div>
+      </div>
+    </div>
+  </div>
+<h3 class="subsection-title">Deal sheet — private lending, in date order</h3>
+<p class="section-sub">Private loans recorded against residential property this period, oldest first.</p>
+<table class="data">
+    <thead><tr><th>Date</th><th>Lender</th><th class="num">Amount</th><th>Property</th><th>Use</th></tr></thead><tbody>
+      <tr><td>May 4</td><td>Martinez Victor</td><td class="num">$260,000</td><td>6315 Plainview DR, Arlington TX 76018</td><td>Single family</td></tr>
+      <tr><td>May 4</td><td>Martinez Victor</td><td class="num">$260,000</td><td>6315 Plainview DR, Arlington TX 76018</td><td>Single family</td></tr>
+      <tr><td>May 4</td><td>Martinez Victor</td><td class="num">$260,000</td><td>6315 Plainview DR, Arlington TX 76018</td><td>Single family</td></tr>
+      <tr><td>May 4</td><td>Rosamond Vicki</td><td class="num">$240,000</td><td>2125 Pecos DR, Grapevine TX 76051</td><td>Single family</td></tr>
+      <tr><td>May 4</td><td>Rosamond Vicki</td><td class="num">$240,000</td><td>2125 Pecos DR, Grapevine TX 76051</td><td>Single family</td></tr>
+      <tr><td>May 4</td><td>Rosamond Vicki</td><td class="num">$240,000</td><td>2125 Pecos DR, Grapevine TX 76051</td><td>Single family</td></tr>
+      <tr><td>May 4</td><td>Lucky Mohr Investments LP</td><td class="num">$199,750</td><td>728 Hillcrest ST, Denton TX 76201</td><td>Single family</td></tr>
+      <tr><td>May 4</td><td>Lucky Mohr Investments LP</td><td class="num">$199,750</td><td>728 Hillcrest ST, Denton TX 76201</td><td>Single family</td></tr>
+    </tbody></table>
+
+<h3 class="subsection-title">Largest flip margin deals of the period, at street level</h3>
+<p class="section-sub">Gross margin = recorded sale price minus the flipper's recorded purchase price. Purchase deeds are recoverable for roughly 4 in 10 flips; rehab and carry costs are not public record.</p>
+<div class="deal-strip">
+    <div class="deal-card">
+      <img src="../img/svm_2026-05..2026-06_6413d570.jpg" alt="Street view of 3610 MANANA DR">
+      <div class="body">
+        <div class="price">$606,620 gross · bought $210,000 (May 2026) → sold $816,620</div>
+        <div class="addr">3610 MANANA DR, Dallas TX 75220</div>
+        <div class="meta">Single family · 1,286 sqft · May 7</div>
+        <div class="svdate">Street View Jul 2024 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-05..2026-06_084f1ecc.jpg" alt="Street view of 409 CADDO ST">
+      <div class="body">
+        <div class="price">$605,150 gross · bought $246,050 (Sep 2024) → sold $851,200</div>
+        <div class="addr">409 CADDO ST, Josephine TX 75173</div>
+        <div class="meta">Single family · 1,530 sqft · Jun 9</div>
+        <div class="svdate">Street View Apr 2023 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-05..2026-06_936153ec.jpg" alt="Street view of 1800 CHESTER DR">
+      <div class="body">
+        <div class="price">$461,310 gross · bought $319,200 (Mar 2026) → sold $780,510</div>
+        <div class="addr">1800 CHESTER DR, Plano TX 75025</div>
+        <div class="meta">Single family · 2,832 sqft · Jun 9</div>
+        <div class="svdate">Street View Sep 2018 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-05..2026-06_0aa69453.jpg" alt="Street view of 11023 MARSH LN">
+      <div class="body">
+        <div class="price">$394,800 gross · bought $350,000 (Nov 2025) → sold $744,800</div>
+        <div class="addr">11023 MARSH LN, Dallas TX 75229</div>
+        <div class="meta">Single family · 2,766 sqft · May 19</div>
+        <div class="svdate">Street View May 2025 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-05..2026-06_1db296b8.jpg" alt="Street view of 7111 HALPRIN CT">
+      <div class="body">
+        <div class="price">$360,323 gross · bought $931,000 (Aug 2025) → sold $1.3M</div>
+        <div class="addr">7111 HALPRIN CT, Dallas TX 75252</div>
+        <div class="meta">Single family · 3,084 sqft · Jun 1</div>
+        <div class="svdate">Street View Jan 2024 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-05..2026-06_95e69246.jpg" alt="Street view of 6408 DUFFIELD DR">
+      <div class="body">
+        <div class="price">$342,991 gross · bought $997,500 (Sep 2025) → sold $1.3M</div>
+        <div class="addr">6408 DUFFIELD DR, Dallas TX 75248</div>
+        <div class="meta">Single family · 3,223 sqft · May 8</div>
+        <div class="svdate">Street View May 2026 — during the flip</div>
+      </div>
+    </div>
+  </div>
+      <!-- AGENT:deals:end -->
+
+  <h2 class="section-title" id="flip-structure">Flip Structure — Year over Year</h2>
+  <p class="section-sub">How the flip market itself is changing: margins, who is doing the flipping, what they flip, and where. Same two calendar months, this year vs last, from the current data extract.</p>
+  <!-- AGENT:flipstructure:start -->
+<table class="data tight">
+    <thead><tr><th>Flip market structure</th><th class="num">Same months last year</th><th class="num">This edition</th></tr></thead><tbody>
+      <tr><td>Flips sold</td><td class="num">643</td><td class="num">357</td></tr>
+      <tr><td>Median sale</td><td class="num">$354,038</td><td class="num">$340,480</td></tr>
+      <tr><td>Median $/sqft</td><td class="num">$215</td><td class="num">$210</td></tr>
+      <tr><td>Sale vs county-assessed</td><td class="num">1.29×</td><td class="num">1.21×</td></tr>
+      <tr><td>Median gross margin (matched buys)</td><td class="num">$58,746</td><td class="num">$64,306</td></tr>
+      <tr><td>Median margin %</td><td class="num">21%</td><td class="num">25%</td></tr>
+      <tr><td>Median hold</td><td class="num">6.5 mo</td><td class="num">5.7 mo</td></tr>
+      <tr><td>Homes bought by flippers</td><td class="num">1,009</td><td class="num">924</td></tr>
+      <tr><td>Net to inventory (bought − sold)</td><td class="num">+366</td><td class="num">+567</td></tr>
+      <tr><td>Active flippers</td><td class="num">426</td><td class="num">249</td></tr>
+      <tr><td>Top-10 flippers' revenue share</td><td class="num">73%</td><td class="num">70%</td></tr>
+      <tr><td>Median house: sqft / beds / built</td><td class="num">1775 / 3 / 1981</td><td class="num">1654 / 3 / 1973</td></tr>
+      <tr><td>Pre-1950 stock share</td><td class="num">7%</td><td class="num">7%</td></tr>
+      <tr><td>2–4 unit share</td><td class="num">2%</td><td class="num">1%</td></tr>
+      <tr><td>Median distance from downtown</td><td class="num">36.1 km</td><td class="num">32.6 km</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Dollar figures on this page are estimates. This county does not disclose sale prices, so 45% of them are back-computed from the recorded mortgage at an assumed loan-to-value. Treat every price, margin and per-foot figure as indicative. Counts, dates, hold times, parties and geography come from the deed record itself and are unaffected.</div>
+  <div class="pulse-caveat">Homes bought counts every deed recorded to a known flipper in the window, resold or not. Net to inventory is that minus flips sold. The standing stock is in the Flip Pipeline section.</div>
+  <div class="pulse-caveat">Attributed profit per flip (per-investor aggregates, by drop period): Jul 25→Feb 26: 12,246 flips, $410,571/flip · Feb 26→Jun 26: 4,076 flips, n/a (revisions) · Jun 26→Aug 26: 1,483 flips, $279,729/flip.</div>
+  <div class="pulse-caveat">County mix (share of flips, last year → this edition): Dallas 39%→38% · Tarrant 25%→32% · Collin 12%→9% · Denton 7%→7% · Parker 2%→3% · Johnson 6%→3% · Ellis 2%→3% · Kaufman 4%→3% · Hood 2%→2% · Hunt 2%→1% · Wise 0%→1% · Rockwall 1%→1% · Somervell 0%→0%.</div>
+      <!-- AGENT:flipstructure:end -->
+
+  <h2 class="section-title" id="flip-pipeline">Flip Pipeline — Buying, Selling and Inventory</h2>
+  <!-- AGENT:flipflow:start -->
+<p class="section-sub">Homes bought by known flippers and homes they resold, per month, alongside the stock sitting in flipper hands. A house enters inventory when a flipper buys it and leaves on the next recorded sale, at any price. Purchases still unsold after five years are treated as holds and drop out.</p>
+<div class="map-panel"><img src="../img/flipflow_2026-05..2026-06.png" alt="Flip purchases, flip sales and inventory by month with projection"><div class="caption">Solid = recorded, dashed = projected. Green bars are inventory on the right axis: homes bought and not yet resold. Aged out is purchases passing five years unsold. Inventory moves by bought minus resold minus aged out.</div></div>
+<table class="data tight">
+    <thead><tr><th>Flip pipeline</th><th class="num">Bought / mo</th><th class="num">Resold / mo</th><th class="num">Aged out / mo</th><th class="num">Inventory</th></tr></thead><tbody>
+      <tr><td>Latest recorded month (2026-05)</td><td class="num">593</td><td class="num">396</td><td class="num">166</td><td class="num">10,592</td></tr>
+      <tr><td>Projected (2026-11)</td><td class="num">440</td><td class="num">347</td><td class="num">161</td><td class="num">9,953</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Method: a straight-line trend through the last 24 months, adjusted for the month of the year, shown dashed as a projection. The series stops before the newest month or two, where deeds are still recording.</div>
+      <!-- AGENT:flipflow:end -->
+
+  <h2 class="section-title" id="financing">Who's Funding the Deals</h2>
+  <!-- AGENT:financing:start -->
+<p class="section-sub">First mortgages open on flipper purchases from Jul 2025 – Jun 2026 that have not yet resold. 35% carried recorded debt; the rest closed cash or off-record. Ranked by deal count.</p>
+<div class="card-grid">
+    <div class="card"><h3>35%</h3><div class="meta">Purchases financed</div><div class="body">1,264 of 3,561 flipper purchases carried a recorded first mortgage</div></div>
+    <div class="card"><h3>$255,300</h3><div class="meta">Typical loan</div><div class="body">recorded lien amount; this county does not disclose sale prices, so loan-to-price cannot be computed here</div></div>
+  </div>
+<table class="data tight">
+    <thead><tr><th>Lender</th><th class="num">Loans</th><th class="num">Borrowers</th><th class="num">Median loan</th><th class="num">Median purchase</th></tr></thead><tbody>
+      <tr><td>United Wholesale Mortgage LLC</td><td class="num">52</td><td class="num">45</td><td class="num">$338,702</td><td class="num">$298,632</td></tr>
+      <tr><td>Rocket Mortgage LLC</td><td class="num">28</td><td class="num">23</td><td class="num">$311,749</td><td class="num">$279,650</td></tr>
+      <tr><td>Mortgage Research Center LLC</td><td class="num">26</td><td class="num">23</td><td class="num">$340,000</td><td class="num">$333,200</td></tr>
+      <tr><td>Everett Financial INC</td><td class="num">22</td><td class="num">20</td><td class="num">$252,752</td><td class="num">$240,550</td></tr>
+      <tr><td>American Portfolio MTG Corp</td><td class="num">20</td><td class="num">20</td><td class="num">$271,492</td><td class="num">$260,888</td></tr>
+      <tr><td>Crosscountry Mortgage LLC</td><td class="num">15</td><td class="num">14</td><td class="num">$350,000</td><td class="num">$365,750</td></tr>
+      <tr><td>Guild Mortgage Company LLC</td><td class="num">15</td><td class="num">12</td><td class="num">$254,545</td><td class="num">$248,500</td></tr>
+      <tr><td>Wells Fargo Bank NA</td><td class="num">14</td><td class="num">14</td><td class="num">$154,918</td><td class="num">$154,742</td></tr>
+      <tr><td>Dhi Mortgage Company LTD</td><td class="num">13</td><td class="num">12</td><td class="num">$260,071</td><td class="num">$230,297</td></tr>
+      <tr><td>Dhi Mortgage Company, LTD.</td><td class="num">13</td><td class="num">8</td><td class="num">$326,869</td><td class="num">$226,501</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Dollar figures on this page are estimates. This county does not disclose sale prices, so 45% of them are back-computed from the recorded mortgage at an assumed loan-to-value. Treat every price, margin and per-foot figure as indicative. Counts, dates, hold times, parties and geography come from the deed record itself and are unaffected.</div>
+  <div class="pulse-caveat">Rates and terms are not published: the county feed models both. Borrowers counts the distinct flippers on each lender's book. Loan vs price is the recorded first mortgage divided by what the buyer paid. Above 1.00x the lender is funding purchase plus rehab; below it the buyer brought cash to the table. Blanket mortgages covering several parcels are excluded, as are loans outside 0.1x-3x the price. Rates and points are not public record.</div>
+      <!-- AGENT:financing:end -->
+
+  <h2 class="section-title" id="flipper-profile">Flipper Profile — The Working Flipper</h2>
+  <!-- AGENT:flipperprofile:start -->
+<p class="section-sub">The 70th–90th percentile of local flippers by lifetime flip count — the established operators below the whales: 4–9 lifetime flips each. Bath counts are not in the assessor extract.</p>
+<div class="card-grid">
+    <div class="card"><h3>1,428</h3><div class="meta">Flippers in the band</div><div class="body">each with 4–9 lifetime flips (avg 5.5)</div></div>
+    <div class="card"><h3>$27,876</h3><div class="meta">Median gross margin</div><div class="body">8,023 flips matched to their purchase price</div></div>
+    <div class="card"><h3>5.7 mo</h3><div class="meta">Typical hold</div><div class="body">purchase to resale, matched deals</div></div>
+    <div class="card"><h3>1674 sqft · 3 bd</h3><div class="meta">Typical house</div><div class="body">median year built 1978</div></div>
+    <div class="card"><img src="../img/flippercurve_2026-05..2026-06.png" alt="Flippers by lifetime flip count" style="width:100%;max-width:260px;"><div class="meta">flippers by lifetime flips · orange = this band</div></div>
+  </div>
+  <div class="pulse-caveat">Where they work: Granbury East (76048) 3% · Oak Cliff South (75216) 2% · Fort Worth South (76104) 2% · South Dallas East (75215) 2% · Pleasant Grove (75217) 2%.</div>
+      <!-- AGENT:flipperprofile:end -->
+
+  <h2 class="section-title" id="market-pulse">Market Pulse</h2>
+  <!-- AGENT:pulse:start -->
+<table class="data">
+    <thead><tr><th></th><th class="num">per month, Jul 2025–Feb 2026</th><th class="num">per month, Jun–Aug 2026</th><th class="num">change</th><th class="num">avg/mo 2yr</th><th class="num">avg/mo 4yr</th></tr></thead><tbody>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Homes bought by flippers</td><td class="num">505</td><td class="num">462</td><td class="num">-8%</td><td class="num">476</td><td class="num">477</td></tr>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Flips sold (deeds)</td><td class="num">322</td><td class="num">179</td><td class="num">-44%</td><td class="num">411</td><td class="num">424</td></tr>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Lending deals funded</td><td class="num">1,037</td><td class="num">957</td><td class="num">-8%</td><td class="num">—</td><td class="num">—</td></tr>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Seller/notes held (net)</td><td class="num">4,784</td><td class="num">702</td><td class="num">-85%</td><td class="num">—</td><td class="num">—</td></tr>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Investors (net)</td><td class="num">1,312</td><td class="num">-535</td><td class="num">−1,847/mo</td><td class="num">—</td><td class="num">—</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Flips and flipper purchases = recorded deeds, same two months each year; their 2- and 4-year columns are per-month averages of the deed series. The remaining rows come from the investor file, which spans 13 months, so they have no multi-year average (2026: Jun 2026 → Aug 2026; 2025: Jul 2025 → Feb 2026).</div>
+      <!-- AGENT:pulse:end -->
+
+  <h2 class="section-title" id="past-issues">Past Issues</h2>
+  <ul>
+    <!-- AGENT:archive:start -->
+<li><a href="../202608/">August 2026</a></li>
+      <!-- AGENT:archive:end -->
+  </ul>
+
+  <h2 class="section-title" id="methodology">Methodology</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Source Data</h3>
+      <div class="meta">County recorder &amp; assessor via FARES</div>
+      <div class="body">Every figure is computed from recorded instruments (deeds, mortgages, assignments) and assessor property records for the five counties of the Dallas-Fort Worth-Elyria MSA. No surveys, no estimates, no listings data.
+        <!-- AGENT:sourcedates:start -->
+<div style="margin-top:.5rem;color:var(--navy);">This edition analyzes transactions dated May 1 – June 30, 2026, as recorded through the 2026-08 data extract.</div>
+      <!-- AGENT:sourcedates:end -->
+      </div>
+    </div>
+    <div class="card">
+      <h3>Who Counts as an Investor</h3>
+      <div class="meta">Transaction-pattern identification</div>
+      <div class="body">Investors are entities whose recorded transaction history looks like investing: rental holding (landlords), short-hold resales (flippers), private mortgage lending, note holding, or contract assignment (wholesalers). Banks, homebuilders, iBuyers, SFR funds, and government entities are identified by name and reported separately from small investors.</div>
+    </div>
+    <div class="card">
+      <h3>How Comparisons Work</h3>
+      <div class="meta">Attribution deltas + same-window comparisons</div>
+      <div class="body">The Market Pulse reports activity attributed between successive data drops, from the per-investor lifetime totals maintained upstream — periods differ in length, so per-month rates are shown. Elsewhere, "vs. year ago" compares the same calendar months one year earlier, counted from the same data extract. Transfers under $5,000 (quitclaims, partial interests) are excluded everywhere. Counts lag recording by 4–8 weeks, and the newest month can grow up to ~15% as late records arrive — direction is reliable before magnitude.</div>
+    </div>
+    <div class="card">
+      <h3>Known Limits</h3>
+      <div class="meta">Floors, not ceilings</div>
+      <div class="body">Wholesale assignments only appear when they touch a recorded deed, so those counts are a floor. Flip hold times are measured from the prior recorded sale. Names are the owner of record, which may be an LLC or trust.</div>
+    </div>
+  </div>
+
+  <h2 class="section-title" id="about">About</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Purpose</h3>
+      <div class="body">A working tool for small real estate investors in Greater Dallas-Fort Worth: what actually closed, where, at what prices, and what it suggests checking next — one theme per issue.</div>
+    </div>
+    <div class="card">
+      <h3>Cadence</h3>
+      <div class="body">Published with each bi-monthly data drop, covering the two most recent complete months of recorded activity.</div>
+    </div>
+    <div class="card">
+      <h3>Disclaimer</h3>
+      <div class="body">Observations from public records, not investment, legal, or tax advice. Past activity does not guarantee future results. Verify any property or counterparty independently before transacting.</div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="newsletter" id="newsletter">
+      <div class="mc-form" id="mc_embed_signup">
+        <form action="https://swarmtrace.us14.list-manage.com/subscribe/post?u=9a4ba4adf4888e6de8829189e&amp;id=35bb5ff4ae" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+          <h3>Subscribe</h3>
+          <p>Get each Dallas-Fort Worth Investor Brief by email when a new issue is published.</p>
+          <label for="mce-EMAIL">Enter your email address to subscribe</label>
+          <input type="email" name="EMAIL" id="mce-EMAIL" placeholder="EMAIL" required>
+          <input type="hidden" name="tags" value="12497810">
+          <div style="position:absolute; left:-5000px;" aria-hidden="true"><input type="text" name="b_9a4ba4adf4888e6de8829189e_35bb5ff4ae" tabindex="-1" value=""></div>
+          <button type="submit" name="subscribe" id="mc-embedded-subscribe">SUBSCRIBE</button>
+          <p class="mc-note">Unsubscribe any time. Powered by Mailchimp.</p>
+        </form>
+      </div>
+    </div>
+    <div>
+      <h4>Sections</h4>
+      <ul>
+        <li><a href="#this-issue">This Issue</a></li>
+        <li><a href="#playbook">Investor Playbook</a></li>
+        <li><a href="#factoids">Factoids</a></li>
+        <li><a href="#activity-chart">Market Activity</a></li>
+        <li><a href="#where-the-money-went">Where the Money Went</a></li>
+        <li><a href="#market-pulse">Market Pulse</a></li>
+        <li><a href="#methodology">Methodology</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Coverage</h4>
+      <ul>
+        <li>Collin County</li>
+        <li>Dallas County</li>
+        <li>Denton County</li>
+        <li>Ellis County</li>
+        <li>Hood County</li>
+        <li>Hunt County</li>
+        <li>Johnson County</li>
+        <li>Kaufman County</li>
+        <li>Parker County</li>
+        <li>Rockwall County</li>
+        <li>Somervell County</li>
+        <li>Tarrant County</li>
+        <li>Wise County</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:jpritchard@swarmalytics.com">jpritchard@swarmalytics.com</a></li>
+        <li>Powered by <a href="https://www.swarmalytics.com" target="_blank" rel="noopener">Swarmalytics</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    Dallas-Fort Worth Real Estate Investor Brief is an independent research publication built from public
+    county records. Not affiliated with any government agency. Nothing here is investment, legal,
+    or tax advice.
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Phoenix Real Estate Investor Brief</title>
+<meta name="description" content="Deed-level data on what small investors are actually doing in the Phoenix-Mesa-Chandler-Elyria MSA — flips, rentals, private lending — with a monthly theme and a playbook per investor type.">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  .mc-form { max-width:540px; margin:0 auto; text-align:left; background:#fff; border:1px solid #C0CCD9; border-radius:3px; padding:24px; font-family:Helvetica, sans-serif; color:#3C4858; }
+  .mc-form h3 { font-size:28px; font-weight:700; margin:0 0 8px; }
+  .mc-form p { font-size:16px; margin:0 0 12px; }
+  .mc-form label { display:block; font-weight:700; font-size:16px; margin-bottom:6px; }
+  .mc-form input[type=email] { width:100%; box-sizing:border-box; font-size:16px; padding:10px; border:1px solid #C0CCD9; border-radius:3px; margin-bottom:12px; }
+  .mc-form button { font-size:16px; font-weight:700; color:#fff; background:#3E4857; border:0; border-radius:3px; padding:10px 20px; cursor:pointer; }
+  .mc-form .mc-note { font-size:12px; color:#6b7785; margin-top:10px; }
+</style>
+</head>
+<body>
+
+<div class="utility-bar">
+  <div class="container">
+    <a href="#methodology">Methodology</a>
+    <a href="#about">About</a>
+    <a href="#newsletter">Subscribe</a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container">
+    <div class="brand">
+      <div class="brand-text">
+        <span class="brand-name">Phoenix Real Estate Investor Brief</span>
+        <span class="brand-tag">Deed-level market intelligence for small investors · Phoenix-Mesa-Chandler-Elyria MSA</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="primary-nav">
+  <div class="container">
+    <a href="#this-issue" class="active">This Issue</a>
+    <a href="#playbook">Investor Playbook</a>
+    <a href="#factoids">Factoids</a>
+    <a href="#activity-chart">Market Activity</a>
+    <a href="#where-the-money-went">Where the Money Went</a>
+    <a href="#flip-structure">Flip Structure</a>
+    <a href="#flip-pipeline">Flip Pipeline</a>
+      <a href="#financing">Funding</a>
+      <a href="#flipper-profile">Flipper Profile</a>
+    <a href="#market-pulse">Market Pulse</a>
+    <a href="#methodology">Methodology</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <!-- AGENT:hero:start -->
+<h1>August Edition — Operator Thinning</h1>
+    <div class="datarange">Analyzing transactions recorded May 1 – June 30, 2026</div>
+      <!-- AGENT:hero:end -->
+  </div>
+</section>
+
+<main>
+
+  <h2 class="section-title" id="this-issue">This Issue
+    <!-- AGENT:updated:start -->
+<span style="float:right;font-weight:400;text-transform:none;letter-spacing:0;font-size:12px;color:var(--text-muted);">August 2026 edition</span>
+      <!-- AGENT:updated:end -->
+  </h2>
+  <!-- AGENT:theme:start -->
+<div class="forecast-headline">
+    <div>
+      <div class="number">339 vs 574</div>
+      <div class="label">Distinct operators recording a flip sale this edition, against the same period a year ago</div>
+    </div>
+    <div class="body">
+      <h3 style="margin:0 0 .5rem;color:var(--navy);">The flipper field thinned to 339 selling operators from 574 a year ago, and the ones still closing widened their median gross margin to $109,900</h3>
+      <p>Flip exits fell to 629 from 996 a year ago, but the count of distinct operators recording a sale fell faster — 339 against 574. Those still closing took a median gross margin of $109,900, up from $100,000, at 37.5% of basis versus 34.0%. They also turned faster: 128 median days held against 147. Resale pricing did not do that work — the median flip sale is $410,000, flat year over year, and $254.61/sqft is below $268.83. Margins here are gross; rehab and carry costs are not in the public record.</p>
+    </div>
+  </div>
+      <!-- AGENT:theme:end -->
+
+  <h2 class="section-title" id="playbook">Investor Playbook</h2>
+  <p class="section-sub">What this issue's numbers suggest checking, by investor type. Observations from recorded data — not investment, legal, or tax advice.</p>
+  <!-- AGENT:playbook:start -->
+<div class="card-grid">
+    <div class="card">
+      <h3>Fewer end buyers, wider spreads — requalify the list</h3>
+      <div class="meta">Wholesalers</div>
+      <div class="body">Only 339 operators recorded a flip sale this edition against 574 a year ago, so the buyer list is materially shorter while the median recorded assignment spread ran $36,628 against $19,500 a year ago. The data suggests concentrating on zips where exits are still clearing at working-class-free, deed-verified volume: 85208 Mesa Far East showed 20 flips against 74 investor buys at a $267,492 median buy, and 85351 showed 15 flips at a $235,000 median buy. Worth verifying which of your buyers actually recorded a sale in the last two periods before you tie up paper.</div>
+    </div>
+    <div class="card">
+      <h3>Margin is coming from basis, not from resale price</h3>
+      <div class="meta">Flippers</div>
+      <div class="body">Median gross margin is $109,900 and 37.5% of basis, up from $100,000 and 34.0%, while the median sale price of $410,000 is flat year over year and per-foot resale slipped to $254.61 from $268.83. Sale-to-assessed also eased to 1.28 from 1.33. The data suggests underwriting to a flat exit and taking the whole spread at purchase, with a 128-day median hold as the planning figure rather than last year's 147.</div>
+    </div>
+    <div class="card">
+      <h3>Buy-side is crowded but the median ticket is cheaper</h3>
+      <div class="meta">Landlords</div>
+      <div class="body">6,262 investor purchases recorded against 4,734 a year ago, yet the median purchase fell to $435,000 from $450,000. Worth checking mobile and manufactured product, where 250 deals cleared at a $171,750 median and $164/sqft, and 85208 Mesa Far East at a $267,492 median buy, against condo stock at $332,000 but $289/sqft. Per-foot basis, not headline price, is where the mix difference shows up.</div>
+    </div>
+    <div class="card">
+      <h3>Rehab money is the gap the record shows</h3>
+      <div class="meta">Private lenders</div>
+      <div class="body">Recorded private loans fell to 85 from 260 a year ago while trailing-12-month data shows 72.3% of observed investor purchases financed, a median loan of $295,000, and a median loan-to-price of 0.96. Only 38.9% of the 2,606 financed purchases carried rehab funding, and among named lenders Kiavi ran 105 loans at a 71.4% rehab share versus Capital Fund I at 111 loans and 36.0%. With 206 homes aging out of the flip window in the latest month, refinance and extension paper on held inventory is the visible unmet demand. Rates and terms are modelled, not recorded, so price accordingly.</div>
+    </div>
+    <div class="card">
+      <h3>2-4 unit product is trading thin and rarely flipped</h3>
+      <div class="meta">Multifamily investors</div>
+      <div class="body">Only 76 two-to-four-unit purchases recorded this edition at a $940,000 median and $333/sqft, and just 4 flip exits were 2-4 units — 0.5% of flip volume. With comparable trades that scarce, the data suggests leaning on per-foot marks from the wider single-family set at $257/sqft and condo at $289/sqft when you build a value case, and expecting a long marketing period rather than a flipper-style turn.</div>
+    </div>
+  </div>
+      <!-- AGENT:playbook:end -->
+
+  <h2 class="section-title" id="factoids">Factoids</h2>
+  <p class="section-sub">Numbers from this period a practitioner would repeat to a colleague. Each computed directly from recorded instruments.</p>
+  <!-- AGENT:factoids:start -->
+<div class="card-grid">
+    <div class="card">
+      <h3>6,262 investor purchases — Recorded investor purchases this edition</h3>
+      <div class="meta">trending up · vs 4,734 a year ago</div>
+      <div class="body">Buy-side volume is up roughly a third year over year while the median purchase eased to $435,000 from $450,000. Acquisition competition is broader than the shrinking exit count suggests.</div>
+    </div>
+    <div class="card">
+      <h3>29% out of state — Share of investor purchases by out-of-state buyers, at a median $504,450</h3>
+      <div class="meta">holding steady · vs 64% local at a median $419,000</div>
+      <div class="body">Out-of-area capital is buying a higher price point than local buyers. Sellers of $500,000-plus product have a wider bid pool than sellers of $250,000 product.</div>
+    </div>
+    <div class="card">
+      <h3>85 private loans — Recorded private loans this edition, median $286,695</h3>
+      <div class="meta">trending down · vs 260 a year ago at a median $239,184</div>
+      <div class="body">Recorded private-lending instruments are a third of last year's count at a higher median size. Fewer, larger tickets means less visible rescue capital for operators who need a second draw.</div>
+    </div>
+    <div class="card">
+      <h3>$36,628 median spread — Median wholesale assignment spread surfaced on recorded deeds</h3>
+      <div class="meta">trending up · was $19,500 a year ago</div>
+      <div class="body">Spreads nearly doubled on 47 assignments versus 49 a year ago. Recorded assignments are a floor, but the ones that surface are being priced far wider than last year.</div>
+    </div>
+    <div class="card">
+      <h3>$289/sqft on condos — Median price per square foot paid by investors on condo purchases, 833 deals</h3>
+      <div class="meta">trending up · vs $257/sqft on 4,563 single-family purchases</div>
+      <div class="body">Condo basis per foot is above detached basis this edition even though the condo median price of $332,000 sits well under $455,000. Product mix, not location, is doing most of the work in per-foot comparisons.</div>
+    </div>
+    <div class="card">
+      <h3>10,856 homes in flipper hands — Estimated held flip inventory in the latest month of the series</h3>
+      <div class="meta">trending down · vs 12,767 in the same month a year earlier</div>
+      <div class="body">The pipeline is smaller than a year ago even as 206 held homes aged out of the flip window in the latest month. Aged-out stock is the most motivated resale supply a buyer can call on.</div>
+    </div>
+  </div>
+      <!-- AGENT:factoids:end -->
+
+  <h2 class="section-title" id="activity-chart">Market Activity — Investor Purchases</h2>
+  <p class="section-sub">Monthly count of investor purchases of MSA properties (left axis) and the median purchase price (right axis), trailing 13 months. The most recent month can grow up to ~15% as late recordings arrive.</p>
+  <!-- AGENT:chart:start -->
+<div class="chart-row">
+    <div class="map-panel"><img src="img/chart_2026-05..2026-06.png" alt="Monthly investor purchases and median price"><div class="caption">Investor purchases per month (bars) and median purchase price (line), trailing 13 months.</div></div>
+    <div class="map-panel"><img src="img/decades_2026-05..2026-06.png" alt="Investor purchases by decade the house was built"><div class="caption">Which vintage of housing investors bought this edition, by decade built.</div></div>
+  </div>
+      <!-- AGENT:chart:end -->
+
+  <h2 class="section-title" id="where-the-money-went">Where the Money Went</h2>
+  <p class="section-sub">The geography of the period's investor activity: which zip codes saw the most recorded deals, and the largest individual transactions at street level.</p>
+  <!-- AGENT:map:start -->
+<div class="map-panel">
+    <h3 class="subsection-title" style="margin-top:0;">The 8 busiest zip codes for investor deals</h3>
+    <div id="dealmap"></div>
+    <script id="map-data" type="application/json">[{"rank":1,"zip":"85255","area":"North Scottsdale","lat":33.668188,"lng":-111.822512,"buys":118,"flips":9,"deals":127,"median":"$1.6M","medianSale":"$1.7M"},{"rank":2,"zip":"85351","area":"Sun City","lat":33.605791,"lng":-112.28406,"buys":110,"flips":15,"deals":125,"median":"$235,000","medianSale":"$312,500"},{"rank":3,"zip":"85254","area":"Scottsdale Airpark West","lat":33.614603,"lng":-111.949671,"buys":98,"flips":7,"deals":105,"median":"$955,000","medianSale":"$1.5M"},{"rank":4,"zip":"85251","area":"Old Town Scottsdale","lat":33.494489,"lng":-111.920714,"buys":96,"flips":8,"deals":104,"median":"$506,500","medianSale":"$615,000"},{"rank":5,"zip":"85138","area":"Maricopa","lat":33.017663,"lng":-111.991284,"buys":84,"flips":10,"deals":94,"median":"$335,000","medianSale":"$293,500"},{"rank":6,"zip":"85208","area":"Mesa Far East","lat":33.402405,"lng":-111.632073,"buys":74,"flips":20,"deals":94,"median":"$267,492","medianSale":"$302,450"},{"rank":7,"zip":"85374","area":"Surprise","lat":33.644893,"lng":-112.395034,"buys":86,"flips":8,"deals":94,"median":"$369,450","medianSale":"$391,450"},{"rank":8,"zip":"85308","area":"Arrowhead","lat":33.660382,"lng":-112.184964,"buys":83,"flips":10,"deals":93,"median":"$432,000","medianSale":"$443,750"}]</script>
+    <div class="caption">Pins rank the busiest zips by recorded investor deals (purchases + flips of existing homes) this period — #1 busiest; orange = top 3; pin size scales with deal volume. Median buy is the typical investor purchase; median sale the typical flip resale. Click a pin for details; full table below.</div>
+    <div class="map-table-wrap">
+    <table class="data">
+      <thead><tr><th>#</th><th>Zip</th><th>Area</th><th class="num">Purchases</th><th class="num">Flips</th><th class="num">Median buy</th><th class="num">Median sale</th></tr></thead><tbody>
+        <tr><td>#1</td><td>85255</td><td>North Scottsdale</td><td class="num">118</td><td class="num">9</td><td class="num">$1.6M</td><td class="num">$1.7M</td></tr>
+        <tr><td>#2</td><td>85351</td><td>Sun City</td><td class="num">110</td><td class="num">15</td><td class="num">$235,000</td><td class="num">$312,500</td></tr>
+        <tr><td>#3</td><td>85254</td><td>Scottsdale Airpark West</td><td class="num">98</td><td class="num">7</td><td class="num">$955,000</td><td class="num">$1.5M</td></tr>
+        <tr><td>#4</td><td>85251</td><td>Old Town Scottsdale</td><td class="num">96</td><td class="num">8</td><td class="num">$506,500</td><td class="num">$615,000</td></tr>
+        <tr><td>#5</td><td>85138</td><td>Maricopa</td><td class="num">84</td><td class="num">10</td><td class="num">$335,000</td><td class="num">$293,500</td></tr>
+        <tr><td>#6</td><td>85208</td><td>Mesa Far East</td><td class="num">74</td><td class="num">20</td><td class="num">$267,492</td><td class="num">$302,450</td></tr>
+        <tr><td>#7</td><td>85374</td><td>Surprise</td><td class="num">86</td><td class="num">8</td><td class="num">$369,450</td><td class="num">$391,450</td></tr>
+        <tr><td>#8</td><td>85308</td><td>Arrowhead</td><td class="num">83</td><td class="num">10</td><td class="num">$432,000</td><td class="num">$443,750</td></tr>
+      </tbody></table>
+    </div>
+  </div>
+      <!-- AGENT:map:end -->
+  <script>
+  (function() {
+    var el = document.getElementById('map-data');
+    if (!el || !window.L) return;
+    var zips; try { zips = JSON.parse(el.textContent); } catch (e) { return; }
+    if (!zips.length) return;
+    var map = L.map('dealmap', { scrollWheelZoom: false });
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',
+      { attribution: 'Tiles &copy; Esri', maxZoom: 18 }).addTo(map);
+    var group = [];
+    var maxDeals = Math.max.apply(null, zips.map(function(z){ return z.deals; }));
+    zips.forEach(function(z) {
+      var size = 26 + Math.round(18 * z.deals / maxDeals);
+      var icon = L.divIcon({ className: '', iconSize: [size, size], iconAnchor: [size/2, size/2],
+        html: '<div class="rank-pin' + (z.rank <= 3 ? ' hot' : '') + '" style="width:'+size+'px;height:'+size+'px;">#'+z.rank+'</div>' });
+      var m = L.marker([z.lat, z.lng], { icon: icon }).addTo(map);
+      m.bindPopup('<b>#'+z.rank+' &middot; '+z.zip+'</b>'+(z.area ? ' &mdash; '+z.area : '')+'<br>'+
+        z.buys.toLocaleString()+' purchases &middot; '+z.flips.toLocaleString()+' flips<br>Median buy '+z.median);
+      m.bindTooltip('#'+z.rank+' '+z.zip, { direction: 'top' });
+      group.push(m);
+    });
+    map.fitBounds(L.featureGroup(group).getBounds().pad(0.25));
+  })();
+  </script>
+  <!-- AGENT:deals:start -->
+<h3 class="subsection-title">A representative deal in each of the busiest zips</h3>
+<p class="section-sub">One deal per zip: the largest matching this market's typical house (typical for this market: 1599 sqft, 3 bed, built around 1981; priced within 4x the county assessment and under 5x its own zip's median).</p>
+<div class="deal-strip">
+    <div class="deal-card">
+      <img src="img/sv_2026-05..2026-06_8c451457.jpg" alt="Street view of 15215 N KIERLAND BLVD UNIT 311">
+      <div class="body">
+        <div class="price">$1.8M · Purchase</div>
+        <div class="addr">15215 N KIERLAND BLVD UNIT 311, Scottsdale AZ 85254</div>
+        <div class="meta">Condo · 1,507 sqft · Jun 23</div>
+        <div class="svdate">Street View Nov 2025 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="img/sv_2026-05..2026-06_c7413621.jpg" alt="Street view of 7117 E RANCHO VISTA DR UNIT 3006">
+      <div class="body">
+        <div class="price">$1.8M · Purchase</div>
+        <div class="addr">7117 E RANCHO VISTA DR UNIT 3006, Scottsdale AZ 85251</div>
+        <div class="meta">Condo · 2,320 sqft · May 11</div>
+        <div class="svdate">Street View Dec 2025 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="img/sv_2026-05..2026-06_a3c13838.jpg" alt="Street view of 11093 W FRONTIER DR">
+      <div class="body">
+        <div class="price">$1.1M · Purchase</div>
+        <div class="addr">11093 W FRONTIER DR, Sun City AZ 85351</div>
+        <div class="meta">Single family · 2,185 sqft · Jun 26</div>
+        <div class="svdate">Street View Jan 2025 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="img/sv_2026-05..2026-06_cd79aaf6.jpg" alt="Street view of 7041 W GREENBRIAR DR">
+      <div class="body">
+        <div class="price">$630,000 · Purchase</div>
+        <div class="addr">7041 W GREENBRIAR DR, Glendale AZ 85308</div>
+        <div class="meta">Single family · 2,195 sqft · May 11</div>
+        <div class="svdate">Street View Feb 2025 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="img/sv_2026-05..2026-06_797b9297.jpg" alt="Street view of 16021 W SILVER BREEZE DR">
+      <div class="body">
+        <div class="price">$535,000 · Purchase</div>
+        <div class="addr">16021 W SILVER BREEZE DR, Surprise AZ 85374</div>
+        <div class="meta">Single family · 2,035 sqft · Jun 26</div>
+        <div class="svdate">Street View Nov 2024 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="img/sv_2026-05..2026-06_bf12f87e.jpg" alt="Street view of 218 S GLENMAR RD">
+      <div class="body">
+        <div class="price">$455,000 · Purchase</div>
+        <div class="addr">218 S GLENMAR RD, Mesa AZ 85208</div>
+        <div class="meta">Single family · 960 sqft · Jun 8</div>
+        <div class="svdate">Street View Nov 2024 — before the purchase</div>
+      </div>
+    </div>
+  </div>
+<h3 class="subsection-title">Deal sheet — private lending, in date order</h3>
+<p class="section-sub">Private loans recorded against residential property this period, oldest first.</p>
+<table class="data">
+    <thead><tr><th>Date</th><th>Lender</th><th class="num">Amount</th><th>Property</th><th>Use</th></tr></thead><tbody>
+      <tr><td>May 5</td><td>Amwake Harvey</td><td class="num">$535,000</td><td>1417 E Briarwood Ter, Phoenix AZ 85048</td><td>Single family</td></tr>
+      <tr><td>May 5</td><td>Spencers Air Conditioning &amp; Ap</td><td class="num">$405,000</td><td>556 W Kiva Ave, Mesa AZ 85210</td><td>Single family</td></tr>
+      <tr><td>May 5</td><td>Ez Homes INC</td><td class="num">$260,000</td><td>11714 W Sherman ST, Avondale AZ 85323</td><td>Single family</td></tr>
+      <tr><td>May 5</td><td>Valdez Gilberto</td><td class="num">$45,000</td><td>21621 W Narramore RD, Buckeye AZ 85326</td><td>Mobile / manufactured</td></tr>
+      <tr><td>May 8</td><td>Haggerty Family Trust</td><td class="num">$400,000</td><td>5748 N 12TH PL, Phoenix AZ 85014</td><td>Single family</td></tr>
+      <tr><td>May 8</td><td>Haggerty Family Trust</td><td class="num">$400,000</td><td>5748 N 12TH PL, Phoenix AZ 85014</td><td>Single family</td></tr>
+      <tr><td>May 8</td><td>Haggerty Family Trust</td><td class="num">$400,000</td><td>5748 N 12TH PL, Phoenix AZ 85014</td><td>Single family</td></tr>
+      <tr><td>May 8</td><td>Hansen Kevin</td><td class="num">$80,000</td><td>2443 E Tracy LN Unit 4, Phoenix AZ 85032</td><td>Condo</td></tr>
+    </tbody></table>
+
+<h3 class="subsection-title">Largest flip margin deals of the period, at street level</h3>
+<p class="section-sub">Gross margin = recorded sale price minus the flipper's recorded purchase price. Purchase deeds are recoverable for roughly 4 in 10 flips; rehab and carry costs are not public record.</p>
+<div class="deal-strip">
+    <div class="deal-card">
+      <img src="img/svm_2026-05..2026-06_463ec436.jpg" alt="Street view of 8507 E RANCHO VISTA DR">
+      <div class="body">
+        <div class="price">$890,000 gross · bought $535,000 (Jul 2025) → sold $1.4M</div>
+        <div class="addr">8507 E RANCHO VISTA DR, Scottsdale AZ 85251</div>
+        <div class="meta">Single family · 1,702 sqft · Jun 12</div>
+        <div class="svdate">Street View Nov 2025 — during the flip</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="img/svm_2026-05..2026-06_9cb569ee.jpg" alt="Street view of 8576 E VIA DE DORADO">
+      <div class="body">
+        <div class="price">$800,000 gross · bought $1.0M (Dec 2025) → sold $1.8M</div>
+        <div class="addr">8576 E VIA DE DORADO, Scottsdale AZ 85258</div>
+        <div class="meta">Single family · 2,550 sqft · Jun 15</div>
+        <div class="svdate">Street View Nov 2025 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="img/svm_2026-05..2026-06_c82929fb.jpg" alt="Street view of 6818 N 13TH ST">
+      <div class="body">
+        <div class="price">$720,999 gross · bought $375,000 (Aug 2024) → sold $1.1M</div>
+        <div class="addr">6818 N 13TH ST, Phoenix AZ 85014</div>
+        <div class="meta">Single family · 936 sqft · May 13</div>
+        <div class="svdate">Street View Jan 2026 — during the flip</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="img/svm_2026-05..2026-06_605bacb1.jpg" alt="Street view of 5110 E LE MARCHE AVE">
+      <div class="body">
+        <div class="price">$700,000 gross · bought $715,000 (Sep 2025) → sold $1.4M</div>
+        <div class="addr">5110 E LE MARCHE AVE, Scottsdale AZ 85254</div>
+        <div class="meta">Single family · 2,216 sqft · Jun 5</div>
+        <div class="svdate">Street View Nov 2025 — during the flip</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="img/svm_2026-05..2026-06_acf886d9.jpg" alt="Street view of 5932 E GRANDVIEW RD">
+      <div class="body">
+        <div class="price">$693,000 gross · bought $832,000 (Aug 2025) → sold $1.5M</div>
+        <div class="addr">5932 E GRANDVIEW RD, Scottsdale AZ 85254</div>
+        <div class="meta">Single family · 2,495 sqft · May 28</div>
+        <div class="svdate">Street View May 2011 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="img/svm_2026-05..2026-06_67db268b.jpg" alt="Street view of 9414 N 87TH ST">
+      <div class="body">
+        <div class="price">$643,000 gross · bought $1.1M (Oct 2025) → sold $1.7M</div>
+        <div class="addr">9414 N 87TH ST, Scottsdale AZ 85258</div>
+        <div class="meta">Single family · 2,586 sqft · Jun 17</div>
+        <div class="svdate">Street View Dec 2025 — during the flip</div>
+      </div>
+    </div>
+  </div>
+      <!-- AGENT:deals:end -->
+
+  <h2 class="section-title" id="flip-structure">Flip Structure — Year over Year</h2>
+  <p class="section-sub">How the flip market itself is changing: margins, who is doing the flipping, what they flip, and where. Same two calendar months, this year vs last, from the current data extract.</p>
+  <!-- AGENT:flipstructure:start -->
+<table class="data tight">
+    <thead><tr><th>Flip market structure</th><th class="num">Same months last year</th><th class="num">This edition</th></tr></thead><tbody>
+      <tr><td>Flips sold</td><td class="num">996</td><td class="num">629</td></tr>
+      <tr><td>Median sale</td><td class="num">$408,250</td><td class="num">$410,000</td></tr>
+      <tr><td>Median $/sqft</td><td class="num">$269</td><td class="num">$255</td></tr>
+      <tr><td>Sale vs county-assessed</td><td class="num">1.33×</td><td class="num">1.28×</td></tr>
+      <tr><td>Median gross margin (matched buys)</td><td class="num">$100,000</td><td class="num">$109,900</td></tr>
+      <tr><td>Median margin %</td><td class="num">34%</td><td class="num">38%</td></tr>
+      <tr><td>Median hold</td><td class="num">4.8 mo</td><td class="num">4.2 mo</td></tr>
+      <tr><td>Homes bought by flippers</td><td class="num">1,096</td><td class="num">1,151</td></tr>
+      <tr><td>Net to inventory (bought − sold)</td><td class="num">+100</td><td class="num">+522</td></tr>
+      <tr><td>Active flippers</td><td class="num">574</td><td class="num">339</td></tr>
+      <tr><td>Top-10 flippers' revenue share</td><td class="num">24%</td><td class="num">25%</td></tr>
+      <tr><td>Median house: sqft / beds / built</td><td class="num">1587 / 3 / 1985</td><td class="num">1660 / 3 / 1986</td></tr>
+      <tr><td>Pre-1950 stock share</td><td class="num">3%</td><td class="num">2%</td></tr>
+      <tr><td>2–4 unit share</td><td class="num">0%</td><td class="num">0%</td></tr>
+      <tr><td>Median distance from downtown</td><td class="num">25.7 km</td><td class="num">25.6 km</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Homes bought counts every deed recorded to a known flipper in the window, resold or not. Net to inventory is that minus flips sold. The standing stock is in the Flip Pipeline section.</div>
+  <div class="pulse-caveat">Attributed profit per flip (per-investor aggregates, by drop period): Feb 26→Jun 26: 902 flips, $1.7M/flip · Jun 26→Aug 26: 739 flips, $55,598/flip.</div>
+  <div class="pulse-caveat">County mix (share of flips, last year → this edition): Maricopa 87%→89% · Pinal 13%→11%.</div>
+      <!-- AGENT:flipstructure:end -->
+
+  <h2 class="section-title" id="flip-pipeline">Flip Pipeline — Buying, Selling and Inventory</h2>
+  <!-- AGENT:flipflow:start -->
+<p class="section-sub">Homes bought by known flippers and homes they resold, per month, alongside the stock sitting in flipper hands. A house enters inventory when a flipper buys it and leaves on the next recorded sale, at any price. Purchases still unsold after five years are treated as holds and drop out.</p>
+<div class="map-panel"><img src="img/flipflow_2026-05..2026-06.png" alt="Flip purchases, flip sales and inventory by month with projection"><div class="caption">Solid = recorded, dashed = projected. Green bars are inventory on the right axis: homes bought and not yet resold. Aged out is purchases passing five years unsold. Inventory moves by bought minus resold minus aged out.</div></div>
+<table class="data tight">
+    <thead><tr><th>Flip pipeline</th><th class="num">Bought / mo</th><th class="num">Resold / mo</th><th class="num">Aged out / mo</th><th class="num">Inventory</th></tr></thead><tbody>
+      <tr><td>Latest recorded month (2026-05)</td><td class="num">792</td><td class="num">485</td><td class="num">206</td><td class="num">10,856</td></tr>
+      <tr><td>Projected (2026-11)</td><td class="num">376</td><td class="num">304</td><td class="num">204</td><td class="num">9,066</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Method: a straight-line trend through the last 24 months, adjusted for the month of the year, shown dashed as a projection. The series stops before the newest month or two, where deeds are still recording.</div>
+      <!-- AGENT:flipflow:end -->
+
+  <h2 class="section-title" id="financing">Who's Funding the Deals</h2>
+  <!-- AGENT:financing:start -->
+<p class="section-sub">First mortgages open on flipper purchases from Jul 2025 – Jun 2026 that have not yet resold. 72% carried recorded debt; the rest closed cash or off-record. Ranked by deal count.</p>
+<div class="card-grid">
+    <div class="card"><h3>72%</h3><div class="meta">Purchases financed</div><div class="body">2,606 of 3,602 flipper purchases carried a recorded first mortgage</div></div>
+    <div class="card"><h3>$295,000</h3><div class="meta">Typical loan</div><div class="body">median 0.96× the purchase price</div></div>
+    <div class="card"><h3>39%</h3><div class="meta">Funding the rehab too</div><div class="body">1,015 of 2,606 loans exceed the purchase price, so the lender is covering work as well as the buy</div></div>
+  </div>
+<table class="data tight">
+    <thead><tr><th>Lender</th><th class="num">Loans</th><th class="num">Borrowers</th><th class="num">Median loan</th><th class="num">Loan vs price</th><th class="num">Funds rehab</th><th class="num">Median purchase</th></tr></thead><tbody>
+      <tr><td>Capital Fund I LLC</td><td class="num">111</td><td class="num">83</td><td class="num">$301,000</td><td class="num">0.91×</td><td class="num">36%</td><td class="num">$316,500</td></tr>
+      <tr><td>Kiavi Funding INC</td><td class="num">105</td><td class="num">58</td><td class="num">$382,500</td><td class="num">1.13×</td><td class="num">71%</td><td class="num">$370,000</td></tr>
+      <tr><td>Merchants Funding Az LLC</td><td class="num">81</td><td class="num">41</td><td class="num">$514,170</td><td class="num">1.05×</td><td class="num">64%</td><td class="num">$490,000</td></tr>
+      <tr><td>United Wholesale Mortgage LLC</td><td class="num">73</td><td class="num">64</td><td class="num">$378,026</td><td class="num">0.97×</td><td class="num">29%</td><td class="num">$390,000</td></tr>
+      <tr><td>Ron Swanson Holdings LLC</td><td class="num">67</td><td class="num">22</td><td class="num">$285,000</td><td class="num">1.02×</td><td class="num">61%</td><td class="num">$293,000</td></tr>
+      <tr><td>Rocket Mortgage LLC</td><td class="num">50</td><td class="num">41</td><td class="num">$357,319</td><td class="num">0.95×</td><td class="num">30%</td><td class="num">$415,400</td></tr>
+      <tr><td>Ez Homes INC</td><td class="num">36</td><td class="num">27</td><td class="num">$195,625</td><td class="num">0.90×</td><td class="num">8%</td><td class="num">$231,550</td></tr>
+      <tr><td>La Familia Fin'l Limited PTSHP</td><td class="num">36</td><td class="num">5</td><td class="num">$319,500</td><td class="num">0.97×</td><td class="num">36%</td><td class="num">$337,000</td></tr>
+      <tr><td>Boomerang Acceptance LLC</td><td class="num">33</td><td class="num">25</td><td class="num">$265,625</td><td class="num">0.95×</td><td class="num">30%</td><td class="num">$270,000</td></tr>
+      <tr><td>Jpmorgan Chase Bank NA</td><td class="num">28</td><td class="num">24</td><td class="num">$145,000</td><td class="num">0.40×</td><td class="num">7%</td><td class="num">$358,489</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Rates and terms are not published: the county feed models both. Borrowers counts the distinct flippers on each lender's book. Loan vs price is the recorded first mortgage divided by what the buyer paid. Above 1.00x the lender is funding purchase plus rehab; below it the buyer brought cash to the table. Blanket mortgages covering several parcels are excluded, as are loans outside 0.1x-3x the price. Rates and points are not public record.</div>
+      <!-- AGENT:financing:end -->
+
+  <h2 class="section-title" id="flipper-profile">Flipper Profile — The Working Flipper</h2>
+  <!-- AGENT:flipperprofile:start -->
+<p class="section-sub">The 70th–90th percentile of local flippers by lifetime flip count — the established operators below the whales: 4–10 lifetime flips each. Bath counts are not in the assessor extract.</p>
+<div class="card-grid">
+    <div class="card"><h3>895</h3><div class="meta">Flippers in the band</div><div class="body">each with 4–10 lifetime flips (avg 5.7)</div></div>
+    <div class="card"><h3>$16,100</h3><div class="meta">Median gross margin</div><div class="body">58,658 flips matched to their purchase price</div></div>
+    <div class="card"><h3>3.6 mo</h3><div class="meta">Typical hold</div><div class="body">purchase to resale, matched deals</div></div>
+    <div class="card"><h3>1599 sqft · 3 bd</h3><div class="meta">Typical house</div><div class="body">median year built 1981</div></div>
+    <div class="card"><img src="img/flippercurve_2026-05..2026-06.png" alt="Flippers by lifetime flip count" style="width:100%;max-width:260px;"><div class="meta">flippers by lifetime flips · orange = this band</div></div>
+  </div>
+  <div class="pulse-caveat">Where they work: McCormick Ranch (85258) 2% · Paradise Valley North (85032) 2% · Scottsdale Airpark West (85254) 2% · Sun City (85351) 2% · North Phoenix (85029) 2%.</div>
+      <!-- AGENT:flipperprofile:end -->
+
+  <h2 class="section-title" id="market-pulse">Market Pulse</h2>
+  <!-- AGENT:pulse:start -->
+<table class="data">
+    <thead><tr><th></th><th class="num">per month, Feb–Jun 2026</th><th class="num">per month, Jun–Aug 2026</th><th class="num">change</th><th class="num">avg/mo 2yr</th><th class="num">avg/mo 4yr</th></tr></thead><tbody>
+      <tr><td><span style="color:#1a7a3c;">&#9650;</span> Homes bought by flippers</td><td class="num">548</td><td class="num">576</td><td class="num">+5%</td><td class="num">561</td><td class="num">717</td></tr>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Flips sold (deeds)</td><td class="num">498</td><td class="num">315</td><td class="num">-37%</td><td class="num">594</td><td class="num">839</td></tr>
+      <tr><td><span style="color:#1a7a3c;">&#9650;</span> Lending deals funded</td><td class="num">221</td><td class="num">288</td><td class="num">+30%</td><td class="num">—</td><td class="num">—</td></tr>
+      <tr><td><span style="color:#1a7a3c;">&#9650;</span> Seller/notes held (net)</td><td class="num">53</td><td class="num">641</td><td class="num">+588/mo</td><td class="num">—</td><td class="num">—</td></tr>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Investors (net)</td><td class="num">1,150</td><td class="num">1,048</td><td class="num">-9%</td><td class="num">—</td><td class="num">—</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Flips and flipper purchases = recorded deeds, same two months each year; their 2- and 4-year columns are per-month averages of the deed series. The remaining rows come from the investor file, which spans 13 months, so they have no multi-year average (2026: Jun 2026 → Aug 2026; 2025: Feb 2026 → Jun 2026).</div>
+      <!-- AGENT:pulse:end -->
+
+  <h2 class="section-title" id="past-issues">Past Issues</h2>
+  <ul>
+    <!-- AGENT:archive:start -->
+<li><a href="202608/">August 2026</a></li>
+      <!-- AGENT:archive:end -->
+  </ul>
+
+  <h2 class="section-title" id="methodology">Methodology</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Source Data</h3>
+      <div class="meta">County recorder &amp; assessor via FARES</div>
+      <div class="body">Every figure is computed from recorded instruments (deeds, mortgages, assignments) and assessor property records for the five counties of the Phoenix-Mesa-Chandler-Elyria MSA. No surveys, no estimates, no listings data.
+        <!-- AGENT:sourcedates:start -->
+<div style="margin-top:.5rem;color:var(--navy);">This edition analyzes transactions dated May 1 – June 30, 2026, as recorded through the 2026-08 data extract.</div>
+      <!-- AGENT:sourcedates:end -->
+      </div>
+    </div>
+    <div class="card">
+      <h3>Who Counts as an Investor</h3>
+      <div class="meta">Transaction-pattern identification</div>
+      <div class="body">Investors are entities whose recorded transaction history looks like investing: rental holding (landlords), short-hold resales (flippers), private mortgage lending, note holding, or contract assignment (wholesalers). Banks, homebuilders, iBuyers, SFR funds, and government entities are identified by name and reported separately from small investors.</div>
+    </div>
+    <div class="card">
+      <h3>How Comparisons Work</h3>
+      <div class="meta">Attribution deltas + same-window comparisons</div>
+      <div class="body">The Market Pulse reports activity attributed between successive data drops, from the per-investor lifetime totals maintained upstream — periods differ in length, so per-month rates are shown. Elsewhere, "vs. year ago" compares the same calendar months one year earlier, counted from the same data extract. Transfers under $5,000 (quitclaims, partial interests) are excluded everywhere. Counts lag recording by 4–8 weeks, and the newest month can grow up to ~15% as late records arrive — direction is reliable before magnitude.</div>
+    </div>
+    <div class="card">
+      <h3>Known Limits</h3>
+      <div class="meta">Floors, not ceilings</div>
+      <div class="body">Wholesale assignments only appear when they touch a recorded deed, so those counts are a floor. Flip hold times are measured from the prior recorded sale. Names are the owner of record, which may be an LLC or trust.</div>
+    </div>
+  </div>
+
+  <h2 class="section-title" id="about">About</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Purpose</h3>
+      <div class="body">A working tool for small real estate investors in Greater Phoenix-Mesa-Chandler: what actually closed, where, at what prices, and what it suggests checking next — one theme per issue.</div>
+    </div>
+    <div class="card">
+      <h3>Cadence</h3>
+      <div class="body">Published with each bi-monthly data drop, covering the two most recent complete months of recorded activity.</div>
+    </div>
+    <div class="card">
+      <h3>Disclaimer</h3>
+      <div class="body">Observations from public records, not investment, legal, or tax advice. Past activity does not guarantee future results. Verify any property or counterparty independently before transacting.</div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="newsletter" id="newsletter">
+      <div class="mc-form" id="mc_embed_signup">
+        <form action="https://swarmtrace.us14.list-manage.com/subscribe/post?u=9a4ba4adf4888e6de8829189e&amp;id=35bb5ff4ae" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+          <h3>Subscribe</h3>
+          <p>Get each Phoenix Investor Brief by email when a new issue is published.</p>
+          <label for="mce-EMAIL">Enter your email address to subscribe</label>
+          <input type="email" name="EMAIL" id="mce-EMAIL" placeholder="EMAIL" required>
+          <input type="hidden" name="tags" value="12497809">
+          <div style="position:absolute; left:-5000px;" aria-hidden="true"><input type="text" name="b_9a4ba4adf4888e6de8829189e_35bb5ff4ae" tabindex="-1" value=""></div>
+          <button type="submit" name="subscribe" id="mc-embedded-subscribe">SUBSCRIBE</button>
+          <p class="mc-note">Unsubscribe any time. Powered by Mailchimp.</p>
+        </form>
+      </div>
+    </div>
+    <div>
+      <h4>Sections</h4>
+      <ul>
+        <li><a href="#this-issue">This Issue</a></li>
+        <li><a href="#playbook">Investor Playbook</a></li>
+        <li><a href="#factoids">Factoids</a></li>
+        <li><a href="#activity-chart">Market Activity</a></li>
+        <li><a href="#where-the-money-went">Where the Money Went</a></li>
+        <li><a href="#market-pulse">Market Pulse</a></li>
+        <li><a href="#methodology">Methodology</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Coverage</h4>
+      <ul>
+        <li>Maricopa County</li>
+        <li>Pinal County</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:jpritchard@swarmalytics.com">jpritchard@swarmalytics.com</a></li>
+        <li>Powered by <a href="https://www.swarmalytics.com" target="_blank" rel="noopener">Swarmalytics</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    Phoenix Real Estate Investor Brief is an independent research publication built from public
+    county records. Not affiliated with any government agency. Nothing here is investment, legal,
+    or tax advice.
+  </div>
+</footer>
+
+</body>
+</html>
