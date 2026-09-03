@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kansas City Real Estate Investor Brief</title>
+<meta name="description" content="Deed-level data on what small investors are actually doing in the Kansas City-Elyria MSA — flips, rentals, private lending — with a monthly theme and a playbook per investor type.">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  .mc-form { max-width:540px; margin:0 auto; text-align:left; background:#fff; border:1px solid #C0CCD9; border-radius:3px; padding:24px; font-family:Helvetica, sans-serif; color:#3C4858; }
+  .mc-form h3 { font-size:28px; font-weight:700; margin:0 0 8px; }
+  .mc-form p { font-size:16px; margin:0 0 12px; }
+  .mc-form label { display:block; font-weight:700; font-size:16px; margin-bottom:6px; }
+  .mc-form input[type=email] { width:100%; box-sizing:border-box; font-size:16px; padding:10px; border:1px solid #C0CCD9; border-radius:3px; margin-bottom:12px; }
+  .mc-form button { font-size:16px; font-weight:700; color:#fff; background:#3E4857; border:0; border-radius:3px; padding:10px 20px; cursor:pointer; }
+  .mc-form .mc-note { font-size:12px; color:#6b7785; margin-top:10px; }
+</style>
+</head>
+<body>
+
+<div class="utility-bar">
+  <div class="container">
+    <a href="#methodology">Methodology</a>
+    <a href="#about">About</a>
+    <a href="#newsletter">Subscribe</a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container">
+    <div class="brand">
+      <div class="brand-text">
+        <span class="brand-name">Kansas City Real Estate Investor Brief</span>
+        <span class="brand-tag">Deed-level market intelligence for small investors · Kansas City-Elyria MSA</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="primary-nav">
+  <div class="container">
+    <a href="#this-issue" class="active">This Issue</a>
+    <a href="#playbook">Investor Playbook</a>
+    <a href="#factoids">Factoids</a>
+    <a href="#activity-chart">Market Activity</a>
+    <a href="#where-the-money-went">Where the Money Went</a>
+    <a href="#flip-structure">Flip Structure</a>
+    <a href="#flip-pipeline">Flip Pipeline</a>
+      <a href="#financing">Funding</a>
+      <a href="#flipper-profile">Flipper Profile</a>
+    <a href="#market-pulse">Market Pulse</a>
+    <a href="#methodology">Methodology</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <!-- AGENT:hero:start -->
+<h1>August Edition — Operator Thinning</h1>
+    <div class="datarange">Analyzing transactions recorded May 1 – June 30, 2026</div>
+      <!-- AGENT:hero:end -->
+  </div>
+</section>
+
+<main>
+
+  <h2 class="section-title" id="this-issue">This Issue
+    <!-- AGENT:updated:start -->
+<span style="float:right;font-weight:400;text-transform:none;letter-spacing:0;font-size:12px;color:var(--text-muted);">August 2026 edition</span>
+      <!-- AGENT:updated:end -->
+  </h2>
+  <!-- AGENT:theme:start -->
+<div class="forecast-headline">
+    <div>
+      <div class="number">132 vs 327</div>
+      <div class="label">Recorded flip resales this edition versus the same two-month window a year ago; operators closing at least one exit fell to 87 from 192</div>
+    </div>
+    <div class="body">
+      <h3 style="margin:0 0 .5rem;color:var(--navy);">Flip resales fell to 132 from 327 a year ago, and the operator field thinned faster than the deal count</h3>
+      <p>Recorded flip resales came in at 132 this edition against 327 a year ago, and the number of operators closing at least one exit fell to 87 from 192. The survivors are more concentrated: the top ten took roughly 58% of estimated flip revenue, against about 39% a year ago. The buy side is thinner still — 181 homes bought by flippers versus 406. Median hold on completed exits was 166 days versus 175. Counts are recorded instruments and lag four to eight weeks, and the most recent month can grow as late records arrive.</p>
+    </div>
+  </div>
+      <!-- AGENT:theme:end -->
+
+  <h2 class="section-title" id="playbook">Investor Playbook</h2>
+  <p class="section-sub">What this issue's numbers suggest checking, by investor type. Observations from recorded data — not investment, legal, or tax advice.</p>
+  <!-- AGENT:playbook:start -->
+<div class="card-grid">
+    <div class="card">
+      <h3>Aim the buyer list where flip exits actually moved</h3>
+      <div class="meta">Wholesalers</div>
+      <div class="body">With 87 operators closing exits versus 192 a year ago, a broadcast blast is less useful than a short list. The data suggests concentrating on the north Clay County corridor — 64118 (Nashua) at 6.1% of exits versus 0.9% a year ago and 64155 (Shoal Creek) at 3.8% versus 0.3% — plus 64132 (Swope Park) at 4.5% versus 1.5%. The typical flipped house this period was about 1,301 sqft, three beds, built around 1962; contracts outside that box are worth pricing more conservatively.</div>
+    </div>
+    <div class="card">
+      <h3>Hold discipline is holding, but the aged tail is growing</h3>
+      <div class="meta">Flippers</div>
+      <div class="body">Median hold on the 132 exits was 166 days, slightly tighter than 175 a year ago, and 30% turned in under 90 days. Against that, 43 holdings aged out in the latest month while only 115 were bought. Gross margin is estimated at roughly $81,070, or about 32% of estimated resale, and rehab and carry are not in the public record — treat it as a ceiling, not a profit. With inventory at 3,045 and fewer competing operators, the constraint this period looks like acquisition, not exit.</div>
+    </div>
+    <div class="card">
+      <h3>Less flipper competition in Jackson's older stock</h3>
+      <div class="meta">Landlords</div>
+      <div class="body">Jackson took 46% of flip exits versus 62% a year ago while flip buying fell to 181 from 406, so the operators bidding on 1950s-60s houses are fewer. Investor purchases still concentrated in 64130 (47 buys), 64133 (29) and 64132 (25). Pre-1940 stock drew 219 purchases and the 1950s 150, so inspection budget matters more than headline basis. Prices in these records are estimates — about 48% are back-computed from the recorded mortgage — so verify basis independently before underwriting rent-to-price.</div>
+    </div>
+    <div class="card">
+      <h3>Rehab money for the three-to-eight-deal band</h3>
+      <div class="meta">Private lenders</div>
+      <div class="body">Only 21 private loans were recorded this edition against 68 a year ago, while 44% of the 446 financed purchases over the trailing twelve months carried rehab dollars. The 802 operators in the three-to-eight lifetime-flip band run a median hold of 202 days on roughly 1,404 sqft, 3-bed houses built around 1960 — longer carry than the 166-day market median. That gap between programme-lender terms and a 200-day project is where the data suggests a small private book can be placed.</div>
+    </div>
+    <div class="card">
+      <h3>2-4 units are being bought to hold, not to flip</h3>
+      <div class="meta">Multifamily investors</div>
+      <div class="body">Small multi made up just 4.5% of flip exits, while 81 of the 980 investor purchases were 2-4 unit buildings at an estimated median around $365,085 and roughly $173 per sqft — close to the estimated $178 per sqft on single family. On that estimated basis there is little per-sqft discount for taking on additional units, so the case rests on unit count and rent roll rather than on entry price. Apartment 5+ transactions numbered 15 this edition.</div>
+    </div>
+  </div>
+      <!-- AGENT:playbook:end -->
+
+  <h2 class="section-title" id="factoids">Factoids</h2>
+  <p class="section-sub">Numbers from this period a practitioner would repeat to a colleague. Each computed directly from recorded instruments.</p>
+  <!-- AGENT:factoids:start -->
+<div class="card-grid">
+    <div class="card">
+      <h3>58% top-ten share — Share of estimated flip revenue taken by the ten largest operators</h3>
+      <div class="meta">trending up · vs about 39% a year ago</div>
+      <div class="body">Fewer operators are closing exits and the largest ones hold a materially bigger slice of the estimated dollars. Bidding for the same house is now a shorter list of names.</div>
+    </div>
+    <div class="card">
+      <h3>181 flip purchases — Homes bought by flippers this edition</h3>
+      <div class="meta">trending down · vs 406 a year ago</div>
+      <div class="body">The refill rate has dropped further than the exit rate, and flip-held inventory stood at 3,045 in the latest month against 3,451 a year earlier. Aged-out holdings ran 43 in the latest month.</div>
+    </div>
+    <div class="card">
+      <h3>Clay 20% of flip exits — Clay County share of recorded flip resales; Jackson at 46%</h3>
+      <div class="meta">trending up · Clay was 6% and Jackson 62% a year ago</div>
+      <div class="body">Johnson County also moved up to 22% from 13%. Within zips, 64118 (Nashua) went to 6.1% of exits from 0.9%, and 64155 (Shoal Creek) to 3.8% from 0.3%.</div>
+    </div>
+    <div class="card">
+      <h3>980 investor purchases — All recorded residential investor purchases this edition</h3>
+      <div class="meta">trending down · vs 1,182 a year ago and 1,055 in the prior period</div>
+      <div class="body">Purchase volume is off 17% year over year, a shallower decline than the flip side. Single family accounted for 827 of the 980; 2-4 unit deals numbered 81.</div>
+    </div>
+    <div class="card">
+      <h3>21 private loans — Recorded private-lender loans this edition</h3>
+      <div class="meta">trending down · vs 68 a year ago</div>
+      <div class="body">Recorded private lending is scarce; institutional programme lenders dominate the trailing-twelve-month table, with Kiavi at 43 loans across 17 borrowers. Financed share was 39% of 1,139 observed purchases over the trailing twelve months.</div>
+    </div>
+    <div class="card">
+      <h3>15 assignments surfaced — Wholesale assignments that touched a recorded deed</h3>
+      <div class="meta">trending down · vs 58 a year ago and 26 in the prior period</div>
+      <div class="body">This is a floor, since most assignments never hit a deed, but the direction matches the thinner flipper buy side. The end-buyer list for an assigned contract is shorter than it was.</div>
+    </div>
+  </div>
+      <!-- AGENT:factoids:end -->
+
+  <h2 class="section-title" id="activity-chart">Market Activity — Investor Purchases</h2>
+  <p class="section-sub">Monthly count of investor purchases of MSA properties (left axis) and the median purchase price (right axis), trailing 13 months. The most recent month can grow up to ~15% as late recordings arrive.</p>
+  <!-- AGENT:chart:start -->
+<div class="chart-row">
+    <div class="map-panel"><img src="../img/chart_2026-05..2026-06.png" alt="Monthly investor purchases and median price"><div class="caption">Investor purchases per month (bars) and median purchase price (line), trailing 13 months.</div></div>
+    <div class="map-panel"><img src="../img/decades_2026-05..2026-06.png" alt="Investor purchases by decade the house was built"><div class="caption">Which vintage of housing investors bought this edition, by decade built.</div></div>
+  </div>
+      <!-- AGENT:chart:end -->
+
+  <h2 class="section-title" id="where-the-money-went">Where the Money Went</h2>
+  <p class="section-sub">The geography of the period's investor activity: which zip codes saw the most recorded deals, and the largest individual transactions at street level.</p>
+  <!-- AGENT:map:start -->
+<div class="map-panel">
+    <h3 class="subsection-title" style="margin-top:0;">The 8 busiest zip codes for investor deals</h3>
+    <div id="dealmap"></div>
+    <script id="map-data" type="application/json">[{"rank":1,"zip":"64130","area":"Marlborough","lat":39.034782,"lng":-94.542049,"buys":47,"flips":6,"deals":53,"median":"$163,856","medianSale":"$174,496"},{"rank":2,"zip":"64133","area":"Raytown East","lat":39.013884,"lng":-94.45772,"buys":29,"flips":5,"deals":34,"median":"$212,135","medianSale":"$238,009"},{"rank":3,"zip":"64132","area":"Swope Park","lat":38.979726,"lng":-94.541547,"buys":25,"flips":6,"deals":31,"median":"$162,925","medianSale":"$182,010"},{"rank":4,"zip":"66062","area":"Olathe South","lat":38.838296,"lng":-94.784409,"buys":27,"flips":2,"deals":29,"median":"$739,347","medianSale":"n/a"},{"rank":5,"zip":"64052","area":"Independence West","lat":39.073616,"lng":-94.450866,"buys":24,"flips":2,"deals":26,"median":"$194,446","medianSale":"n/a"},{"rank":6,"zip":"64119","area":"Antioch","lat":39.209967,"lng":-94.514665,"buys":19,"flips":3,"deals":22,"median":"$233,415","medianSale":"n/a"},{"rank":7,"zip":"64050","area":"Independence","lat":39.115787,"lng":-94.410569,"buys":17,"flips":3,"deals":20,"median":"$145,768","medianSale":"n/a"},{"rank":8,"zip":"64055","area":"Independence South","lat":39.050847,"lng":-94.397998,"buys":16,"flips":4,"deals":20,"median":"$202,622","medianSale":"n/a"}]</script>
+    <div class="caption">Pins rank the busiest zips by recorded investor deals (purchases + flips of existing homes) this period — #1 busiest; orange = top 3; pin size scales with deal volume. Median buy is the typical investor purchase; median sale the typical flip resale. Click a pin for details; full table below.</div>
+    <div class="map-table-wrap">
+    <table class="data">
+      <thead><tr><th>#</th><th>Zip</th><th>Area</th><th class="num">Purchases</th><th class="num">Flips</th><th class="num">Median buy</th><th class="num">Median sale</th></tr></thead><tbody>
+        <tr><td>#1</td><td>64130</td><td>Marlborough</td><td class="num">47</td><td class="num">6</td><td class="num">$163,856</td><td class="num">$174,496</td></tr>
+        <tr><td>#2</td><td>64133</td><td>Raytown East</td><td class="num">29</td><td class="num">5</td><td class="num">$212,135</td><td class="num">$238,009</td></tr>
+        <tr><td>#3</td><td>64132</td><td>Swope Park</td><td class="num">25</td><td class="num">6</td><td class="num">$162,925</td><td class="num">$182,010</td></tr>
+        <tr><td>#4</td><td>66062</td><td>Olathe South</td><td class="num">27</td><td class="num">2</td><td class="num">$739,347</td><td class="num">n/a</td></tr>
+        <tr><td>#5</td><td>64052</td><td>Independence West</td><td class="num">24</td><td class="num">2</td><td class="num">$194,446</td><td class="num">n/a</td></tr>
+        <tr><td>#6</td><td>64119</td><td>Antioch</td><td class="num">19</td><td class="num">3</td><td class="num">$233,415</td><td class="num">n/a</td></tr>
+        <tr><td>#7</td><td>64050</td><td>Independence</td><td class="num">17</td><td class="num">3</td><td class="num">$145,768</td><td class="num">n/a</td></tr>
+        <tr><td>#8</td><td>64055</td><td>Independence South</td><td class="num">16</td><td class="num">4</td><td class="num">$202,622</td><td class="num">n/a</td></tr>
+      </tbody></table>
+    </div>
+  </div>
+  <div class="pulse-caveat">Dollar figures on this page are estimates. This county does not disclose sale prices, so 48% of them are back-computed from the recorded mortgage at an assumed loan-to-value. Treat every price, margin and per-foot figure as indicative. Counts, dates, hold times, parties and geography come from the deed record itself and are unaffected.</div>
+      <!-- AGENT:map:end -->
+  <script>
+  (function() {
+    var el = document.getElementById('map-data');
+    if (!el || !window.L) return;
+    var zips; try { zips = JSON.parse(el.textContent); } catch (e) { return; }
+    if (!zips.length) return;
+    var map = L.map('dealmap', { scrollWheelZoom: false });
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',
+      { attribution: 'Tiles &copy; Esri', maxZoom: 18 }).addTo(map);
+    var group = [];
+    var maxDeals = Math.max.apply(null, zips.map(function(z){ return z.deals; }));
+    zips.forEach(function(z) {
+      var size = 26 + Math.round(18 * z.deals / maxDeals);
+      var icon = L.divIcon({ className: '', iconSize: [size, size], iconAnchor: [size/2, size/2],
+        html: '<div class="rank-pin' + (z.rank <= 3 ? ' hot' : '') + '" style="width:'+size+'px;height:'+size+'px;">#'+z.rank+'</div>' });
+      var m = L.marker([z.lat, z.lng], { icon: icon }).addTo(map);
+      m.bindPopup('<b>#'+z.rank+' &middot; '+z.zip+'</b>'+(z.area ? ' &mdash; '+z.area : '')+'<br>'+
+        z.buys.toLocaleString()+' purchases &middot; '+z.flips.toLocaleString()+' flips<br>Median buy '+z.median);
+      m.bindTooltip('#'+z.rank+' '+z.zip, { direction: 'top' });
+      group.push(m);
+    });
+    map.fitBounds(L.featureGroup(group).getBounds().pad(0.25));
+  })();
+  </script>
+  <!-- AGENT:deals:start -->
+<h3 class="subsection-title">A representative deal in each of the busiest zips</h3>
+<p class="section-sub">One deal per zip: the largest matching this market's typical house (typical for this market: 1404 sqft, 3 bed, built around 1960; priced within 4x the county assessment and under 5x its own zip's median).</p>
+<div class="deal-strip">
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_f16831d7.jpg" alt="Street view of 3917 NE 59TH ST">
+      <div class="body">
+        <div class="price">$460,047 · Purchase</div>
+        <div class="addr">3917 NE 59TH ST, Kansas City MO 64119</div>
+        <div class="meta">Single family · 1,634 sqft · Jun 23</div>
+        <div class="svdate">Street View Jun 2019 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_2e553cc6.jpg" alt="Street view of 915 S TRAIL RIDGE DR">
+      <div class="body">
+        <div class="price">$367,678 · Purchase</div>
+        <div class="addr">915 S TRAIL RIDGE DR, Independence MO 64050</div>
+        <div class="meta">Single family · 1,851 sqft · May 14</div>
+        <div class="svdate">Street View Sep 2024 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_16a9e802.jpg" alt="Street view of 629 S CRYSLER AVE # 1">
+      <div class="body">
+        <div class="price">$356,243 · Purchase</div>
+        <div class="addr">629 S CRYSLER AVE # 1, Independence MO 64052</div>
+        <div class="meta">Single family · 1,829 sqft · Jun 23</div>
+        <div class="svdate">Street View Jan 2024 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_862241ea.jpg" alt="Street view of 3912 S CHRISTOPHER CIR">
+      <div class="body">
+        <div class="price">$345,800 · Purchase</div>
+        <div class="addr">3912 S CHRISTOPHER CIR, Independence MO 64055</div>
+        <div class="meta">Single family · 2,018 sqft · Jun 16</div>
+        <div class="svdate">Street View May 2024 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_163151d7.jpg" alt="Street view of 10805 E 65TH ST">
+      <div class="body">
+        <div class="price">$319,067 · Purchase</div>
+        <div class="addr">10805 E 65TH ST, Raytown MO 64133</div>
+        <div class="meta">Single family · 1,394 sqft · May 7</div>
+        <div class="svdate">Street View May 2024 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_a1cb3919.jpg" alt="Street view of 1875 E 76TH TER">
+      <div class="body">
+        <div class="price">$266,000 · Purchase</div>
+        <div class="addr">1875 E 76TH TER, Kansas City MO 64132</div>
+        <div class="meta">Single family · 1,910 sqft · May 26</div>
+        <div class="svdate">Street View Oct 2014 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_a267e78b.jpg" alt="Street view of 4420 BENTON BLVD">
+      <div class="body">
+        <div class="price">$214,263 · Purchase</div>
+        <div class="addr">4420 BENTON BLVD, Kansas City MO 64130</div>
+        <div class="meta">Single family · 1,883 sqft · Jun 9</div>
+        <div class="svdate">Street View Mar 2019 — before the purchase</div>
+      </div>
+    </div>
+  </div>
+<h3 class="subsection-title">Deal sheet — private lending, in date order</h3>
+<p class="section-sub">Private loans recorded against residential property this period, oldest first.</p>
+<table class="data">
+    <thead><tr><th>Date</th><th>Lender</th><th class="num">Amount</th><th>Property</th><th>Use</th></tr></thead><tbody>
+      <tr><td>May 1</td><td>Smith Gerald</td><td class="num">$168,813</td><td>13559 W 58TH Ter, Shawnee NE 66216</td><td>Single family</td></tr>
+      <tr><td>May 1</td><td>Birdsong Richard</td><td class="num">$40,000</td><td>4631 W 61ST ST, Fairway KS 66205</td><td>Single family</td></tr>
+      <tr><td>May 4</td><td>Goodwin Mark</td><td class="num">$135,000</td><td>8108 E 92ND Ter, Kansas City NE 64138</td><td>Single family</td></tr>
+      <tr><td>May 5</td><td>Abaugh RD TR</td><td class="num">$40,000</td><td>7801 Ne San Rafael DR, Kansas City IA 64119</td><td>Single family</td></tr>
+      <tr><td>May 5</td><td>Abaugh RD TR</td><td class="num">$40,000</td><td>7801 Ne San Rafael DR, Kansas City IA 64119</td><td>Single family</td></tr>
+      <tr><td>May 7</td><td>Holsinger Trevor</td><td class="num">$271,000</td><td>3625 NW Anchor CT, Blue Springs KS 64015</td><td>Single family</td></tr>
+      <tr><td>May 12</td><td>Revocable Trust Agreement of D</td><td class="num">$164,000</td><td>10420 Palmer Ave, Kansas City MO 64134</td><td>Single family</td></tr>
+      <tr><td>Jun 1</td><td>Mo Electric Cooperatives Emp C</td><td class="num">$159,400</td><td>508 N Main ST, Butler MO 64730</td><td>Single family</td></tr>
+    </tbody></table>
+
+<h3 class="subsection-title">Largest flip margin deals of the period, at street level</h3>
+<p class="section-sub">Gross margin = recorded sale price minus the flipper's recorded purchase price. Purchase deeds are recoverable for roughly 4 in 10 flips; rehab and carry costs are not public record.</p>
+<div class="deal-strip">
+    <div class="deal-card">
+      <img src="../img/svm_2026-05..2026-06_197eab7a.jpg" alt="Street view of 6717 W 65TH TER">
+      <div class="body">
+        <div class="price">$296,280 gross · bought $390,000 (Mar 2026) → sold $686,280</div>
+        <div class="addr">6717 W 65TH TER, Mission KS 66202</div>
+        <div class="meta">Single family · 2,108 sqft · May 27</div>
+        <div class="svdate">Street View May 2026 — during the flip</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-05..2026-06_e4ca9470.jpg" alt="Street view of 5205 W 99TH ST">
+      <div class="body">
+        <div class="price">$291,356 gross · bought $290,000 (Apr 2026) → sold $581,356</div>
+        <div class="addr">5205 W 99TH ST, Overland Park KS 66207</div>
+        <div class="meta">Single family · 2,662 sqft · Jun 1</div>
+        <div class="svdate">Street View Nov 2022 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-05..2026-06_f69de8a0.jpg" alt="Street view of 12701 APPLEWOOD DR">
+      <div class="body">
+        <div class="price">$271,517 gross · bought $163,000 (Aug 2025) → sold $434,517</div>
+        <div class="addr">12701 APPLEWOOD DR, Grandview MO 64030</div>
+        <div class="meta">Single family · 1,248 sqft · May 4</div>
+        <div class="svdate">Street View Aug 2024 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-05..2026-06_280c656c.jpg" alt="Street view of 1516 E 99TH ST">
+      <div class="body">
+        <div class="price">$239,463 gross · bought $190,000 (Nov 2024) → sold $429,463</div>
+        <div class="addr">1516 E 99TH ST, Kansas City MO 64131</div>
+        <div class="meta">Single family · 2,395 sqft · May 12</div>
+        <div class="svdate">Street View May 2026 — during the flip</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-05..2026-06_53b9a535.jpg" alt="Street view of 1401 SE ROYAL ST">
+      <div class="body">
+        <div class="price">$221,578 gross · bought $139,650 (Jul 2025) → sold $361,228</div>
+        <div class="addr">1401 SE ROYAL ST, Oak Grove MO 64075</div>
+        <div class="meta">Single family · 1,056 sqft · May 26</div>
+        <div class="svdate">Street View Oct 2024 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-05..2026-06_8fe0aa42.jpg" alt="Street view of 9501 GRAND AVE">
+      <div class="body">
+        <div class="price">$219,430 gross · bought $178,572 (Sep 2025) → sold $398,002</div>
+        <div class="addr">9501 GRAND AVE, Kansas City MO 64114</div>
+        <div class="meta">Single family · 1,152 sqft · May 20</div>
+        <div class="svdate">Street View Apr 2019 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+  </div>
+      <!-- AGENT:deals:end -->
+
+  <h2 class="section-title" id="flip-structure">Flip Structure — Year over Year</h2>
+  <p class="section-sub">How the flip market itself is changing: margins, who is doing the flipping, what they flip, and where. Same two calendar months, this year vs last, from the current data extract.</p>
+  <!-- AGENT:flipstructure:start -->
+<table class="data tight">
+    <thead><tr><th>Flip market structure</th><th class="num">Same months last year</th><th class="num">This edition</th></tr></thead><tbody>
+      <tr><td>Flips sold</td><td class="num">327</td><td class="num">132</td></tr>
+      <tr><td>Median sale</td><td class="num">$283,822</td><td class="num">$303,374</td></tr>
+      <tr><td>Median $/sqft</td><td class="num">$212</td><td class="num">$217</td></tr>
+      <tr><td>Sale vs county-assessed</td><td class="num">1.93×</td><td class="num">1.96×</td></tr>
+      <tr><td>Median gross margin (matched buys)</td><td class="num">$59,850</td><td class="num">$81,070</td></tr>
+      <tr><td>Median margin %</td><td class="num">21%</td><td class="num">32%</td></tr>
+      <tr><td>Median hold</td><td class="num">5.8 mo</td><td class="num">5.5 mo</td></tr>
+      <tr><td>Homes bought by flippers</td><td class="num">406</td><td class="num">181</td></tr>
+      <tr><td>Net to inventory (bought − sold)</td><td class="num">+79</td><td class="num">+49</td></tr>
+      <tr><td>Active flippers</td><td class="num">192</td><td class="num">87</td></tr>
+      <tr><td>Top-10 flippers' revenue share</td><td class="num">39%</td><td class="num">58%</td></tr>
+      <tr><td>Median house: sqft / beds / built</td><td class="num">1346 / 3 / 1961</td><td class="num">1301 / 3 / 1962</td></tr>
+      <tr><td>Pre-1950 stock share</td><td class="num">27%</td><td class="num">23%</td></tr>
+      <tr><td>2–4 unit share</td><td class="num">4%</td><td class="num">5%</td></tr>
+      <tr><td>Median distance from downtown</td><td class="num">16.5 km</td><td class="num">17.0 km</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Dollar figures on this page are estimates. This county does not disclose sale prices, so 48% of them are back-computed from the recorded mortgage at an assumed loan-to-value. Treat every price, margin and per-foot figure as indicative. Counts, dates, hold times, parties and geography come from the deed record itself and are unaffected.</div>
+  <div class="pulse-caveat">Homes bought counts every deed recorded to a known flipper in the window, resold or not. Net to inventory is that minus flips sold. The standing stock is in the Flip Pipeline section.</div>
+  <div class="pulse-caveat">Attributed profit per flip (per-investor aggregates, by drop period): Feb 26→Jun 26: 1,363 flips, $23,077/flip · Jun 26→Aug 26: 396 flips, $49,558/flip.</div>
+  <div class="pulse-caveat">County mix (share of flips, last year → this edition): Jackson 62%→46% · Johnson 13%→22% · Clay 6%→20% · Wyandotte 5%→4% · Cass 5%→3% · Caldwell 0%→2% · Platte 4%→2% · Miami 4%→2% · Clinton 0%→1%.</div>
+  <div class="pulse-caveat">Biggest zip share moves: Nashua 0.9%→6.1% · Shoal Creek 0.3%→3.8% · Swope Park 1.5%→4.5% · Shawnee Northwest 2.8%→0.0% · Spring Hill 3.4%→0.8% · Blue Valley 2.1%→0.0%.</div>
+      <!-- AGENT:flipstructure:end -->
+
+  <h2 class="section-title" id="flip-pipeline">Flip Pipeline — Buying, Selling and Inventory</h2>
+  <!-- AGENT:flipflow:start -->
+<p class="section-sub">Homes bought by known flippers and homes they resold, per month, alongside the stock sitting in flipper hands. A house enters inventory when a flipper buys it and leaves on the next recorded sale, at any price. Purchases still unsold after five years are treated as holds and drop out.</p>
+<div class="map-panel"><img src="../img/flipflow_2026-05..2026-06.png" alt="Flip purchases, flip sales and inventory by month with projection"><div class="caption">Solid = recorded, dashed = projected. Green bars are inventory on the right axis: homes bought and not yet resold. Aged out is purchases passing five years unsold. Inventory moves by bought minus resold minus aged out.</div></div>
+<table class="data tight">
+    <thead><tr><th>Flip pipeline</th><th class="num">Bought / mo</th><th class="num">Resold / mo</th><th class="num">Aged out / mo</th><th class="num">Inventory</th></tr></thead><tbody>
+      <tr><td>Latest recorded month (2026-05)</td><td class="num">115</td><td class="num">155</td><td class="num">43</td><td class="num">3,045</td></tr>
+      <tr><td>Projected (2026-11)</td><td class="num">159</td><td class="num">194</td><td class="num">34</td><td class="num">3,237</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Method: a straight-line trend through the last 24 months, adjusted for the month of the year, shown dashed as a projection. The series stops before the newest month or two, where deeds are still recording.</div>
+      <!-- AGENT:flipflow:end -->
+
+  <h2 class="section-title" id="financing">Who's Funding the Deals</h2>
+  <!-- AGENT:financing:start -->
+<p class="section-sub">First mortgages open on flipper purchases from Jul 2025 – Jun 2026 that have not yet resold. 39% carried recorded debt; the rest closed cash or off-record. Ranked by deal count.</p>
+<div class="card-grid">
+    <div class="card"><h3>39%</h3><div class="meta">Purchases financed</div><div class="body">446 of 1,139 flipper purchases carried a recorded first mortgage</div></div>
+    <div class="card"><h3>$154,000</h3><div class="meta">Typical loan</div><div class="body">recorded lien amount; this county does not disclose sale prices, so loan-to-price cannot be computed here</div></div>
+  </div>
+<table class="data tight">
+    <thead><tr><th>Lender</th><th class="num">Loans</th><th class="num">Borrowers</th><th class="num">Median loan</th><th class="num">Median purchase</th></tr></thead><tbody>
+      <tr><td>Kiavi Funding INC</td><td class="num">43</td><td class="num">17</td><td class="num">$146,700</td><td class="num">$165,053</td></tr>
+      <tr><td>Loan Funder LLC</td><td class="num">21</td><td class="num">4</td><td class="num">$156,000</td><td class="num">$183,939</td></tr>
+      <tr><td>Hometown Equity Mortgage LLC</td><td class="num">12</td><td class="num">6</td><td class="num">$147,250</td><td class="num">$131,500</td></tr>
+      <tr><td>Commercial Lender LLC</td><td class="num">11</td><td class="num">6</td><td class="num">$120,000</td><td class="num">$86,500</td></tr>
+      <tr><td>Crossroads MGMT Group LLC</td><td class="num">9</td><td class="num">7</td><td class="num">$161,000</td><td class="num">$97,500</td></tr>
+      <tr><td>S & P Financial Services INC</td><td class="num">8</td><td class="num">4</td><td class="num">$109,858</td><td class="num">$106,987</td></tr>
+      <tr><td>Cap One Lending LLC</td><td class="num">7</td><td class="num">2</td><td class="num">$172,800</td><td class="num">$210,140</td></tr>
+      <tr><td>Dayspring Bank</td><td class="num">7</td><td class="num">1</td><td class="num">$137,385</td><td class="num">$126,076</td></tr>
+      <tr><td>MB Bank</td><td class="num">7</td><td class="num">2</td><td class="num">$154,654</td><td class="num">$146,300</td></tr>
+      <tr><td>Community Mortgage LLC</td><td class="num">6</td><td class="num">5</td><td class="num">$170,050</td><td class="num">$217,500</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Dollar figures on this page are estimates. This county does not disclose sale prices, so 48% of them are back-computed from the recorded mortgage at an assumed loan-to-value. Treat every price, margin and per-foot figure as indicative. Counts, dates, hold times, parties and geography come from the deed record itself and are unaffected.</div>
+  <div class="pulse-caveat">Rates and terms are not published: the county feed models both. Borrowers counts the distinct flippers on each lender's book. Loan vs price is the recorded first mortgage divided by what the buyer paid. Above 1.00x the lender is funding purchase plus rehab; below it the buyer brought cash to the table. Blanket mortgages covering several parcels are excluded, as are loans outside 0.1x-3x the price. Rates and points are not public record.</div>
+      <!-- AGENT:financing:end -->
+
+  <h2 class="section-title" id="flipper-profile">Flipper Profile — The Working Flipper</h2>
+  <!-- AGENT:flipperprofile:start -->
+<p class="section-sub">The 70th–90th percentile of local flippers by lifetime flip count — the established operators below the whales: 3–8 lifetime flips each. Bath counts are not in the assessor extract.</p>
+<div class="card-grid">
+    <div class="card"><h3>802</h3><div class="meta">Flippers in the band</div><div class="body">each with 3–8 lifetime flips (avg 4.3)</div></div>
+    <div class="card"><h3>$40,000</h3><div class="meta">Median gross margin</div><div class="body">5,538 flips matched to their purchase price</div></div>
+    <div class="card"><h3>6.6 mo</h3><div class="meta">Typical hold</div><div class="body">purchase to resale, matched deals</div></div>
+    <div class="card"><h3>1404 sqft · 3 bd</h3><div class="meta">Typical house</div><div class="body">median year built 1960</div></div>
+    <div class="card"><img src="../img/flippercurve_2026-05..2026-06.png" alt="Flippers by lifetime flip count" style="width:100%;max-width:260px;"><div class="meta">flippers by lifetime flips · orange = this band</div></div>
+  </div>
+  <div class="pulse-caveat">Where they work: Marlborough (64130) 3% · Hickman Mills (64134) 3% · Raytown East (64133) 3% · Independence West (64052) 3% · Raytown South (64138) 2%.</div>
+      <!-- AGENT:flipperprofile:end -->
+
+  <h2 class="section-title" id="market-pulse">Market Pulse</h2>
+  <!-- AGENT:pulse:start -->
+<table class="data">
+    <thead><tr><th></th><th class="num">per month, Feb–Jun 2026</th><th class="num">per month, Jun–Aug 2026</th><th class="num">change</th><th class="num">avg/mo 2yr</th><th class="num">avg/mo 4yr</th></tr></thead><tbody>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Homes bought by flippers</td><td class="num">203</td><td class="num">91</td><td class="num">-55%</td><td class="num">194</td><td class="num">176</td></tr>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Flips sold (deeds)</td><td class="num">164</td><td class="num">66</td><td class="num">-60%</td><td class="num">181</td><td class="num">169</td></tr>
+      <tr><td><span style="color:#1a7a3c;">&#9650;</span> Lending deals funded</td><td class="num">30</td><td class="num">68</td><td class="num">+129%</td><td class="num">—</td><td class="num">—</td></tr>
+      <tr><td><span style="color:#1a7a3c;">&#9650;</span> Seller/notes held (net)</td><td class="num">17</td><td class="num">59</td><td class="num">+258%</td><td class="num">—</td><td class="num">—</td></tr>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Investors (net)</td><td class="num">545</td><td class="num">-340</td><td class="num">−885/mo</td><td class="num">—</td><td class="num">—</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Flips and flipper purchases = recorded deeds, same two months each year; their 2- and 4-year columns are per-month averages of the deed series. The remaining rows come from the investor file, which spans 13 months, so they have no multi-year average (2026: Jun 2026 → Aug 2026; 2025: Feb 2026 → Jun 2026).</div>
+      <!-- AGENT:pulse:end -->
+
+  <h2 class="section-title" id="past-issues">Past Issues</h2>
+  <ul>
+    <!-- AGENT:archive:start -->
+<li><a href="../202608/">August 2026</a></li>
+      <!-- AGENT:archive:end -->
+  </ul>
+
+  <h2 class="section-title" id="methodology">Methodology</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Source Data</h3>
+      <div class="meta">County recorder &amp; assessor via FARES</div>
+      <div class="body">Every figure is computed from recorded instruments (deeds, mortgages, assignments) and assessor property records for the five counties of the Kansas City-Elyria MSA. No surveys, no estimates, no listings data.
+        <!-- AGENT:sourcedates:start -->
+<div style="margin-top:.5rem;color:var(--navy);">This edition analyzes transactions dated May 1 – June 30, 2026, as recorded through the 2026-08 data extract.</div>
+      <!-- AGENT:sourcedates:end -->
+      </div>
+    </div>
+    <div class="card">
+      <h3>Who Counts as an Investor</h3>
+      <div class="meta">Transaction-pattern identification</div>
+      <div class="body">Investors are entities whose recorded transaction history looks like investing: rental holding (landlords), short-hold resales (flippers), private mortgage lending, note holding, or contract assignment (wholesalers). Banks, homebuilders, iBuyers, SFR funds, and government entities are identified by name and reported separately from small investors.</div>
+    </div>
+    <div class="card">
+      <h3>How Comparisons Work</h3>
+      <div class="meta">Attribution deltas + same-window comparisons</div>
+      <div class="body">The Market Pulse reports activity attributed between successive data drops, from the per-investor lifetime totals maintained upstream — periods differ in length, so per-month rates are shown. Elsewhere, "vs. year ago" compares the same calendar months one year earlier, counted from the same data extract. Transfers under $5,000 (quitclaims, partial interests) are excluded everywhere. Counts lag recording by 4–8 weeks, and the newest month can grow up to ~15% as late records arrive — direction is reliable before magnitude.</div>
+    </div>
+    <div class="card">
+      <h3>Known Limits</h3>
+      <div class="meta">Floors, not ceilings</div>
+      <div class="body">Wholesale assignments only appear when they touch a recorded deed, so those counts are a floor. Flip hold times are measured from the prior recorded sale. Names are the owner of record, which may be an LLC or trust.</div>
+    </div>
+  </div>
+
+  <h2 class="section-title" id="about">About</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Purpose</h3>
+      <div class="body">A working tool for small real estate investors in Greater Kansas City: what actually closed, where, at what prices, and what it suggests checking next — one theme per issue.</div>
+    </div>
+    <div class="card">
+      <h3>Cadence</h3>
+      <div class="body">Published with each bi-monthly data drop, covering the two most recent complete months of recorded activity.</div>
+    </div>
+    <div class="card">
+      <h3>Disclaimer</h3>
+      <div class="body">Observations from public records, not investment, legal, or tax advice. Past activity does not guarantee future results. Verify any property or counterparty independently before transacting.</div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="newsletter" id="newsletter">
+      <div class="mc-form" id="mc_embed_signup">
+        <form action="https://swarmtrace.us14.list-manage.com/subscribe/post?u=9a4ba4adf4888e6de8829189e&amp;id=35bb5ff4ae" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+          <h3>Subscribe</h3>
+          <p>Get each Kansas City Investor Brief by email when a new issue is published.</p>
+          <label for="mce-EMAIL">Enter your email address to subscribe</label>
+          <input type="email" name="EMAIL" id="mce-EMAIL" placeholder="EMAIL" required>
+          <input type="hidden" name="tags" value="12497813">
+          <div style="position:absolute; left:-5000px;" aria-hidden="true"><input type="text" name="b_9a4ba4adf4888e6de8829189e_35bb5ff4ae" tabindex="-1" value=""></div>
+          <button type="submit" name="subscribe" id="mc-embedded-subscribe">SUBSCRIBE</button>
+          <p class="mc-note">Unsubscribe any time. Powered by Mailchimp.</p>
+        </form>
+      </div>
+    </div>
+    <div>
+      <h4>Sections</h4>
+      <ul>
+        <li><a href="#this-issue">This Issue</a></li>
+        <li><a href="#playbook">Investor Playbook</a></li>
+        <li><a href="#factoids">Factoids</a></li>
+        <li><a href="#activity-chart">Market Activity</a></li>
+        <li><a href="#where-the-money-went">Where the Money Went</a></li>
+        <li><a href="#market-pulse">Market Pulse</a></li>
+        <li><a href="#methodology">Methodology</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Coverage</h4>
+      <ul>
+        <li>Bates County</li>
+        <li>Caldwell County</li>
+        <li>Cass County</li>
+        <li>Clay County</li>
+        <li>Clinton County</li>
+        <li>Jackson County</li>
+        <li>Lafayette County</li>
+        <li>Platte County</li>
+        <li>Ray County</li>
+        <li>Franklin County</li>
+        <li>Johnson County</li>
+        <li>Leavenworth County</li>
+        <li>Linn County</li>
+        <li>Miami County</li>
+        <li>Wyandotte County</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:jpritchard@swarmalytics.com">jpritchard@swarmalytics.com</a></li>
+        <li>Powered by <a href="https://www.swarmalytics.com" target="_blank" rel="noopener">Swarmalytics</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    Kansas City Real Estate Investor Brief is an independent research publication built from public
+    county records. Not affiliated with any government agency. Nothing here is investment, legal,
+    or tax advice.
+  </div>
+</footer>
+
+</body>
+</html>

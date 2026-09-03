@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>New Orleans Real Estate Investor Brief</title>
+<meta name="description" content="Deed-level data on what small investors are actually doing in the New Orleans-Elyria MSA — flips, rentals, private lending — with a monthly theme and a playbook per investor type.">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  .mc-form { max-width:540px; margin:0 auto; text-align:left; background:#fff; border:1px solid #C0CCD9; border-radius:3px; padding:24px; font-family:Helvetica, sans-serif; color:#3C4858; }
+  .mc-form h3 { font-size:28px; font-weight:700; margin:0 0 8px; }
+  .mc-form p { font-size:16px; margin:0 0 12px; }
+  .mc-form label { display:block; font-weight:700; font-size:16px; margin-bottom:6px; }
+  .mc-form input[type=email] { width:100%; box-sizing:border-box; font-size:16px; padding:10px; border:1px solid #C0CCD9; border-radius:3px; margin-bottom:12px; }
+  .mc-form button { font-size:16px; font-weight:700; color:#fff; background:#3E4857; border:0; border-radius:3px; padding:10px 20px; cursor:pointer; }
+  .mc-form .mc-note { font-size:12px; color:#6b7785; margin-top:10px; }
+</style>
+</head>
+<body>
+
+<div class="utility-bar">
+  <div class="container">
+    <a href="#methodology">Methodology</a>
+    <a href="#about">About</a>
+    <a href="#newsletter">Subscribe</a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container">
+    <div class="brand">
+      <div class="brand-text">
+        <span class="brand-name">New Orleans Real Estate Investor Brief</span>
+        <span class="brand-tag">Deed-level market intelligence for small investors · New Orleans-Elyria MSA</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="primary-nav">
+  <div class="container">
+    <a href="#this-issue" class="active">This Issue</a>
+    <a href="#playbook">Investor Playbook</a>
+    <a href="#factoids">Factoids</a>
+    <a href="#activity-chart">Market Activity</a>
+    <a href="#where-the-money-went">Where the Money Went</a>
+    <a href="#flip-structure">Flip Structure</a>
+    <a href="#flip-pipeline">Flip Pipeline</a>
+      <a href="#financing">Funding</a>
+      <a href="#flipper-profile">Flipper Profile</a>
+    <a href="#market-pulse">Market Pulse</a>
+    <a href="#methodology">Methodology</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <!-- AGENT:hero:start -->
+<h1>August Edition — Slidell Shift</h1>
+    <div class="datarange">Analyzing transactions recorded May 1 – June 30, 2026</div>
+      <!-- AGENT:hero:end -->
+  </div>
+</section>
+
+<main>
+
+  <h2 class="section-title" id="this-issue">This Issue
+    <!-- AGENT:updated:start -->
+<span style="float:right;font-weight:400;text-transform:none;letter-spacing:0;font-size:12px;color:var(--text-muted);">August 2026 edition</span>
+      <!-- AGENT:updated:end -->
+  </h2>
+  <!-- AGENT:theme:start -->
+<div class="forecast-headline">
+    <div>
+      <div class="number">68% vs 33%</div>
+      <div class="label">St. Tammany's share of recorded flip resales this edition versus the same period a year ago</div>
+    </div>
+    <div class="body">
+      <h3 style="margin:0 0 .5rem;color:var(--navy);">Flip exits have relocated across the lake: St. Tammany took 68% of resales this edition against 33% a year ago</h3>
+      <p>Flip resales concentrated in St. Tammany, which took 68% of recorded exits versus 33% a year ago, while Jefferson fell to 26% from 57%. Slidell East (70461) alone accounted for 24% of exits against 3% a year ago, and the median flip sat 44.2 km from the CBD versus 17.0 km. The shift came with far fewer deals: 34 flips sold versus 75, at a $231,000 median versus $240,000. Basis did the work, and it thinned — median gross margin per flip was $87,050 against $120,000 a year ago.</p>
+    </div>
+  </div>
+      <!-- AGENT:theme:end -->
+
+  <h2 class="section-title" id="playbook">Investor Playbook</h2>
+  <p class="section-sub">What this issue's numbers suggest checking, by investor type. Observations from recorded data — not investment, legal, or tax advice.</p>
+  <!-- AGENT:playbook:start -->
+<div class="card-grid">
+    <div class="card">
+      <h3>Your buyer list has shrunk to two dozen names, and most of them are working Slidell</h3>
+      <div class="meta">Wholesalers</div>
+      <div class="body">Only 24 operators sold flips this edition, and the top ten took 66.9% of flip revenue, so the data suggests calling before you contract rather than after. Deal flow is clustering in 70458 (7 buys, 6 flips, $71,600 median buy), 70461 (5 buys, 8 flips, $180,000 median buy) and 70460 (6 buys, $110,050 median buy). Note St. Charles shows 0 recorded purchases this window against 14 a year ago — the county feed is likely missing, so treat that parish as unmeasured rather than dead.</div>
+    </div>
+    <div class="card">
+      <h3>Resale price held; the spread did not</h3>
+      <div class="meta">Flippers</div>
+      <div class="body">Median flip resale was $231,000 versus $240,000 a year ago and $142.31/sqft versus $145.73 — but median gross margin fell to $87,050 from $120,000, and margin percentage to 54.8% from 85.8%. Sale-to-assessed compressed to 1.32 from 1.68, so exits are landing closer to assessment than last year. With a 217.5-day median hold, it is worth underwriting Slidell-area acquisitions off today's $131,650 median resale in 70458 and $178,000 in 70461, not off last year's Jefferson comps.</div>
+    </div>
+    <div class="card">
+      <h3>Entry basis has moved with the flip trade</h3>
+      <div class="meta">Landlords</div>
+      <div class="body">Median investor purchase is $157,500 against $179,796 a year ago, with Slidell buys at a $110,000 median and $66/sqft — the lowest square-foot basis among the busier cities against Metairie's $135/sqft on 25 purchases. Condo product (12 deals, $58,000 median, $80/sqft) remains the cheapest entry ticket on record this edition. With 439 first-time local landlords appearing in the records and 338 adding units since the last drop, competition for the sub-$150,000 house is still present.</div>
+    </div>
+    <div class="card">
+      <h3>The recorded private channel has nearly vanished; banks are carrying rehab paper</h3>
+      <div class="meta">Private lenders</div>
+      <div class="body">One private loan was recorded this edition against 24 a year ago, and seller notes fell to 14 from 49. Over the trailing twelve months, 71.0% of the 138 financed purchases funded rehab, at a median $163,654 loan and a 1.12 median loan-to-price — GMFS (10 loans), Rocket (7) and Fidelity Bank (5) lead the count. The gap the data suggests is the $70,000–$180,000 Slidell-basis deal, below most bank medians and above the smallest recorded notes; verify hold assumptions against the 217.5-day median.</div>
+    </div>
+    <div class="card">
+      <h3>2-4 units are the cheapest square footage on the board</h3>
+      <div class="meta">Multifamily investors</div>
+      <div class="body">Seventeen 2-4 unit purchases recorded at a $417,300 median and $75/sqft, below single family at $101/sqft. The most active buyer of the period, J B Thompson LLC, took 5 parcels for $13.3M, mostly 2-4 units in Kenner. Small multifamily was 0% of flip resales this edition against 6.7% a year ago, so exit comps for renovated duplexes are thin — the data suggests underwriting these to hold, not to resell within the year.</div>
+    </div>
+  </div>
+      <!-- AGENT:playbook:end -->
+
+  <h2 class="section-title" id="factoids">Factoids</h2>
+  <p class="section-sub">Numbers from this period a practitioner would repeat to a colleague. Each computed directly from recorded instruments.</p>
+  <!-- AGENT:factoids:start -->
+<div class="card-grid">
+    <div class="card">
+      <h3>116 investor purchases — recorded investor purchases this edition</h3>
+      <div class="meta">trending down · vs 206 a year ago and 135 in the prior period</div>
+      <div class="body">Acquisition volume is running at roughly half of last year's pace across the eight-parish footprint. The median purchase also stepped down to $157,500 from $179,796 a year ago.</div>
+    </div>
+    <div class="card">
+      <h3>$87,050 median gross flip margin — median gross spread between buy and resale on the 34 flips sold</h3>
+      <div class="meta">trending down · was $120,000 a year ago</div>
+      <div class="body">Median margin percentage fell to 54.8% from 85.8%, on a hold of 217.5 days versus 212. Rehab and carry are not in public record, so these are gross figures.</div>
+    </div>
+    <div class="card">
+      <h3>24 flip operators — distinct sellers behind this edition's flip resales</h3>
+      <div class="meta">trending down · vs 63 operators a year ago</div>
+      <div class="body">The top ten operators took 66.9% of flip revenue, up from 38.7% a year ago. The exit side of this market is now a short list of names, which matters when you price a wholesale assignment.</div>
+    </div>
+    <div class="card">
+      <h3>1 recorded private loan — private loans recorded against residential deals this edition</h3>
+      <div class="meta">trending down · vs 24 a year ago</div>
+      <div class="body">Median recorded private loan was $25,425 against $302,750 a year ago, and seller-financed notes fell to 14 from 49. Over the trailing twelve months 138 of 201 observed purchases carried financing, a 68.7% financed share at a $163,654 median loan.</div>
+    </div>
+    <div class="card">
+      <h3>$75/sqft on 2-4 units — median price per square foot paid on 17 recorded 2-4 unit purchases</h3>
+      <div class="meta">holding steady · vs $101/sqft on 79 single-family purchases</div>
+      <div class="body">Small multifamily traded at a $417,300 median ticket but the lowest square-foot basis of any product type this edition. Condos, 12 deals at a $58,000 median, priced at $80/sqft.</div>
+    </div>
+    <div class="card">
+      <h3>835 homes in flipper inventory — properties held by flippers and not yet resold, latest month</h3>
+      <div class="meta">trending down · vs 1,067 in the same month a year ago</div>
+      <div class="body">The held pipeline has drawn down every month since late 2025 as resales (38 in the latest month) outpace flipper purchases (23). Ten aged out of the window in the latest month.</div>
+    </div>
+  </div>
+      <!-- AGENT:factoids:end -->
+
+  <h2 class="section-title" id="activity-chart">Market Activity — Investor Purchases</h2>
+  <p class="section-sub">Monthly count of investor purchases of MSA properties (left axis) and the median purchase price (right axis), trailing 13 months. The most recent month can grow up to ~15% as late recordings arrive.</p>
+  <!-- AGENT:chart:start -->
+<div class="chart-row">
+    <div class="map-panel"><img src="../img/chart_2026-05..2026-06.png" alt="Monthly investor purchases and median price"><div class="caption">Investor purchases per month (bars) and median purchase price (line), trailing 13 months.</div></div>
+    <div class="map-panel"><img src="../img/decades_2026-05..2026-06.png" alt="Investor purchases by decade the house was built"><div class="caption">Which vintage of housing investors bought this edition, by decade built.</div></div>
+  </div>
+      <!-- AGENT:chart:end -->
+
+  <h2 class="section-title" id="where-the-money-went">Where the Money Went</h2>
+  <p class="section-sub">The geography of the period's investor activity: which zip codes saw the most recorded deals, and the largest individual transactions at street level.</p>
+  <!-- AGENT:map:start -->
+<div class="map-panel">
+    <h3 class="subsection-title" style="margin-top:0;">The 8 busiest zip codes for investor deals</h3>
+    <div id="dealmap"></div>
+    <script id="map-data" type="application/json">[{"rank":1,"zip":"70458","area":"Slidell","lat":30.262007,"lng":-89.794167,"buys":7,"flips":6,"deals":13,"median":"$71,600","medianSale":"$131,650"},{"rank":2,"zip":"70461","area":"Slidell East","lat":30.234038,"lng":-89.709634,"buys":5,"flips":8,"deals":13,"median":"$180,000","medianSale":"$178,000"},{"rank":3,"zip":"70001","area":"Metairie","lat":29.982705,"lng":-90.169068,"buys":10,"flips":1,"deals":11,"median":"$214,500","medianSale":"n/a"},{"rank":4,"zip":"70003","area":"Metairie West","lat":30.001164,"lng":-90.209724,"buys":10,"flips":0,"deals":10,"median":"$157,000","medianSale":"n/a"},{"rank":5,"zip":"70053","area":"Gretna","lat":29.917069,"lng":-90.052204,"buys":7,"flips":1,"deals":8,"median":"$150,000","medianSale":"n/a"},{"rank":6,"zip":"70058","area":"Harvey","lat":29.868874,"lng":-90.064872,"buys":6,"flips":2,"deals":8,"median":"$146,388","medianSale":"n/a"},{"rank":7,"zip":"70460","area":"Slidell West","lat":30.299875,"lng":-89.835997,"buys":6,"flips":2,"deals":8,"median":"$110,050","medianSale":"n/a"},{"rank":8,"zip":"70056","area":"Terrytown","lat":29.887441,"lng":-90.027304,"buys":6,"flips":1,"deals":7,"median":"$209,950","medianSale":"n/a"}]</script>
+    <div class="caption">Pins rank the busiest zips by recorded investor deals (purchases + flips of existing homes) this period — #1 busiest; orange = top 3; pin size scales with deal volume. Median buy is the typical investor purchase; median sale the typical flip resale. Click a pin for details; full table below.</div>
+    <div class="map-table-wrap">
+    <table class="data">
+      <thead><tr><th>#</th><th>Zip</th><th>Area</th><th class="num">Purchases</th><th class="num">Flips</th><th class="num">Median buy</th><th class="num">Median sale</th></tr></thead><tbody>
+        <tr><td>#1</td><td>70458</td><td>Slidell</td><td class="num">7</td><td class="num">6</td><td class="num">$71,600</td><td class="num">$131,650</td></tr>
+        <tr><td>#2</td><td>70461</td><td>Slidell East</td><td class="num">5</td><td class="num">8</td><td class="num">$180,000</td><td class="num">$178,000</td></tr>
+        <tr><td>#3</td><td>70001</td><td>Metairie</td><td class="num">10</td><td class="num">1</td><td class="num">$214,500</td><td class="num">n/a</td></tr>
+        <tr><td>#4</td><td>70003</td><td>Metairie West</td><td class="num">10</td><td class="num">0</td><td class="num">$157,000</td><td class="num">n/a</td></tr>
+        <tr><td>#5</td><td>70053</td><td>Gretna</td><td class="num">7</td><td class="num">1</td><td class="num">$150,000</td><td class="num">n/a</td></tr>
+        <tr><td>#6</td><td>70058</td><td>Harvey</td><td class="num">6</td><td class="num">2</td><td class="num">$146,388</td><td class="num">n/a</td></tr>
+        <tr><td>#7</td><td>70460</td><td>Slidell West</td><td class="num">6</td><td class="num">2</td><td class="num">$110,050</td><td class="num">n/a</td></tr>
+        <tr><td>#8</td><td>70056</td><td>Terrytown</td><td class="num">6</td><td class="num">1</td><td class="num">$209,950</td><td class="num">n/a</td></tr>
+      </tbody></table>
+    </div>
+  </div>
+      <!-- AGENT:map:end -->
+  <script>
+  (function() {
+    var el = document.getElementById('map-data');
+    if (!el || !window.L) return;
+    var zips; try { zips = JSON.parse(el.textContent); } catch (e) { return; }
+    if (!zips.length) return;
+    var map = L.map('dealmap', { scrollWheelZoom: false });
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',
+      { attribution: 'Tiles &copy; Esri', maxZoom: 18 }).addTo(map);
+    var group = [];
+    var maxDeals = Math.max.apply(null, zips.map(function(z){ return z.deals; }));
+    zips.forEach(function(z) {
+      var size = 26 + Math.round(18 * z.deals / maxDeals);
+      var icon = L.divIcon({ className: '', iconSize: [size, size], iconAnchor: [size/2, size/2],
+        html: '<div class="rank-pin' + (z.rank <= 3 ? ' hot' : '') + '" style="width:'+size+'px;height:'+size+'px;">#'+z.rank+'</div>' });
+      var m = L.marker([z.lat, z.lng], { icon: icon }).addTo(map);
+      m.bindPopup('<b>#'+z.rank+' &middot; '+z.zip+'</b>'+(z.area ? ' &mdash; '+z.area : '')+'<br>'+
+        z.buys.toLocaleString()+' purchases &middot; '+z.flips.toLocaleString()+' flips<br>Median buy '+z.median);
+      m.bindTooltip('#'+z.rank+' '+z.zip, { direction: 'top' });
+      group.push(m);
+    });
+    map.fitBounds(L.featureGroup(group).getBounds().pad(0.25));
+  })();
+  </script>
+  <!-- AGENT:deals:start -->
+<h3 class="subsection-title">A representative deal in each of the busiest zips</h3>
+<p class="section-sub">One deal per zip: the largest matching this market's typical house (typical for this market: 1580 sqft, 3 bed, built around 2007; priced within 4x the county assessment and under 5x its own zip's median).</p>
+<div class="deal-strip">
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_f187a23c.jpg" alt="Street view of 4512 TARTAN DR">
+      <div class="body">
+        <div class="price">$374,000 · Purchase</div>
+        <div class="addr">4512 TARTAN DR, Metairie LA 70003</div>
+        <div class="meta">Single family · 2,229 sqft · Jun 4</div>
+        <div class="svdate">Street View Apr 2025 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_2188e93c.jpg" alt="Street view of 712 MARLENE DR">
+      <div class="body">
+        <div class="price">$269,900 · Purchase</div>
+        <div class="addr">712 MARLENE DR, Gretna LA 70056</div>
+        <div class="meta">Single family · 2,216 sqft · May 13</div>
+        <div class="svdate">Street View Dec 2024 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/sv_2026-05..2026-06_acdf7dd4.jpg" alt="Street view of 3623 BAUVAIS ST">
+      <div class="body">
+        <div class="price">$132,000 · Purchase</div>
+        <div class="addr">3623 BAUVAIS ST, Metairie LA 70001</div>
+        <div class="meta">Single family · 1,000 sqft · May 22</div>
+        <div class="svdate">Street View Sep 2025 — before the purchase</div>
+      </div>
+    </div>
+  </div>
+<h3 class="subsection-title">Largest flip margin deals of the period, at street level</h3>
+<p class="section-sub">Gross margin = recorded sale price minus the flipper's recorded purchase price. Purchase deeds are recoverable for roughly 4 in 10 flips; rehab and carry costs are not public record.</p>
+<div class="deal-strip">
+    <div class="deal-card">
+      <img src="../img/svm_2026-05..2026-06_005a53c2.jpg" alt="Street view of 127 LAKE AVE">
+      <div class="body">
+        <div class="price">$298,000 gross · bought $475,000 (Sep 2025) → sold $773,000</div>
+        <div class="addr">127 LAKE AVE, Metairie LA 70005</div>
+        <div class="meta">Single family · 2,821 sqft · May 20</div>
+        <div class="svdate">Street View Oct 2025 — during the flip</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-05..2026-06_7443409b.jpg" alt="Street view of 204 UNION DR">
+      <div class="body">
+        <div class="price">$208,500 gross · bought $265,000 (Jan 2026) → sold $473,500</div>
+        <div class="addr">204 UNION DR, Hahnville LA 70057</div>
+        <div class="meta">Single family · 4,364 sqft · May 1</div>
+        <div class="svdate">Street View Jan 2019 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-05..2026-06_b2048ee9.jpg" alt="Street view of 611 MACARTHUR AVE">
+      <div class="body">
+        <div class="price">$185,000 gross · bought $70,000 (May 2025) → sold $255,000</div>
+        <div class="addr">611 MACARTHUR AVE, Harvey LA 70058</div>
+        <div class="meta">Single family · 5,998 sqft · May 12</div>
+        <div class="svdate">Street View Jan 2019 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-05..2026-06_ecd9deb1.jpg" alt="Street view of 63 SAINT ANTHONY ST">
+      <div class="body">
+        <div class="price">$183,000 gross · bought $102,000 (Dec 2025) → sold $285,000</div>
+        <div class="addr">63 SAINT ANTHONY ST, Luling LA 70070</div>
+        <div class="meta">Single family · 1,640 sqft · May 26</div>
+        <div class="svdate">Street View Oct 2025 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-05..2026-06_ef67f585.jpg" alt="Street view of 125 ORCHARD RD">
+      <div class="body">
+        <div class="price">$153,000 gross · bought $225,000 (Oct 2025) → sold $378,000</div>
+        <div class="addr">125 ORCHARD RD, New Orleans LA 70123</div>
+        <div class="meta">Single family · 1,625 sqft · May 29</div>
+        <div class="svdate">Street View Sep 2025 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="../img/svm_2026-05..2026-06_36b959fd.jpg" alt="Street view of 2236 HAMPTON DR">
+      <div class="body">
+        <div class="price">$145,000 gross · bought $155,000 (Nov 2025) → sold $300,000</div>
+        <div class="addr">2236 HAMPTON DR, Harvey LA 70058</div>
+        <div class="meta">Single family · 2,240 sqft · May 29</div>
+        <div class="svdate">Street View Jan 2025 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+  </div>
+      <!-- AGENT:deals:end -->
+
+  <h2 class="section-title" id="flip-structure">Flip Structure — Year over Year</h2>
+  <p class="section-sub">How the flip market itself is changing: margins, who is doing the flipping, what they flip, and where. Same two calendar months, this year vs last, from the current data extract.</p>
+  <!-- AGENT:flipstructure:start -->
+<table class="data tight">
+    <thead><tr><th>Flip market structure</th><th class="num">Same months last year</th><th class="num">This edition</th></tr></thead><tbody>
+      <tr><td>Flips sold</td><td class="num">75</td><td class="num">34</td></tr>
+      <tr><td>Median sale</td><td class="num">$240,000</td><td class="num">$231,000</td></tr>
+      <tr><td>Median $/sqft</td><td class="num">$146</td><td class="num">$142</td></tr>
+      <tr><td>Sale vs county-assessed</td><td class="num">1.68×</td><td class="num">1.32×</td></tr>
+      <tr><td>Median gross margin (matched buys)</td><td class="num">$120,000</td><td class="num">$87,050</td></tr>
+      <tr><td>Median margin %</td><td class="num">86%</td><td class="num">55%</td></tr>
+      <tr><td>Median hold</td><td class="num">7.0 mo</td><td class="num">7.2 mo</td></tr>
+      <tr><td>Homes bought by flippers</td><td class="num">90</td><td class="num">33</td></tr>
+      <tr><td>Net to inventory (bought − sold)</td><td class="num">+15</td><td class="num">−1</td></tr>
+      <tr><td>Active flippers</td><td class="num">63</td><td class="num">24</td></tr>
+      <tr><td>Top-10 flippers' revenue share</td><td class="num">39%</td><td class="num">67%</td></tr>
+      <tr><td>Median house: sqft / beds / built</td><td class="num">1734 / 3 / 1983</td><td class="num">1707 / 4 / 1990</td></tr>
+      <tr><td>Pre-1950 stock share</td><td class="num">0%</td><td class="num">0%</td></tr>
+      <tr><td>2–4 unit share</td><td class="num">7%</td><td class="num">0%</td></tr>
+      <tr><td>Median distance from downtown</td><td class="num">17.0 km</td><td class="num">44.2 km</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Homes bought counts every deed recorded to a known flipper in the window, resold or not. Net to inventory is that minus flips sold. The standing stock is in the Flip Pipeline section.</div>
+  <div class="pulse-caveat">Attributed profit per flip (per-investor aggregates, by drop period): Feb 26→Jun 26: 54 flips, $157,093/flip · Jun 26→Aug 26: 18 flips, $140,348/flip.</div>
+  <div class="pulse-caveat">County mix (share of flips, last year → this edition): St. Tammany 33%→68% · Jefferson 57%→26% · St. Charles 4%→6% · Plaquemines 1%→0% · Orleans 4%→0%.</div>
+  <div class="pulse-caveat">Biggest zip share moves: Slidell East 2.7%→23.5% · Slidell 6.7%→17.6% · Marrero 10.7%→0.0% · Metairie West 8.0%→0.0% · Kenner North 8.0%→2.9% · Westwego 8.0%→2.9%.</div>
+      <!-- AGENT:flipstructure:end -->
+
+  <h2 class="section-title" id="flip-pipeline">Flip Pipeline — Buying, Selling and Inventory</h2>
+  <!-- AGENT:flipflow:start -->
+<p class="section-sub">Homes bought by known flippers and homes they resold, per month, alongside the stock sitting in flipper hands. A house enters inventory when a flipper buys it and leaves on the next recorded sale, at any price. Purchases still unsold after five years are treated as holds and drop out.</p>
+<div class="map-panel"><img src="../img/flipflow_2026-05..2026-06.png" alt="Flip purchases, flip sales and inventory by month with projection"><div class="caption">Solid = recorded, dashed = projected. Green bars are inventory on the right axis: homes bought and not yet resold. Aged out is purchases passing five years unsold. Inventory moves by bought minus resold minus aged out.</div></div>
+<table class="data tight">
+    <thead><tr><th>Flip pipeline</th><th class="num">Bought / mo</th><th class="num">Resold / mo</th><th class="num">Aged out / mo</th><th class="num">Inventory</th></tr></thead><tbody>
+      <tr><td>Latest recorded month (2026-05)</td><td class="num">23</td><td class="num">38</td><td class="num">10</td><td class="num">835</td></tr>
+      <tr><td>Projected (2026-11)</td><td class="num">25</td><td class="num">31</td><td class="num">12</td><td class="num">761</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Method: a straight-line trend through the last 24 months, adjusted for the month of the year, shown dashed as a projection. The series stops before the newest month or two, where deeds are still recording.</div>
+      <!-- AGENT:flipflow:end -->
+
+  <h2 class="section-title" id="financing">Who's Funding the Deals</h2>
+  <!-- AGENT:financing:start -->
+<p class="section-sub">First mortgages open on flipper purchases from Jul 2025 – Jun 2026 that have not yet resold. 69% carried recorded debt; the rest closed cash or off-record. Ranked by deal count.</p>
+<div class="card-grid">
+    <div class="card"><h3>69%</h3><div class="meta">Purchases financed</div><div class="body">138 of 201 flipper purchases carried a recorded first mortgage</div></div>
+    <div class="card"><h3>$163,654</h3><div class="meta">Typical loan</div><div class="body">median 1.12× the purchase price — the median lender advances rehab money on top of the buy</div></div>
+    <div class="card"><h3>71%</h3><div class="meta">Funding the rehab too</div><div class="body">98 of 138 loans exceed the purchase price, so the lender is covering work as well as the buy</div></div>
+  </div>
+<table class="data tight">
+    <thead><tr><th>Lender</th><th class="num">Loans</th><th class="num">Borrowers</th><th class="num">Median loan</th><th class="num">Loan vs price</th><th class="num">Funds rehab</th><th class="num">Median purchase</th></tr></thead><tbody>
+      <tr><td>GMFS LLC</td><td class="num">10</td><td class="num">9</td><td class="num">$149,758</td><td class="num">1.16×</td><td class="num">60%</td><td class="num">$132,878</td></tr>
+      <tr><td>Rocket Mortgage LLC</td><td class="num">7</td><td class="num">3</td><td class="num">$189,150</td><td class="num">1.04×</td><td class="num">100%</td><td class="num">$187,838</td></tr>
+      <tr><td>Fidelity Bank</td><td class="num">5</td><td class="num">4</td><td class="num">$115,862</td><td class="num">1.12×</td><td class="num">100%</td><td class="num">$112,877</td></tr>
+      <tr><td>Resource Bank FB</td><td class="num">5</td><td class="num">4</td><td class="num">$103,500</td><td class="num">0.83×</td><td class="num">20%</td><td class="num">$90,000</td></tr>
+      <tr><td>Gulf Coast Bank & Trust Co</td><td class="num">4</td><td class="num">4</td><td class="num">$234,200</td><td class="num">1.37×</td><td class="num">100%</td><td class="num">$161,500</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Rates and terms are not published: the county feed models both. Borrowers counts the distinct flippers on each lender's book. Loan vs price is the recorded first mortgage divided by what the buyer paid. Above 1.00x the lender is funding purchase plus rehab; below it the buyer brought cash to the table. Blanket mortgages covering several parcels are excluded, as are loans outside 0.1x-3x the price. Rates and points are not public record.</div>
+      <!-- AGENT:financing:end -->
+
+  <h2 class="section-title" id="flipper-profile">Flipper Profile — The Working Flipper</h2>
+  <!-- AGENT:flipperprofile:start -->
+<p class="section-sub">The 70th–90th percentile of local flippers by lifetime flip count — the established operators below the whales: 3–5 lifetime flips each. Bath counts are not in the assessor extract.</p>
+<div class="card-grid">
+    <div class="card"><h3>115</h3><div class="meta">Flippers in the band</div><div class="body">each with 3–5 lifetime flips (avg 3.4)</div></div>
+    <div class="card"><h3>$108,950</h3><div class="meta">Median gross margin</div><div class="body">292 flips matched to their purchase price</div></div>
+    <div class="card"><h3>6.4 mo</h3><div class="meta">Typical hold</div><div class="body">purchase to resale, matched deals</div></div>
+    <div class="card"><h3>1580 sqft · 3 bd</h3><div class="meta">Typical house</div><div class="body">median year built 2007</div></div>
+    <div class="card"><img src="../img/flippercurve_2026-05..2026-06.png" alt="Flippers by lifetime flip count" style="width:100%;max-width:260px;"><div class="meta">flippers by lifetime flips · orange = this band</div></div>
+  </div>
+  <div class="pulse-caveat">Where they work: Westwego (70094) 9% · Kenner North (70065) 7% · Metairie (70001) 7% · Terrytown (70056) 6% · Marrero (70072) 5%.</div>
+      <!-- AGENT:flipperprofile:end -->
+
+  <h2 class="section-title" id="market-pulse">Market Pulse</h2>
+  <!-- AGENT:pulse:start -->
+<table class="data">
+    <thead><tr><th></th><th class="num">per month, Feb–Jun 2026</th><th class="num">per month, Jun–Aug 2026</th><th class="num">change</th><th class="num">avg/mo 2yr</th><th class="num">avg/mo 4yr</th></tr></thead><tbody>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Homes bought by flippers</td><td class="num">45</td><td class="num">17</td><td class="num">-63%</td><td class="num">36</td><td class="num">43</td></tr>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Flips sold (deeds)</td><td class="num">38</td><td class="num">17</td><td class="num">-55%</td><td class="num">37</td><td class="num">43</td></tr>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Lending deals funded</td><td class="num">15</td><td class="num">8</td><td class="num">-50%</td><td class="num">—</td><td class="num">—</td></tr>
+      <tr><td><span style="color:#1a7a3c;">&#9650;</span> Seller/notes held (net)</td><td class="num">11</td><td class="num">33</td><td class="num">+195%</td><td class="num">—</td><td class="num">—</td></tr>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Investors (net)</td><td class="num">220</td><td class="num">69</td><td class="num">-69%</td><td class="num">—</td><td class="num">—</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Flips and flipper purchases = recorded deeds, same two months each year; their 2- and 4-year columns are per-month averages of the deed series. The remaining rows come from the investor file, which spans 13 months, so they have no multi-year average (2026: Jun 2026 → Aug 2026; 2025: Feb 2026 → Jun 2026).</div>
+      <!-- AGENT:pulse:end -->
+
+  <h2 class="section-title" id="past-issues">Past Issues</h2>
+  <ul>
+    <!-- AGENT:archive:start -->
+<li><a href="../202608/">August 2026</a></li>
+      <!-- AGENT:archive:end -->
+  </ul>
+
+  <h2 class="section-title" id="methodology">Methodology</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Source Data</h3>
+      <div class="meta">County recorder &amp; assessor via FARES</div>
+      <div class="body">Every figure is computed from recorded instruments (deeds, mortgages, assignments) and assessor property records for the five counties of the New Orleans-Elyria MSA. No surveys, no estimates, no listings data.
+        <!-- AGENT:sourcedates:start -->
+<div style="margin-top:.5rem;color:var(--navy);">This edition analyzes transactions dated May 1 – June 30, 2026, as recorded through the 2026-08 data extract.</div>
+      <!-- AGENT:sourcedates:end -->
+      </div>
+    </div>
+    <div class="card">
+      <h3>Who Counts as an Investor</h3>
+      <div class="meta">Transaction-pattern identification</div>
+      <div class="body">Investors are entities whose recorded transaction history looks like investing: rental holding (landlords), short-hold resales (flippers), private mortgage lending, note holding, or contract assignment (wholesalers). Banks, homebuilders, iBuyers, SFR funds, and government entities are identified by name and reported separately from small investors.</div>
+    </div>
+    <div class="card">
+      <h3>How Comparisons Work</h3>
+      <div class="meta">Attribution deltas + same-window comparisons</div>
+      <div class="body">The Market Pulse reports activity attributed between successive data drops, from the per-investor lifetime totals maintained upstream — periods differ in length, so per-month rates are shown. Elsewhere, "vs. year ago" compares the same calendar months one year earlier, counted from the same data extract. Transfers under $5,000 (quitclaims, partial interests) are excluded everywhere. Counts lag recording by 4–8 weeks, and the newest month can grow up to ~15% as late records arrive — direction is reliable before magnitude.</div>
+    </div>
+    <div class="card">
+      <h3>Known Limits</h3>
+      <div class="meta">Floors, not ceilings</div>
+      <div class="body">Wholesale assignments only appear when they touch a recorded deed, so those counts are a floor. Flip hold times are measured from the prior recorded sale. Names are the owner of record, which may be an LLC or trust.</div>
+    </div>
+  </div>
+
+  <h2 class="section-title" id="about">About</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Purpose</h3>
+      <div class="body">A working tool for small real estate investors in Greater New Orleans: what actually closed, where, at what prices, and what it suggests checking next — one theme per issue.</div>
+    </div>
+    <div class="card">
+      <h3>Cadence</h3>
+      <div class="body">Published with each bi-monthly data drop, covering the two most recent complete months of recorded activity.</div>
+    </div>
+    <div class="card">
+      <h3>Disclaimer</h3>
+      <div class="body">Observations from public records, not investment, legal, or tax advice. Past activity does not guarantee future results. Verify any property or counterparty independently before transacting.</div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="newsletter" id="newsletter">
+      <div class="mc-form" id="mc_embed_signup">
+        <form action="https://swarmtrace.us14.list-manage.com/subscribe/post?u=9a4ba4adf4888e6de8829189e&amp;id=35bb5ff4ae" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+          <h3>Subscribe</h3>
+          <p>Get each New Orleans Investor Brief by email when a new issue is published.</p>
+          <label for="mce-EMAIL">Enter your email address to subscribe</label>
+          <input type="email" name="EMAIL" id="mce-EMAIL" placeholder="EMAIL" required>
+          <input type="hidden" name="tags" value="12497814">
+          <div style="position:absolute; left:-5000px;" aria-hidden="true"><input type="text" name="b_9a4ba4adf4888e6de8829189e_35bb5ff4ae" tabindex="-1" value=""></div>
+          <button type="submit" name="subscribe" id="mc-embedded-subscribe">SUBSCRIBE</button>
+          <p class="mc-note">Unsubscribe any time. Powered by Mailchimp.</p>
+        </form>
+      </div>
+    </div>
+    <div>
+      <h4>Sections</h4>
+      <ul>
+        <li><a href="#this-issue">This Issue</a></li>
+        <li><a href="#playbook">Investor Playbook</a></li>
+        <li><a href="#factoids">Factoids</a></li>
+        <li><a href="#activity-chart">Market Activity</a></li>
+        <li><a href="#where-the-money-went">Where the Money Went</a></li>
+        <li><a href="#market-pulse">Market Pulse</a></li>
+        <li><a href="#methodology">Methodology</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Coverage</h4>
+      <ul>
+        <li>Jefferson County</li>
+        <li>Orleans County</li>
+        <li>Plaquemines County</li>
+        <li>St. Bernard County</li>
+        <li>St. Charles County</li>
+        <li>St. James County</li>
+        <li>St. John the Baptist County</li>
+        <li>St. Tammany County</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:jpritchard@swarmalytics.com">jpritchard@swarmalytics.com</a></li>
+        <li>Powered by <a href="https://www.swarmalytics.com" target="_blank" rel="noopener">Swarmalytics</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    New Orleans Real Estate Investor Brief is an independent research publication built from public
+    county records. Not affiliated with any government agency. Nothing here is investment, legal,
+    or tax advice.
+  </div>
+</footer>
+
+</body>
+</html>
