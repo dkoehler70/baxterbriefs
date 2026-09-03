@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Philadelphia Real Estate Investor Brief</title>
+<meta name="description" content="Deed-level data on what small investors are actually doing in the Philadelphia-Elyria MSA — flips, rentals, private lending — with a monthly theme and a playbook per investor type.">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  .mc-form { max-width:540px; margin:0 auto; text-align:left; background:#fff; border:1px solid #C0CCD9; border-radius:3px; padding:24px; font-family:Helvetica, sans-serif; color:#3C4858; }
+  .mc-form h3 { font-size:28px; font-weight:700; margin:0 0 8px; }
+  .mc-form p { font-size:16px; margin:0 0 12px; }
+  .mc-form label { display:block; font-weight:700; font-size:16px; margin-bottom:6px; }
+  .mc-form input[type=email] { width:100%; box-sizing:border-box; font-size:16px; padding:10px; border:1px solid #C0CCD9; border-radius:3px; margin-bottom:12px; }
+  .mc-form button { font-size:16px; font-weight:700; color:#fff; background:#3E4857; border:0; border-radius:3px; padding:10px 20px; cursor:pointer; }
+  .mc-form .mc-note { font-size:12px; color:#6b7785; margin-top:10px; }
+</style>
+</head>
+<body>
+
+<div class="utility-bar">
+  <div class="container">
+    <a href="#methodology">Methodology</a>
+    <a href="#about">About</a>
+    <a href="#newsletter">Subscribe</a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="container">
+    <div class="brand">
+      <div class="brand-text">
+        <span class="brand-name">Philadelphia Real Estate Investor Brief</span>
+        <span class="brand-tag">Deed-level market intelligence for small investors · Philadelphia-Elyria MSA</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<nav class="primary-nav">
+  <div class="container">
+    <a href="#this-issue" class="active">This Issue</a>
+    <a href="#playbook">Investor Playbook</a>
+    <a href="#factoids">Factoids</a>
+    <a href="#activity-chart">Market Activity</a>
+    <a href="#where-the-money-went">Where the Money Went</a>
+    <a href="#flip-structure">Flip Structure</a>
+    <a href="#flip-pipeline">Flip Pipeline</a>
+      <a href="#financing">Funding</a>
+      <a href="#flipper-profile">Flipper Profile</a>
+    <a href="#market-pulse">Market Pulse</a>
+    <a href="#methodology">Methodology</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <!-- AGENT:hero:start -->
+<h1>August Edition — Flips Move Out</h1>
+    <div class="datarange">Analyzing transactions recorded May 1 – June 30, 2026</div>
+      <!-- AGENT:hero:end -->
+  </div>
+</section>
+
+<main>
+
+  <h2 class="section-title" id="this-issue">This Issue
+    <!-- AGENT:updated:start -->
+<span style="float:right;font-weight:400;text-transform:none;letter-spacing:0;font-size:12px;color:var(--text-muted);">August 2026 edition</span>
+      <!-- AGENT:updated:end -->
+  </h2>
+  <!-- AGENT:theme:start -->
+<div class="forecast-headline">
+    <div>
+      <div class="number">18.7 km vs 15.0 km a year ago</div>
+      <div class="label">Median distance from Center City for homes sold as flips, current vs a year ago</div>
+    </div>
+    <div class="body">
+      <h3 style="margin:0 0 .5rem;color:var(--navy);">Flip volume fell to a two-year low and the trade moved farther from Center City</h3>
+      <p>Flips sold fell to 514 this period, down 37% from 812 a year ago, and the homes that did trade sat a median 18.7 km from Center City, up from 15.0 km. Median sale price held near $335,000, up 3% year over year, but gross margin narrowed to 75.6% of purchase price from 82.5%, suggesting acquisition costs are climbing faster than exit prices. The flip trade is smaller and more suburban than it was twelve months ago.</p>
+    </div>
+  </div>
+      <!-- AGENT:theme:end -->
+
+  <h2 class="section-title" id="playbook">Investor Playbook</h2>
+  <p class="section-sub">What this issue's numbers suggest checking, by investor type. Observations from recorded data — not investment, legal, or tax advice.</p>
+  <!-- AGENT:playbook:start -->
+<div class="card-grid">
+    <div class="card">
+      <h3>Fewer assignments, bigger spreads</h3>
+      <div class="meta">Wholesalers</div>
+      <div class="body">Recorded assignments ticked up to 7 from 4 last period but remain half of last year's 14, with the median spread rising to $51,250 from $45,000. Worth checking Kingsessing (19143), where flip share of metro activity nearly tripled year over year and flip count (19) led every zip.</div>
+    </div>
+    <div class="card">
+      <h3>The core is thinning, the margin math is tightening</h3>
+      <div class="meta">Flippers</div>
+      <div class="body">Median flip distance from Center City rose to 18.7 km from 15.0 km, and gross margin narrowed to 75.6% of purchase price from 82.5%. Operators with 4-9 lifetime flips post a $196,720 median margin and a 122-day hold versus the market's 209.5 days — the data suggests concentrated, lower-basis buys in zips like Kensington ($75,000 median buy) or Frankford ($105,000) are worth checking against center-city acquisitions.</div>
+    </div>
+    <div class="card">
+      <h3>Hold-strategy formation is outpacing flip formation</h3>
+      <div class="meta">Landlords</div>
+      <div class="body">6,777 buyers added a combined 10,991 units since the last drop, and 13,164 first-time landlords entered the records. 2-4 unit purchases carried a $200,000 median ($125/sqft), well under single-family's $158/sqft — worth checking as flip volume cools and comparable stock may be repricing toward hold buyers.</div>
+    </div>
+    <div class="card">
+      <h3>Recorded volume has consolidated at the top</h3>
+      <div class="meta">Private lenders</div>
+      <div class="body">Recorded private loans fell to 69 from 188 a year ago, with Kiavi, RFLF 4, Const Loan Services and Shallcross capturing most of the recorded volume. The data suggests room in smaller-balance, non-institutional lending outside those top names, particularly where seller financing (median $225,000) is filling gaps.</div>
+    </div>
+    <div class="card">
+      <h3>Larger product still trading despite the flip slowdown</h3>
+      <div class="meta">Multifamily investors</div>
+      <div class="body">Apartment 5+ deals cleared at a $1.6M median ($158/sqft), with this period's largest recorded transactions in West Philadelphia, Burlington and Newark. Worth checking whether cooling flip activity is loosening up 2-4 unit stock at a $200,000 median, a discount to single-family basis.</div>
+    </div>
+  </div>
+      <!-- AGENT:playbook:end -->
+
+  <h2 class="section-title" id="factoids">Factoids</h2>
+  <p class="section-sub">Numbers from this period a practitioner would repeat to a colleague. Each computed directly from recorded instruments.</p>
+  <!-- AGENT:factoids:start -->
+<div class="card-grid">
+    <div class="card">
+      <h3>362 operators — Flippers who closed at least one sale this period</h3>
+      <div class="meta">trending down · vs 639 a year ago</div>
+      <div class="body">The pool of active flip operators shrank by more than four in ten. Fewer players are absorbing the same falling deal count, not a broader base spreading it out.</div>
+    </div>
+    <div class="card">
+      <h3>$196,720 median lifetime margin — Operators with 4-9 lifetime flips</h3>
+      <div class="meta">trending up · vs $150,000 median margin for all flips this period</div>
+      <div class="body">Investors who have done several flips post materially fatter margins and a 122-day median hold, versus 209.5 days market-wide. Repeat, disciplined buying still outperforms one-off flipping.</div>
+    </div>
+    <div class="card">
+      <h3>69 private loans recorded — Private/hard-money loans recorded this period</h3>
+      <div class="meta">trending down · vs 188 a year ago</div>
+      <div class="body">Recorded lending volume dropped by nearly two-thirds even as the median loan size held near $180,000. Institutional funds (Kiavi, RFLF 4) now account for the bulk of what's left.</div>
+    </div>
+    <div class="card">
+      <h3>3.7% of flip volume — Kingsessing (19143) share of metro flip activity</h3>
+      <div class="meta">trending up · vs 1.1% a year ago</div>
+      <div class="body">No other zip moved this much. Kingsessing also led the metro in raw flip count (19) and investor purchases (94) this period.</div>
+    </div>
+    <div class="card">
+      <h3>$160,000 median purchase — Out-of-state buyers (13% of purchases)</h3>
+      <div class="meta">trending down · vs $250,000 median for local buyers</div>
+      <div class="body">Out-of-state capital, led by New York, California and Florida buyers, is concentrated in a lower price band than local investors, not competing head-on for the same product.</div>
+    </div>
+    <div class="card">
+      <h3>$225,000 median note — Seller-financed notes held this period</h3>
+      <div class="meta">trending up · vs $180,000 a year ago</div>
+      <div class="body">Note count fell 23% to 219, but the notes still being written carry a higher median value, pointing to fewer but larger seller-financed deals.</div>
+    </div>
+  </div>
+      <!-- AGENT:factoids:end -->
+
+  <h2 class="section-title" id="activity-chart">Market Activity — Investor Purchases</h2>
+  <p class="section-sub">Monthly count of investor purchases of MSA properties (left axis) and the median purchase price (right axis), trailing 13 months. The most recent month can grow up to ~15% as late recordings arrive.</p>
+  <!-- AGENT:chart:start -->
+<div class="chart-row">
+    <div class="map-panel"><img src="img/chart_2026-05..2026-06.png" alt="Monthly investor purchases and median price"><div class="caption">Investor purchases per month (bars) and median purchase price (line), trailing 13 months.</div></div>
+    <div class="map-panel"><img src="img/decades_2026-05..2026-06.png" alt="Investor purchases by decade the house was built"><div class="caption">Which vintage of housing investors bought this edition, by decade built.</div></div>
+  </div>
+      <!-- AGENT:chart:end -->
+
+  <h2 class="section-title" id="where-the-money-went">Where the Money Went</h2>
+  <p class="section-sub">The geography of the period's investor activity: which zip codes saw the most recorded deals, and the largest individual transactions at street level.</p>
+  <!-- AGENT:map:start -->
+<div class="map-panel">
+    <h3 class="subsection-title" style="margin-top:0;">The 8 busiest zip codes for investor deals</h3>
+    <div id="dealmap"></div>
+    <script id="map-data" type="application/json">[{"rank":1,"zip":"19143","area":"Kingsessing","lat":39.943806,"lng":-75.226551,"buys":94,"flips":19,"deals":113,"median":"$100,000","medianSale":"$275,000"},{"rank":2,"zip":"19134","area":"Kensington","lat":39.989223,"lng":-75.108756,"buys":93,"flips":9,"deals":102,"median":"$75,000","medianSale":"$163,000"},{"rank":3,"zip":"19132","area":"Strawberry Mansion","lat":39.996864,"lng":-75.170871,"buys":91,"flips":3,"deals":94,"median":"$47,500","medianSale":"n/a"},{"rank":4,"zip":"19140","area":"Hunting Park","lat":40.012279,"lng":-75.145084,"buys":88,"flips":4,"deals":92,"median":"$67,500","medianSale":"n/a"},{"rank":5,"zip":"19121","area":"Brewerytown","lat":39.982071,"lng":-75.179825,"buys":77,"flips":7,"deals":84,"median":"$120,000","medianSale":"$165,000"},{"rank":6,"zip":"19139","area":"Cobbs Creek","lat":39.961575,"lng":-75.231146,"buys":80,"flips":3,"deals":83,"median":"$75,250","medianSale":"n/a"},{"rank":7,"zip":"19124","area":"Frankford","lat":40.017257,"lng":-75.095261,"buys":77,"flips":5,"deals":82,"median":"$105,000","medianSale":"$85,000"},{"rank":8,"zip":"19013","area":"Chester","lat":39.845414,"lng":-75.374817,"buys":59,"flips":4,"deals":63,"median":"$75,000","medianSale":"n/a"}]</script>
+    <div class="caption">Pins rank the busiest zips by recorded investor deals (purchases + flips of existing homes) this period — #1 busiest; orange = top 3; pin size scales with deal volume. Median buy is the typical investor purchase; median sale the typical flip resale. Click a pin for details; full table below.</div>
+    <div class="map-table-wrap">
+    <table class="data">
+      <thead><tr><th>#</th><th>Zip</th><th>Area</th><th class="num">Purchases</th><th class="num">Flips</th><th class="num">Median buy</th><th class="num">Median sale</th></tr></thead><tbody>
+        <tr><td>#1</td><td>19143</td><td>Kingsessing</td><td class="num">94</td><td class="num">19</td><td class="num">$100,000</td><td class="num">$275,000</td></tr>
+        <tr><td>#2</td><td>19134</td><td>Kensington</td><td class="num">93</td><td class="num">9</td><td class="num">$75,000</td><td class="num">$163,000</td></tr>
+        <tr><td>#3</td><td>19132</td><td>Strawberry Mansion</td><td class="num">91</td><td class="num">3</td><td class="num">$47,500</td><td class="num">n/a</td></tr>
+        <tr><td>#4</td><td>19140</td><td>Hunting Park</td><td class="num">88</td><td class="num">4</td><td class="num">$67,500</td><td class="num">n/a</td></tr>
+        <tr><td>#5</td><td>19121</td><td>Brewerytown</td><td class="num">77</td><td class="num">7</td><td class="num">$120,000</td><td class="num">$165,000</td></tr>
+        <tr><td>#6</td><td>19139</td><td>Cobbs Creek</td><td class="num">80</td><td class="num">3</td><td class="num">$75,250</td><td class="num">n/a</td></tr>
+        <tr><td>#7</td><td>19124</td><td>Frankford</td><td class="num">77</td><td class="num">5</td><td class="num">$105,000</td><td class="num">$85,000</td></tr>
+        <tr><td>#8</td><td>19013</td><td>Chester</td><td class="num">59</td><td class="num">4</td><td class="num">$75,000</td><td class="num">n/a</td></tr>
+      </tbody></table>
+    </div>
+  </div>
+      <!-- AGENT:map:end -->
+  <script>
+  (function() {
+    var el = document.getElementById('map-data');
+    if (!el || !window.L) return;
+    var zips; try { zips = JSON.parse(el.textContent); } catch (e) { return; }
+    if (!zips.length) return;
+    var map = L.map('dealmap', { scrollWheelZoom: false });
+    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}',
+      { attribution: 'Tiles &copy; Esri', maxZoom: 18 }).addTo(map);
+    var group = [];
+    var maxDeals = Math.max.apply(null, zips.map(function(z){ return z.deals; }));
+    zips.forEach(function(z) {
+      var size = 26 + Math.round(18 * z.deals / maxDeals);
+      var icon = L.divIcon({ className: '', iconSize: [size, size], iconAnchor: [size/2, size/2],
+        html: '<div class="rank-pin' + (z.rank <= 3 ? ' hot' : '') + '" style="width:'+size+'px;height:'+size+'px;">#'+z.rank+'</div>' });
+      var m = L.marker([z.lat, z.lng], { icon: icon }).addTo(map);
+      m.bindPopup('<b>#'+z.rank+' &middot; '+z.zip+'</b>'+(z.area ? ' &mdash; '+z.area : '')+'<br>'+
+        z.buys.toLocaleString()+' purchases &middot; '+z.flips.toLocaleString()+' flips<br>Median buy '+z.median);
+      m.bindTooltip('#'+z.rank+' '+z.zip, { direction: 'top' });
+      group.push(m);
+    });
+    map.fitBounds(L.featureGroup(group).getBounds().pad(0.25));
+  })();
+  </script>
+  <!-- AGENT:deals:start -->
+<h3 class="subsection-title">A representative deal in each of the busiest zips</h3>
+<p class="section-sub">One deal per zip: the largest matching this market's typical house (typical for this market: 1465 sqft, 3 bed, built around 1953; priced within 4x the county assessment and under 5x its own zip's median).</p>
+<div class="deal-strip">
+    <div class="deal-card">
+      <img src="img/sv_2026-05..2026-06_6120c908.jpg" alt="Street view of 1629 W STILES ST">
+      <div class="body">
+        <div class="price">$472,350 · Purchase</div>
+        <div class="addr">1629 W STILES ST, Philadelphia PA 19121</div>
+        <div class="meta">Single family · 1,704 sqft · Jun 30</div>
+        <div class="svdate">Street View May 2022 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="img/sv_2026-05..2026-06_6f6d55ac.jpg" alt="Street view of 4946 CHARLES ST">
+      <div class="body">
+        <div class="price">$432,580 · Purchase</div>
+        <div class="addr">4946 CHARLES ST, Philadelphia PA 19124</div>
+        <div class="meta">Single family · 1,080 sqft · Jun 4</div>
+        <div class="svdate">Street View Jul 2025 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="img/sv_2026-05..2026-06_06fd2797.jpg" alt="Street view of 5818 WARRINGTON AVE">
+      <div class="body">
+        <div class="price">$429,718 · Purchase</div>
+        <div class="addr">5818 WARRINGTON AVE, Philadelphia PA 19143</div>
+        <div class="meta">Single family · 1,208 sqft · May 27</div>
+        <div class="svdate">Street View Jul 2024 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="img/sv_2026-05..2026-06_45940fb6.jpg" alt="Street view of 107 N RUBY ST">
+      <div class="body">
+        <div class="price">$369,607 · Purchase</div>
+        <div class="addr">107 N RUBY ST, Philadelphia PA 19139</div>
+        <div class="meta">Single family · 1,184 sqft · Jun 3</div>
+        <div class="svdate">Street View Jul 2024 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="img/sv_2026-05..2026-06_5380b781.jpg" alt="Street view of 1943 E MONMOUTH ST">
+      <div class="body">
+        <div class="price">$358,516 · Purchase</div>
+        <div class="addr">1943 E MONMOUTH ST, Philadelphia PA 19134</div>
+        <div class="meta">Single family · 1,214 sqft · May 26</div>
+        <div class="svdate">Street View Jul 2025 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="img/sv_2026-05..2026-06_6efee2a2.jpg" alt="Street view of 3425 OLD YORK RD">
+      <div class="body">
+        <div class="price">$335,000 · Purchase</div>
+        <div class="addr">3425 OLD YORK RD, Philadelphia PA 19140</div>
+        <div class="meta">Single family · 1,736 sqft · Jun 16</div>
+        <div class="svdate">Street View Apr 2025 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="img/sv_2026-05..2026-06_3636c6ae.jpg" alt="Street view of 38 E 23RD ST">
+      <div class="body">
+        <div class="price">$233,333 · Purchase</div>
+        <div class="addr">38 E 23RD ST, Chester PA 19013</div>
+        <div class="meta">2-4 units · 1,871 sqft · May 27</div>
+        <div class="svdate">Street View Aug 2024 — before the purchase</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="img/sv_2026-05..2026-06_506a2db4.jpg" alt="Street view of 2838 N BAILEY ST">
+      <div class="body">
+        <div class="price">$150,000 · Purchase</div>
+        <div class="addr">2838 N BAILEY ST, Philadelphia PA 19132</div>
+        <div class="meta">Single family · 1,024 sqft · Jun 17</div>
+        <div class="svdate">Street View Apr 2023 — before the purchase</div>
+      </div>
+    </div>
+  </div>
+<h3 class="subsection-title">Deal sheet — private lending, in date order</h3>
+<p class="section-sub">Private loans recorded against residential property this period, oldest first.</p>
+<table class="data">
+    <thead><tr><th>Date</th><th>Lender</th><th class="num">Amount</th><th>Property</th><th>Use</th></tr></thead><tbody>
+      <tr><td>May 4</td><td>Phoenixville Federal BK&amp;TR</td><td class="num">$139,505</td><td>702 2ND Ave, Royersford PA 19468</td><td>Single family</td></tr>
+      <tr><td>May 5</td><td>Shah Sahil</td><td class="num">$200,000</td><td>4006 Joshua RD, Lafayette Hill PA 19444</td><td>Single family</td></tr>
+      <tr><td>May 5</td><td>Phoenixville Federal BK&amp;TR</td><td class="num">$30,000</td><td>350 King ST, Spring City PA 19475</td><td>Single family</td></tr>
+      <tr><td>May 6</td><td>Gallardo-reza Salvador</td><td class="num">$87,292</td><td>761 Valley RD, Coatesville PA 19320</td><td>Single family</td></tr>
+      <tr><td>May 7</td><td>Township of Abington</td><td class="num">$42,650</td><td>1604 Summit Ave, Willow Grove PA 19090</td><td>Single family</td></tr>
+      <tr><td>May 8</td><td>Splitero Fubding INC</td><td class="num">$65,843</td><td>350 N Fieldstone CT, Yardley DE 19067</td><td>Single family</td></tr>
+      <tr><td>May 8</td><td>Splitero Fubding INC</td><td class="num">$65,843</td><td>350 N Fieldstone CT, Yardley DE 19067</td><td>Single family</td></tr>
+      <tr><td>May 14</td><td>Zunino Edward</td><td class="num">$100,000</td><td>309 Northbank RD, Landenberg PA 19350</td><td>Single family</td></tr>
+    </tbody></table>
+
+<h3 class="subsection-title">Largest flip margin deals of the period, at street level</h3>
+<p class="section-sub">Gross margin = recorded sale price minus the flipper's recorded purchase price. Purchase deeds are recoverable for roughly 4 in 10 flips; rehab and carry costs are not public record.</p>
+<div class="deal-strip">
+    <div class="deal-card">
+      <img src="img/svm_2026-05..2026-06_1bf01be6.jpg" alt="Street view of 310 LEWIS RD">
+      <div class="body">
+        <div class="price">$615,000 gross · bought $485,000 (Dec 2025) → sold $1.1M</div>
+        <div class="addr">310 LEWIS RD, Springfield PA 19064</div>
+        <div class="meta">Single family · 2,094 sqft · Jun 16</div>
+        <div class="svdate">Street View Aug 2023 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="img/svm_2026-05..2026-06_7cea6b65.jpg" alt="Street view of 2716 BRANCH PIKE">
+      <div class="body">
+        <div class="price">$569,500 gross · bought $200,000 (Mar 2026) → sold $769,500</div>
+        <div class="addr">2716 BRANCH PIKE, Cinnaminson NJ 08077</div>
+        <div class="meta">Single family · 3,134 sqft · Jun 11</div>
+        <div class="svdate">Street View Apr 2023 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="img/svm_2026-05..2026-06_a5416703.jpg" alt="Street view of 1217 MCKEAN RD">
+      <div class="body">
+        <div class="price">$567,000 gross · bought $593,000 (Sep 2025) → sold $1.2M</div>
+        <div class="addr">1217 MCKEAN RD, Ambler PA 19002</div>
+        <div class="meta">Single family · 3,873 sqft · May 15</div>
+        <div class="svdate">Street View Jun 2025 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="img/svm_2026-05..2026-06_26096c68.jpg" alt="Street view of 760 N 23RD ST">
+      <div class="body">
+        <div class="price">$510,000 gross · bought $400,000 (Aug 2025) → sold $910,000</div>
+        <div class="addr">760 N 23RD ST, Philadelphia PA 19130</div>
+        <div class="meta">Single family · 1,350 sqft · Jun 2</div>
+        <div class="svdate">Street View May 2025 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="img/svm_2026-05..2026-06_ebec7255.jpg" alt="Street view of 1941 OAKFORD AVE">
+      <div class="body">
+        <div class="price">$484,900 gross · bought $225,000 (Dec 2024) → sold $709,900</div>
+        <div class="addr">1941 OAKFORD AVE, Feasterville Trevose PA 19053</div>
+        <div class="meta">Single family · 1,154 sqft · Jun 10</div>
+        <div class="svdate">Street View May 2023 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+    <div class="deal-card">
+      <img src="img/svm_2026-05..2026-06_4dd3cfef.jpg" alt="Street view of 1126 MIFFLIN ST">
+      <div class="body">
+        <div class="price">$475,000 gross · bought $295,000 (Nov 2024) → sold $770,000</div>
+        <div class="addr">1126 MIFFLIN ST, Philadelphia PA 19148</div>
+        <div class="meta">Single family · 1,744 sqft · May 7</div>
+        <div class="svdate">Street View Apr 2023 — before the flip (pre-renovation)</div>
+      </div>
+    </div>
+  </div>
+      <!-- AGENT:deals:end -->
+
+  <h2 class="section-title" id="flip-structure">Flip Structure — Year over Year</h2>
+  <p class="section-sub">How the flip market itself is changing: margins, who is doing the flipping, what they flip, and where. Same two calendar months, this year vs last, from the current data extract.</p>
+  <!-- AGENT:flipstructure:start -->
+<table class="data tight">
+    <thead><tr><th>Flip market structure</th><th class="num">Same months last year</th><th class="num">This edition</th></tr></thead><tbody>
+      <tr><td>Flips sold</td><td class="num">812</td><td class="num">514</td></tr>
+      <tr><td>Median sale</td><td class="num">$325,000</td><td class="num">$335,000</td></tr>
+      <tr><td>Median $/sqft</td><td class="num">$235</td><td class="num">$238</td></tr>
+      <tr><td>Sale vs county-assessed</td><td class="num">1.82×</td><td class="num">2.06×</td></tr>
+      <tr><td>Median gross margin (matched buys)</td><td class="num">$149,950</td><td class="num">$150,000</td></tr>
+      <tr><td>Median margin %</td><td class="num">82%</td><td class="num">76%</td></tr>
+      <tr><td>Median hold</td><td class="num">6.9 mo</td><td class="num">6.9 mo</td></tr>
+      <tr><td>Homes bought by flippers</td><td class="num">1,059</td><td class="num">909</td></tr>
+      <tr><td>Net to inventory (bought − sold)</td><td class="num">+247</td><td class="num">+395</td></tr>
+      <tr><td>Active flippers</td><td class="num">639</td><td class="num">362</td></tr>
+      <tr><td>Top-10 flippers' revenue share</td><td class="num">19%</td><td class="num">17%</td></tr>
+      <tr><td>Median house: sqft / beds / built</td><td class="num">1368 / 3 / 1948</td><td class="num">1374 / 3 / 1948</td></tr>
+      <tr><td>Pre-1950 stock share</td><td class="num">52%</td><td class="num">51%</td></tr>
+      <tr><td>2–4 unit share</td><td class="num">9%</td><td class="num">10%</td></tr>
+      <tr><td>Median distance from downtown</td><td class="num">15.0 km</td><td class="num">18.7 km</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Homes bought counts every deed recorded to a known flipper in the window, resold or not. Net to inventory is that minus flips sold. The standing stock is in the Flip Pipeline section.</div>
+  <div class="pulse-caveat">Attributed profit per flip (per-investor aggregates, by drop period): Feb 26→Jun 26: 1,205 flips, $81,009/flip · Jun 26→Aug 26: 570 flips, n/a (revisions).</div>
+  <div class="pulse-caveat">County mix (share of flips, last year → this edition): Philadelphia 33%→29% · Camden 15%→15% · Delaware 12%→11% · New Castle 6%→8% · Burlington 8%→8% · Gloucester 7%→7% · Bucks 6%→6% · Chester 3%→5% · Montgomery 7%→5% · Salem 2%→3% · Cecil 2%→2%.</div>
+  <div class="pulse-caveat">Biggest zip share moves: Kingsessing 1.1%→3.7%.</div>
+      <!-- AGENT:flipstructure:end -->
+
+  <h2 class="section-title" id="flip-pipeline">Flip Pipeline — Buying, Selling and Inventory</h2>
+  <!-- AGENT:flipflow:start -->
+<p class="section-sub">Homes bought by known flippers and homes they resold, per month, alongside the stock sitting in flipper hands. A house enters inventory when a flipper buys it and leaves on the next recorded sale, at any price. Purchases still unsold after five years are treated as holds and drop out.</p>
+<div class="map-panel"><img src="img/flipflow_2026-05..2026-06.png" alt="Flip purchases, flip sales and inventory by month with projection"><div class="caption">Solid = recorded, dashed = projected. Green bars are inventory on the right axis: homes bought and not yet resold. Aged out is purchases passing five years unsold. Inventory moves by bought minus resold minus aged out.</div></div>
+<table class="data tight">
+    <thead><tr><th>Flip pipeline</th><th class="num">Bought / mo</th><th class="num">Resold / mo</th><th class="num">Aged out / mo</th><th class="num">Inventory</th></tr></thead><tbody>
+      <tr><td>Latest recorded month (2026-05)</td><td class="num">600</td><td class="num">410</td><td class="num">196</td><td class="num">11,588</td></tr>
+      <tr><td>Projected (2026-11)</td><td class="num">401</td><td class="num">346</td><td class="num">125</td><td class="num">11,303</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Method: a straight-line trend through the last 24 months, adjusted for the month of the year, shown dashed as a projection. The series stops before the newest month or two, where deeds are still recording.</div>
+      <!-- AGENT:flipflow:end -->
+
+  <h2 class="section-title" id="financing">Who's Funding the Deals</h2>
+  <!-- AGENT:financing:start -->
+<p class="section-sub">First mortgages open on flipper purchases from Jul 2025 – Jun 2026 that have not yet resold. 60% carried recorded debt; the rest closed cash or off-record. Ranked by deal count.</p>
+<div class="card-grid">
+    <div class="card"><h3>60%</h3><div class="meta">Purchases financed</div><div class="body">2,338 of 3,873 flipper purchases carried a recorded first mortgage</div></div>
+    <div class="card"><h3>$223,000</h3><div class="meta">Typical loan</div><div class="body">median 1.19× the purchase price — the median lender advances rehab money on top of the buy</div></div>
+    <div class="card"><h3>67%</h3><div class="meta">Funding the rehab too</div><div class="body">1,565 of 2,338 loans exceed the purchase price, so the lender is covering work as well as the buy</div></div>
+  </div>
+<table class="data tight">
+    <thead><tr><th>Lender</th><th class="num">Loans</th><th class="num">Borrowers</th><th class="num">Median loan</th><th class="num">Loan vs price</th><th class="num">Funds rehab</th><th class="num">Median purchase</th></tr></thead><tbody>
+      <tr><td>Kiavi Funding INC</td><td class="num">240</td><td class="num">98</td><td class="num">$262,400</td><td class="num">1.32×</td><td class="num">91%</td><td class="num">$210,000</td></tr>
+      <tr><td>RFLF 4 LLC</td><td class="num">150</td><td class="num">46</td><td class="num">$295,250</td><td class="num">1.29×</td><td class="num">95%</td><td class="num">$230,000</td></tr>
+      <tr><td>Const Loan Services Ii LLC</td><td class="num">114</td><td class="num">17</td><td class="num">$200,344</td><td class="num">1.45×</td><td class="num">98%</td><td class="num">$140,000</td></tr>
+      <tr><td>Shallcross Mortgage Company</td><td class="num">61</td><td class="num">13</td><td class="num">$165,000</td><td class="num">1.28×</td><td class="num">97%</td><td class="num">$120,000</td></tr>
+      <tr><td>Wells Fargo Bank NA</td><td class="num">42</td><td class="num">38</td><td class="num">$167,127</td><td class="num">0.95×</td><td class="num">45%</td><td class="num">$172,000</td></tr>
+      <tr><td>Ifp Fund I LLC</td><td class="num">31</td><td class="num">19</td><td class="num">$285,000</td><td class="num">1.48×</td><td class="num">97%</td><td class="num">$180,800</td></tr>
+      <tr><td>Crosscountry Mortgage LLC</td><td class="num">29</td><td class="num">29</td><td class="num">$299,250</td><td class="num">0.95×</td><td class="num">17%</td><td class="num">$320,000</td></tr>
+      <tr><td>Loan Funder LLC</td><td class="num">26</td><td class="num">17</td><td class="num">$252,725</td><td class="num">1.35×</td><td class="num">77%</td><td class="num">$200,000</td></tr>
+      <tr><td>Genesis Capital</td><td class="num">21</td><td class="num">4</td><td class="num">$139,500</td><td class="num">1.72×</td><td class="num">95%</td><td class="num">$70,000</td></tr>
+      <tr><td>Yellow Breeches Capital LLC</td><td class="num">17</td><td class="num">2</td><td class="num">$440,000</td><td class="num">1.31×</td><td class="num">100%</td><td class="num">$335,000</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Rates and terms are not published: the county feed models both. Borrowers counts the distinct flippers on each lender's book. Loan vs price is the recorded first mortgage divided by what the buyer paid. Above 1.00x the lender is funding purchase plus rehab; below it the buyer brought cash to the table. Blanket mortgages covering several parcels are excluded, as are loans outside 0.1x-3x the price. Rates and points are not public record.</div>
+      <!-- AGENT:financing:end -->
+
+  <h2 class="section-title" id="flipper-profile">Flipper Profile — The Working Flipper</h2>
+  <!-- AGENT:flipperprofile:start -->
+<p class="section-sub">The 70th–90th percentile of local flippers by lifetime flip count — the established operators below the whales: 4–9 lifetime flips each. Bath counts are not in the assessor extract.</p>
+<div class="card-grid">
+    <div class="card"><h3>582</h3><div class="meta">Flippers in the band</div><div class="body">each with 4–9 lifetime flips (avg 5.4)</div></div>
+    <div class="card"><h3>$196,720</h3><div class="meta">Median gross margin</div><div class="body">32,407 flips matched to their purchase price</div></div>
+    <div class="card"><h3>4.0 mo</h3><div class="meta">Typical hold</div><div class="body">purchase to resale, matched deals</div></div>
+    <div class="card"><h3>1465 sqft · 3 bd</h3><div class="meta">Typical house</div><div class="body">median year built 1953</div></div>
+    <div class="card"><img src="img/flippercurve_2026-05..2026-06.png" alt="Flippers by lifetime flip count" style="width:100%;max-width:260px;"><div class="meta">flippers by lifetime flips · orange = this band</div></div>
+  </div>
+  <div class="pulse-caveat">Where they work: Pottstown (19464) 2% · Clementon (08021) 2% · Willingboro (08046) 2% · South Philadelphia East (19148) 1% · Williamstown (08094) 1%.</div>
+      <!-- AGENT:flipperprofile:end -->
+
+  <h2 class="section-title" id="market-pulse">Market Pulse</h2>
+  <!-- AGENT:pulse:start -->
+<table class="data">
+    <thead><tr><th></th><th class="num">per month, Feb–Jun 2026</th><th class="num">per month, Jun–Aug 2026</th><th class="num">change</th><th class="num">avg/mo 2yr</th><th class="num">avg/mo 4yr</th></tr></thead><tbody>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Homes bought by flippers</td><td class="num">530</td><td class="num">455</td><td class="num">-14%</td><td class="num">504</td><td class="num">532</td></tr>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Flips sold (deeds)</td><td class="num">406</td><td class="num">257</td><td class="num">-37%</td><td class="num">426</td><td class="num">464</td></tr>
+      <tr><td><span style="color:#1a7a3c;">&#9650;</span> Lending deals funded</td><td class="num">123</td><td class="num">466</td><td class="num">+279%</td><td class="num">—</td><td class="num">—</td></tr>
+      <tr><td><span style="color:#1a7a3c;">&#9650;</span> Seller/notes held (net)</td><td class="num">14</td><td class="num">108</td><td class="num">+94/mo</td><td class="num">—</td><td class="num">—</td></tr>
+      <tr><td><span style="color:#b03a2e;">&#9660;</span> Investors (net)</td><td class="num">-773</td><td class="num">-5,476</td><td class="num">−4,703/mo</td><td class="num">—</td><td class="num">—</td></tr>
+    </tbody></table>
+  <div class="pulse-caveat">Flips and flipper purchases = recorded deeds, same two months each year; their 2- and 4-year columns are per-month averages of the deed series. The remaining rows come from the investor file, which spans 13 months, so they have no multi-year average (2026: Jun 2026 → Aug 2026; 2025: Feb 2026 → Jun 2026).</div>
+      <!-- AGENT:pulse:end -->
+
+  <h2 class="section-title" id="past-issues">Past Issues</h2>
+  <ul>
+    <!-- AGENT:archive:start -->
+<li><a href="202608/">August 2026</a></li>
+      <!-- AGENT:archive:end -->
+  </ul>
+
+  <h2 class="section-title" id="methodology">Methodology</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Source Data</h3>
+      <div class="meta">County recorder &amp; assessor via FARES</div>
+      <div class="body">Every figure is computed from recorded instruments (deeds, mortgages, assignments) and assessor property records for the five counties of the Philadelphia-Elyria MSA. No surveys, no estimates, no listings data.
+        <!-- AGENT:sourcedates:start -->
+<div style="margin-top:.5rem;color:var(--navy);">This edition analyzes transactions dated May 1 – June 30, 2026, as recorded through the 2026-08 data extract.</div>
+      <!-- AGENT:sourcedates:end -->
+      </div>
+    </div>
+    <div class="card">
+      <h3>Who Counts as an Investor</h3>
+      <div class="meta">Transaction-pattern identification</div>
+      <div class="body">Investors are entities whose recorded transaction history looks like investing: rental holding (landlords), short-hold resales (flippers), private mortgage lending, note holding, or contract assignment (wholesalers). Banks, homebuilders, iBuyers, SFR funds, and government entities are identified by name and reported separately from small investors.</div>
+    </div>
+    <div class="card">
+      <h3>How Comparisons Work</h3>
+      <div class="meta">Attribution deltas + same-window comparisons</div>
+      <div class="body">The Market Pulse reports activity attributed between successive data drops, from the per-investor lifetime totals maintained upstream — periods differ in length, so per-month rates are shown. Elsewhere, "vs. year ago" compares the same calendar months one year earlier, counted from the same data extract. Transfers under $5,000 (quitclaims, partial interests) are excluded everywhere. Counts lag recording by 4–8 weeks, and the newest month can grow up to ~15% as late records arrive — direction is reliable before magnitude.</div>
+    </div>
+    <div class="card">
+      <h3>Known Limits</h3>
+      <div class="meta">Floors, not ceilings</div>
+      <div class="body">Wholesale assignments only appear when they touch a recorded deed, so those counts are a floor. Flip hold times are measured from the prior recorded sale. Names are the owner of record, which may be an LLC or trust.</div>
+    </div>
+  </div>
+
+  <h2 class="section-title" id="about">About</h2>
+  <div class="card-grid">
+    <div class="card">
+      <h3>Purpose</h3>
+      <div class="body">A working tool for small real estate investors in Greater Philadelphia: what actually closed, where, at what prices, and what it suggests checking next — one theme per issue.</div>
+    </div>
+    <div class="card">
+      <h3>Cadence</h3>
+      <div class="body">Published with each bi-monthly data drop, covering the two most recent complete months of recorded activity.</div>
+    </div>
+    <div class="card">
+      <h3>Disclaimer</h3>
+      <div class="body">Observations from public records, not investment, legal, or tax advice. Past activity does not guarantee future results. Verify any property or counterparty independently before transacting.</div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="newsletter" id="newsletter">
+      <div class="mc-form" id="mc_embed_signup">
+        <form action="https://swarmtrace.us14.list-manage.com/subscribe/post?u=9a4ba4adf4888e6de8829189e&amp;id=35bb5ff4ae" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+          <h3>Subscribe</h3>
+          <p>Get each Philadelphia Investor Brief by email when a new issue is published.</p>
+          <label for="mce-EMAIL">Enter your email address to subscribe</label>
+          <input type="email" name="EMAIL" id="mce-EMAIL" placeholder="EMAIL" required>
+          <input type="hidden" name="tags" value="12497817">
+          <div style="position:absolute; left:-5000px;" aria-hidden="true"><input type="text" name="b_9a4ba4adf4888e6de8829189e_35bb5ff4ae" tabindex="-1" value=""></div>
+          <button type="submit" name="subscribe" id="mc-embedded-subscribe">SUBSCRIBE</button>
+          <p class="mc-note">Unsubscribe any time. Powered by Mailchimp.</p>
+        </form>
+      </div>
+    </div>
+    <div>
+      <h4>Sections</h4>
+      <ul>
+        <li><a href="#this-issue">This Issue</a></li>
+        <li><a href="#playbook">Investor Playbook</a></li>
+        <li><a href="#factoids">Factoids</a></li>
+        <li><a href="#activity-chart">Market Activity</a></li>
+        <li><a href="#where-the-money-went">Where the Money Went</a></li>
+        <li><a href="#market-pulse">Market Pulse</a></li>
+        <li><a href="#methodology">Methodology</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Coverage</h4>
+      <ul>
+        <li>Bucks County</li>
+        <li>Chester County</li>
+        <li>Delaware County</li>
+        <li>Montgomery County</li>
+        <li>Philadelphia County</li>
+        <li>Burlington County</li>
+        <li>Camden County</li>
+        <li>Gloucester County</li>
+        <li>Salem County</li>
+        <li>New Castle County</li>
+        <li>Cecil County</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="mailto:jpritchard@swarmalytics.com">jpritchard@swarmalytics.com</a></li>
+        <li>Powered by <a href="https://www.swarmalytics.com" target="_blank" rel="noopener">Swarmalytics</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    Philadelphia Real Estate Investor Brief is an independent research publication built from public
+    county records. Not affiliated with any government agency. Nothing here is investment, legal,
+    or tax advice.
+  </div>
+</footer>
+
+</body>
+</html>
